@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+
+<holidays country="br">
+    <!-- Brasilien http://www.esperanza-tours.de/reiseveranstalter/brasilien.html-->
+
+    <holiday name="Confraternização Universal" type="gesetzlich" international="New Year's Day">
+        <definition>
+            <fixed month="January" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="Carnaval">
+       <definition>
+          <easter/>
+          <add days="-50"/>
+       </definition>
+    </holiday>
+    <holiday name="Carnaval">
+       <definition>
+          <easter/>
+          <add days="-49"/>
+       </definition>
+    </holiday>
+    <holiday name="Caranaval">
+       <definition>
+          <easter/>
+          <add days="-48"/>
+       </definition>
+    </holiday>
+    <holiday name="Carnaval" international="Carnival">
+       <definition>
+          <easter/>
+          <add days="-47"/>
+       </definition>
+    </holiday>
+    <holiday name="Cinzas (Carnival end until 14hours)" international="Ash Wednesday">
+       <definition>
+          <easter/>
+          <add days="-46"/>
+       </definition>
+    </holiday>
+    <holiday name="Paixão de Crito(Karfreitag)" type="gesetzlich" international="Good Friday">
+       <definition>
+          <easter/>
+          <add days="-2"/>
+       </definition>
+    </holiday>
+    <holiday name="Páscoa" type="gesetzlich" international="Easter Day">
+       <definition>
+          <easter/>
+        </definition>
+    </holiday>
+    <holiday name="Tridentes-Tag" type="gesetzlich">
+       <definition>
+          <fixed month="April" day="21"/>
+       </definition>
+    </holiday>
+    <holiday name="Dia do Trabalho" type="gesetzlich" international="Labour Day">
+       <definition firstyear="1934">
+          <fixed month="May" day="1"/>
+       </definition>
+    </holiday>
+    <holiday name="Dia das Mães (Muttertag)">
+        <!-- 2. Sonntag im Mai -->
+        <definition>
+            <rule nth="2nd" weekday="Sunday" month="May"/>
+        </definition>
+    </holiday>
+    <holiday name="Corbus Christi (Fronleichnam)" type="gesetzlich">
+       <definition>
+          <easter/>
+          <add days="+60"/>
+       </definition>
+    </holiday>
+    <holiday name="Dia dos Pais (Vatertag)">
+        <definition>
+            <rule nth="2nd" weekday="Sunday" month="August"/>
+        </definition>
+    </holiday>
+    <holiday name="Independência" type="gesetzlich">
+       <definition>
+          <fixed month="September" day="7"/>
+       </definition>
+    </holiday>
+    <holiday name="Nossa Senhora da Aparecida-Tag" type="gestzlich">
+       <definition>
+          <fixed month="October" day="12"/>
+       </definition>
+    </holiday>
+    <holiday name="Allerheiligen" international="All Saints’ Day">
+       <!-- All Saint's Day is a Christian holy day observed by many Western churches on November 1 -->
+       <definition>
+          <fixed month="November" day="1"/>
+       </definition>
+    </holiday>
+    <holiday name="Finados (Remembrance Day)" type="gesetzlich" international="All Soul's Day">
+       <definition>
+          <fixed month="November" day="2"/>
+       </definition>
+    </holiday>
+    <holiday name="Proclamação da República(Tag der Brasilianischen Republik)" type="gesetzlich">
+       <definition>
+          <fixed month="November" day="15"/>
+       </definition>
+    </holiday>
+    <holiday name="1. Advent">
+       <definition>
+          <advent/>
+       </definition>
+    </holiday>
+    <holiday name="2. Advent">
+       <definition>
+          <advent/>
+          <add days="+7"/>
+       </definition>
+    </holiday>
+    <holiday name="3. Advent (Gaudete)">
+       <definition>
+          <advent/>
+          <add days="+14"/>
+       </definition>
+    </holiday>
+    <holiday name="4. Advent">
+       <definition>
+          <advent/>
+          <add days="+21"/>
+       </definition>
+    </holiday>
+    <holiday name="Heiligabend" international="Christmas Eve">
+       <definition>
+          <fixed month="December" day="24"/>
+       </definition>
+    </holiday>
+    <holiday name="Natal" type="gesetzlich">
+       <definition>
+          <fixed month="December" day="25"/>
+       </definition>
+    </holiday>
+    <holiday name="2. Weihnachtsfeiertag">
+       <definition>
+          <fixed month="December" day="26"/>
+       </definition>
+    </holiday>
+    <holiday name="Véspera de Ano Novo(from 14 hours)" type="gesetzlich" international="New Year's Eve">
+        <definition>
+            <fixed month="December" day="31"/>
+        </definition>
+    </holiday>
+</holidays>

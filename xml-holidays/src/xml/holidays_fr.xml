@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+
+<holidays country="fr">
+    <!-- Frankreich http://www.feiertagskalender.ch -->
+
+    <holiday name="Le Jour de l'An" type="gesetzlich" international="New Year's Day">
+        <definition>
+            <fixed month="January" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="Valentinstag">
+        <import name="Valentine's Day"/>
+    </holiday>
+    <holiday name="Beginn der Sommerzeit (Uhren 1 h vorstellen)" international="Begin Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Paris" action="start"/>
+        </definition>
+    </holiday>
+    <holiday name="Palmsonntag (Palmarum)" international="Palm Sunday">
+        <definition>
+            <easter/>
+            <add days="-7"/>
+        </definition>
+    </holiday><holiday name="Karfreitag" type="katholisch" international="Good Friday">
+        <definition>
+            <easter/>
+            <add days="-2"/>
+        </definition>
+    </holiday>
+    <holiday name="Pâques" type="gesetzlich">
+        <import name="Easter Sunday"/>
+    </holiday>
+    <holiday name="Le lundi de Le lundi de Pâques" type="gesetzlich">
+        <import name="Easter Monday"/>
+    </holiday>
+    <holiday name="La fête du Travail" type="gesetzlich" international="Labour Day">
+        <definition>
+            <fixed month="May" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="L'Ascension" type="gesetzlich" international="Ascension Day">
+        <definition>
+            <easter/>
+            <add days="+39"/>
+        </definition>
+    </holiday>
+    <holiday name="Fête de la Victoire 1945" type="gesetzlich" international="WWII Victory Day">
+        <definition firstyear="1945">
+            <fixed month="May" day="8"/>
+        </definition>
+    </holiday>
+    <holiday name="Pfingstsonntag (Pfingsten)" type="katholisch">
+        <import name="Pentecost"/>
+    </holiday>
+    <holiday name="Muttertag">
+        <!-- 2. Sonntag im Mai -->
+        <definition>
+            <rule nth="2nd" weekday="Sunday" month="May"/>
+        </definition>
+    </holiday>
+    <holiday name="La fête nationale" type="gesetzlich" international="Bastille Day">
+        <definition>
+            <fixed month="July" day="14"/>
+        </definition>
+    </holiday>
+    <holiday name="L'Assomption" type="gesetzlich" international="Assumption of Mary">
+        <definition>
+            <fixed month="August" day="15"/>
+        </definition>
+    </holiday>
+    <holiday name="Ende der Sommerzeit (Uhren 1 h zurückstellen)" international="End Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Paris" action="end"/>
+        </definition>
+    </holiday>
+    <holiday name="La Toussaint" type="gesetzlich" international="All Saints’ Day">
+        <!-- All Saint's Day is a Christian holy day observed by many Western churches on November 1 -->
+        <import name="All Saints’ Day"/>
+    </holiday>
+    <holiday name="L'Armistice" type="gesetzlich" international="Armistice Day">
+        <definition firstyear="1918">
+            <fixed month="November" day="11"/>
+        </definition>
+    </holiday>
+    <holiday name="St. Nikolaus" type="katholisch">
+        <definition>
+            <fixed month="December" day="6"/>
+        </definition>
+    </holiday>
+    <holiday name="1. Advent" type="katholisch">
+        <import name="1st Advent"/>
+    </holiday>
+    <holiday name="2. Advent" type="katholisch">
+        <import name="2nd Advent"/>
+    </holiday>
+    <holiday name="3. Advent (Gaudete)" type="katholisch">
+        <import name="3rd Advent"/>
+    </holiday>
+    <holiday name="4. Advent" type="katholisch">
+        <import name="4th Advent"/>
+    </holiday>
+    <holiday name="Noël" type="gesetzlich">
+        <definition>
+            <fixed month="December" day="25"/>
+        </definition>
+    </holiday>
+    <holiday name="2. Noël" type="katholisch">
+        <definition>
+            <fixed month="December" day="26"/>
+        </definition>
+    </holiday>
+    <holiday name="Silvester" type="katholisch">
+        <import name="New Year's Eve"/>
+    </holiday>
+</holidays>

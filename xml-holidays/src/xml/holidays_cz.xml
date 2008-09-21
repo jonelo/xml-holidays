@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+
+<holidays country="cz">
+    <!-- Tschech. Republik http://www.touristiklinks.de/laender/europa.php/tschechien/gesetzliche_feiertage/ -->
+
+    <holiday  name="Nový rok" type="gesetzlich" international="New Year's Day">
+        <import name="New Year's Day"/>
+    </holiday>
+    <holiday  name="Den obnovy samostatného českého státu(Czech Independence Day)" type="gesetzlich">
+        <import name="New Year's Day"/>
+    </holiday>
+    <holiday name="Popeleční středa(Aschermittwoch)" type="katholisch">
+        <import name="Ash Wednesday"/>
+    </holiday>
+    <holiday name="Beginn der Sommerzeit (Uhren 1 h vorstellen)" international="Begin Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Prague" action="start"/>
+        </definition>
+    </holiday>
+    <holiday name="Květná neděle(Palmsonntag)" type="katholisch">
+        <definition>
+            <easter/>
+            <add days="-7"/>
+        </definition>
+    </holiday>
+    <holiday name="Zelený čtvrtek(Gründonnerstag)" international="Maundy Thursday" type="katholisch">
+        <definition>
+            <easter/>
+            <add days="-3"/>
+        </definition>
+    </holiday>
+        <holiday name="Velký pátek(Karfreitag)" type="katholisch" international="Good Friday">
+        <definition>
+            <easter/>
+            <add days="-2"/>
+        </definition>
+    </holiday>
+    <holiday name="Bílá sobota(Karsamstag)" type="katholisch" international="Holy Saturday">
+        <definition>
+            <easter/>
+            <add days="-1"/>
+        </definition>
+    </holiday>
+    <holiday name="Boží hod velikonožní(Ostersonntag)" type="gesetzlich" international="Easter Day">
+        <import name="Easter Sunday"/>
+    </holiday>
+
+    <holiday name="Velikonoční pondě(Ostermontag)" type="gesetzlich" international="Easter Monday">
+        <import name="Easter Monday"/>
+    </holiday>
+    <holiday name="Svátek práce(Tag der Arbeit)" type="gesetzlich" international="Labour Day">
+        <definition>
+            <fixed month="May" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="Den osvobození(Tag d. Sieges über d. Faschismus)" type="gesetzlich">
+        <definition>
+            <fixed month="May" day="8"/>
+        </definition>
+    </holiday>
+    <holiday name="Den slovanských věrozvěstů Cyrila a Metoděje(Tag der Slawenapostel St. Kyrill und St. Method)" type="gesetzlich">
+        <definition>
+            <fixed month="July" day="5"/>
+        </definition>
+    </holiday>
+    <holiday name="Den upálení mistra Jana Husa(Jahrestag des Martyriums des Reformators Jan Hus)" type="gesetzlich">
+        <definition>
+            <fixed month="July" day="6"/>
+        </definition>
+    </holiday>
+    <holiday name="Den české státnosti(Tag des Nationalheiligen St. Wenzel)" type="gesetzlich">
+        <definition>
+            <fixed month="September" day="28"/>
+        </definition>
+    </holiday>
+    <holiday name="Den vzniku samostatného československého státu(Unabhängigkeitstag)" type="gesetzlich">
+        <definition>
+            <fixed month="October" day="28"/>
+        </definition>
+    </holiday>
+    <holiday name="Ende der Sommerzeit (Uhren 1 h zurückstellen)" international="End Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Prague" action="end"/>
+        </definition>
+    </holiday>
+    <holiday name="Den boje za svobodu a demokracii(Tag der Freiheit und Demokratie)" type="gesetzlich">
+        <definition>
+            <fixed month="November" day="17"/>
+        </definition>
+    </holiday>
+    <holiday name="Ŝtědrý denx" international="Christmas Eve">
+        <import name="Christmas Eve"/>
+    </holiday>
+
+    <holiday name="1. svátek vánoční" type="gesetzlich">
+        <definition>
+            <fixed month="December" day="25"/>
+        </definition>
+    </holiday>
+
+    <holiday name="2. svátek vánoční" type="gesetzlich">
+        <definition>
+            <fixed month="December" day="26"/>
+        </definition>
+    </holiday>
+</holidays>

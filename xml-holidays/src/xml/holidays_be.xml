@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+
+<holidays country="be">
+    <!-- Belgien http://www.belgien-tourismus.de/urlauber/praktische-infos/feste-und-feiertage.html-->
+
+    <holiday name="Neujahrstag" type="gesetzlich" international="New Year's Day">
+       <definition>
+          <fixed month="January" day="1"/>
+       </definition>
+    </holiday>  
+    <holiday name="Hl. Drei Könige (Dreikönigsfest)">
+       <definition>
+          <fixed month="January" day="6"/>
+       </definition>
+    </holiday>
+    <holiday name="Erscheinung des Herrn (Epiphanie) [evangelisch]">
+       <definition>
+          <fixed month="January" day="6"/>
+       </definition>
+    </holiday>
+    <!--  Sonntag nach dem 6. Januar -->    
+    <holiday name="Taufe des Herrn [katholisch]">
+       <definition>
+          <fixed month="January" day="6"/>
+          <goto weekday="Sunday" direction="forward"/>
+       </definition>
+    </holiday>
+    <holiday name="Darstellung des Herrn (Mariä Lichtmess)">
+       <definition>
+          <fixed month="February" day="2"/>
+       </definition>
+    </holiday> 
+    <holiday name="Valentinstag" international="Valentine's Day">
+       <definition>
+          <fixed month="February" day="14"/>
+       </definition>
+    </holiday>
+    <holiday name="Rosenmontag">
+       <definition>
+          <easter/>
+          <add days="-48"/>
+       </definition>
+    </holiday>
+    <holiday name="Fastnacht (Faschingsdienstag)" international="Carnival">
+       <definition>
+          <easter/>
+          <add days="-47"/>
+       </definition>
+    </holiday>
+    <holiday name="Aschermittwoch" international="Ash Wednesday">
+       <definition>
+          <easter/>
+          <add days="-46"/>
+       </definition>
+    </holiday>
+    <holiday name="1. Fastensonntag (Invocavit)">
+    <!-- 6. Sonntag vor Ostern -->
+       <definition>
+          <easter/>
+          <add days="-42"/>
+       </definition>
+    </holiday>
+    <holiday name="2. Fastensonntag (Reminiscere)">
+    <!-- 5. Sonntag vor Ostern -->
+       <definition>
+          <easter/>
+          <add days="-35"/>
+       </definition>
+    </holiday>
+    <holiday name="3. Fastensonntag (Oculi)">
+    <!-- 4. Sonntag vor Ostern -->
+       <definition>
+          <easter/>
+          <add days="-28"/>
+       </definition>
+    </holiday>
+    <holiday name="4. Fastensonntag (Lätare, Rosensonntag, Brotsonntag, Todsonntag, Stabaus-Sonntag)">
+    <!-- 3. Sonntag vor Ostern -->
+       <definition>
+          <easter/>
+          <add days="-21"/>
+       </definition>
+    </holiday>
+    <holiday name="5. Fastensonntag (Judica, Passionssonntag, Schwarzer Sonntag)">
+    <!-- 2. Sonntag vor Ostern -->
+       <definition>
+          <easter/>
+          <add days="-14"/>
+       </definition>
+    </holiday>
+    <holiday name="Beginn der Sommerzeit (Uhren 1 h vorstellen)">
+       <definition>
+          <dst timezone="Europe/Brussels" action="start"/>
+       </definition>
+    </holiday>
+    <holiday name="Erster April" international="April Fool's Day">
+       <definition>
+          <fixed month="April" day="1"/>
+       </definition>
+    </holiday>
+    <holiday name="Palmsonntag (Palmarum)" international="Palm Sunday">
+       <definition>
+          <easter/>
+          <add days="-7"/>
+       </definition>
+    </holiday>
+    <holiday name="Gründonnerstag">
+       <definition>
+          <easter/>
+          <add days="-3"/>
+       </definition>
+    </holiday>
+    <holiday name="Krummer Mittwoch">
+       <definition>
+          <easter/>
+          <add days="-4"/>
+       </definition>
+    </holiday>
+    <holiday name="Karfreitag" international="Good Friday">
+       <definition>
+          <easter/>
+          <add days="-2"/>
+       </definition>
+    </holiday>
+    <holiday name="Karsamstag" international="Holy Saturday">
+       <definition>
+          <easter/>
+          <add days="-1"/>
+       </definition>
+    </holiday>
+    <holiday name="Ostersonntag (Ostern)" type="gesetzlich" international="Easter Day">
+       <definition>
+          <easter/>
+        </definition>
+    </holiday>
+    <holiday name="Ostermontag (Emmaustag)" type="gesetzlich" international="Easter Monday">
+       <definition>
+          <easter/>
+          <add days="+1"/>
+       </definition>
+    </holiday>
+    <holiday name="Weißer Sonntag (Barmherzigkeitssonntag)" type="katholisch">
+       <definition>
+          <easter/>
+          <add days="+7"/>
+       </definition>
+    </holiday>
+    <holiday name="Quasimodogeniti" type="evangelisch">
+       <definition>
+          <easter/>
+          <add days="+7"/>
+       </definition>
+    </holiday>
+    <holiday name="Tag der Arbeit" type="gesetzlich" international="Labour Day">
+       <definition>
+          <fixed month="May" day="1"/>
+       </definition>
+    </holiday>
+    <holiday name="Muttertag">
+       <!-- 2. Sonntag im Mai -->
+       <definition>
+          <rule nth="2nd" weekday="Sunday" month="May"/>
+       </definition>
+    </holiday>
+    <holiday name="Kantate" type="evangelisch">
+       <!-- 4. Sonntag nach Ostern -->
+       <definition>
+          <easter/>
+          <add days="+28"/>
+       </definition>
+    </holiday>
+    <holiday name="Exaudi" type="evangelisch">
+       <!-- 6. Sonntag nach Ostern -->
+       <definition>
+          <easter/>
+          <add days="+42"/>
+       </definition>
+    </holiday>
+    <holiday name="Christi Himmelfahrt" type="gesetzlich">
+       <definition>
+          <easter/>
+          <add days="+39"/>
+       </definition>
+    </holiday>
+    <holiday name="Pfingstsonntag (Pfingsten)" type="gesetzlich">
+       <definition>
+          <easter/>
+          <add days="+49"/>
+       </definition>
+    </holiday>
+    <holiday name="Pfingstmontag" type="gesetzlich">
+       <definition>
+          <easter/>
+          <add days="+50"/>
+       </definition>
+    </holiday>
+    <holiday name="Fronleichnam">
+       <definition>
+          <easter/>
+          <add days="+60"/>
+       </definition>
+    </holiday>
+    <holiday name="Feiertag der Flämischen Gemeinschaft" type="gesetzlich">
+       <definition>
+          <fixed month="July" day="11"/>
+       </definition>
+    </holiday>    
+    <holiday name="belgischer Nationalfeiertag" type="gesetzlich">
+       <definition>
+          <fixed month="July" day="21"/>
+       </definition>
+    </holiday>
+    <holiday name="Mariä Himmelfahrt" type="gesetzlich">
+       <definition>
+          <fixed month="August" day="15"/>
+       </definition>
+    </holiday>
+    <holiday name="Feiertag der Französischen Gemeinschaft" type="gesetzlich">
+       <definition>
+          <fixed month="September" day="27"/>
+       </definition>
+    </holiday>
+    <holiday name="Erntedankfest">
+       <definition>
+          <rule nth="1st" weekday="Sunday" month="October"/>
+       </definition>
+    </holiday>
+    <holiday name="Ende der Sommerzeit (Uhren 1 h zurückstellen)">
+       <definition>
+          <dst timezone="Europe/Brussels" action="end"/>
+       </definition>
+    </holiday>
+
+    <!--
+      1913 legte man das Rosenkranzfest auf den 7. Oktober
+      -->
+    <holiday name="Rosenkranzfest">
+       <definition firstyear="1573" lastyear="1912">
+          <rule nth="1st" weekday="Sunday" month="October"/>
+       </definition>
+       <definition firstyear="1913">
+          <fixed month="October" day="7"/>                                     
+       </definition>
+    </holiday>
+
+    <!-- 
+      1989 erklärte die UNO offiziell den 31. Oktober zum Weltspartag.
+      In Deutschland wird dieser Tag allerdings bereits am letzten
+      Werktag vor dem 31. Oktober begangen, weil in einigen Bundesländern
+      am 31. Oktober Reformationstag, also ein gesetzlicher Feiertag, ist.
+      zwischen 1925 und 1988 ist keine Regel erkennbar.
+      -->
+    <holiday name="Weltspartag (gefeiert)">
+       <definition firstyear="1925" lastyear="1988">
+          <unknown/>
+       </definition>
+       <definition firstyear="1989">
+          <fixed day="30" month="October"/>
+          <add days="-1" ifweekday="Saturday"/> <!-- kann Freitag werden -->
+          <add days="-2" ifweekday="Sunday"/>   <!-- kann Freitag werden -->
+       </definition>        
+    </holiday>
+    <holiday name="Weltspartag (offiziell)">
+       <definition firstyear="1989">
+          <fixed month="October" day="31"/>
+       </definition>
+    </holiday>
+    <holiday name="Allerheiligen" type="gestzlich" international="All Saints’ Day">
+       <!-- All Saint's Day is a Christian holy day observed by many Western churches on November 1 -->
+       <definition>
+          <fixed month="November" day="1"/>
+       </definition>
+    </holiday>
+    <holiday name="Allerseelen" international="All Soul's Day">
+       <definition>
+          <fixed month="November" day="2"/>
+       </definition>
+    </holiday>
+    <holiday name="Waffenstillstand 1918" type="gestzlich">
+       <definition>
+          <fixed month="November" day="11"/>
+       </definition>
+    </holiday>
+    <holiday name="Tag der Dynastie [Deutschsprachige Gemeinschaft]" type="gesetzlich">
+       <definition>
+          <fixed month="September" day="27"/>
+       </definition>
+    </holiday>
+    <holiday name="Totensonntag (Ewigkeitssonntag) [evangelisch]">
+       <definition>
+          <advent/>
+          <add days="-7"/>
+       </definition>
+    </holiday>
+    <holiday name="Nikolaus">
+       <definition>
+          <fixed month="December" day="6"/>
+       </definition>
+    </holiday>
+    <holiday name="Mariä Empfängnis">
+       <definition>
+          <fixed month="December" day="8"/>
+       </definition>
+    </holiday>
+    <holiday name="1. Advent">
+       <definition>
+          <advent/>
+       </definition>
+    </holiday>
+    <holiday name="2. Advent">
+       <definition>
+          <advent/>
+          <add days="+7"/>
+       </definition>
+    </holiday>
+    <holiday name="3. Advent (Gaudete)">
+       <definition>
+          <advent/>
+          <add days="+14"/>
+       </definition>
+    </holiday>
+    <holiday name="4. Advent">
+       <definition>
+          <advent/>
+          <add days="+21"/>
+       </definition>
+    </holiday>
+    <holiday name="Heiligabend" international="Christmas Eve">
+       <definition>
+          <fixed month="December" day="24"/>
+       </definition>
+    </holiday>
+    <holiday name="1. Weihnachtsfeiertag (Weihnachten)" type="gesetzlich">
+       <definition>
+          <fixed month="December" day="25"/>
+       </definition>
+    </holiday>
+    <holiday name="2. Weihnachtsfeiertag [öffentlicher Dienst und Deutsche Gemeinschaft]">
+       <definition>
+          <fixed month="December" day="26"/>
+       </definition>
+    </holiday>
+    <holiday name="Silvester" international="New Year's Eve">
+        <definition>
+            <fixed month="December" day="31"/>
+        </definition>
+    </holiday>
+</holidays>

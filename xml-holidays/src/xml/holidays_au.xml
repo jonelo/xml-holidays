@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+
+<holidays country="au">
+    <!-- Australia -->
+
+    <holiday name="New Year's Day(1.1.1901 - Gründungstag)" type="gesetzlich">
+        <definition>
+            <fixed month="January" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="Australia Day(26.1.1788)" type="gesetzlich">
+        <definition firstyear="1788">
+        	<fixed month="January" day="26" />
+        </definition>
+    </holiday>
+    <holiday name="Labour Day (Western Australia only)" type="local">
+        <definition>
+            <rule nth="1st" weekday="Monday" month="March"/>
+        </definition>
+    </holiday>
+    <holiday name="Eight Hours Day (Tasmania only)" type="local">
+        <definition>
+            <rule nth="2nd" weekday="Monday" month="March"/>
+        </definition>
+    </holiday>
+    <holiday name="Labour Day (Victoria only)" type="local">
+        <definition>
+            <rule nth="2nd" weekday="Monday" month="March"/>
+        </definition>
+    </holiday>
+    <holiday name="Good Friday" type="gesetzlich">
+        <definition>
+            <easter/>
+            <add days="-2"/>
+        </definition>
+    </holiday>
+    <holiday name="Easter Saturday" international="Holy Saturday">
+        <definition>
+            <easter/>
+            <add days="-1"/>
+        </definition>
+    </holiday>
+    <holiday name="Easter Sunday" type="gesetzlich">
+        <import name="Easter Sunday"/>
+    </holiday>
+    <holiday name="Easter Monday" type="gesetzlich">
+        <import name="Easter Monday"/>
+    </holiday>
+    <holiday name="ANZAC Day(1915)" type="gesetzlich">
+        <definition>
+            <fixed month="April" day="25"/>
+        </definition>
+    </holiday>
+    <holiday name="May Day (Northern Territory only)" type="local">
+        <definition>
+            <rule nth="1st" weekday="Monday" month="May"/>
+        </definition>
+    </holiday>
+    <holiday name="Labour Day (Queensland only)" type="local">
+        <definition>
+            <rule nth="1st" weekday="Monday" month="May"/>
+        </definition>
+    </holiday>
+    <holiday name="Foundation Day(Western Australia only)" type="local">
+        <definition>
+            <rule nth="1st" weekday="Monday" month="June"/>
+        </definition>
+    </holiday>
+    <holiday name="Queen's Birthday(all exept WA)" type="local">
+        <definition>
+            <rule nth="2nd" weekday="Monday" month="June"/>
+        </definition>
+    </holiday>
+    <holiday name="Queen's Birthday(West Australia only)" type="local">
+        <definition>
+            <rule nth="1st" weekday="Monday" month="October"/>
+        </definition>
+    </holiday>
+    <holiday name="Labour Day(SA, ACT, NSW)" type="local">
+        <definition>
+            <rule nth="1st" weekday="Monday" month="October"/>
+        </definition>
+    </holiday>
+    <holiday name="Melbourne Cup Day(Victoria only)" type="local">
+        <definition>
+            <rule nth="1st" weekday="Tuesday" month="November"/>
+        </definition>
+    </holiday>
+    <holiday name="Christmas Day" type="gesetzlich">
+        <definition>
+            <fixed month="December" day="25"/>
+        </definition>
+    </holiday>
+    <holiday name="Boxing Day" type="gesetzlich">
+        <definition>
+            <fixed month="December" day="26"/>
+        </definition>
+    </holiday>
+</holidays>

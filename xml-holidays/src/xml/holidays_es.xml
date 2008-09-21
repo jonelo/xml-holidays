@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+
+<holidays country="es">
+    <!-- Spanien http://www.anabell.de/spanien/spanische_feiertage.html -->
+    <!-- WARNING  die astronomischen Tag/Nachtgleiche und Sommer- u.
+         Wintersonnwende sind hier fixed !! d.h. stimmen nicht immer mit
+         den tatsächlichen Tagen überein. -->
+         
+    <holiday name="Día del Año Nuevo" type="gesetzlich" international="New Year's Day">
+        <definition>
+            <fixed month="January" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="Epifanía del Señor(CM, CE, AN, M, S, O, ML)" type="local" international="Epiphany">
+        <definition>
+            <fixed month="January" day="6"/>
+        </definition>
+    </holiday>
+    <holiday name="Lunes siguienta a la Epifanía del Señor(CM, CE, AN, M, S, O, ML)" type="local" international="Epiphany observed">
+        <definition>
+            <fixed month="January" day="7"/>
+        </definition>
+    </holiday>
+    <holiday name="Día de Andalucía(AN)" type="local" international="Day of Andalucía">
+        <definition>
+            <fixed month="February" day="28"/>
+        </definition>
+    </holiday>
+    <holiday name="Dia de las Islas Baleares(IB)" type="local" international="Day of the Balearic Islands">
+        <definition>
+            <fixed month="March" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="San José(GA, M, AR, ML, CM, MU, EX, NA, PV, CL, VC)" type="local" international="San Jose">
+        <definition>
+            <fixed month="March" day="19"/>
+        </definition>
+    </holiday>
+    <holiday name="Equinocio de marzo" international="Vernal equinox">
+        <definition>
+            <fixed month="March" day="21"/>
+        </definition>
+    </holiday>
+    <holiday name="Jueves Santo(CE, LO, EX, AR, GA, IB, M, CN, ML, CL, MU, O, NA, CM, AN, PV)" type="local" international="Maundy Thursday">
+        <definition>
+            <easter/>
+            <add days="-3"/>
+        </definition>
+    </holiday>
+    <holiday name="Viernes Santo" type="gesetzlich" international="Good Friday">
+        <definition>
+            <easter/>
+            <add days="-2"/>
+        </definition>
+    </holiday>
+    <holiday name="Pascua" international="Easter">
+        <import name="Easter Sunday"/>
+    </holiday>
+
+    <holiday name="Lunes de Pascua(LO, NA, PV, CT, VC)" type="local" international="Easter Monday">
+        <import name="Easter Monday"/>
+    </holiday>
+    <holiday name="cambio de horario de verano" international="Begin Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Madrid" action="start"/>
+        </definition>
+    </holiday>
+    <holiday name="Fiesta de la Comunidad Autónoma(CL)" type="local" international="Celebration of the Independent Community">
+        <definition>
+            <fixed month="April" day="23"/>
+        </definition>
+    </holiday>
+    <holiday name="San Jorge. Día de Aragón(AR)" type="local" international="Day of Aragón">
+        <definition>
+            <fixed month="April" day="23"/>
+        </definition>
+    </holiday>
+    <holiday name="Fiesta del Trabajo" type="gesetzlich" international="Labour Day">
+        <definition>
+            <fixed month="May" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="Día de la Communidad Madrid(M)" type="local" international="Day of Madrid">
+        <definition>
+            <fixed month="May" day="2"/>
+        </definition>
+    </holiday>
+    <holiday name="Pascua" type="gesetzlich">
+        <import name="Pentecost"/>
+    </holiday>
+    <holiday name="Secunda Pascua(B)" type="local" international="Whit Monday">
+        <definition>
+            <easter/>
+            <add days="+50"/>
+        </definition>
+    </holiday>
+    <holiday name="Día de las Letras Gallegas(GA)" type="local" international="Day of Galicia">
+        <definition>
+            <fixed month="May" day="17"/>
+        </definition>
+    </holiday>
+    <holiday name="festividad del Día de Canarias(CN)" type="local" international="Canaries day">
+        <definition>
+            <fixed month="May" day="30"/>
+        </definition>
+    </holiday>
+    <holiday name="Día de la Región de Cast.-La M.(CM)" type="local" international="Day of Castile-La Mancha">
+        <definition>
+            <fixed month="May" day="31"/>
+        </definition>
+    </holiday>
+    <holiday name="descanso laboral correspondiente a la festividad del Día de Canarias(CN)" type="local" international="Canaries day observed">
+        <definition>
+            <fixed month="May" day="31"/>
+        </definition>
+    </holiday>
+    <holiday name="Día de la Región de Murcia(MU)" type="local" international="Day of Murcia">
+        <definition>
+            <fixed month="June" day="9"/>
+        </definition>
+    </holiday>
+    <holiday name="Día de la Rioja(LO)" type="local" international="Day of Rioja">
+        <definition>
+            <fixed month="June" day="9"/>
+        </definition>
+    </holiday>
+    <holiday name="San Antonio(CE)" type="local" international="San Antonio">
+        <definition>
+            <fixed month="June" day="13"/>
+        </definition>
+    </holiday>
+    <holiday name="El Solsticio de junio" international="June Solstice">
+        <!-- Sommersonnwende is not fixed !! needs to be corrected -->
+        <definition>
+            <fixed month="June" day="20"/>
+        </definition>
+    </holiday>
+    <holiday name="San Juan(CT)" type="local" international="Sant Joan">
+        <definition>
+            <fixed month="June" day="24"/>
+        </definition>
+    </holiday>
+    <holiday name="Santiago Apóstol(GA, M, PV, NA, CL, CN, LO)" type="local" international="Santiago Apostle">
+        <definition>
+            <fixed month="July" day="25"/>
+        </definition>
+    </holiday>
+    <holiday name="Día de las Instituciones(S)" type="local" international="Day of the Institutions">
+        <definition>
+            <fixed month="July" day="28"/>
+        </definition>
+    </holiday>
+    <holiday name="Nuestra Señora de África(CE)" type="local" international="Our Mrs. of Africa">
+        <definition>
+            <fixed month="August" day="5"/>
+        </definition>
+    </holiday>
+    <holiday name="La Asunción de la Virgen(S, CE, AN, M, CN, O, ML)" type="local" international="Assumption of Mary">
+        <definition>
+            <fixed month="August" day="15"/>
+        </definition>
+    </holiday>
+    <holiday name="Día de la Ciudad Autónoma de Ceuta(CE)" type="local" international="Day of the independent city Ceuta">
+        <definition>
+            <fixed month="September" day="2"/>
+        </definition>
+    </holiday>
+    <holiday name="Virgen de la Victoria(ML)" type="local" international="Virgin of the Victory">
+        <definition>
+            <fixed month="September" day="8"/>
+        </definition>
+    </holiday>
+    <holiday name="Día de Asturias(O)" type="local" international="Day of Asturias">
+        <definition>
+            <fixed month="September" day="8"/>
+        </definition>
+    </holiday>
+    <holiday name="Día de Extremadura(EX)" type="local" international="Day of Extremadura">
+        <definition>
+            <fixed month="September" day="8"/>
+        </definition>
+    </holiday>
+    <holiday name="Día Nacional de Cataluña(CT)" type="local" international="Day of Catalonia">
+        <definition>
+            <fixed month="September" day="11"/>
+        </definition>
+    </holiday>
+    <holiday name="Nuestra Señora de la Bien Aparecida(S)" type="local" international="Nuestra Señora de la Bien Aparecida">
+        <definition>
+            <fixed month="September" day="15"/>
+        </definition>
+    </holiday>
+    <holiday name="Día de Melilla(ML)" type="local" international="Day of Melilla">
+        <definition>
+            <fixed month="September" day="17"/>
+        </definition>
+    </holiday>
+    <holiday name="Equinoccio de septiembre" international="Autumnal equinox">
+        <definition>
+            <fixed month="September" day="23"/>
+        </definition>
+    </holiday>
+    <holiday name="Día de la Comunidad Valenciana(VC)" type="local" international="Day of the Valencian Community">
+        <definition>
+            <fixed month="October" day="9"/>
+        </definition>
+    </holiday>
+    <holiday name="Fiesta Nacional de España" type="gesetzlich" international="National Day">
+        <definition>
+            <fixed month="October" day="12"/>
+        </definition>
+    </holiday>
+    <holiday name="Cambio de horario de invierno" international="Daylight Saving Time ends">
+        <definition>
+            <dst timezone="Europe/Madrid" action="end"/>
+        </definition>
+    </holiday>
+    <holiday name="Todos los Santos" type="gesetzlich" international="All Saints">
+        <!-- All Saint's Day is a Christian holy day observed by many Western churches on November 1 -->
+        <import name="All Saints’ Day"/>
+    </holiday>
+    <holiday name="Día de Navarra(NA)" type="local" international="Day of Navarre">
+        <definition>
+            <fixed month="December" day="3"/>
+        </definition>
+    </holiday>
+    <holiday name="Día de la Constitución Española" type="gesetzlich" international="Constitution Day">
+        <definition>
+            <fixed month="December" day="6"/>
+        </definition>
+    </holiday>
+    <holiday name="La Inmaculada Concepción" type="gesetzlich" international="Immaculate Conception">
+        <definition>
+            <fixed month="December" day="8"/>
+        </definition>
+    </holiday>
+    <holiday name="El Solsticio de diciembre" international="December Solstice">
+        <!-- Wintersonnwende needs to be corrected -->
+        <definition>
+            <fixed month="December" day="22"/>
+        </definition>
+    </holiday>
+    <holiday name="Navidad" type="gesetzlich" international="Christmas Day">
+        <definition>
+            <fixed month="December" day="25"/>
+        </definition>
+    </holiday>
+</holidays>

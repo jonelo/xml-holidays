@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+
+<holidays country="hr">
+    <!-- Kroatien http://www.kroatientips.de/html/feiertage_kroatien_feiertage_k.html -->
+    <!-- http://www.feiertagskalender.ch -->
+
+    <holiday name="Nova godina" type="gesetzlich" international="New Year's Day">
+        <definition>
+            <fixed month="January" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="Sveta tri kralja" type="gesetzlich" international="Epiphany">
+        <definition>
+            <fixed month="January" day="6"/>
+        </definition>
+    </holiday>
+    <holiday name="Begin Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Zagreb" action="start"/>
+        </definition>
+    </holiday>
+    <holiday name="Uskrs" type="gesetzlich" international="Easter">
+        <import name="Easter Sunday"/>
+    </holiday>
+    <holiday name="Uskršnji ponedjeljak" type="gesetzlich" international="Easter Monday">
+        <import name="Easter Monday"/>
+    </holiday>
+    <holiday name="Praznik rada" type="gesetzlich" international="Labour Day">
+        <definition>
+            <fixed month="May" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="Fronleichnam" type="gesetzlich" international="Corpus Christi">
+        <definition>
+            <easter/>
+            <add days="+60"/>
+        </definition>
+    </holiday>
+    <holiday name="Dan antifašističke borbe(Day of Antifascist Struggle)" type="gesetzlich">
+        <definition>
+            <fixed month="June" day="22"/>
+        </definition>
+    </holiday>
+    <holiday name="Dan državnosti(Statehood Day)" type="gesetzlich">
+        <definition firstyear="2006"> <!-- 2007 ?? -->
+        	<fixed month="June" day="25" />
+        </definition>
+    </holiday>
+    <holiday name="Dan domovinske zahvalnosti(Homeland Thanksgiving Day)" type="gesetzlich">
+        <definition>
+        	<fixed month="August" day="5" />
+        </definition>
+    </holiday>
+    <holiday name="Velika gospa" type="gesetzlich" international="Assumption of Mary">
+        <definition>
+        	<fixed month="August" day="15" />
+        </definition>
+    </holiday>
+    <holiday name="Dan nezavisnosti(Independence Day)" type="gesetzlich">
+        <definition>
+        	<fixed month="October" day="8" />
+        </definition>
+    </holiday>
+    <holiday name="End Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Zagreb" action="end"/>
+        </definition>
+    </holiday>
+    <holiday name="Dan svih svetih" type="gesetzlich" international="All Saints">
+        <definition>
+        	<fixed month="November" day="1" />
+        </definition>
+    </holiday>
+    <holiday name="Božić" type="gesetzlich" international="Christmas Day">
+        <definition>
+            <fixed month="December" day="25"/>
+        </definition>
+    </holiday>
+    <holiday name="Sveti Stjepan" type="gesetzlich" international="Boxing Day">
+        <definition>
+            <fixed month="December" day="26"/>
+        </definition>
+    </holiday>
+</holidays>

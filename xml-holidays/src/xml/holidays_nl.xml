@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+
+<holidays country="nl">
+    <!-- Niederlande http://mobile.feiertagskalender.ch/index.php?geo=3192&jahr=2007&klasse=5&hl=de -->
+
+    <holiday name="Neujahrstag" type="gesetzlich" international="New Year's Day">
+        <definition>
+            <fixed month="January" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="Beginn der Sommerzeit (Uhren 1 h vorstellen)" international="Begin Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Amsterdam" action="start"/>
+        </definition>
+    </holiday>
+    <holiday name="Karfreitag" type="gesetzlich" international="Good Friday">
+        <definition>
+            <easter/>
+            <add days="-2"/>
+        </definition>
+    </holiday>
+    <holiday name="Ostern" type="gesetzlich">
+        <import name="Easter Sunday"/>
+    </holiday>
+    <holiday name="Ostermontag (Emmaustag)" type="gesetzlich">
+        <import name="Easter Monday"/>
+    </holiday>
+    <holiday name="Koninginnedag (Nationalfeiertag)">
+    	<!-- Wenn Sonntag dann wird Samstag gefeiert -->
+        <definition>
+            <fixed month="April" day="30"/>
+            <add days="-1" ifweekday="Sunday"/>
+        </definition>
+    </holiday>
+    <holiday name="Tag der Befreiung">
+        <definition>
+            <fixed month="May" day="5"/>
+        </definition>
+    </holiday>
+    <holiday name="Muttertag">
+        <!-- 2. Sonntag im Mai -->
+        <definition>
+            <rule nth="2nd" weekday="Sunday" month="May"/>
+        </definition>
+    </holiday>
+    <holiday name="Christi Himmelfahrt" type="gesetzlich">
+        <definition>
+            <easter/>
+            <add days="+39"/>
+        </definition>
+    </holiday>
+    <holiday name="Pfingstsonntag (Pfingsten)" type="gesetzlich" international="Whit Sunday">
+        <import name="Pentecost"/>
+    </holiday>
+    <holiday name="Pfingstmontag" type="gesetzlich" international="Whit Monday">
+        <definition>
+            <easter/>
+            <add days="+50"/>
+        </definition>
+    </holiday>
+    <holiday name="Ende der Sommerzeit (Uhren 1 h zurückstellen)" international="End Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Amsterdam" action="end"/>
+        </definition>
+    </holiday>
+    <holiday name="1. Weihnachtsfeiertag (Weihnachten)" type="gesetzlich" international="Christmas Day">
+        <definition>
+            <fixed month="December" day="25"/>
+        </definition>
+    </holiday>
+    <holiday name="2. Weihnachtsfeiertag" type="gesetzlich" international="Boxing Day">
+        <definition>
+            <fixed month="December" day="26"/>
+        </definition>
+    </holiday>
+</holidays>

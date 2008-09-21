@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+
+<holidays country="ddr">
+    <!-- DDR -->
+
+    <holiday name="Neujahrstag" type="gesetzlich" international="New Year's Day">
+        <definition>
+            <fixed month="January" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="Karfreitag" type="gesetzlich" international="Good Friday">
+        <definition>
+            <easter/>
+            <add days="-2"/>
+        </definition>
+    </holiday>
+    <holiday name="Ostersonntag (Ostern)" type="gesetzlich">
+        <import name="Easter Sunday"/>
+    </holiday>
+    <holiday name="Ostermontag (Emmaustag)" type="gesetzlich">
+        <import name="Easter Monday"/>
+    </holiday>
+    <holiday name="Internationaler Kampf- und Feiertag der Werktätigen" type="gesetzlich">
+        <definition firstyear="1950" lastyear="1990">
+        	<fixed month="May" day="1" />
+        </definition>
+    </holiday>
+    <holiday name="Tag der Befreiung" type="gesetzlich">
+        <definition firstyear="1950" lastyear="1966">
+        	<fixed month="May" day="8" />
+        </definition>
+    </holiday>
+    <holiday name="Tag des Sieges" type="gesetzlich">
+        <definition year="1975">
+        	<fixed month="May" day="9" />
+        </definition>
+    </holiday>
+    <holiday name="Christi Himmelfahrt" type="gesetzlich">
+        <definition>
+            <easter/>
+            <add days="+39"/>
+        </definition>
+    </holiday>
+    <holiday name="Pfingstsonntag (Pfingsten)" type="gesetzlich" international="Whit Sunday">
+        <import name="Pentecost"/>
+    </holiday>
+    <holiday name="Pfingstmontag" type="gesetzlich">
+        <definition>
+            <easter/>
+            <add days="+50"/>
+        </definition>
+    </holiday>
+    <holiday name="Tag der Republik" type="gesetzlich">
+        <definition firstyear="1949" lastyear="1989">
+        	<fixed month="October" day="7" />
+        </definition>
+    </holiday>
+    <holiday name="Reformationstag" type="gesetzlich">
+        <definition>
+            <fixed month="October" day="31"/>
+        </definition>
+    </holiday>
+    <holiday name="Buß- und Bettag" type="gesetzlich">
+        <definition>
+            <advent/>
+            <add days="-11"/>
+        </definition>
+    </holiday>
+    <holiday name="1. Weihnachtsfeiertag (Weihnachten)" type="gesetzlich" international="Christmas Day">
+        <definition>
+            <fixed month="December" day="25"/>
+        </definition>
+    </holiday>
+    <holiday name="2. Weihnachtsfeiertag" type="gesetzlich" international="Boxing Day">
+        <definition>
+            <fixed month="December" day="26"/>
+        </definition>
+    </holiday>
+</holidays>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+
+<holidays country="shared">
+    
+    <holiday name="New Year's Day">
+        <definition>
+            <fixed month="January" day="1"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Valentine's Day">
+        <definition>
+            <fixed month="February" day="14"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Carnival">
+        <definition>
+            <easter/>
+            <add days="-47"/>
+        </definition>
+    </holiday>
+
+    <holiday name="Ash Wednesday">
+        <definition>
+            <easter/>
+            <add days="-46"/>
+        </definition>
+    </holiday>
+
+    <holiday name="Easter Sunday">
+        <definition>
+            <easter/>
+        </definition>
+    </holiday>
+
+    <holiday name="Easter Monday">
+        <definition>
+            <easter/>
+            <add days="+1"/>
+        </definition>
+    </holiday>
+
+    <holiday name="Pentecost">
+        <definition>
+           <easter/>
+           <add days="+49"/>
+        </definition>
+    </holiday>
+
+    <holiday name="1st Advent">
+        <definition>
+            <advent/>
+        </definition>
+    </holiday>
+
+    <holiday name="2nd Advent">
+        <definition>
+            <advent/>
+            <add days="+7"/>
+        </definition>
+    </holiday>
+
+    <holiday name="3rd Advent">
+        <definition>
+            <advent/>
+            <add days="+14"/>
+        </definition>
+    </holiday>
+
+    <holiday name="4th Advent">
+        <definition>
+            <advent/>
+            <add days="+21"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="New Year's Eve">
+        <definition>
+            <fixed month="December" day="31"/>
+        </definition>
+    </holiday>
+
+</holidays>

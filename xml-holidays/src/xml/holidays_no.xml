@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+
+<holidays country="no">
+    <!-- Norwegen http://www.ferienwohnungen-kroatien.net/feiertage/feiertage_norwegen.shtml -->
+
+    <holiday name="Første nyttårsdag" type="gesetzlich" international="New Year's Day">
+        <definition>
+            <fixed month="January" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="Prinsesse Ingrid Alexandra">
+        <definition>
+            <fixed month="January" day="21"/>
+        </definition>
+    </holiday>
+    <holiday name="Beginn der Sommerzeit (Uhren 1 h vorstellen)" international="Begin Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Oslo" action="start"/>
+        </definition>
+    </holiday>
+    <holiday name="palmesøndag" international="Palm Sunday">
+        <definition>
+            <easter/>
+            <add days="-7"/>
+        </definition>
+    </holiday>
+    <holiday name="Skjærtorsdag" international="Maundy Thursday">
+        <definition>
+            <easter/>
+            <add days="-3"/>
+        </definition>
+    </holiday>
+    <holiday name="Langfredag" type="gesetzlich" international="Good Friday">
+        <definition>
+            <easter/>
+            <add days="-2"/>
+        </definition>
+    </holiday>
+    <holiday name="1. påskedag" type="gesetzlich">
+        <import name="Easter Sunday"/>
+    </holiday>
+    <holiday name="2. påskedag" type="gesetzlich">
+        <import name="Easter Monday"/>
+    </holiday>
+    <holiday name="Offentlig høytidsdag" type="gesetzlich">
+        <definition>
+            <fixed month="May" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="Kristi Himmelfartsdag" type="gesetzlich">
+        <definition>
+            <easter/>
+            <add days="+39"/>
+        </definition>
+    </holiday>
+    <holiday name="Frigjøringsdag 1945 (Day of liberation)">
+        <definition>
+            <fixed month="May" day="8"/>
+        </definition>
+    </holiday>
+    <holiday name="Grunnlovsdag (Norges nasjonaldag)" type="gesetzlich">
+        <definition firstyear="1814">
+        	<fixed month="May" day="17" />
+        </definition>
+    </holiday>
+    <holiday name="1. pinsedag" type="gesetzlich" international="Whit Sunday">
+        <import name="Pentecost"/>
+    </holiday>
+    <holiday name="2. pinsedag" type="gesetzlich" international="Whit Monday">
+        <definition>
+            <easter/>
+            <add days="+50"/>
+        </definition>
+    </holiday>
+    <holiday name="Corpus Christi" international="Corpus Christi">
+        <definition>
+            <easter/>
+            <add days="+60"/>
+        </definition>
+    </holiday>
+    <holiday name="Unionsoppløsningen (End of union)">
+        <definition firstyear="1905">
+        	<fixed month="June" day="7" />
+        </definition>
+    </holiday>
+    <holiday name="Dronning Sonja (Queen Sonja's day)">
+        <definition>
+        	<fixed month="July" day="4" />
+        </definition>
+    </holiday>
+    <holiday name="Kronprins Haakon Magnus (Crown Prince Haakon Magnus' day)">
+        <definition>
+        	<fixed month="July" day="20" />
+        </definition>
+    </holiday>
+    <holiday name="Ende der Sommerzeit (Uhren 1 h zurückstellen)" international="End Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Oslo" action="end"/>
+        </definition>
+    </holiday>
+    <holiday name="Julaften" international="Christmas Eve">
+        <import name="Christmas Eve"/>
+    </holiday>
+    <holiday name="1. Juledag" type="gesetzlich" international="Christmas Day">
+        <definition>
+            <fixed month="December" day="25"/>
+        </definition>
+    </holiday>
+    <holiday name="2. Juledag" type="gesetzlich" international="Boxing Day">
+        <definition>
+            <fixed month="December" day="26"/>
+        </definition>
+    </holiday>
+    <holiday name="Nyttårsaften" international="New Year's Eve">
+        <import name="New Year's Eve"/>
+    </holiday>
+</holidays>

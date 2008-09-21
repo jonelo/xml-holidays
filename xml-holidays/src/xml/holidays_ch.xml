@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+
+<holidays country="ch">
+    <!-- Schweiz -->
+
+    <holiday name="Neujahrstag" type="gesetzlich" international="New Year's Day">
+        <definition>
+            <fixed month="January" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="Berchtoldstag (Bächtelistag) [nicht in allen Kantonen]" type="local">
+    	<definition>
+    		<fixed day="2" month="January" />
+    	</definition>
+    </holiday>
+    <holiday name="Hl. Drei Könige(nur TI, UR, GR*, SZ)" type="local" international="Epiphany">
+        <definition>
+            <fixed month="January" day="6"/>
+        </definition>
+    </holiday>
+    <holiday name="Valentinstag">
+    	<definition>
+    		<fixed day="14" month="January" />
+    	</definition>
+    </holiday>
+    <holiday name="Aschermittwoch">
+    	<definition>
+    		<easter /><add days="-46" ></add>
+    	</definition>
+    </holiday>
+    <holiday name="Fridolinstag [gesetzlich in Kanton Solothurn, Breitenbach]" type="local">
+    	<definition>
+    		<fixed day="6" month="March" />
+    	</definition>
+    </holiday>
+    <holiday name="St. Josef [gesetzlich, nicht in allen Orten]" type="local">
+    	<definition firstyear="1729">
+    		<fixed day="19" month="March" />
+    	</definition>
+    </holiday>
+    <holiday name="St. Benediktstag [gesetzlich in  Kanton Obwalden,  Engelberg]" type="local">
+    	<definition>
+    		<fixed day="21" month="March" />
+    	</definition>
+    </holiday>
+    <holiday name="Näfelser Fahrt [Feiertag in Kanton Glarus]" type="local">
+    	<definition firstyear="1389">
+    		<fixed day="21" month="March" />
+    	</definition>
+    </holiday>
+    <holiday name="Beginn der Sommerzeit (Uhren 1 h vorstellen)">
+    	<definition>
+    		<dst timezone="Europe/Zurich" action="start" />
+    	</definition>
+    </holiday>
+    <holiday name="Palmsonntag">
+    	<definition>
+    		<easter /><add days="-7" />
+    	</definition>
+    </holiday><holiday name="Karfreitag [alle ausser TI, VS]" type="local">
+    	<definition>
+    		<easter /><add days="-2" />
+    	</definition>
+    </holiday>
+    <holiday name="Ostersonntag (Ostern)">
+    	<definition>
+    		<easter />
+    	</definition>
+    </holiday>
+    <holiday name="Ostermontag (alle ausser VS)" type="local">
+    	<definition>
+    		<easter /><add days="+1"/>
+    	</definition>
+    </holiday>
+    <holiday name="Auffahrt" type="gesetzlich">
+    	<definition>
+    		<easter /><add days="+39" />
+    	</definition>
+    </holiday>
+    <holiday name="Muttertag">
+    	<definition>
+    		<rule nth="2nd" weekday="Sunday" month="May" />
+    	</definition>
+    </holiday>
+    <holiday name="Pfingstsonntag (Pfingsten)" type="gesetzlich">
+    	<definition>
+    		<easter /><add days="+49" />
+    	</definition>
+    </holiday>
+    <holiday name="Pfingstmontag (alle ausser VS)" type="local">
+    	<definition>
+    		<easter /><add days="+49" />
+    	</definition>
+    </holiday>
+    <holiday name="Fronleichnam" type="OW, ZG, SO, AI, SZ, GR, TI, LU, UR, AG, VS, JU, FR, NW">
+        <definition>
+            <easter/>
+            <add days="+60"/>
+        </definition>
+    </holiday>
+    <holiday name="Nationalfeiertag Schweiz (Bundesfeier seit 1993 gesamtschweizerisch)" type="gesetzlich">
+    	<definition firstyear="1899">
+    		<fixed day="1" month="August" />
+    	</definition>
+    </holiday>
+    <holiday name="Eidgenössischer Dank-, Buss- und Bettag">
+    	<definition firstyear="1832">
+    		<rule nth="3rd" weekday="Sunday" month="September" />
+    	</definition>
+    </holiday>
+    <holiday name="Ende der Sommerzeit (Uhren 1 h zurückstellen)">
+    	<definition>
+    		<dst timezone="Europe/Zurich" action="start" />
+    	</definition>
+    </holiday>
+    <holiday name="Allerheiligen">
+    	<definition>
+    		<fixed day="1" month="November" />
+    	</definition>
+    </holiday>
+    <holiday name="Totensonntag">
+    	<definition>
+    		<advent /><add days="-7" />
+    	</definition>
+    </holiday>
+    <holiday name="1. Advent">
+    	<definition>
+    		<advent />
+    	</definition>
+    </holiday>
+    <holiday name="2. Advent">
+    	<definition>
+    		<advent /><add days="+7" />
+    	</definition>
+    </holiday>
+    <holiday name="3. Advent">
+    	<definition>
+    		<advent /><add days="+14" />
+    	</definition>
+    </holiday>
+    <holiday name="4. Advent">
+    	<definition>
+    		<advent /><add days="+21" />
+    	</definition>
+    </holiday>
+    <holiday name="Heiliger Abend">
+    	<definition>
+    		<fixed day="24" month="December" />
+    	</definition>
+    </holiday>
+    <holiday name="Weihnachten" type="gesetzlich">
+    	<definition>
+    		<fixed day="25" month="December" />
+    	</definition>
+    </holiday>
+    <holiday name="Stephanstag(alle ausser VD, VS, GE, JU)" type="local">
+    	<definition>
+    		<fixed day="26" month="December" />
+    	</definition>
+    </holiday>
+    <holiday name="Silvester">
+    	<definition>
+    		<fixed day="31" month="December" />
+    	</definition>
+    </holiday>
+</holidays>

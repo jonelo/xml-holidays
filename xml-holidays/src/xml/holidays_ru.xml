@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+
+<holidays country="ru">
+    <!-- Russland http://www.russlandjournal.de/russland/reiseinformationen/feiertage/-->
+	<!-- generell gilt: fällt ein Feiertage auf Sonntag oder Samstag wird der Feiertag auf einen
+	     Arbeitstag verlegt !! -->
+	<!-- viele Geschäfte bleiben vom 31.12 - 7.1 durchgehend geschlossen -->
+
+    <holiday name="Новый Год" type="gesetzlich" international="New Year's Day">
+        <definition>
+            <fixed month="January" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="православное Рождество" type="gesetzlich" international="Orthodox Christmas Day">
+        <!-- maybe not fixed !! -->
+        <definition>
+            <fixed month="January" day="7"/>
+        </definition>
+    </holiday>
+    <holiday name="День Защитника Отечества" type="gesetzlich" international="Defender of the Fatherland Day">
+        <definition>
+            <fixed month="February" day="23"/>
+        </definition>
+    </holiday>
+    <!-- "Масленица (Russische Fastnacht)" Ende Februar/Anfangs März -->
+    <holiday name="Международный Женский День" type="gesetzlich" international="International Women's Day">
+        <definition>
+            <fixed month="March" day="23"/>
+        </definition>
+    </holiday>
+    <!-- "Пасха (Russisch-Orthodox Ostern)"  March/April/May -->
+    <holiday name="День Знамени (Tag der Nationalflagge)">
+        <definition>
+            <fixed month="August" day="22"/>
+        </definition>
+    </holiday>
+    <holiday name="День народного единства (Tag der Einheit des Volkes)" type="gesetzlich">
+        <definition>
+            <fixed month="November" day="4"/>
+        </definition>
+    </holiday>
+    <holiday name="День Конституции (Tag der Verfassung)">
+        <definition>
+            <fixed month="December" day="12"/>
+        </definition>
+    </holiday>
+</holidays>

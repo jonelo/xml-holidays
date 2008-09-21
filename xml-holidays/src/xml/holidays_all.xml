@@ -1,0 +1,37 @@
+<?xml version="1.1" encoding="UTF-8"?> 
+<combined xmlns:xi="http://www.w3.org/2001/XInclude">
+    <countries>
+        <xi:include href="holidays_at.xml"/>
+        <xi:include href="holidays_au.xml"/>
+        <xi:include href="holidays_be.xml"/>
+        <xi:include href="holidays_br.xml"/>
+        <xi:include href="holidays_ca.xml"/>
+        <xi:include href="holidays_ch.xml"/>
+        <xi:include href="holidays_cn.xml"/>
+        <xi:include href="holidays_cz.xml"/>
+        <xi:include href="holidays_ddr.xml"/>
+        <xi:include href="holidays_de.xml"/>
+        <xi:include href="holidays_dk.xml"/>
+        <xi:include href="holidays_es.xml"/>
+        <xi:include href="holidays_fi.xml"/>
+        <xi:include href="holidays_fr.xml"/>
+        <xi:include href="holidays_gb.xml"/>
+        <xi:include href="holidays_gr.xml"/>
+        <xi:include href="holidays_hr.xml"/>
+        <xi:include href="holidays_hu.xml"/>
+        <xi:include href="holidays_ie.xml"/>
+        <xi:include href="holidays_it.xml"/>
+        <xi:include href="holidays_li.xml"/>
+        <xi:include href="holidays_lu.xml"/>
+        <xi:include href="holidays_nl.xml"/>
+        <xi:include href="holidays_no.xml"/>
+        <xi:include href="holidays_pl.xml"/>
+        <xi:include href="holidays_pt.xml"/>
+        <xi:include href="holidays_ro.xml"/>
+        <xi:include href="holidays_ru.xml"/>
+        <xi:include href="holidays_se.xml"/>
+        <xi:include href="holidays_si.xml"/>
+        <xi:include href="holidays_sk.xml"/>
+        <xi:include href="holidays_us.xml"/>
+    </countries>
+</combined>
