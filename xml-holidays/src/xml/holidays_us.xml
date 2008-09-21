@@ -6,15 +6,18 @@
        http://en.wikipedia.org/wiki/Category:Holidays_in_the_United_States
     -->
     
-    <holiday name="New Year's Day [federal holiday]">
+    <holiday name="New Year's Day" type="federal holiday">
         <definition>
-            <fixed day="1" month="January" />
+            <fixed day="1" month="January"/>
         </definition>
     </holiday>
 
+    <!--
+      http://en.wikipedia.org/wiki/Three_Kings_Day
+    -->
     <holiday name="Three Kings Day">
         <definition>
-            <fixed day="6" month="January" />
+            <fixed day="6" month="January"/>
         </definition>
     </holiday>
 
@@ -25,11 +28,19 @@
     -->
     <holiday name="Martin Luther King Day" type="national">
         <definition firstyear="1986">
-            <rule nth="3rd" weekday="Monday" month="January" />
+            <rule nth="3rd" weekday="Monday" month="January"/>
         </definition>
     </holiday>
 
+    <!--
+       http://en.wikipedia.org/wiki/Inauguration_Day
+       Inauguration Day is the day every four years on which the President of
+       the United States is sworn in and takes office.
+    -->
     <holiday name="Inauguration Day">
+        <!-- The inauguration for the first U.S. president, George Washington,
+             was held on April 30, 1789 in New York City. 
+          -->
         <definition year="1789">
             <fixed month="April" day="30"/>
         </definition>
@@ -37,50 +48,70 @@
             <fixed month="March" day="4"/>
             <add days="+1" ifweekday="Sunday"/>
         </definition>
+        <!-- In 1933, the day of inauguration was changed by constitutional
+             amendment from March 4 to noon on January 20, beginning with
+             Franklin Roosevelt's second term in 1937. -->
         <definition firstyear="1937" frequency="4">
             <fixed month="January" day="20"/>
+            <!-- Should January 20 be a Sunday, the President is usually
+                 administered the oath of office in a private ceremony on that
+                 day, followed by a public ceremony the following day. -->
             <add days="+1" ifweekday="Sunday"/>
         </definition>
     </holiday>
 
-    <holiday name="Groundhog Day">
+    <!-- http://en.wikipedia.org/wiki/Groundhog_Day -->
+    <holiday name="Groundhog Day" type="cultural">
         <definition firstyear="1777">
-            <fixed day="2" month="February" />	
+            <fixed day="2" month="February"/>	
         </definition>
     </holiday>
 
-    <holiday name="Mardi Gras [New Orleans, Louisiana]">
+    <!--
+        http://en.wikipedia.org/wiki/Mardi_Gras
+        Mardi Gras" (French for Fat Tuesday) is the day before Ash Wednesday.
+     -->
+    <holiday name="Mardi Gras (Fat Tuesday)" type="cultural, christian, New Orleans, Louisiana">
         <definition>
-            <easter /><add days="-47" />
+            <easter/>
+            <add days="-47"/>
         </definition>
     </holiday>
 
     <holiday name="Ash Wednesday">
         <definition>
-            <easter /><add days="-46" />
+            <easter/>
+            <add days="-46"/>
         </definition>
     </holiday>
 
     <holiday name="Laetare Sunday (Mothering Sunday, Mid-Lent Sunday, Rose Sunday)">
         <definition>
-            <easter /><add days="-21" />
+            <easter/>
+            <add days="-21"/>
         </definition>
     </holiday>
 
-    <holiday name="Lincoln's Birthday">
+    <!-- 
+      http://en.wikipedia.org/wiki/Lincoln%27s_Birthday
+    -->
+    <holiday name="Lincoln's Birthday" type="local">
         <definition firstyear="1865" lastyear="1971">
             <fixed day="12" month="February" />
         </definition>
     </holiday>
 
-    <holiday name="Washington's Birthday [federal holiday]">
-        <definition firstyear="1790" lastyear="1971">
+    <!--
+      http://en.wikipedia.org/wiki/Washington%27s_Birthday
+      George Washington (February 22, 1732 – December 14, 1799)
+     -->      
+    <holiday name="Washington's Birthday (President's Day)" type="federal holiday">
+        <definition firstyear="1790" lastyear="1970">
             <fixed day="22" month="February" />
         </definition>
-    </holiday>
-
-    <holiday name="President's Day [federal holiday]">
-        <definition>
+        <!-- On January 1, 1971 the federal holiday was shifted to the third
+             Monday in February by the Uniform Monday Holiday Act. -->
+        <definition firstyear="1971">
             <rule nth="1st" weekday="Monday" month="February" />
         </definition>
     </holiday>
@@ -175,168 +206,200 @@
 
     <holiday name="Palm Sunday">
         <definition>
-            <easter /><add days="-7" />
+            <easter/>
+            <add days="-7"/>
         </definition>
     </holiday>
 
     <holiday name="Good Friday">
         <definition>
-            <easter /><add days="-2" />
+            <easter/>
+            <add days="-2"/>
         </definition>
     </holiday>
 
     <holiday name="Holy Saturday (Easter Even)">
         <definition>
-            <easter /><add days="-1" />
+            <easter/>
+            <add days="-1"/>
         </definition>
     </holiday>
 
     <holiday name="Easter Day">
         <definition>
-            <easter />
+            <easter/>
         </definition>
     </holiday>
 
     <holiday name="Arbor Day">
         <definition firstyear="1872">
-            <rule nth="Last" weekday="Friday" month="April" />
+            <rule nth="Last" weekday="Friday" month="April"/>
         </definition>
     </holiday>
 
-    <holiday name="Cinco de Mayo [Mexican American]">
+    <holiday name="Cinco de Mayo" type="Mexican American">
         <definition firstyear="1862">
-            <fixed day="5" month="May" />
+            <fixed day="5" month="May"/>
         </definition>
     </holiday>
 
     <holiday name="Mother's Day">
         <definition firstyear="1914">
-            <rule nth="2nd" weekday="Sunday" month="May" />
+            <rule nth="2nd" weekday="Sunday" month="May"/>
         </definition>
     </holiday>
 
-    <holiday name="Memorial Day [federal holiday]">
+    <holiday name="Memorial Day" type="federal holiday">
         <definition firstyear="1971">
-            <rule nth="Last" weekday="Monday" month="May" />
+            <rule nth="Last" weekday="Monday" month="May"/>
         </definition>
     </holiday>
+
     <holiday name="Flag Day">
         <definition firstyear="1916">
-            <fixed day="14" month="June" />
+            <fixed day="14" month="June"/>
         </definition>
     </holiday>
 
     <holiday name="Father's Day"><!--in 1966 President Lyndon Johnson signed a presidential proclamation declaring the 3rd Sunday of June as Father's Day.-->
         <definition>
-            <rule nth="3rd" weekday="Sunday" month="June" />
+            <rule nth="3rd" weekday="Sunday" month="June"/>
         </definition>
     </holiday>
 
     <holiday name="Independence Day [federal holiday]">
         <definition firstyear="1776">
-            <fixed day="4" month="July" />
+            <fixed day="4" month="July"/>
         </definition>
     </holiday>
 
-    <holiday name="Labor Day [federal holiday]">
+    <holiday name="Labor Day" type="federal holiday">
         <definition firstyear="1776">
-            <rule nth="1st" weekday="Monday" month="September" />
+            <rule nth="1st" weekday="Monday" month="September"/>
         </definition>
     </holiday>
 
     <holiday name="Patriot Day"><!--Patriot Day was signed into law on December 18th, 2001.-->
         <definition firstyear="2002">
-            <fixed day="11" month="September" />
+            <fixed day="11" month="September"/>
         </definition>
     </holiday>
 
     <holiday name="Grandparents Day"><!--Grandparents Day is always celebrated on the first Sunday after Labor Day.-->
         <definition firstyear="1978">
-            <rule nth="1st" weekday="Monday" month="September" /><!--set Sunday after the date.-->
-            <add days="+6" />
+            <rule nth="1st" weekday="Monday" month="September"/><!-- set Sunday after the date -->
+            <add days="+6"/>
         </definition>
     </holiday>
 
-    <holiday name="Columbus Day [federal holiday]">
+    <holiday name="Columbus Day" type="federal holiday">
         <definition firstyear="1776">
-            <rule nth="2nd" weekday="Monday" month="October" />
+            <rule nth="2nd" weekday="Monday" month="October"/>
         </definition>
     </holiday>
 
     <holiday name="National Boss Day">
         <definition firstyear="1958">
-            <fixed day="16" month="October" />
+            <fixed day="16" month="October"/>
         </definition>
     </holiday>
 
     <holiday name="End Daylight Saving Time (DST), -1h">
         <definition firstyear="1776">
-            <dst timezone="America/New_York" action="end" />
+            <dst timezone="America/New_York" action="end"/>
         </definition>
     </holiday>
 
     <holiday name="Halloween">
         <definition firstyear="1776">
-            <fixed day="31" month="October" />
+            <fixed day="31" month="October"/>
         </definition>
     </holiday>
 
-    <holiday name="All Saint's Day [Western Churches]">
+    <holiday name="All Saint's Day" type="Western Churches">
         <definition>
-            <fixed day="1" month="November" />
+            <fixed day="1" month="November"/>
         </definition>
     </holiday>
 
     <holiday name="All Soul's Day">
         <definition>
-            <fixed day="2" month="November" />
+            <fixed day="2" month="November"/>
         </definition>
     </holiday>
 
-    <holiday name="Election Day"><!--The Tuesday after the first Monday in November was initiallly established in 1845 for the appointment of Presidential electors. in every fourth year. The US established this date for electing U.S. Representatives in every even numbered year in 1875.-->
+    <!-- 
+      http://en.wikipedia.org/wiki/Election_Day_(United_States)
+     -->
+    <holiday name="Election Day">
+        <!-- 
+          For federal offices, the Election Day occurs on the first Tuesday
+          after the first Monday in November. Presidential elections are held
+          every four years. Elections to the House of Representatives and the
+          Senate are held every two years.
+          A uniform date for chosing presidential Electors was
+          instituted by the Congress in 1845.
+          Note: the first Tuesday after the first Monday in November is not the
+          same as the first Tuesday in November!
+        -->
         <definition firstyear="1845" lastyear="1874" frequency="4">
-            <rule nth="1st" weekday="Monday" month="November" ></rule><!--Tuesday-->
-            <add days="1" />
+            <rule nth="1st" weekday="Monday" month="November"/>
+            <add days="1"/><!-- Tuesday -->
         </definition>
+        <!--
+          In 1875 the date was established for electing U.S. Representatives
+          in every even numbered year.
+        -->
         <definition firstyear="1876" frequency="2">
-            <rule nth="1st" weekday="Monday" month="November" /><!--Tuesday-->
-            <add days="1" />
+            <rule nth="1st" weekday="Monday" month="November"/>
+            <add days="1"/><!-- Tuesday -->
         </definition>
     </holiday>
 
-    <holiday name="Veteran's Day [federal holiday]">
-        <definition firstyear="1918">
-            <fixed day="11" month="November" />
+    <!-- http://en.wikipedia.org/wiki/Veterans_Day
+         Veterans Day is an American holiday honoring military veterans. -->
+    <!-- An Act (52 Stat. 351; 5 U. S. Code, Sec. 87a) approved May 13, 1938,
+         made the 11th of November in each year a legal holiday -->
+    <holiday name="Armistice's Day" type="federal holiday">
+        <definition firstyear="1938" lastyear="1953">
+            <fixed day="11" month="November"/>
         </definition>
     </holiday>
+    <!-- Congress amended an act on November 8, 1954, by replacing "Armistice"
+         with Veterans and it has been known as Veterans Day since -->
+    <holiday name="Veteran's Day" type="federal holiday">
+        <definition firstyear="1954">
+            <fixed day="11" month="November"/>
+        </definition>
+    </holiday>   
 
-    <holiday name="Thanksgiving Day [federal holiday]">
+    <holiday name="Thanksgiving Day" type="federal holiday">
         <definition firstyear="1776">
-            <rule nth="1st" weekday="Thursday" month="November" />
+            <rule nth="1st" weekday="Thursday" month="November"/>
         </definition>
     </holiday>
 
     <holiday name="Christmas Eve">
         <definition>
-            <fixed day="24" month="December" />
+            <fixed day="24" month="December"/>
         </definition>
     </holiday>
 
-    <holiday name="Christmas Day [federal holiday]">
+    <holiday name="Christmas Day" type="federal holiday">
         <definition>
-            <fixed day="25" month="December" />
+            <fixed day="25" month="December"/>
         </definition>
     </holiday>
 
-    <holiday name="Kwanzaa [African American], 7 days">
+    <holiday name="Kwanzaa (7 days)" type="African American">
         <definition firstyear="1966">
-            <fixed day="26" month="December" />
+            <fixed day="26" month="December"/>
         </definition>
     </holiday>
 
     <holiday name="New Year's Eve">
         <definition>
-            <fixed day="31" month="December" />
+            <fixed day="31" month="December"/>
         </definition>
     </holiday>
 
