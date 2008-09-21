@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+<holidays country="int">
+
+    <!--
+      http://en.wikipedia.org/wiki/Earth_Day
+      -->
+    <holiday name="Earth Day">
+        <definition firstyear="1970">
+            <fixed month="April" day="22"/>
+        </definition>
+    </holiday>
+    
+    <!-- 
+      http://www.sueddeutsche.de/kultur/artikel/690/115575/
+      0x25+0x5=37+5=42 ;)
+      -->
+    <holiday name="Towel Day">
+        <definition lastyear="2000">
+            <undefined/>
+        </definition>
+        <definition firstyear="2001">
+            <fixed month="May" day="25"/>
+        </definition>
+    </holiday>
+
+</holidays>
