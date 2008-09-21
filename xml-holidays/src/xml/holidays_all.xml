@@ -3,15 +3,17 @@
     <countries>
         <!-- International -->
         <xi:include href="holidays_int.xml"/>
-        <xi:include href="holidays_at.xml"/>
-        <xi:include href="holidays_au.xml"/>
-        <xi:include href="holidays_be.xml"/>
-        <xi:include href="holidays_br.xml"/>
+        
+        <!-- America -->
+        <xi:include href="holidays_us.xml"/>
         <xi:include href="holidays_ca.xml"/>
+        <xi:include href="holidays_br.xml"/>
+
+        <!-- Europe -->
+        <xi:include href="holidays_at.xml"/>
+        <xi:include href="holidays_be.xml"/>
         <xi:include href="holidays_ch.xml"/>
-        <xi:include href="holidays_cn.xml"/>
         <xi:include href="holidays_cz.xml"/>
-        <xi:include href="holidays_ddr.xml"/>
         <xi:include href="holidays_de.xml"/>
         <xi:include href="holidays_dk.xml"/>
         <xi:include href="holidays_es.xml"/>
@@ -34,6 +36,13 @@
         <xi:include href="holidays_se.xml"/>
         <xi:include href="holidays_si.xml"/>
         <xi:include href="holidays_sk.xml"/>
-        <xi:include href="holidays_us.xml"/>
+
+        <!-- Asia and Pacific -->
+        <xi:include href="holidays_au.xml"/>
+        <xi:include href="holidays_cn.xml"/>
+        
+        <!-- Historic -->
+        <xi:include href="holidays_ddr.xml"/>
+        
     </countries>
 </combined>
