@@ -1,0 +1,143 @@
+<!ENTITY % months "January | February | March | April |
+                   May | June | July | August | September |
+                   October | November | December">
+<!ENTITY % weekdays "Monday | Tuesday | Wednesday | Thursday |
+                     Friday | Saturday | Sunday">
+<!ENTITY % nth "1st | 2nd | 3rd | 4th | Last">
+<!ENTITY % startdate "fixed | easter | advent | rule | dst">
+<!ENTITY % modifiers "add | goto">
+
+<!ELEMENT holidays (holiday+)>
+<!ATTLIST holidays
+          country CDATA #REQUIRED>
+
+   <!--
+     A holiday can have one import element or a combination of both definitions
+     and code 
+     "name"          is the localized name for the holiday, it must be set in
+                     any case. Don't use english, except your local language
+                     is english. Use the local description of the holiday
+                     in your country.
+     "international" is the english (international) well known name for the
+                     holiday (optional). The local rules don't need to 
+                     necessarily match with the well known english holiday.
+     "valid"         determines whether the holiday is still valid or not
+     "type"          currently free text, it can be anything, it further
+                     describes the type of the holiday (e.g. legal holiday,
+                     de facto legal holiday, katholic, etc.)
+   -->
+   <!ELEMENT holiday (import|(definition+|code+)+)>
+   <!ATTLIST holiday
+             name CDATA #REQUIRED
+             type CDATA #IMPLIED
+             valid (true|false) "true"
+             international CDATA #IMPLIED>
+      
+      <!--
+        An import element imports the definitions of a holiday from the
+        file called holidays_shared.xml
+      -->
+      <!ELEMENT import EMPTY>
+      <!ATTLIST import
+                name CDATA #REQUIRED>
+
+      <!-- The code element can keep Java code -->
+      <!ELEMENT code (#PCDATA)>
+      <!ATTLIST code
+                firstyear CDATA #IMPLIED
+                lastyear CDATA #IMPLIED>
+
+      <!--
+        The definition is either
+        * undefined or 
+        * unkonwn or
+        * it is a startdate, followed by a modifier
+      -->
+      <!ELEMENT definition (undefined | unknown | ((%startdate;),(%modifiers;)*))>
+      <!--
+        year       the year when the holiday is valid,
+                   same as if firstyear equals lastyear
+                   the frequency, firstyear and lastyear are being ignored
+                   if year is set
+        firstyear  the first year when the holiday is valid (inclusively)
+        lastyear   the last year when the holiday was valid (inclusively)
+        frequency  how many years must pass, until the next year is valid?
+                   (the actual start of the frequency depends on the firstyear
+                   respectively on the lastyear if firstyear is not set)
+      -->
+      <!ATTLIST definition
+                year CDATA #IMPLIED
+                firstyear CDATA #IMPLIED
+                lastyear CDATA #IMPLIED
+                frequency CDATA #IMPLIED>
+
+          <!--
+            The undefined element says that a holiday wasn't/isn't
+            defined during the years of the definition
+          -->
+          <!ELEMENT undefined EMPTY>
+          
+          <!--
+            The empty element defines that we don't know the definition
+          -->
+          <!ELEMENT unknown EMPTY>
+
+          <!--
+            The fixed element defines a fixed date
+          -->
+          <!ELEMENT fixed EMPTY>
+          <!ATTLIST fixed 
+	            month (%months;) #REQUIRED
+	            day CDATA #REQUIRED>
+
+          <!--
+            The Daylight Saving Time (dst) definition
+            action defines whether the DST starts or whether the DST ends
+          -->
+          <!ELEMENT dst EMPTY>
+          <!ATTLIST dst
+                    timezone CDATA #REQUIRED
+                    action (start|end) #IMPLIED>
+
+          <!--
+            This is the startdate of Easter
+            Western churches use the Gregorian Calendar to calculate the date
+            of Easter and Eastern Orthodox churches use the Julian Calendar
+          -->
+          <!ELEMENT easter EMPTY>
+          <!ATTLIST easter
+                    church (western|eastern) "western">
+
+          <!--
+            This is the startdate of the 1st advent
+          -->
+          <!ELEMENT advent EMPTY>
+          
+          <!--
+            The rule defines the nth weekday of a month
+          -->
+          <!ELEMENT rule EMPTY>
+          <!ATTLIST rule
+                    nth (%nth;) #REQUIRED
+                    weekday (%weekdays;) #REQUIRED
+                    month (%months;) #REQUIRED>
+
+          <!--
+            The add modifier
+            the "add" property can become positive or negative values
+            if the condition "ifweekday" is present, it only adds days
+            when the startday set is on a particular weekday
+          -->
+          <!ELEMENT add EMPTY>
+          <!ATTLIST add
+                    days CDATA #REQUIRED
+                    ifweekday (%weekdays;) #IMPLIED>
+          
+          <!--
+            The goto modifier
+            moves to the next (or previous) weekday
+          -->
+          <!ELEMENT goto EMPTY>
+          <!ATTLIST goto
+                    weekday (%weekdays;) #REQUIRED
+                    direction (forward|backward) "forward">
