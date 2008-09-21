@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+
+<holidays country="pt">
+    <!-- Portugal http://www.algarve-live.de/landundleute/index.php?cat=11200&id2=1&id4=6&id5=1-->
+
+    <holiday name="Ano Novo" type="gesetzlich" international="New Year's Day">
+        <definition>
+            <fixed month="January" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="Entrudo" international="Carnival/Shrove Tuesday">
+        <import name="Carnival"/>
+    </holiday>
+    <holiday name="Beginn der Sommerzeit (Uhren 1 h vorstellen)" international="Begin Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Lisbon" action="start"/>
+        </definition>
+    </holiday>
+    <holiday name="Sexta Feira Santa" type="gesetzlich" international="Good Friday">
+        <definition>
+            <easter/>
+            <add days="-2"/>
+        </definition>
+    </holiday>
+    <holiday name="Domingo de Páscoa" type="gesetzlich">
+        <import name="Easter Sunday"/>
+    </holiday>
+    <holiday name="Dia da Liberdade (Tag der Nelkenrevolution)" type="gesetzlich">
+        <definition firstyear="1974">
+        	<fixed month="April" day="25" />
+        </definition>
+    </holiday>
+    <holiday name="Dia do Trabalhador" type="gesetzlich" international="Labour Day">
+        <definition>
+            <fixed month="May" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="Corpo de Deus" type="gesetzlich" international="Corpus Christi">
+        <definition>
+            <easter/>
+            <add days="+60"/>
+        </definition>
+    </holiday>
+    <holiday name="Dia de Portugal oder Dia de Camões" type="gesetzlich">
+        <definition firstyear="1580">
+        	<fixed month="June" day="10" />
+        </definition>
+    </holiday>
+    <holiday name="Assunção de Nossa Senhora" type="gesetzlich" international="Assumption of Mary">
+        <definition>
+            <fixed month="August" day="15"/>
+        </definition>
+    </holiday>
+    <holiday name="Dia da República (Proklamation der Republik 1910)" type="gesetzlich">
+        <definition firstyear="1910">
+        	<fixed month="October" day="5" />
+        </definition>
+    </holiday>
+    <holiday name="Ende der Sommerzeit (Uhren 1 h zurückstellen)" international="End Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Lisbon" action="end"/>
+        </definition>
+    </holiday>
+    <holiday name="Dia de Todos-os-Santos" type="gesetzlich" international="All Saints">
+        <!-- All Saint's Day is a Christian holy day observed by many Western churches on November 1 -->
+        <import name="All Saints’ Day"/>
+    </holiday>
+    <holiday name="Restauração da Independência" type="Restoration of Independence">
+        <definition>
+            <fixed month="December" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="Imaculada Conceição (Mariä Empfängnis)" type="gesetzlich" international="Immaculate Conception's day">
+        <definition>
+            <fixed month="December" day="8"/>
+        </definition>
+    </holiday>
+    <holiday name="Natal" type="gesetzlich" international="Christmas Day">
+        <definition>
+            <fixed month="December" day="25"/>
+        </definition>
+    </holiday>
+</holidays>

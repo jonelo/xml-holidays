@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+
+<holidays country="ie">
+    <!-- Irland http://www.irlandguide.de/feiertage-in-irland/35/ -->
+
+    <holiday name="New Year's Day" type="gesetzlich" international="New Year's Day">
+        <definition>
+            <fixed month="January" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="St. Patrick's Day" type="gesetzlich">
+        <definition>
+            <fixed month="March" day="17"/>
+        </definition>
+    </holiday>
+    <holiday name="Begin Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Dublin" action="start"/>
+        </definition>
+    </holiday>
+    <holiday name="Good Friday">
+        <definition>
+            <easter/>
+            <add days="-2"/>
+        </definition>
+    </holiday>
+    <holiday name="Easter" type="gesetzlich">
+        <import name="Easter Sunday"/>
+    </holiday>
+    <holiday name="Easter Monday" type="gesetzlich">
+        <import name="Easter Monday"/>
+    </holiday>
+    <holiday name="Labour Day">
+        <definition>
+            <fixed month="May" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="May Bank Holiday " type="gesetzlich">
+        <definition>
+        	<!-- 1. Montag im Mai -->
+        	<rule weekday="Monday" month="May" nth="1st"/>
+        </definition>
+    </holiday>
+    <holiday name="Spring Bank Holiday (Northern Irland)">
+        <definition>
+        	<rule weekday="Monday" month="May" nth="Last"/>
+        </definition>
+    </holiday>
+    <holiday name="June Bank Holiday (Republic Ireland)" type="gesetzlich">
+        <definition>
+        	<!-- 1. Montag im Juni -->
+        	<rule weekday="Monday" month="June" nth="1st"/>
+        </definition>
+    </holiday>
+    <holiday name="Battle of the Boyne Day (Northern Irland)">
+        <definition>
+            <fixed month="July" day="12"/>
+        </definition>
+    </holiday>
+    <holiday name="August Bank Holiday" type="gesetzlich">
+        <definition>
+        	<rule weekday="Monday" month="August" nth="1st"/>
+        </definition>
+    </holiday>
+    <holiday name="End Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Dublin" action="end"/>
+        </definition>
+    </holiday>
+    <holiday name="October Bank Holiday">
+        <definition>
+        	<rule weekday="Monday" month="October" nth="Last"/>
+        </definition>
+    </holiday>
+    <holiday name="Christmas Day" type="gesetzlich" international="Christmas Day">
+        <definition>
+            <fixed month="December" day="25"/>
+        </definition>
+    </holiday>
+    <holiday name="St. Stephen's Day" type="gesetzlich" international="Boxing Day">
+        <definition>
+            <fixed month="December" day="26"/>
+        </definition>
+    </holiday>
+</holidays>

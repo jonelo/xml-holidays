@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+<holidays country="us">
+    <!-- United States -->
+    
+    <holiday name="New Year's Day [federal holiday]">
+    	<definition>
+    		<fixed day="1" month="January" />
+    	</definition>
+	</holiday>
+	<holiday name="Three Kings Day">
+		<definition>
+			<fixed day="6" month="January" />
+		</definition>
+	</holiday>
+	<holiday name="Inauguration Day">
+        <definition year="1789">
+            <fixed month="April" day="30"/>
+        </definition>
+        <definition firstyear="1793" lastyear="1936" frequency="4">
+            <fixed month="March" day="4"/>
+            <add days="+1" ifweekday="Sunday"/>
+        </definition>
+        <definition firstyear="1937" frequency="4">
+            <fixed month="January" day="20"/>
+            <add days="+1" ifweekday="Sunday"/>
+        </definition>
+    </holiday>
+    <holiday name="Groundhog Day">
+		<definition firstyear="1777">
+			<fixed day="2" month="February" />	
+		</definition>
+    </holiday>
+    <holiday name="Mardi Gras [New Orleans, Louisiana]">
+    	<definition>
+    		<easter /><add days="-47" />
+    	</definition>
+    </holiday>
+    <holiday name="Ash Wednesday">
+    	<definition>
+    		<easter /><add days="-46" />
+    	</definition>
+    </holiday>
+    <holiday name="Laetare Sunday (Mothering Sunday, Mid-Lent Sunday, Rose Sunday)">
+    	<definition>
+    		<easter /><add days="-21" />
+    	</definition>
+    </holiday>
+    <holiday name="Lincoln's Birthday">
+    	<definition firstyear="1865" lastyear="1971">
+    		<fixed day="12" month="February" />
+    	</definition>
+    </holiday>
+    <holiday name="Washington's Birthday [federal holiday]">
+    	<definition firstyear="1790" lastyear="1971">
+    		<fixed day="22" month="February" />
+    	</definition>
+    </holiday>
+    <holiday name="President's Day [federal holiday]">
+    	<definition>
+    		<rule nth="1st" weekday="Monday" month="February" />
+    	</definition>
+    </holiday>
+    <holiday name="Teacher's Day">
+    	<definition>
+    		<rule nth="1st" weekday="Sunday" month="March" />
+    		<add days="+2" />
+    	</definition>
+    </holiday>
+    <holiday name="Saint Patrick's Day">
+    	<definition firstyear="1777">
+    		<fixed day="17" month="March" />
+    	</definition>
+    </holiday>
+    <holiday name="Sait Joseph's Day">
+    	<definition firstyear="1777">
+    		<fixed day="19" month="March" />
+    	</definition>
+    </holiday>
+    <holiday name="April Fool's Day">
+    	<definition>
+    		<fixed day="1" month="April" />
+    	</definition>
+    </holiday>
+    <holiday name="Begin Daylight Saving Time (DST), +1h">
+    	<definition firstyear="1777">
+    		<dst timezone="America/New_York" action="start" />
+    	</definition>
+    </holiday>
+    <holiday name="Tax Day">
+        <definition lastyear="1776">
+            <undefined/>
+        </definition>
+        <definition firstyear="1777">
+            <fixed month="April" day="15"/>
+            <add days="+2" ifweekday="Saturday"/>
+            <add days="+1" ifweekday="Sunday"/>
+        </definition>
+    </holiday>
+    <!--
+      http://en.wikipedia.org/wiki/Earth_Day
+      -->
+    <holiday name="Earth Day">
+        <definition lastyear="1969">
+            <undefined/>
+        </definition>
+        <definition firstyear="1970">
+            <fixed month="April" day="22"/>
+        </definition>
+    </holiday>
+    <holiday name="Secretarysday">
+        <definition firstyear="1952" lastyear="1954">
+            <fixed month="June" day="4"/>
+        </definition>
+        <definition>
+            <rule nth="Last" weekday="Saturday" month="April"/>
+            <add days="-3"/> <!-- this is wednesday -->
+        </definition>
+    </holiday>
+    <holiday name="Palm Sunday">
+    	<definition>
+    		<easter /><add days="-7" />
+    	</definition>
+    </holiday>
+    <holiday name="Good Friday">
+    	<definition>
+    		<easter /><add days="-2" />
+    	</definition>
+    </holiday>
+    <holiday name="Holy Saturday (Easter Even)">
+    	<definition>
+    		<easter /><add days="-1" />
+    	</definition>
+    </holiday>
+    <holiday name="Easter Day">
+    	<definition>
+    		<easter />
+    	</definition>
+    </holiday>
+    <holiday name="Arbor Day">
+    	<definition firstyear="1872">
+    		<rule nth="Last" weekday="Friday" month="April" />
+    	</definition>
+    </holiday>
+    <holiday name="Cinco de Mayo [Mexican American]">
+    	<definition firstyear="1862">
+    		<fixed day="5" month="May" />
+    	</definition>
+    </holiday>
+    <holiday name="Mother's Day">
+    	<definition firstyear="1914">
+    		<rule nth="2nd" weekday="Sunday" month="May" />
+    	</definition>
+    </holiday>
+    <holiday name="Memorial Day [federal holiday]">
+    	<definition firstyear="1971">
+    		<rule nth="Last" weekday="Monday" month="May" />
+    	</definition>
+    </holiday>
+    <holiday name="Flag Day">
+    	<definition firstyear="1916">
+    		<fixed day="14" month="June" />
+    	</definition>
+    </holiday>
+    <holiday name="Father's Day"><!--in 1966 President Lyndon Johnson signed a presidential proclamation declaring the 3rd Sunday of June as Father's Day.-->
+    	<definition>
+    		<rule nth="3rd" weekday="Sunday" month="June" />
+    	</definition>
+    </holiday>
+    <holiday name="Independence Day [federal holiday]">
+    	<definition firstyear="1776">
+    		<fixed day="4" month="July" />
+    	</definition>
+    </holiday>
+    <holiday name="Labor Day [federal holiday]">
+    	<definition firstyear="1776">
+    		<rule nth="1st" weekday="Monday" month="September" />
+    	</definition>
+    </holiday>
+    <holiday name="Patriot Day"><!--Patriot Day was signed into law on December 18th, 2001.-->
+    	<definition firstyear="2002">
+    		<fixed day="11" month="September" />
+    	</definition>
+    </holiday>
+    <holiday name="Grandparents Day"><!--Grandparents Day is always celebrated on the first Sunday after Labor Day.-->
+    	<definition firstyear="1978">
+    		<rule nth="1st" weekday="Monday" month="September" /><!--set Sunday after the date.-->
+    		<add days="+6" />
+    	</definition>
+    </holiday>
+    <holiday name="Columbus Day [federal holiday]">
+    	<definition firstyear="1776">
+    		<rule nth="2nd" weekday="Monday" month="October" />
+    	</definition>
+    </holiday>
+    <holiday name="National Boss Day">
+    	<definition firstyear="1958">
+    		<fixed day="16" month="October" />
+    	</definition>
+    </holiday>
+    <holiday name="End Daylight Saving Time (DST), -1h">
+    	<definition firstyear="1776">
+    		<dst timezone="America/New_York" action="end" />
+    	</definition>
+    </holiday>
+    <holiday name="Halloween">
+    	<definition firstyear="1776">
+    		<fixed day="31" month="October" />
+    	</definition>
+    </holiday>
+    <holiday name="All Saint's Day [Western Churches]">
+    	<definition>
+    		<fixed day="1" month="November" />
+    	</definition>
+    </holiday>
+    <holiday name="All Soul's Day">
+    	<definition>
+    		<fixed day="2" month="November" />
+    	</definition>
+    </holiday>
+    <holiday name="Election Day"><!--The Tuesday after the first Monday in November was initiallly established in 1845 for the appointment of Presidential electors. in every fourth year. The US established this date for electing U.S. Representatives in every even numbered year in 1875.-->
+    	<definition firstyear="1845" lastyear="1874" frequency="4">
+    		<rule nth="1st" weekday="Monday" month="November" ></rule><!--Tuesday-->
+    		<add days="1" />
+    	</definition>
+    	<definition firstyear="1876" frequency="2">
+    		<rule nth="1st" weekday="Monday" month="November" /><!--Tuesday-->
+    		<add days="1" />
+    	</definition>
+    </holiday>
+    <holiday name="Veteran's Day [federal holiday]">
+    	<definition firstyear="1918">
+    		<fixed day="11" month="November" />
+    	</definition>
+    </holiday>
+    <holiday name="Thanksgiving Day [federal holiday]">
+    	<definition firstyear="1776">
+    		<rule nth="1st" weekday="Thursday" month="November" />
+    	</definition>
+    </holiday>
+    <holiday name="Christmas Eve">
+    	<definition>
+    		<fixed day="24" month="December" />
+    	</definition>
+    </holiday>
+    <holiday name="Christmas Day [federal holiday]">
+    	<definition>
+    		<fixed day="25" month="December" />
+    	</definition>
+    </holiday>
+    <holiday name="Kwanzaa [African American], 7 days">
+    	<definition firstyear="1966">
+    		<fixed day="26" month="December" />
+    	</definition>
+    </holiday>
+    <holiday name="New Year's Eve">
+    	<definition>
+    		<fixed day="31" month="December" />
+    	</definition>
+    </holiday>
+</holidays>

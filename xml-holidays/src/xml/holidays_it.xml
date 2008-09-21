@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+
+<holidays country="it">
+    <!-- Italien -->
+
+    <holiday name="Capodanno" type="gesetzlich" international="New Year's Day">
+        <definition>
+            <fixed month="January" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="Epifania" type="gesetzlich" international="The Epiphany (Three Kings Day)">
+    	<definition>
+    		<fixed day="6" month="January" />
+    	</definition>
+    </holiday>
+    <holiday name="Beginn der Sommerzeit (Uhren 1 h vorstellen)" international="Begin Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Rome" action="start"/>
+        </definition>
+    </holiday>
+    <holiday name="Pasqua" type="gesetzlich" international="Easter Sunday">
+    	<definition>
+    		<easter />
+    	</definition>
+    </holiday>
+    <holiday name="Lunedì di Pasqua" type="gesetzlich" international="Easter Monday">
+    	<definition>
+    		<easter /><add days="+1" />
+    	</definition>
+    </holiday>
+    <holiday name="Festa della Liberazione" type="gesetzlich">
+    	<definition>
+    		<fixed day="25" month="April" />
+    	</definition>
+    </holiday>
+    <holiday name="Festa del Lavoro" type="gesetzlich" international="Labor Day">
+    	<definition>
+    		<fixed day="1" month="May" />
+    	</definition>
+    </holiday>
+    <holiday name="Festa della Repubblica" type="gesetzlich">
+    	<definition>
+    		<fixed day="2" month="June" />
+    	</definition>
+    </holiday>
+    <holiday name="San Giovanni">
+    	<definition>
+    		<fixed day="24" month="June" />
+    	</definition>
+    </holiday>
+    <holiday name="Assunzione della B. V. Maria" type="gesetzlich">
+    	<definition>
+    		<fixed day="15" month="August" />
+    	</definition>
+    </holiday>
+    <holiday name="Ende der Sommerzeit (Uhren 1 h zurückstellen)" international="End Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Rome" action="end"/>
+        </definition>
+    </holiday>
+    <holiday name="Ognissanti (Tutti i Santi)" type="gesetzlich">
+    	<definition>
+    		<fixed day="1" month="November" />
+    	</definition>
+    </holiday>
+    <holiday name="Immacolata Concezione" type="gesetzlich">
+    	<definition>
+    		<fixed day="8" month="December" />
+    	</definition>
+    </holiday>
+    <holiday name="Santo Natale" type="gesetzlich">
+    	<definition>
+    		<fixed day="25" month="December" />
+    	</definition>
+    </holiday>
+    <holiday name="Santo Stefano" type="gesetzlich">
+    	<definition>
+    		<fixed day="26" month="December" />
+    	</definition>
+    </holiday>
+    <holiday name="San Silvestro">
+    	<definition>
+    		<fixed day="31" month="December" />
+    	</definition>
+    </holiday>
+</holidays>

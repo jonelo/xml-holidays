@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+
+<holidays country="gb">
+    <!-- Groszbritannien -->
+
+    <holiday name="New Year's Day" type="gesetzlich" international="New Year's Day">
+        <definition>
+            <fixed month="January" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="2nd January (SCT)" type="local">
+        <definition>
+            <fixed month="January" day="2"/>
+        </definition>
+    </holiday>
+    <holiday name="Burns' Night (SCT)" type="local">
+        <definition>
+            <fixed month="January" day="25"/>
+        </definition>
+    </holiday>
+    <holiday name="St. David's Day (WAL)" type="local">
+        <definition>
+            <fixed month="March" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="Mothering Sunday" type="local">
+        <definition>
+        	<rule nth="1st" weekday="Sunday" month="March"/>
+        </definition>
+    </holiday>
+    <holiday name="St. Patricks Day (NIR)" type="local">
+        <definition>
+            <fixed month="March" day="17"/>
+        </definition>
+    </holiday>
+    <holiday name="Vernal equinox" type="local">
+    	<!-- Tagegleiche im Frühling need to be done -->
+        <definition>
+            <fixed month="March" day="20"/>
+        </definition>
+    </holiday>
+    <holiday name="Begin Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/London" action="start"/>
+        </definition>
+    </holiday>
+    <holiday name="Good Friday" type="gesetzlich">
+        <definition>
+            <easter/>
+            <add days="-2"/>
+        </definition>
+    </holiday>
+    <holiday name="Easter Sunday" type="gesetzlich">
+        <import name="Easter Sunday"/>
+    </holiday>
+    <holiday name="Easter Monday" type="local">
+        <import name="Easter Monday"/>
+    </holiday>
+    <holiday name="St. George's Day (ENG)">
+        <definition>
+            <fixed month="April" day="23"/>
+        </definition>
+    </holiday>
+    <holiday name="Early May Bank Holiday">
+        <definition>
+        	<rule nth="1st" weekday="Sunday" month="May"/>
+        	<goto weekday="Monday" />
+        </definition>
+    </holiday>
+    <holiday name="Father's Day">
+        <definition>
+        	<rule nth="3rd" weekday="Sunday" month="June"/>
+        </definition>
+    </holiday>
+    <holiday name="June Solstice">
+    	<!-- Sommersonnwende needs to be done !! -->
+        <definition>
+            <fixed month="June" day="20"/>
+        </definition>
+    </holiday>
+    <holiday name="Orangemen's Day (NIR)">
+        <definition>
+        	<rule nth="1st" weekday="Sunday" month="July"/>
+        	<goto weekday="Saturday" />
+        </definition>
+    </holiday>
+    <holiday name="'Orangemen's Day' observed (NIR)">
+        <definition>
+        	<rule nth="2nd" weekday="Sunday" month="July"/>
+        	<goto weekday="Monday" />
+        </definition>
+    </holiday>
+    <holiday name="Summer Bank Holiday (SCT)">
+        <definition>
+        	<rule nth="1st" weekday="Sunday" month="August"/>
+        	<goto weekday="Monday" />
+        </definition>
+    </holiday>
+    <holiday name="Summer Bank Holiday (WAL, ENG, NIR)">
+        <definition>
+        	<rule nth="Last" weekday="Monday" month="August"/>
+        </definition>
+    </holiday>
+    <holiday name="Autumnal equinox">
+    	<!-- Tagegleiche im Herbst needs to be done !! -->
+        <definition>
+            <fixed month="September" day="22"/>
+        </definition>
+    </holiday>
+    <holiday name="Daylight Saving Time ends">
+        <definition>
+            <dst timezone="Europe/London" action="end"/>
+        </definition>
+    </holiday>
+    <holiday name="Halloween">
+        <definition>
+            <fixed month="October" day="31"/>
+        </definition>
+    </holiday>
+    <holiday name="Guy Fawkes Day">
+        <definition>
+            <fixed month="November" day="5"/>
+        </definition>
+    </holiday>
+    <holiday name="St. Andrew's Day (SCT)" type="local">
+        <definition>
+            <rule nth="Last" weekday="Sunday" month="November"/>
+        </definition>
+    </holiday>
+    <holiday name="'St. Andrew's Day' observed (SCT)" type="local">
+        <definition>
+            <rule nth="Last" weekday="Sunday" month="November"/>
+            <goto weekday="Monday" />
+        </definition>
+    </holiday>
+    <holiday name="Autumnal equinox">
+    	<!-- Wintersonnenwende needs to be done !! -->
+        <definition>
+            <fixed month="December" day="21"/>
+        </definition>
+    </holiday>
+    <holiday name="Christmas Day" type="gesetzlich">
+        <definition>
+            <fixed month="December" day="25"/>
+        </definition>
+    </holiday>
+    <holiday name="Boxing Day" type="gesetzlich">
+        <definition>
+            <fixed month="December" day="26"/>
+        </definition>
+    </holiday>
+</holidays>

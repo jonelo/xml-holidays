@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+
+<holidays country="ca">
+    <!-- Canada http://www.hartberger.de/feier_kan.htm-->
+
+    <holiday name="New Year's Day" type="gesetzlich">
+    	<import name="New Year's Day"/>
+    </holiday>
+    <holiday name="Day After New Year's Day [QC]" type="local">
+        <definition>
+            <fixed month="January" day="2"/>
+        </definition>
+    </holiday>
+    <holiday name="Valentine's Day">
+       <definition>
+          <fixed month="February" day="14"/>
+       </definition>
+    </holiday>
+    <holiday name="National Flag of Canada Day">
+       <definition>
+          <fixed month="February" day="15"/>
+       </definition>
+    </holiday>
+    <holiday name="Carnival/Strove Thuesday">
+       <definition>
+          <easter/>
+          <add days="-47"/>
+       </definition>
+    </holiday>
+    <holiday name="Ash Wednesday">
+    	<import name="Ash Wednesday"/>
+    </holiday>
+    <holiday name="Daylight Saving Time starts (change time 1 h forward)">
+       <definition>
+          <dst timezone="Canada/Central" action="start"/>
+       </definition>
+    </holiday>
+    <holiday name="Good Friday" type="gesetzlich">
+       <definition>
+          <easter/>
+          <add days="-2"/>
+       </definition>
+    </holiday>
+    <holiday name="Holy Saturday">
+       <definition>
+          <easter/>
+          <add days="-1"/>
+       </definition>
+    </holiday>
+    <holiday name="Easter Sunday">
+       <definition>
+          <easter/>
+       </definition>
+    </holiday>
+    <holiday name="Easter Monday" type="gesetzlich">
+       <definition>
+          <easter/>
+          <add days="+1"/>
+       </definition>
+    </holiday>
+    <holiday name="Mother's Day">
+       <!-- 2. Sonntag im Mai -->
+       <definition>
+          <rule nth="2nd" weekday="Sunday" month="May"/>
+       </definition>
+    </holiday> 
+    <holiday name="Victoria Day" type="gesetzlich">
+       <!--  Montag vor dem 25. Mai -->
+       <definition>
+          <fixed month="May" day="25"/>
+          <goto weekday="Monday" direction="backward"/>
+       </definition>
+    </holiday>
+    <holiday name="Canada Day" type="gesetzlich">
+       <definition>
+          <fixed month="July" day="1"/>
+       </definition>
+    </holiday>
+    <holiday name="British Columbia Day [BC]" type="local">
+       <!--  1. Montag im August -->
+       <definition>
+          <fixed month="August" day="1"/>
+          <goto weekday="Monday" direction="forward"/>
+       </definition>
+    </holiday>
+    <holiday name="Civil/Provincial Day [SK,NT,MB,ON]" type="local">
+       <!--  1. Montag im August -->
+       <definition>
+          <fixed month="August" day="1"/>
+          <goto weekday="Monday" direction="forward"/>
+       </definition>
+    </holiday>
+    <holiday name="New Brunswick Day [NB]" type="local">
+       <!--  1. Montag im August -->
+       <definition>
+          <fixed month="August" day="1"/>
+          <goto weekday="Monday" direction="forward"/>
+       </definition>
+    </holiday>
+    <holiday name="Discovery Day [Yukon]" type="local">
+       <!-- 3. Montag im August -->
+       <definition>
+          <rule nth="3rd" weekday="Monday" month="August"/>
+       </definition>
+    </holiday> 
+    <holiday name="Labour Day" type="gesetzlich">
+       <!--  1. Montag im September -->
+       <definition>
+          <fixed month="September" day="1"/>
+          <goto weekday="Monday" direction="forward"/>
+       </definition>
+    </holiday>
+    <holiday name="Thanksgiving Day" type="gesetzlich">
+       <!-- 2. Montag im Oktober -->
+       <definition>
+          <rule nth="2nd" weekday="Monday" month="October"/>
+       </definition>
+    </holiday>
+    <holiday name="Halloween">
+       <definition>
+          <fixed month="October" day="31"/>
+       </definition>
+    </holiday>
+    <holiday name="Daylight Saving Time ends (change time 1 h back)">
+       <definition>
+          <dst timezone="Canada/Central" action="end"/>
+       </definition>
+    </holiday>
+    <holiday name="Remembrance Day [all except NB,NS,ON,QC]" type="local">
+       <definition>
+          <fixed month="November" day="11"/>
+       </definition>
+    </holiday>
+    <holiday name="First Sunday Advent">
+       <definition>
+          <advent/>
+       </definition>
+    </holiday>
+    <holiday name="Second Sunday Advent">
+       <definition>
+          <advent/>
+          <add days="+7"/>
+       </definition>
+    </holiday>
+    <holiday name="Third Sunday Advent (Gaudete)">
+       <definition>
+          <advent/>
+          <add days="+14"/>
+       </definition>
+    </holiday>
+    <holiday name="Fourth Sunday Advent">
+       <definition>
+          <advent/>
+          <add days="+21"/>
+       </definition>
+    </holiday>
+    <holiday name="Christmas Eve">
+       <definition>
+          <fixed month="December" day="24"/>
+       </definition>
+    </holiday>
+    <holiday name="Christmas" type="gesetzlich">
+       <definition>
+          <fixed month="December" day="25"/>
+       </definition>
+    </holiday>
+    <holiday name="Boxing Day [all except AB,BC,NU,PE]" type="local">
+       <definition>
+          <fixed month="December" day="26"/>
+       </definition>
+    </holiday>
+</holidays>

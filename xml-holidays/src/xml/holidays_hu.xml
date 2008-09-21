@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+
+<holidays country="hu">
+    <!-- Ungarn -->
+
+    <holiday name="Újév" type="gesetzlich" international="New Year's Day">
+        <definition>
+            <fixed month="January" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="Nemzeti ünnep (National Day)" type="gesetzlich">
+        <definition>
+            <fixed month="March" day="15"/>
+        </definition>
+    </holiday>
+    <holiday name="Húsvétvasárnap" type="gesetzlich" international="Easter">
+        <import name="Easter Sunday"/>
+    </holiday>
+    <holiday name="Húsvéthétfő" type="gesetzlich" international="Easter Monday">
+        <import name="Easter Monday"/>
+    </holiday>
+    <holiday name="Begin Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Budapest" action="start"/>
+        </definition>
+    </holiday>
+    <holiday name="A munka ünnepe" type="gesetzlich" international="Labour Day">
+        <definition>
+            <fixed month="May" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="Pünkösd" type="gesetzlich" international="Whit Sunday">
+        <import name="Pentecost"/>
+    </holiday>
+    <holiday name="Szent István ünnepe (National Day)" type="gesetzlich">
+        <definition>
+            <fixed month="August" day="20"/>
+        </definition>
+    </holiday>
+    <holiday name="Nemzeti ünnep (National Day)" type="gesetzlich">
+        <definition>
+            <fixed month="October" day="23"/>
+        </definition>
+    </holiday>
+    <holiday name="End Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Budapest" action="end"/>
+        </definition>
+    </holiday>
+    <holiday name="Mindenszentek" type="gesetzlich" international="All Saints">
+        <!-- All Saint's Day is a Christian holy day observed by many Western churches on November 1 -->
+        <import name="All Saints’ Day"/>
+    </holiday>
+    <holiday name="Télapó Mikulás" international="Saint Nicholas Day">
+        <definition>
+            <fixed month="December" day="6"/>
+        </definition>
+    </holiday>
+    <holiday name="Karácsony" type="gesetzlich" international="Christmas Day">
+        <definition>
+            <fixed month="December" day="25"/>
+        </definition>
+    </holiday>
+    <holiday name="Karácsony másnapja" type="gesetzlich" international="Boxing Day">
+        <definition>
+            <fixed month="December" day="26"/>
+        </definition>
+    </holiday>
+    <holiday name="Szilveszter" international="New Year's Eve">
+        <import name="New Year's Eve"/>
+    </holiday>
+</holidays>

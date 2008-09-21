@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+
+<holidays country="pl">
+    <!-- Polen http://www.polen-total.de/Feiertage.52.0.html -->
+
+    <holiday name="Nowy Rok" type="gesetzlich" international="New Year's Day">
+        <definition>
+            <fixed month="January" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="Begin Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Warsaw" action="start"/>
+        </definition>
+    </holiday>
+    <holiday name="Niedziela Wielkanocna" type="gesetzlich" international="Easter">
+        <import name="Easter Sunday"/>
+    </holiday>
+    <holiday name="Ostermontag (Emmaustag)" type="gesetzlich" international="Easter Monday">
+        <import name="Easter Monday"/>
+    </holiday>
+    <holiday name="Święto Pracy" type="gesetzlich" international="Labour Day">
+        <definition>
+            <fixed month="May" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="Święto Konstytucji Trzeciego Maja (Constitution Day)" type="gesetzlich">
+        <definition>
+            <fixed month="May" day="3"/>
+        </definition>
+    </holiday>
+    <holiday name="Tag des Friedens">
+        <definition>
+            <fixed month="May" day="8"/>
+        </definition>
+    </holiday>
+    <holiday name="Zielone Świątki" type="gesetzlich" international="Whit Sunday">
+        <import name="Pentecost"/>
+    </holiday>
+    <holiday name="Boże Ciało" type="gesetzlich" international="Corpus Christi">
+        <definition>
+            <easter/>
+            <add days="+60"/>
+        </definition>
+    </holiday>
+    <holiday name="Wniebowzięcie Najświętszej Maryi Panny" type="gesetzlich" international="Assumption of Mary">
+        <definition>
+            <fixed month="August" day="15"/>
+        </definition>
+    </holiday>
+    <holiday name="Tag der polnischen Armee">
+        <definition>
+            <fixed month="August" day="15"/>
+        </definition>
+    </holiday>
+    <holiday name="End Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Warsaw" action="end"/>
+        </definition>
+    </holiday>
+    <holiday name="Wszystkich Świętych" type="gesetzlich" international="All Saints">
+        <!-- All Saint's Day is a Christian holy day observed by many Western churches on November 1 -->
+        <import name="All Saints’ Day"/>
+    </holiday>
+    <holiday name="Dzień Niepodległości (Independence Day)" type="gesetzlich">
+        <definition firstyear="1918">
+        	<fixed month="November" day="11" />
+        </definition>
+    </holiday>
+    <holiday name="pierwszy dzień Bożego Narodzenia" type="gesetzlich" international="Christmas Day">
+        <definition>
+            <fixed month="December" day="25"/>
+        </definition>
+    </holiday>
+    <holiday name="Boxing Day" type="gesetzlich" international="Boxing Day">
+        <definition>
+            <fixed month="December" day="26"/>
+        </definition>
+    </holiday>
+</holidays>
