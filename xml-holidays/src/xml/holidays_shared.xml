@@ -21,31 +21,44 @@
             <add days="-47"/>
         </definition>
     </holiday>
-
+    
     <holiday name="Ash Wednesday">
         <definition>
             <easter/>
             <add days="-46"/>
         </definition>
     </holiday>
-
+    
     <holiday name="Easter Sunday">
         <definition>
             <easter/>
         </definition>
     </holiday>
-
+    
     <holiday name="Easter Monday">
         <definition>
             <easter/>
             <add days="+1"/>
         </definition>
     </holiday>
-
+    
     <holiday name="Pentecost">
         <definition>
-           <easter/>
-           <add days="+49"/>
+            <easter/>
+            <add days="+49"/>
+        </definition>
+    </holiday>
+    
+    <!-- All Saint's Day is a Christian holy day observed by many Western churches on November 1 -->
+    <holiday name="All Saint's Day">
+        <definition>
+            <fixed month="November" day="1"/>
+        </definition>
+    </holiday>
+
+    <holiday name="All Soul's Day">
+        <definition>
+            <fixed month="November" day="2"/>
         </definition>
     </holiday>
 
@@ -54,32 +67,44 @@
             <advent/>
         </definition>
     </holiday>
-
+    
     <holiday name="2nd Advent">
         <definition>
             <advent/>
             <add days="+7"/>
         </definition>
     </holiday>
-
+    
     <holiday name="3rd Advent">
         <definition>
             <advent/>
             <add days="+14"/>
         </definition>
     </holiday>
-
+    
     <holiday name="4th Advent">
         <definition>
             <advent/>
             <add days="+21"/>
         </definition>
     </holiday>
-    
+
+    <holiday name="Christmas Eve">
+        <definition>
+            <fixed month="December" day="24"/>
+        </definition>
+    </holiday>
+
+    <holiday name="Christmas Day">
+        <definition>
+            <fixed month="December" day="25"/>
+        </definition>
+    </holiday>
+
     <holiday name="New Year's Eve">
         <definition>
             <fixed month="December" day="31"/>
         </definition>
     </holiday>
-
+    
 </holidays>
