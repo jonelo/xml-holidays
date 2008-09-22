@@ -293,7 +293,7 @@
         </definition>
     </holiday>
 
-    <holiday name="Independence Day" type"federal holiday">
+    <holiday name="Independence Day" type="federal holiday">
         <definition firstyear="1776">
             <fixed day="4" month="July"/>
         </definition>
