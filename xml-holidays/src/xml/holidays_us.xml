@@ -151,7 +151,8 @@
         </definition>
     </holiday>
 
-    <holiday name="Sait Joseph's Day">
+    <!-- http://en.wikipedia.org/wiki/Saint_Joseph's_Day -->
+    <holiday name="Saint Joseph's Day" type="Christian, Catholic">
         <definition firstyear="1777">
             <fixed day="19" month="March"/>
         </definition>
