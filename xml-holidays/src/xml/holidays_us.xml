@@ -107,43 +107,62 @@
      -->      
     <holiday name="Washington's Birthday (President's Day)" type="federal holiday">
         <definition firstyear="1790" lastyear="1970">
-            <fixed day="22" month="February" />
+            <fixed day="22" month="February"/>
         </definition>
         <!-- On January 1, 1971 the federal holiday was shifted to the third
              Monday in February by the Uniform Monday Holiday Act. -->
         <definition firstyear="1971">
-            <rule nth="1st" weekday="Monday" month="February" />
+            <rule nth="1st" weekday="Monday" month="February"/>
         </definition>
     </holiday>
 
-    <holiday name="Teacher's Day">
-        <definition>
-            <rule nth="1st" weekday="Sunday" month="March" />
-            <add days="+2" />
+    <!-- http://www.nea.org/teacherday/index.html -->
+    <holiday name="National Teacher Day">
+        <!-- Congress declared March 7, 1980, as National Teacher Day
+             for that year only. -->
+        <definition firstyear="1980" lastyear="1980">
+            <fixed day="7" month="March"/>
+        </definition>
+        <!-- NEA and its affiliates continued to observe National Teacher Day
+             on the first Tuesday in March until 1985 -->
+        <definition firstyear="1981" lastyear="1985">
+            <rule nth="1st" weekday="Tuesday" month="March"/>
+        </definition>
+        <!-- when the National PTA established Teacher Appreciation Week as the
+             first full week of May. The NEA Representative Assembly then voted
+             to make the Tuesday of that week National Teacher Day.
+             Now it is celebrated on the Tuesday of the first full week of May.
+        -->
+        <definition firstyear="1986">
+            <!-- the first full week of May in the US
+                 (the week begins with Sunday
+            -->
+            <rule nth="1st" weekday="Sunday" month="May"/>
+            <add days="+2"/> <!-- will become Tuesday -->
         </definition>
     </holiday>
 
     <holiday name="Saint Patrick's Day">
         <definition firstyear="1777">
-            <fixed day="17" month="March" />
+            <fixed day="17" month="March"/>
         </definition>
     </holiday>
 
     <holiday name="Sait Joseph's Day">
         <definition firstyear="1777">
-            <fixed day="19" month="March" />
+            <fixed day="19" month="March"/>
         </definition>
     </holiday>
 
     <holiday name="April Fool's Day">
         <definition>
-            <fixed day="1" month="April" />
+            <fixed day="1" month="April"/>
         </definition>
     </holiday>
 
     <holiday name="Begin Daylight Saving Time (DST), +1h">
         <definition firstyear="1777">
-            <dst timezone="America/New_York" action="start" />
+            <dst timezone="America/New_York" action="start"/>
         </definition>
     </holiday>
 
