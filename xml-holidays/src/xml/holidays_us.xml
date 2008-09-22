@@ -135,15 +135,18 @@
         -->
         <definition firstyear="1986">
             <!-- the first full week of May in the US
-                 (the week begins with Sunday
+                 (the week begins with Sunday)
             -->
             <rule nth="1st" weekday="Sunday" month="May"/>
             <add days="+2"/> <!-- will become Tuesday -->
         </definition>
     </holiday>
 
-    <holiday name="Saint Patrick's Day">
-        <definition firstyear="1777">
+    <!-- http://en.wikipedia.org/wiki/Saint_Patrick%27s_Day -->
+    <holiday name="Saint Patrick's Day" type="Christian, Festive">
+        <!-- The first civic and public celebration of Saint Patrick's Day in
+             the 13 colonies took place in Boston, Massachusetts in 1737 -->
+        <definition firstyear="1737">
             <fixed day="17" month="March"/>
         </definition>
     </holiday>
