@@ -7,9 +7,7 @@
     -->
     
     <holiday name="New Year's Day" type="federal holiday">
-        <definition>
-            <fixed day="1" month="January"/>
-        </definition>
+        <import name="New Year's Day"/>
     </holiday>
 
     <!--
@@ -293,7 +291,8 @@
         </definition>
     </holiday>
 
-    <holiday name="Independence Day" type="federal holiday">
+    <!-- http://en.wikipedia.org/wiki/Independence_Day_(United_States) -->
+    <holiday name="Independence Day (The Fourth of July)" type="federal holiday">
         <definition firstyear="1776">
             <fixed day="4" month="July"/>
         </definition>
@@ -324,7 +323,7 @@
         </definition>
         <!-- Since 1969, the holiday has been observed on the
              third Monday in April -->
-        <defintion firstyear="1969">
+        <definition firstyear="1969">
             <rule nth="3rd" weekday="Monday" month="April"/>
         </definition>
     </holiday>
@@ -356,6 +355,7 @@
         </definition>
     </holiday>
 
+    <!-- http://en.wikipedia.org/wiki/Halloween -->
     <holiday name="Halloween">
         <definition firstyear="1776">
             <fixed day="31" month="October"/>
@@ -363,15 +363,11 @@
     </holiday>
 
     <holiday name="All Saint's Day" type="Western Churches">
-        <definition>
-            <fixed day="1" month="November"/>
-        </definition>
+        <import name="All Saint's Day"/>
     </holiday>
 
     <holiday name="All Soul's Day">
-        <definition>
-            <fixed day="2" month="November"/>
-        </definition>
+        <import name="All Soul's Day"/>
     </holiday>
 
     <!-- 
@@ -429,15 +425,11 @@
     </holiday>
 
     <holiday name="Christmas Eve">
-        <definition>
-            <fixed day="24" month="December"/>
-        </definition>
+        <import name="Christmas Eve"/>
     </holiday>
 
     <holiday name="Christmas Day" type="federal holiday">
-        <definition>
-            <fixed day="25" month="December"/>
-        </definition>
+        <import name="Christmas Day"/>
     </holiday>
 
     <holiday name="Kwanzaa (7 days)" type="African American">
@@ -447,9 +439,7 @@
     </holiday>
 
     <holiday name="New Year's Eve">
-        <definition>
-            <fixed day="31" month="December"/>
-        </definition>
+        <import name="New Year's Eve"/>
     </holiday>
 
 </holidays>
