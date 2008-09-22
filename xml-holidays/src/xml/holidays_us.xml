@@ -278,7 +278,10 @@
         </definition>
     </holiday>
 
+    <!-- http://en.wikipedia.org/wiki/Flag_Day_in_the_United_States -->
     <holiday name="Flag Day">
+        <!-- In 1916, President Woodrow Wilson issued a proclamation that
+             officially established June 14 as Flag Day -->
         <definition firstyear="1916">
             <fixed day="14" month="June"/>
         </definition>
@@ -290,7 +293,7 @@
         </definition>
     </holiday>
 
-    <holiday name="Independence Day [federal holiday]">
+    <holiday name="Independence Day" type"federal holiday">
         <definition firstyear="1776">
             <fixed day="4" month="July"/>
         </definition>
@@ -302,16 +305,36 @@
         </definition>
     </holiday>
 
-    <holiday name="Patriot Day"><!--Patriot Day was signed into law on December 18th, 2001.-->
+    <!-- http://en.wikipedia.org/wiki/Patriot_Day -->
+    <holiday name="Patriot Day">
+        <!-- Patriot Day was signed into law on December 18th, 2001. -->
         <definition firstyear="2002">
             <fixed day="11" month="September"/>
         </definition>
     </holiday>
+    
+    <!-- http://en.wikipedia.org/wiki/Patriots%27_Day -->
+    <!-- a holiday celebrated primarily in Maine, Massachusetts, and the
+         Adirondack region of New York. Traditionally it was designated as
+         April 19 in observance of the anniversary of the Battles of Lexington
+         and Concord, the first battles of the American Revolutionary War. -->
+    <holiday name="Patriot's Day" type="Massachusetts and state of Maine">
+        <definition firstyear="1775" lastyear="1968">
+            <fixed day="19" month="April"/>
+        </definition>
+        <!-- Since 1969, the holiday has been observed on the
+             third Monday in April -->
+        <defintion firstyear="1969">
+            <rule nth="3rd" weekday="Monday" month="April"/>
+        </definition>
+    </holiday>
 
-    <holiday name="Grandparents Day"><!--Grandparents Day is always celebrated on the first Sunday after Labor Day.-->
+    <!-- http://en.wikipedia.org/wiki/Grandparents_Day -->
+    <holiday name="Grandparents Day" type="national">
         <definition firstyear="1978">
-            <rule nth="1st" weekday="Monday" month="September"/><!-- set Sunday after the date -->
-            <add days="+6"/>
+            <!-- Grandparents Day is always celebrated on the first Sunday after Labor Day -->
+            <rule nth="1st" weekday="Monday" month="September"/>
+            <add days="+6"/><!-- set Sunday after the date -->
         </definition>
     </holiday>
 
