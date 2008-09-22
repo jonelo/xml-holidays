@@ -419,9 +419,12 @@
         </definition>
     </holiday>   
 
-    <holiday name="Thanksgiving Day" type="federal holiday">
+    <!-- http://en.wikipedia.org/wiki/Thanksgiving -->
+    <!-- Thanksgiving is celebrated on the fourth Thursday of November
+         in the United States -->
+    <holiday name="Thanksgiving" type="federal holiday">
         <definition firstyear="1776">
-            <rule nth="1st" weekday="Thursday" month="November"/>
+            <rule nth="4th" weekday="Thursday" month="November"/>
         </definition>
     </holiday>
 
