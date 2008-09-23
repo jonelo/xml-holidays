@@ -257,7 +257,8 @@
         </definition>
     </holiday>
 
-    <holiday name="Arbor Day">
+    <!-- http://en.wikipedia.org/wiki/Arbor_Day -->
+    <holiday name="Arbor Day" type="cultural">
         <definition firstyear="1872">
             <rule nth="Last" weekday="Friday" month="April"/>
         </definition>
@@ -269,13 +270,27 @@
         </definition>
     </holiday>
 
+    <!-- http://en.wikipedia.org/wiki/Mother%27s_Day -->
     <holiday name="Mother's Day">
-        <definition firstyear="1914">
+        <!-- The holiday was declared officially by some states
+             beginning in 1912 -->
+        <definition firstyear="1912">
             <rule nth="2nd" weekday="Sunday" month="May"/>
         </definition>
     </holiday>
 
+    <!-- http://en.wikipedia.org/wiki/Memorial_Day -->
     <holiday name="Memorial Day" type="federal holiday">
+        <!-- It was observed for the first time on May 30 of 1868 -->
+        <definition firstyear="1868" lastyear="1970">
+            <fixed day="30" month="May"/>
+        </definition>
+        <!-- On June 28, 1968, the United States Congress passed the Uniform
+             Holidays Bill, which moved the holiday from the traditional date
+             to a specified Monday in order to create a convenient three-day
+             weekend. The change moved Memorial Day from its traditional
+             May 30 date to the last Monday in May. The law took effect at the
+             federal level in 1971. -->
         <definition firstyear="1971">
             <rule nth="Last" weekday="Monday" month="May"/>
         </definition>
@@ -290,8 +305,12 @@
         </definition>
     </holiday>
 
-    <holiday name="Father's Day"><!--in 1966 President Lyndon Johnson signed a presidential proclamation declaring the 3rd Sunday of June as Father's Day.-->
-        <definition>
+    <!-- http://en.wikipedia.org/wiki/Father%27s_Day -->
+    <!-- In 1966, President Lyndon Johnson made Father's Day a holiday to be
+         celebrated on the third Sunday of June. The holiday was not officially
+         recognized until 1972, during the presidency of Richard Nixon. -->
+    <holiday name="Father's Day">
+        <definition firstyear="1972">
             <rule nth="3rd" weekday="Sunday" month="June"/>
         </definition>
     </holiday>
