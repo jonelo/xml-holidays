@@ -373,8 +373,11 @@
         </definition>
     </holiday>
 
-    <holiday name="National Boss Day">
-        <definition firstyear="1958">
+    <!-- http://en.wikipedia.org/wiki/Boss's_Day -->
+    <holiday name="Boss' Day (National Boss Day, Bosses Day)">
+        <!-- In 1962, Illinois Governor Otto Kerner backed Haroski's
+             registration and officially proclaimed the day. -->
+        <definition firstyear="1962">
             <fixed day="16" month="October"/>
         </definition>
     </holiday>
