@@ -95,8 +95,13 @@
     -->
     <holiday name="Lincoln's Birthday" type="local">
         <definition firstyear="1865" lastyear="1971">
-            <fixed day="12" month="February" />
+            <fixed day="12" month="February"/>
         </definition>
+    </holiday>
+
+    <!-- http://en.wikipedia.org/wiki/Valentine%27s_Day -->
+    <holiday name="Valentine's Day">
+         <import name="Valentine's Day"/>
     </holiday>
 
     <!--
