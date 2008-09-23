@@ -322,8 +322,10 @@
         </definition>
     </holiday>
 
+    <!-- http://en.wikipedia.org/wiki/Labor_Day -->
     <holiday name="Labor Day" type="federal holiday">
-        <definition firstyear="1776">
+        <!-- Congress made Labor Day a federal holiday on June 28, 1894 -->
+        <definition firstyear="1894">
             <rule nth="1st" weekday="Monday" month="September"/>
         </definition>
     </holiday>
