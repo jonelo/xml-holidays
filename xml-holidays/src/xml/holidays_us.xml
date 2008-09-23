@@ -363,8 +363,12 @@
         </definition>
     </holiday>
 
+    <!-- http://en.wikipedia.org/wiki/Columbus_Day -->
     <holiday name="Columbus Day" type="federal holiday">
-        <definition firstyear="1776">
+        <!-- The first Columbus Day celebration was held in 1792, when New York
+            City celebrated the 300th anniversary of his landing in the
+            New World. -->
+        <definition firstyear="1792">
             <rule nth="2nd" weekday="Monday" month="October"/>
         </definition>
     </holiday>
