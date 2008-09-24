@@ -1,173 +1,371 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
+<!-- 
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+ -->
+<holidays country="ca">    
+    <!--
+       Holidays in Canada
+       http://en.wikipedia.org/wiki/Category:Holidays_in_Canada
+       http://en.wikipedia.org/wiki/Public_holidays_in_Canada
+    -->
 
-<holidays country="ca">
-    <!-- Canada http://www.hartberger.de/feier_kan.htm-->
-
-    <holiday name="New Year's Day" type="gesetzlich">
-    	<import name="New Year's Day"/>
+    <holiday name="New Year's Day / Le jour de l'An" type="nationwide statutory holiday">
+        <import name="New Year's Day"/>
     </holiday>
-    <holiday name="Day After New Year's Day [QC]" type="local">
-        <definition>
-            <fixed month="January" day="2"/>
+
+    <holiday name="Valentine's Day">
+        <import name="Valentine's Day"/>
+    </holiday>
+
+    <!-- http://en.wikipedia.org/wiki/National_Flag_of_Canada_Day -->
+    <holiday name="National Flag of Canada Day">
+        <definition firstyear="1965">
+            <fixed month="February" day="15"/>
         </definition>
     </holiday>
-    <holiday name="Valentine's Day">
-       <definition>
-          <fixed month="February" day="14"/>
-       </definition>
+
+    <!-- http://en.wikipedia.org/wiki/Family_Day -->
+    <holiday name="Family Day / Fête de la famille" type="common statutory holiday, Alberta, Ontario, Saskatchewan">
+        <definition firstyear="1990">
+            <rule nth="3rd" weekday="Monday" month="February"/>
+        </definition>
     </holiday>
-    <holiday name="National Flag of Canada Day">
-       <definition>
-          <fixed month="February" day="15"/>
-       </definition>
+    
+    <!-- http://en.wikipedia.org/wiki/Carnival#Canada -->
+    <!-- Due to climatic imperatives, Caribana is held in the summer when
+         Caribbean costumes may be paraded comfortably, rather than adhering to
+         the traditional winter dates of the other carnivals in which the
+         festival is strongly rooted. -->
+    <holiday name="Caribana">
+        <defintion>
+            <rule nth="1st" weekday="Saturday" month="August"/>
+        </defintion>
     </holiday>
-    <holiday name="Carnival/Strove Thuesday">
-       <definition>
-          <easter/>
-          <add days="-47"/>
-       </definition>
+    
+    <holiday name="Shrove Monday (Rose Monday)">
+        <definition>
+            <easter/>
+            <add days="-48"/>
+        </definition>
     </holiday>
+    
+    <!-- http://en.wikipedia.org/wiki/Shrove_Tuesday -->
+    <holiday name="Strove Thuesday (Pancake Day, Pancake Tuesday)">
+         <import name="Carnival"/>
+    </holiday>
+
     <holiday name="Ash Wednesday">
-    	<import name="Ash Wednesday"/>
+        <import name="Ash Wednesday"/>
     </holiday>
+
     <holiday name="Daylight Saving Time starts (change time 1 h forward)">
-       <definition>
-          <dst timezone="Canada/Central" action="start"/>
-       </definition>
+        <definition>
+            <dst timezone="Canada/Central" action="start"/>
+        </definition>
     </holiday>
-    <holiday name="Good Friday" type="gesetzlich">
-       <definition>
-          <easter/>
-          <add days="-2"/>
-       </definition>
+
+    <holiday name="Good Friday / Le vendredi saint" type="nationwide statutory holiday">
+        <definition>
+            <easter/>
+            <add days="-2"/>
+        </definition>
     </holiday>
+
     <holiday name="Holy Saturday">
-       <definition>
-          <easter/>
-          <add days="-1"/>
-       </definition>
+        <definition>
+            <easter/>
+            <add days="-1"/>
+        </definition>
     </holiday>
-    <holiday name="Easter Sunday">
-       <definition>
-          <easter/>
-       </definition>
+
+    <holiday name="Easter Sunday / Pâques">
+        <import name="Easter Sunday"/>
     </holiday>
-    <holiday name="Easter Monday" type="gesetzlich">
-       <definition>
-          <easter/>
-          <add days="+1"/>
-       </definition>
+
+    <holiday name="Easter Monday / Lundi de Pâques" type="statutory holiday">
+        <definition>
+            <easter/>
+            <add days="+1"/>
+        </definition>
     </holiday>
+
     <holiday name="Mother's Day">
-       <!-- 2. Sonntag im Mai -->
-       <definition>
-          <rule nth="2nd" weekday="Sunday" month="May"/>
-       </definition>
+        <definition>
+            <rule nth="2nd" weekday="Sunday" month="May"/>
+        </definition>
     </holiday> 
-    <holiday name="Victoria Day" type="gesetzlich">
-       <!--  Montag vor dem 25. Mai -->
-       <definition>
-          <fixed month="May" day="25"/>
-          <goto weekday="Monday" direction="backward"/>
-       </definition>
+
+    <!-- http://en.wikipedia.org/wiki/Victoria_Day_(Canada) -->
+    <holiday name="Victoria Day / La fête de la Reine" type="statutory holiday">
+        <!-- celebrated on the last Monday before or on May 24  -->
+        <definition>
+            <fixed month="May" day="24"/>
+            <add days="+1"/>
+            <goto weekday="Monday" direction="backward"/>
+        </definition>
     </holiday>
-    <holiday name="Canada Day" type="gesetzlich">
-       <definition>
-          <fixed month="July" day="1"/>
-       </definition>
+
+    <!-- http://en.wikipedia.org/wiki/Canada_Day -->
+    <!-- celebrating the anniversary of the July 1, 1867 -->
+    <holiday name="Canada Day / La fête du Canada" type="nationwide statutory holiday">
+        <definition firstyear="1867">
+            <fixed month="July" day="1"/>
+            <!-- If July 1 is a Sunday, the holiday is legally on July 2 -->
+            <add days="1" ifweekday="Sunday"/>
+        </definition>
     </holiday>
-    <holiday name="British Columbia Day [BC]" type="local">
-       <!--  1. Montag im August -->
-       <definition>
-          <fixed month="August" day="1"/>
-          <goto weekday="Monday" direction="forward"/>
-       </definition>
+    
+    <!-- http://en.wikipedia.org/wiki/Civic_Holiday -->
+    <!-- http://www.pch.gc.ca/progs/cpsc-ccsp/jfa-ha/prov_e.cfm -->
+    <!-- alternate names: 
+         "British Columbia Day" in British Columbia
+         "New Brunswick Day" in New Brunswick
+         "Saskatchewan Day" in Saskatchewan
+         "Civic Holiday" in in Nunavut and Northwest Territories
+         "Natal Day" in Nova Scotia and Prince Edward Island
+         "Heritage Day" in Alberta -->
+    <holiday name="August Civic Holiday / Premier lundi d'août" type="local">
+        <definition>
+            <rule nth="1st" weekday="Monday" month="August"/>
+        </definition>
     </holiday>
-    <holiday name="Civil/Provincial Day [SK,NT,MB,ON]" type="local">
-       <!--  1. Montag im August -->
-       <definition>
-          <fixed month="August" day="1"/>
-          <goto weekday="Monday" direction="forward"/>
-       </definition>
+
+    <!-- http://en.wikipedia.org/wiki/Discovery_Day#Canada -->
+    <!-- commemorating the anniversary of the discovery of gold in 1896,
+         which started the Klondike Gold Rush. -->
+    <holiday name="Discovery Day (Yukon)">
+        <definition firstyear="1896">
+            <rule nth="3rd" weekday="Monday" month="August"/>
+        </definition>
     </holiday>
-    <holiday name="New Brunswick Day [NB]" type="local">
-       <!--  1. Montag im August -->
-       <definition>
-          <fixed month="August" day="1"/>
-          <goto weekday="Monday" direction="forward"/>
-       </definition>
+    
+    <!-- http://en.wikipedia.org/wiki/Discovery_Day#Canada -->
+    <!-- commemorates John Cabot's discovery in 1497 -->
+    <holiday name="Discovery Day (Newfoundland and Labrador)">
+        <definition firstyear="1497">
+            <fixed day="24" month="June"/>
+        </definition>
     </holiday>
-    <holiday name="Discovery Day [Yukon]" type="local">
-       <!-- 3. Montag im August -->
-       <definition>
-          <rule nth="3rd" weekday="Monday" month="August"/>
-       </definition>
-    </holiday> 
-    <holiday name="Labour Day" type="gesetzlich">
-       <!--  1. Montag im September -->
-       <definition>
-          <fixed month="September" day="1"/>
-          <goto weekday="Monday" direction="forward"/>
-       </definition>
+
+    <!-- http://en.wikipedia.org/wiki/Labour_Day -->
+    <!-- Labour Day has been celebrated on the first Monday in September in
+         Canada since the 1880s. The origins of Labour Day in Canada can be
+         traced back to April 14, 1872. -->
+    <holiday name="Labour Day / La fête du travail" type="nationwide statutory holiday">
+        <definition firstyear="1872">
+            <rule nth="1st" weekday="Monday" month="September"/>
+        </definition>
     </holiday>
-    <holiday name="Thanksgiving Day" type="gesetzlich">
-       <!-- 2. Montag im Oktober -->
-       <definition>
-          <rule nth="2nd" weekday="Monday" month="October"/>
-       </definition>
+
+    <!-- http://en.wikipedia.org/wiki/Thanksgiving_(Canada) -->
+    <!-- http://www.pch.gc.ca/progs/cpsc-ccsp/jfa-ha/graces_e.cfm -->
+    <holiday name="Thanksgiving / L'Action de grâce" type="statutory holiday, cultural">
+        <definition lastyear="1971">
+            <unknown/>
+        </definition>
+        <definition firstyear="1792" lastyear="1792">
+            <fixed day="15" month="April"/>
+        </definition>
+        <!-- Starting in 1879 Thanksgiving Day was observed every year
+             [at least once] but the date was proclaimed annually and
+             changed year to year -->
+        <definition firstyear="1879" lastyear="1879">
+            <fixed day="6" month="November"/>
+        </definition>
+        <definition firstyear="1880" lastyear="1880">
+            <fixed day="3" month="November"/>
+        </definition>
+        <definition firstyear="1881" lastyear="1881">
+            <fixed day="20" month="October"/>
+        </definition>
+        <definition firstyear="1882" lastyear="1882">
+            <fixed day="9" month="November"/>
+        </definition>
+        <definition firstyear="1883" lastyear="1883">
+            <fixed day="8" month="November"/>
+        </definition>
+        <definition firstyear="1884" lastyear="1884">
+            <fixed day="6" month="November"/>
+        </definition>
+        <definition firstyear="1885" lastyear="1885">
+            <fixed day="12" month="November"/>
+        </definition>
+        <definition firstyear="1886" lastyear="1886">
+            <fixed day="18" month="November"/>
+        </definition>
+        <definition firstyear="1887" lastyear="1887">
+            <fixed day="21" month="June"/>
+        </definition>
+        <definition firstyear="1887" lastyear="1887">
+            <fixed day="17" month="November"/>
+        </definition>
+        <definition firstyear="1888" lastyear="1888">
+            <fixed day="15" month="November"/>
+        </definition>
+        <definition firstyear="1889" lastyear="1889">
+            <fixed day="7" month="November"/>
+        </definition>
+        <definition firstyear="1890" lastyear="1890">
+            <fixed day="6" month="November"/>
+        </definition>
+        <definition firstyear="1891" lastyear="1891">
+            <fixed day="12" month="November"/>
+        </definition>
+        <definition firstyear="1892" lastyear="1892">
+            <fixed day="10" month="November"/>
+        </definition>
+        <definition firstyear="1893" lastyear="1893">
+            <fixed day="23" month="November"/>
+        </definition>
+        <definition firstyear="1894" lastyear="1894">
+            <fixed day="22" month="November"/>
+        </definition>
+        <definition firstyear="1895" lastyear="1895">
+            <fixed day="21" month="November"/>
+        </definition>
+        <definition firstyear="1896" lastyear="1896">
+            <fixed day="26" month="November"/>
+        </definition>
+        <definition firstyear="1896" lastyear="1896">
+            <fixed day="22" month="June"/>
+        </definition>
+        <definition firstyear="1897" lastyear="1897">
+            <fixed day="25" month="November"/>
+        </definition>
+        <definition firstyear="1898" lastyear="1898">
+            <fixed day="24" month="November"/>
+        </definition>
+        <definition firstyear="1899" lastyear="1899">
+            <fixed day="19" month="October"/>
+        </definition>
+        <definition firstyear="1900" lastyear="1900">
+            <fixed day="18" month="October"/>
+        </definition>
+        <definition firstyear="1901" lastyear="1901">
+            <fixed day="28" month="November"/>
+        </definition>
+        <definition firstyear="1902" lastyear="1902">
+            <fixed day="26" month="June"/>
+        </definition>
+        <definition firstyear="1902" lastyear="1902">
+            <fixed day="9" month="August"/>
+        </definition>
+        <definition firstyear="1902" lastyear="1902">
+            <fixed day="16" month="October"/>
+        </definition>
+        <definition firstyear="1903" lastyear="1903">
+            <fixed day="15" month="October"/>
+        </definition>
+        <definition firstyear="1904" lastyear="1904">
+            <fixed day="17" month="November"/>
+        </definition>
+        <definition firstyear="1905" lastyear="1905">
+            <fixed day="26" month="October"/>
+        </definition>
+        <definition firstyear="1906" lastyear="1906">
+            <fixed day="18" month="October"/>
+        </definition>
+        <definition firstyear="1907" lastyear="1907">
+            <fixed day="31" month="October"/>
+        </definition>
+        <definition firstyear="1908" lastyear="1908">
+            <fixed day="9" month="November"/>
+        </definition>
+        <definition firstyear="1909" lastyear="1912">
+            <rule nth="last" weekday="Monday" month="October"/>
+        </definition>
+        <definition firstyear="1913" lastyear="1913">
+             <rule nth="3nd" weekday="Monday" month="October"/>
+        </definition>
+        <definition firstyear="1914" lastyear="1919">
+            <rule nth="2nd" weekday="Monday" month="October"/>
+        </definition>
+        <definition firstyear="1920" lastyear="1920">
+            <rule nth="3nd" weekday="Monday" month="October"/>
+        </definition>
+        <definition firstyear="1921" lastyear="1930">
+           <fixed day="11" month="November"/>
+           <goto weekday="Monday" direction="backward"/>
+        </definition>
+        <definition firstyear="1931" lastyear="1934">
+            <rule nth="2nd" weekday="Monday" month="October"/>
+        </definition>
+        <!-- first fixed on Monday Oct. 14, then changed to Oct. 24, due to
+             General elections on Oct. 14 -->
+        <definition firstyear="1935" lasstyear="1935">
+            <fixed day="24" month="October"/>
+        </definition>
+        <definition firstyear="1936">
+            <!-- Since 1936 it was already the 2nd Monday in October.
+                 On January 31, 1957, the Canadian Parliament proclaimed 
+                 the holiday to be observed on the 2nd Monday in October -->
+            <rule nth="2nd" weekday="Monday" month="October"/>
+        </definition>
     </holiday>
+
+    <!-- http://en.wikipedia.org/wiki/Halloween#United_States_and_Canada -->
     <holiday name="Halloween">
-       <definition>
-          <fixed month="October" day="31"/>
-       </definition>
+        <definition>
+            <fixed month="October" day="31"/>
+        </definition>
     </holiday>
+
     <holiday name="Daylight Saving Time ends (change time 1 h back)">
-       <definition>
-          <dst timezone="Canada/Central" action="end"/>
-       </definition>
+        <definition>
+            <dst timezone="Canada/Central" action="end"/>
+        </definition>
     </holiday>
-    <holiday name="Remembrance Day [all except NB,NS,ON,QC]" type="local">
-       <definition>
-          <fixed month="November" day="11"/>
-       </definition>
+
+    <!-- http://en.wikipedia.org/wiki/Remembrance_Day -->
+    <holiday name="Remembrance Day / Le jour du Souvenir" type="all except NB, NS, ON, QC">
+        <definition>
+            <fixed month="November" day="11"/>
+        </definition>
     </holiday>
+
     <holiday name="First Sunday Advent">
-       <definition>
-          <advent/>
-       </definition>
+        <definition>
+            <advent/>
+        </definition>
     </holiday>
+
     <holiday name="Second Sunday Advent">
-       <definition>
-          <advent/>
-          <add days="+7"/>
-       </definition>
+        <definition>
+            <advent/>
+            <add days="+7"/>
+        </definition>
     </holiday>
+
     <holiday name="Third Sunday Advent (Gaudete)">
-       <definition>
-          <advent/>
-          <add days="+14"/>
-       </definition>
+        <definition>
+            <advent/>
+            <add days="+14"/>
+        </definition>
     </holiday>
+
     <holiday name="Fourth Sunday Advent">
-       <definition>
-          <advent/>
-          <add days="+21"/>
-       </definition>
+        <definition>
+            <advent/>
+            <add days="+21"/>
+        </definition>
     </holiday>
+
     <holiday name="Christmas Eve">
-       <definition>
-          <fixed month="December" day="24"/>
-       </definition>
+        <import name="Christmas Eve"/>
     </holiday>
-    <holiday name="Christmas" type="gesetzlich">
-       <definition>
-          <fixed month="December" day="25"/>
-       </definition>
+
+    <holiday name="Christmas Day" type="nationwide statutory holiday">
+        <import name="Christmas Day"/>
     </holiday>
-    <holiday name="Boxing Day [all except AB,BC,NU,PE]" type="local">
-       <definition>
-          <fixed month="December" day="26"/>
-       </definition>
+
+    <!-- http://en.wikipedia.org/wiki/Boxing_Day#Canada -->
+    <holiday name="Boxing Day / Le lendemain de Noël" type="statutory holiday">
+        <definition>
+            <fixed month="December" day="26"/>
+        </definition>
     </holiday>
+
 </holidays>
