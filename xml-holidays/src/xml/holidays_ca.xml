@@ -40,9 +40,9 @@
          the traditional winter dates of the other carnivals in which the
          festival is strongly rooted. -->
     <holiday name="Caribana">
-        <defintion>
+        <definition>
             <rule nth="1st" weekday="Saturday" month="August"/>
-        </defintion>
+        </definition>
     </holiday>
     
     <holiday name="Shrove Monday (Rose Monday)">
@@ -275,16 +275,16 @@
             <fixed day="9" month="November"/>
         </definition>
         <definition firstyear="1909" lastyear="1912">
-            <rule nth="last" weekday="Monday" month="October"/>
+            <rule nth="Last" weekday="Monday" month="October"/>
         </definition>
         <definition firstyear="1913" lastyear="1913">
-             <rule nth="3nd" weekday="Monday" month="October"/>
+             <rule nth="3rd" weekday="Monday" month="October"/>
         </definition>
         <definition firstyear="1914" lastyear="1919">
             <rule nth="2nd" weekday="Monday" month="October"/>
         </definition>
         <definition firstyear="1920" lastyear="1920">
-            <rule nth="3nd" weekday="Monday" month="October"/>
+            <rule nth="3rd" weekday="Monday" month="October"/>
         </definition>
         <definition firstyear="1921" lastyear="1930">
            <fixed day="11" month="November"/>
@@ -295,7 +295,7 @@
         </definition>
         <!-- first fixed on Monday Oct. 14, then changed to Oct. 24, due to
              General elections on Oct. 14 -->
-        <definition firstyear="1935" lasstyear="1935">
+        <definition firstyear="1935" lastyear="1935">
             <fixed day="24" month="October"/>
         </definition>
         <definition firstyear="1936">
