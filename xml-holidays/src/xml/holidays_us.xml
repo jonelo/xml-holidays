@@ -114,7 +114,11 @@
       George Washington (February 22, 1732 – December 14, 1799)
      -->      
     <holiday name="Washington's Birthday (President's Day)" type="federal holiday">
-        <definition firstyear="1790" lastyear="1970">
+        <!-- Titled Washington's Birthday, the federal holiday was originally
+             implemented by the United States federal government in 1880 for
+             government offices in the District of Columbia (20 Stat. 277) and
+             expanded in 1885 to include all federal offices (23 Stat. 516). -->
+        <definition firstyear="1885" lastyear="1970">
             <fixed day="22" month="February"/>
         </definition>
         <!-- On January 1, 1971 the federal holiday was shifted to the third
