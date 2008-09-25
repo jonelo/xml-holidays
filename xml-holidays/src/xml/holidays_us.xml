@@ -124,7 +124,7 @@
         <!-- On January 1, 1971 the federal holiday was shifted to the third
              Monday in February by the Uniform Monday Holiday Act. -->
         <definition firstyear="1971">
-            <rule nth="1st" weekday="Monday" month="February"/>
+            <rule nth="3rd" weekday="Monday" month="February"/>
         </definition>
     </holiday>
 
