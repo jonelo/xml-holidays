@@ -1,3 +1,9 @@
+<!-- 
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+ -->
+ 
 <!ENTITY % months "January | February | March | April |
                    May | June | July | August | September |
                    October | November | December">
@@ -124,9 +130,9 @@
 
           <!--
             The add modifier
-            the "add" property can become positive or negative values
-            if the condition "ifweekday" is present, it only adds days
-            when the startday set is on a particular weekday
+            the "add" property value can become positive or negative
+            if the condition called "ifweekday" is present, it adds days
+            only when the startdate is set on a particular weekday
           -->
           <!ELEMENT add EMPTY>
           <!ATTLIST add
@@ -140,4 +146,4 @@
           <!ELEMENT goto EMPTY>
           <!ATTLIST goto
                     weekday (%weekdays;) #REQUIRED
-                    direction (forward|backward) "forward">
+                    direction (forward|backward|shortest) "forward">
