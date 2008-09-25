@@ -16,7 +16,8 @@
         <import name="New Year's Day"/>
     </holiday>
 
-    <holiday name="Valentine's Day">
+    <!-- http://en.wikipedia.org/wiki/Valentines_Day -->
+    <holiday name="Valentine's Day / Saint-Valentin">
         <import name="Valentine's Day"/>
     </holiday>
 
@@ -32,6 +33,13 @@
         <definition firstyear="1990">
             <rule nth="3rd" weekday="Monday" month="February"/>
         </definition>
+    </holiday>
+    
+    <!-- http://en.wikipedia.org/wiki/Louis_Riel_Day -->
+    <holiday name="Louis Riel Day" type="public holiday in the Canadian province of Manitoba">
+         <definition firstyear="2008">
+             <rule nth="3rd" weekday="Monday" month="February"/>
+         </definition>
     </holiday>
     
     <!-- http://en.wikipedia.org/wiki/Carnival#Canada -->
@@ -92,7 +100,8 @@
         </definition>
     </holiday>
 
-    <holiday name="Mother's Day">
+    <!-- http://en.wikipedia.org/wiki/Mother%27s_Day -->
+    <holiday name="Mother's Day / Fête des Mères">
         <definition>
             <rule nth="2nd" weekday="Sunday" month="May"/>
         </definition>
@@ -136,7 +145,7 @@
     <!-- http://en.wikipedia.org/wiki/Discovery_Day#Canada -->
     <!-- commemorating the anniversary of the discovery of gold in 1896,
          which started the Klondike Gold Rush. -->
-    <holiday name="Discovery Day (Yukon)">
+    <holiday name="Discovery Day (Yukon)" type="statutory holiday in the Yukon">
         <definition firstyear="1896">
             <rule nth="3rd" weekday="Monday" month="August"/>
         </definition>
@@ -146,10 +155,68 @@
     <!-- commemorates John Cabot's discovery in 1497 -->
     <holiday name="Discovery Day (Newfoundland and Labrador)">
         <definition firstyear="1497">
+            <!-- http://www.pch.gc.ca/progs/cpsc-ccsp/jfa-ha/prov_e.cfm -->
+            <!-- it is celebrated on the Monday nearest June 24th -->
             <fixed day="24" month="June"/>
+            <goto weekday="Monday" direction="nearest"/>
+        </definition>
+    </holiday>
+    
+    <!-- http://www.pch.gc.ca/progs/cpsc-ccsp/jfa-ha/prov_e.cfm -->
+    <holiday name="Nunavut Day" type="Nunavut">
+        <definition>
+            <fixed day="9" month="July"/>
+        </definition>
+    </holiday>
+    
+    <!-- http://en.wikipedia.org/wiki/National_Aboriginal_Day -->
+    <holiday name="National Aboriginal Day" type="Northwest Territories">
+        <!-- The day was first celebrated in 1996, after it was proclaimed
+             that year -->
+        <definition firstyear="1996">
+            <fixed day="21" month="June"/>
+        </definition>
+    </holiday>
+    
+    <!-- http://en.wikipedia.org/wiki/Memorial_Day -->
+    <holiday name="Memorial Day" type="Newfoundland and Labrador">
+        <definition>
+            <!-- it is celebrated on the Monday nearest July 1st -->
+            <fixed day="1" month="July"/>
+            <goto weekday="Monday" direction="nearest"/>
+        </definition>
+    </holiday>
+    
+    <!-- http://en.wikipedia.org/wiki/Orangemen%27s_Day -->
+    <holiday name="Orangemen's Day " type="Newfoundland and Labrador">
+        <definition firstyear="1690">
+            <!-- it is celebrated on the Monday nearest July 12th -->
+            <fixed day="12" month="July"/>
+            <goto weekday="Monday" direction="nearest"/>
+        </definition> 
+    </holiday>
+
+    <!-- http://en.wikipedia.org/wiki/Saint_Patrick%27s_Day -->
+    <!--  -->
+    <holiday name="St. Patrick's Day" type="public holiday in Newfoundland and Labrador">
+        <definition>
+            <!-- it is celebrated on the Monday nearest March 17 -->
+            <fixed day="17" month="March"/>
+            <goto weekday="Monday" direction="nearest"/>
         </definition>
     </holiday>
 
+    
+    <!-- http://en.wikipedia.org/wiki/St_George%27s_Day -->
+    <!-- St. George's Day is a provincial government holiday in Newfoundland -->
+    <holiday name="St. George's Day" type="Newfoundland and Labrador">
+        <definition>
+            <!-- it is celebrated on the Monday nearest April 23 -->
+            <fixed day="23" month="April"/>
+            <goto weekday="Monday" direction="nearest"/>
+        </definition>
+    </holiday>
+    
     <!-- http://en.wikipedia.org/wiki/Labour_Day -->
     <!-- Labour Day has been celebrated on the first Monday in September in
          Canada since the 1880s. The origins of Labour Day in Canada can be
@@ -353,11 +420,13 @@
         </definition>
     </holiday>
 
-    <holiday name="Christmas Eve">
+    <!-- http://en.wikipedia.org/wiki/Christmas_Eve -->
+    <holiday name="Christmas Eve / Réveillon de Noël">
         <import name="Christmas Eve"/>
     </holiday>
 
-    <holiday name="Christmas Day" type="nationwide statutory holiday">
+    <!-- http://en.wikipedia.org/wiki/Christmas -->
+    <holiday name="Christmas Day / Noël" type="nationwide statutory holiday">
         <import name="Christmas Day"/>
     </holiday>
 
