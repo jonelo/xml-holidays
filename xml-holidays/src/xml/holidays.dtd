@@ -146,4 +146,4 @@
           <!ELEMENT goto EMPTY>
           <!ATTLIST goto
                     weekday (%weekdays;) #REQUIRED
-                    direction (forward|backward|shortest) "forward">
+                    direction (forward|backward|nearest) "forward">
