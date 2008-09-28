@@ -108,12 +108,27 @@
     </holiday> 
 
     <!-- http://en.wikipedia.org/wiki/Victoria_Day_(Canada) -->
+    <!-- http://www.pch.gc.ca/PROGS/CPSC-CCSP/JFA-HA/victoria_e.cfm -->
+    <!-- http://en.wikipedia.org/wiki/Queen_Victoria
+         24 May 1819 – 22 January 1901
+         -->
     <holiday name="Victoria Day / La fête de la Reine" type="statutory holiday">
-        <!-- celebrated on the last Monday before or on May 24  -->
-        <definition>
+        <!-- After the death of Queen Victoria in 1901, an Act was passed by the
+             Parliament of Canada establishing a legal holiday on May 24 in each
+             year (or May 25 if May 24 fell on a Sunday) under the name
+             Victoria Day. -->
+        <definition firstyear="1901" lastyear="1952">
             <fixed month="May" day="24"/>
-            <add days="+1"/>
-            <goto weekday="Monday" direction="backward"/>
+            <add days="1" ifweekday="Sunday"/>
+        </definition>
+        <!-- An amendment to the Statutes of Canada in 1952 established the
+             celebration of Victoria Day on the Monday preceding May 25. -->
+        <!-- celebrated on the last Monday before or on May 24  -->
+        <!-- an amendment to the Statutes of Canada in 1952 moved the holiday
+             to the Monday before May 25. -->
+        <definition firstyear="1953">
+            <fixed month="May" day="25"/>
+            <goto direction="previous" weekday="Monday"/>
         </definition>
     </holiday>
 
@@ -122,7 +137,8 @@
     <holiday name="Canada Day / La fête du Canada" type="nationwide statutory holiday">
         <definition firstyear="1867">
             <fixed month="July" day="1"/>
-            <!-- If July 1 is a Sunday, the holiday is legally on July 2 -->
+            <!-- The Holidays Act provides that July 2 is Canada Day when
+                 July 1 is a Sunday -->
             <add days="1" ifweekday="Sunday"/>
         </definition>
     </holiday>
@@ -355,7 +371,7 @@
         </definition>
         <definition firstyear="1921" lastyear="1930">
            <fixed day="11" month="November"/>
-           <goto weekday="Monday" direction="backward"/>
+           <goto weekday="Monday" direction="previous"/>
         </definition>
         <definition firstyear="1931" lastyear="1934">
             <rule nth="2nd" weekday="Monday" month="October"/>
