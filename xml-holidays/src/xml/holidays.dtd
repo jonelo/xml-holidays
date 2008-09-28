@@ -12,6 +12,7 @@
 <!ENTITY % nth "1st | 2nd | 3rd | 4th | Last">
 <!ENTITY % startdate "fixed | easter | advent | rule | dst">
 <!ENTITY % modifiers "add | goto">
+<!ENTITY % directions "next | previous | nearest">
 
 <!ELEMENT holidays (holiday+)>
 <!ATTLIST holidays
@@ -146,4 +147,4 @@
           <!ELEMENT goto EMPTY>
           <!ATTLIST goto
                     weekday (%weekdays;) #REQUIRED
-                    direction (forward|backward|nearest) "forward">
+                    direction (%directions;) "next">
