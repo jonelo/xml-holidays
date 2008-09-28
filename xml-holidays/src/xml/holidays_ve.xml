@@ -7,4 +7,17 @@
  -->
 <holidays country="ve">
     <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Venezuela -->
+    
+    <holiday name="Begin Daylight Saving Time (DST)">
+        <definition>
+            <dst timezone="America/Caracas" action="start"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="End Daylight Saving Time (DST)">
+        <definition>
+            <dst timezone="America/Caracas" action="end"/>
+        </definition>
+    </holiday>
+
 </holidays>
