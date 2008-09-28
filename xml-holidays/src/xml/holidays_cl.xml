@@ -7,4 +7,17 @@
  -->
 <holidays country="cl">
     <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Chile -->
+    
+    <holiday name="Begin Daylight Saving Time (DST)">
+        <definition>
+            <dst timezone="America/Santiago" action="start"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="End Daylight Saving Time (DST)">
+        <definition>
+            <dst timezone="America/Santiago" action="end"/>
+        </definition>
+    </holiday>
+
 </holidays>
