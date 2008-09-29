@@ -8,18 +8,18 @@
 <holidays country="pa">
     <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Panama -->
     
-    <holiday name="New Year's Day">
+    <holiday name="New Year's Day" type="public holiday">
         <import name="New Year's Day"/>
     </holiday>
     
     <!-- http://en.wikipedia.org/wiki/Martyrs%27_Day_(Panama) -->
-    <holiday name="Martyrs' Day">
+    <holiday name="Martyrs' Day" type="public holiday">
         <definition firstyear="1964">
             <fixed day="9" month="January"/>
         </definition>
     </holiday>
     
-    <holiday name="Carnival's Monday">
+    <holiday name="Carnival's Monday" type="public holiday">
         <!-- The Monday before Ash Wednesday -->
         <definition>
             <easter/>
@@ -27,60 +27,72 @@
         </definition>
     </holiday>
     
-    <holiday name="Carnival's Tuesday">
+    <holiday name="Carnival's Tuesday" type="public holiday">
         <!-- The Tuesday before Ash Wednesday -->
         <import name="Carnival"/>
     </holiday>
     
-    <holiday name="Holy Friday">
+    <holiday name="Holy Friday" type="public holiday">
         <!-- Friday of Roman Catholic Holy Week - Death of Christ -->
         <import name="Good Friday"/>
     </holiday>
     
-    <holiday name="May Day" international="Labour Day">
+    <holiday name="Easter">
+        <easter/>
+    </holiday>
+    
+    <holiday name="May Day" international="Labour Day" type="public holiday">
         <definition>
             <fixed day="1" month="May"/>
         </definition>
     </holiday>
     
-    <holiday name="Separation Day (from Colombia)">
-        <definition>
+    <!-- http://en.wikipedia.org/wiki/Panama_City -->
+    <holiday name="Anniversary of the Founding of  Panama City">
+        <definition firstyear="1519">
+            <fixed day="15" month="August"/>
+        </definition>
+    </holiday>
+        
+    <holiday name="Separation Day (from Colombia)" type="public holiday">
+        <definition firstyear="1903">
             <fixed day="3" month="November"/>
         </definition>
     </holiday>
     
-    <holiday name="Flag Day">
+    <holiday name="Flag Day" type="public holiday">
         <definition>
             <fixed day="4" month="November"/>
         </definition>
     </holiday>
     
-    <holiday name="Colon Day">
+    <holiday name="Colon Day" type="public holiday">
         <definition>
             <fixed day="5" month="November"/>
         </definition>
     </holiday>
     
     <holiday name="Primer Grito de Independencia de la Villa de los Santos"
-             international="The uprise in the Villa de los Santos against Spain.">
-        <definition>
+             international="The uprise in the Villa de los Santos against Spain"
+             type="public holiday">
+        <definition firstyear="1821">
             <fixed day="10" month="November"/>
         </definition>
     </holiday>
     
-    <holiday name="Independence Day (from Spain)">
+    <holiday name="Independence Day (from Spain)" type="public holiday">
         <definition>
             <fixed day="28" month="November"/>
         </definition>
     </holiday>
     
-    <holiday name="Mothers' Day">
+    <holiday name="Mothers' Day" type="public holiday">
         <definition>
             <fixed day="8" month="December"/>
         </definition>
     </holiday>
     
-    <holiday name="Christmas">
+    <holiday name="Christmas" type="public holiday">
         <import name="Christmas Day"/>
     </holiday> 
     
