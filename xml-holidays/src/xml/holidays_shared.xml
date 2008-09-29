@@ -28,7 +28,21 @@
             <add days="-46"/>
         </definition>
     </holiday>
-    
+
+    <holiday name="Maundy Thursday">
+        <definition>
+            <easter/>
+            <add days="-3"/>
+        </definition>
+    </holiday>
+
+    <holiday name="Good Friday">
+        <definition>
+            <easter/>
+            <add days="-2"/>
+        </definition>
+    </holiday>
+
     <holiday name="Easter Sunday">
         <definition>
             <easter/>
