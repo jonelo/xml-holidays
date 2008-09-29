@@ -4,9 +4,85 @@
     This file is from the free xml-holidays project. See also
     http://xml-holidays.sourceforge.net/
     Thank you for keeping the comment.
- -->
+-->
 <holidays country="pa">
     <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Panama -->
+    
+    <holiday name="New Year's Day">
+        <import name="New Year's Day"/>
+    </holiday>
+    
+    <!-- http://en.wikipedia.org/wiki/Martyrs%27_Day_(Panama) -->
+    <holiday name="Martyrs' Day">
+        <definition firstyear="1964">
+            <fixed day="9" month="January"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Carnival's Monday">
+        <!-- The Monday before Ash Wednesday -->
+        <definition>
+            <easter/>
+            <add days="-48"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Carnival's Tuesday">
+        <!-- The Tuesday before Ash Wednesday -->
+        <import name="Carnival"/>
+    </holiday>
+    
+    <holiday name="Holy Friday">
+        <!-- Friday of Roman Catholic Holy Week - Death of Christ -->
+        <import name="Good Friday"/>
+    </holiday>
+    
+    <holiday name="May Day" international="Labour Day">
+        <definition>
+            <fixed day="1" month="May"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Separation Day (from Colombia)">
+        <definition>
+            <fixed day="3" month="November"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Flag Day">
+        <definition>
+            <fixed day="4" month="November"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Colon Day">
+        <definition>
+            <fixed day="5" month="November"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Primer Grito de Independencia de la Villa de los Santos"
+             international="The uprise in the Villa de los Santos against Spain.">
+        <definition>
+            <fixed day="10" month="November"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Independence Day (from Spain)">
+        <definition>
+            <fixed day="28" month="November"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Mothers' Day">
+        <definition>
+            <fixed day="8" month="December"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Christmas">
+        <import name="Christmas Day"/>
+    </holiday> 
     
     <holiday name="Begin Daylight Saving Time (DST)">
         <definition>
@@ -19,5 +95,5 @@
             <dst timezone="America/Panama" action="end"/>
         </definition>
     </holiday>
-
+    
 </holidays>
