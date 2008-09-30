@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+<!-- 
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+-->
+<holidays country="sc">
+    <!-- http://en.wikipedia.org/wiki/Seychelles 
+         http://www.sez.sc/seychelles/Public-Holidays-Seychelles.html 
+         http://www.cbs.sc/holidays.html -->
+
+    <holiday name="New Year (Jan 1)" type="public holiday">
+        <definition>
+            <fixed day="1" month="January"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="New Year (Jan 2)" type="public holiday">
+        <definition>
+            <fixed day="2" month="January"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Good Friday" type="public holiday, religious">
+        <import name="Good Friday"/>
+    </holiday>
+    
+    <holiday name="Easter Sunday" type="religious">
+        <import name="Easter Sunday"/>
+    </holiday>
+    
+    <holiday name="Easter Monday" type="public holiday">
+        <import name="Easter Monday"/>
+    </holiday>
+    
+    <holiday name="Corpus Christi" type="public holiday, religious">
+        <import name="Corpus Christi"/>
+    </holiday>
+    
+    <holiday name="Labour Day" type="public holiday">
+        <definition>
+            <fixed day="1" month="May"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Liberation Day" type="public holiday">
+        <definition>
+            <fixed day="5" month="June"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="National Day" type="public holiday">
+        <definition>
+            <fixed day="18" month="June"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Independence Day" type="public holiday">
+        <definition>
+            <fixed day="29" month="June"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Assumption Day/La Digue Festival" type="public holiday, religious">
+        <definition>
+            <fixed day="15" month="August"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="All Saints' Day" type="public holiday, religious">
+        <import name="All Saints' Day"/>
+    </holiday>
+    
+    <holiday name="Immaculate Conception" type="public holiday, religious">
+        <definition>
+            <fixed day="8" month="December"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Christmas Day" type="public holiday, religious">
+        <import name="Christmas Day"/>
+    </holiday> 
+    
+    <holiday name="Begin Daylight Saving Time (DST)">
+        <definition>
+            <dst timezone="Indian/Mahe" action="start"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="End Daylight Saving Time (DST)">
+        <definition>
+            <dst timezone="Indian/Mahe" action="end"/>
+        </definition>
+    </holiday>
+</holidays>
