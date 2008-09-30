@@ -63,6 +63,13 @@
         </definition>
     </holiday>
     
+    <holiday name="Corpus Christi">
+        <definition>
+            <easter/>
+            <add days="+60"/>
+        </definition>
+    </holiday>
+    
     <!-- All Saint's Day is a Christian holy day observed by many Western churches on November 1 -->
     <holiday name="All Saint's Day">
         <definition>
