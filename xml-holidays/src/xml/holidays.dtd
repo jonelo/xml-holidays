@@ -133,12 +133,15 @@
             The add modifier
             the "add" property value can become positive or negative
             if the condition called "ifweekday" is present, it adds days
-            only when the startdate is set on a particular weekday
+            only when the startdate is set on a particular weekday.
+            if the condition called "ifdaytype" is present, it adds days
+            only when the startdate is set on a day of a particular type.
           -->
           <!ELEMENT add EMPTY>
           <!ATTLIST add
                     days CDATA #REQUIRED
-                    ifweekday (%weekdays;) #IMPLIED>
+                    ifweekday (%weekdays;) #IMPLIED
+                    ifdaytype CDATA #IMPLIED>
           
           <!--
             The goto modifier
