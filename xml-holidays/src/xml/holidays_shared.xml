@@ -29,6 +29,7 @@
         </definition>
     </holiday>
 
+    <!-- The Thursday before Easter Sunday -->
     <holiday name="Maundy Thursday">
         <definition>
             <easter/>
@@ -36,6 +37,7 @@
         </definition>
     </holiday>
 
+    <!-- The Friday before Easter Sunday -->
     <holiday name="Good Friday">
         <definition>
             <easter/>
@@ -56,6 +58,14 @@
         </definition>
     </holiday>
     
+    <holiday name="Ascension of Jesus">
+        <definition>
+            <easter/>
+            <add days="+39"/>
+        </definition>
+    </holiday>
+    
+    <!-- http://en.wikipedia.org/wiki/Pentecost -->
     <holiday name="Pentecost">
         <definition>
             <easter/>
@@ -63,6 +73,7 @@
         </definition>
     </holiday>
     
+    <!-- http://en.wikipedia.org/wiki/Corpus_Christi_(feast) -->
     <holiday name="Corpus Christi">
         <definition>
             <easter/>
