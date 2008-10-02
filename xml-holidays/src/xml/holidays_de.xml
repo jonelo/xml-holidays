@@ -155,18 +155,21 @@
             <add days="-7"/>
         </definition>
     </holiday>
+    
     <holiday name="Krummer Mittwoch" valid="false">
         <definition>
             <easter/>
             <add days="-4"/>
         </definition>
     </holiday>
+    
     <holiday name="Gründonnerstag" international="Maundy Thursday">
         <definition>
             <easter/>
             <add days="-3"/>
         </definition>
     </holiday>
+    
     <holiday name="Karfreitag" type="gesetzlich" international="Good Friday">
         <definition>
             <easter/>
@@ -276,6 +279,138 @@
         </definition>
     </holiday>
     
+    <!-- http://de.wikipedia.org/wiki/Oktoberfest -->
+    <!-- Seit seinem Bestehen war das Oktoberfest damit 24 Mal ausgefallen. -->
+    <holiday name="Oktoberfest (Eröffnung)" type="Fest"
+             international="Oktoberfest (Start)">
+        
+        <!-- Es fand erstmals am 17. Oktober 1810 statt. -->
+        <definition firstyear="1810" lastyear="1812">
+            <fixed day="17" month="October"/>
+        </definition>
+        
+        <!-- Im Jahr 1813 fiel das Fest allerdings aus, da
+         Bayern in die napoleonischen Kriege verwickelt
+         war. -->
+
+        <definition firstyear="1814" lastyear="1853">
+            <fixed day="17" month="October"/>
+        </definition>
+        
+        <!-- Es fielen einige Feste aus. Grund dafür waren
+         zwei Cholera-Epidemien in den Jahren 1854 [...] -->
+
+        <definition firstyear="1855" lastyear="1865">
+            <fixed day="17" month="October"/>
+        </definition>
+        
+        <!-- Preußisch-Österreichische Krieg 1866 -->
+
+        <definition firstyear="1867" lastyear="1869">
+            <fixed day="17" month="October"/>
+        </definition>
+        
+        <!-- Deutsch-Französische Krieg 1870 -->
+
+        <definition firstyear="1871" lastyear="1871">
+            <fixed day="17" month="October"/>
+        </definition>
+        
+        <!-- Aufgrund des oft kühlen Wetters im Oktober beginnt das Oktoberfest
+         seit 1872 schon im September. Eröffnet wird stets am Samstag nach
+         dem 15. September. -->
+        <definition firstyear="1872" lastyear="1872">
+            <fixed day="15" month="September"/>
+            <goto weekday="Saturday" direction="next"/>
+        </definition>
+        
+        <!-- Es fielen einige Feste aus. Grund dafür waren
+         zwei Cholera-Epidemien in den Jahren [...] und 1873. -->
+
+        <definition firstyear="1874" lastyear="1913">
+            <fixed day="15" month="September"/>
+            <goto weekday="Saturday" direction="next"/>
+        </definition>
+        
+        <!-- Von 1914 bis 1918 fiel das Oktoberfest wegen des
+         Ersten Weltkriegs aus. 
+         1919/1920 feierte man nur ein kleines „Herbstfest“ -->
+
+        <definition firstyear="1921" lastyear="1922">
+            <fixed day="15" month="September"/>
+            <goto weekday="Saturday" direction="next"/>
+        </definition>
+        
+        <!-- 1923/1924 zwang die Inflation zu weiteren Absagen -->
+
+        <definition firstyear="1925" lastyear="1938">
+            <fixed day="15" month="September"/>
+            <goto weekday="Saturday" direction="next"/>
+        </definition>
+        
+        <!-- Auch während des Zweiten Weltkriegs von 1939 bis 1945
+         fand kein Fest statt.
+         In den Nachkriegsjahren 1946 bis 1948 gab es wenigstens
+         wieder ein „Herbstfest“. -->
+        <definition firstyear="1949">
+            <fixed day="15" month="September"/>
+            <goto weekday="Saturday" direction="next"/>
+        </definition>
+        
+    </holiday>
+    
+    <holiday name="Oktoberfest (Ende)" type="Fest"
+             international="Oktoberfest (End)">
+        <!-- Ende des Festes ist traditionell der erste Sonntag im Oktober. -->
+        <definition firstyear="1810" lastyear="1812">
+            <rule nth="1st" weekday="Sunday" month="October"/>
+        </definition>
+        
+        <definition firstyear="1814" lastyear="1853">
+            <rule nth="1st" weekday="Sunday" month="October"/>
+        </definition>
+        
+        <definition firstyear="1855" lastyear="1865">
+            <rule nth="1st" weekday="Sunday" month="October"/>
+        </definition>
+        
+        <definition firstyear="1867" lastyear="1869">
+            <rule nth="1st" weekday="Sunday" month="October"/>
+        </definition>
+        
+        <definition firstyear="1871" lastyear="1872">
+            <rule nth="1st" weekday="Sunday" month="October"/>
+        </definition>
+        
+        <definition firstyear="1874" lastyear="1913">
+            <rule nth="1st" weekday="Sunday" month="October"/>
+        </definition>
+        
+        <definition firstyear="1921" lastyear="1922">
+            <rule nth="1st" weekday="Sunday" month="October"/>
+        </definition>
+        
+        <definition firstyear="1925" lastyear="1938">
+            <rule nth="1st" weekday="Sunday" month="October"/>
+        </definition>
+        
+        <definition firstyear="1949" lastyear="1999">
+            <rule nth="1st" weekday="Sunday" month="October"/>
+        </definition>
+        
+        <!-- Seit 2000 gilt folgende Regel: Ist der 1. oder 2. Oktober ein Sonntag,
+         wird das Fest bis zum Tag der Deutschen Einheit am 3. Oktober
+         verlängert.
+         Damit dauert das Fest mindestens 16 und höchstens 18 Tage; es beginnt
+         frühestens am 16., spätestens am 22. September und endet frühestens
+         am 3., spätestens am 7. Oktober. -->
+        <definition firstyear="2000">
+            <rule nth="1st" weekday="Sunday" month="October"/>
+            <add days="2" ifday="1"/>
+            <add days="1" ifday="2"/>
+        </definition>
+    </holiday>
+
     <holiday name="Tag der deutschen Einheit" type="gesetzlich seit 1990" international="German Unity Day">
         <definition firstyear="1990">
             <fixed month="October" day="3"/>
