@@ -6,7 +6,8 @@
     Thank you for keeping the comment.
 -->
 <holidays country="co">
-    <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Colombia -->
+    <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Colombia 
+         http://es.wikipedia.org/wiki/Fiestas_de_Colombia -->
     
     <holiday name="Año Nuevo" type="public holiday">
         <import name="New Year's Day"/>
