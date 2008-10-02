@@ -50,6 +50,7 @@
         <!-- Asia and Pacific -->
         <xi:include href="holidays_au.xml"/>
         <xi:include href="holidays_cn.xml"/>
+        <xi:include href="holidays_jp.xml"/>
         
         <!-- Historic -->
         <xi:include href="holidays_ddr.xml"/>
