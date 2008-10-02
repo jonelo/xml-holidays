@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+<!-- 
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+-->
+<holidays country="co">
+    <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Colombia 
+         http://es.wikipedia.org/wiki/Fiestas_de_Colombia -->
+    
+    <holiday name="Año Nuevo" type="public holiday">
+        <import name="New Year's Day"/>
+    </holiday>
+    
+    <holiday name="Día de los Reyes Magos" type="public holiday"
+             international="Epiphany">
+        <definition>
+            <fixed day="6" month="January"/>
+            <!--
+              Movable holiday: when it does not fall on a Monday,
+              the holiday is observed on the following Monday.
+            -->
+            <add days="6" ifweekday="Tuesday"/>
+            <add days="5" ifweekday="Wednesday"/>
+            <add days="4" ifweekday="Thursday"/>
+            <add days="3" ifweekday="Friday"/>
+            <add days="2" ifweekday="Saturday"/>
+            <add days="1" ifweekday="Sunday"/>
+        </definition>
+    </holiday>
+    
+    
+    <holiday name="Día del Maestro" type="public holiday"
+             international="Teacher's Day">
+        <definition>
+            <fixed day="15" month="May"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Día de San José" type="public holiday"
+             international="Saint Joseph's Day">
+        <definition>
+            <fixed day="19" month="March"/>
+            <!--
+              Movable holiday: when they do not fall on a Monday,
+              the holiday is observed on the following Monday.
+            -->
+            <add days="6" ifweekday="Tuesday"/>
+            <add days="5" ifweekday="Wednesday"/>
+            <add days="4" ifweekday="Thursday"/>
+            <add days="3" ifweekday="Friday"/>
+            <add days="2" ifweekday="Saturday"/>
+            <add days="1" ifweekday="Sunday"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Jueves Santo" type="public holiday">        
+        <import name="Maundy Thursday"/>
+    </holiday>
+    
+    <holiday name="Viernes Santo" type="public holiday">
+        <import name="Good Friday"/>
+    </holiday>
+    
+    <holiday name="Primero de Mayo" type="public holiday"
+             international="Labor Day">
+        <definition>
+            <fixed day="1" month="May"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Ascensión" type="public holiday">
+        <import name="Ascension of Jesus">
+    </holiday>
+    
+    <holiday name="Corpus Christi" type="public holiday">
+        <import name="Corpus Christi"/>
+    </holiday>
+    
+    <holiday name="Sagrado Corazón" type="public holiday"
+             international="Sacred Heart">
+        <definition>
+            <!-- observed the Monday ten weeks and a day after Easter Sunday -->
+            <easter/>
+            <add days="71"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="San Pedro y San Pablo" type="public holiday"
+             international="Saint Peter and Saint Paul">
+        <definition>
+            <fixed day="29" month="June"/>
+            <!--
+              Movable holiday: when it does not fall on a Monday,
+              the holiday is observed on the following Monday.
+            -->
+            <add days="6" ifweekday="Tuesday"/>
+            <add days="5" ifweekday="Wednesday"/>
+            <add days="4" ifweekday="Thursday"/>
+            <add days="3" ifweekday="Friday"/>
+            <add days="2" ifweekday="Saturday"/>
+            <add days="1" ifweekday="Sunday"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Independence Day" type="public holiday">
+        <definition>
+            <fixed day="20" month="July"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Battle of Boyacá" type="public holiday">
+        <definition>
+            <fixed day="7" month="August"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="La Asunción" type="public holiday"
+             international="Assumption of Mary">
+        <definition>
+            <fixed day="15" month="August"/>
+            <!--
+              Movable holiday: when it does not fall on a Monday,
+              the holiday is observed on the following Monday.
+            -->
+            <add days="6" ifweekday="Tuesday"/>
+            <add days="5" ifweekday="Wednesday"/>
+            <add days="4" ifweekday="Thursday"/>
+            <add days="3" ifweekday="Friday"/>
+            <add days="2" ifweekday="Saturday"/>
+            <add days="1" ifweekday="Sunday"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Día de la Raza" type="public holiday"
+             international="Columbus Day">
+        <definition>
+            <fixed day="12" month="October"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="All Saints' Day" type="public holiday">
+        <definition>
+            <fixed day="1" month="November"/>
+            <!--
+              Movable holiday: when it does not fall on a Monday,
+              the holiday is observed on the following Monday.
+            -->
+            <add days="6" ifweekday="Tuesday"/>
+            <add days="5" ifweekday="Wednesday"/>
+            <add days="4" ifweekday="Thursday"/>
+            <add days="3" ifweekday="Friday"/>
+            <add days="2" ifweekday="Saturday"/>
+            <add days="1" ifweekday="Sunday"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Independence of Cartagena City" type="public holiday">
+        <definition>
+            <fixed day="11" month="November"/>
+            <!--
+              Movable holiday: when it does not fall on a Monday,
+              the holiday is observed on the following Monday.
+            -->
+            <add days="6" ifweekday="Tuesday"/>
+            <add days="5" ifweekday="Wednesday"/>
+            <add days="4" ifweekday="Thursday"/>
+            <add days="3" ifweekday="Friday"/>
+            <add days="2" ifweekday="Saturday"/>
+            <add days="1" ifweekday="Sunday"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="La Inmaculada Concepción" type="public holiday"
+             international="Immaculate Conception">
+        <definition>
+            <fixed day="8" month="December"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Navidad" type="public holiday">
+        <import name="Christmas Day"/>
+    </holiday>
+    
+    <holiday name="Begin Daylight Saving Time (DST)">
+        <definition>
+            <dst timezone="America/Bogota" action="start"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="End Daylight Saving Time (DST)">
+        <definition>
+            <dst timezone="America/Bogota" action="end"/>
+        </definition>
+    </holiday>
+    
+</holidays>
