@@ -14,6 +14,7 @@
         <xi:include href="holidays_ni.xml"/>
         <xi:include href="holidays_pa.xml"/>
         <xi:include href="holidays_mx.xml"/>
+        <xi:include href="holidays_co.xml"/>
 
         <!-- Europe -->
         <xi:include href="holidays_at.xml"/>
