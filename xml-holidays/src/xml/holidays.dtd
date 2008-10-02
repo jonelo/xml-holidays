@@ -141,7 +141,8 @@
           <!ATTLIST add
                     days CDATA #REQUIRED
                     ifweekday (%weekdays;) #IMPLIED
-                    ifdaytype CDATA #IMPLIED>
+                    ifdaytype CDATA #IMPLIED
+                    ifday CDATA #IMPLIED>
           
           <!--
             The goto modifier
