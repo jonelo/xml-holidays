@@ -8,6 +8,12 @@
 <holidays country="jp">
     <!-- http://en.wikipedia.org/wiki/Holidays_of_Japan 
          http://www.japan-guide.com/e/e2062.html -->
+         
+    <!-- http://en.wikipedia.org/wiki/Japanese_calendar
+         Since January 1, 1873, Japan has used the Gregorian calendar, with
+         local names for the months and mostly fixed holidays. Before 1873,
+         a lunisolar calendar was in use, which was adapted from the Chinese
+         calendar. -->
 
     <holiday name="Ganjitsu" type="national holiday">
         <import name="New Year's Day"/>
@@ -25,8 +31,8 @@
             <rule nth="2nd" weekday="Monday" month="January"/>
         </definition>
     </holiday>
-
-    <holiday name="setsubun)">
+    
+    <holiday name="setsubun">
         <definition>
             <fixed day="3" month="February"/>
         </definition>
@@ -34,7 +40,7 @@
     
     <holiday name="Kigen-setsu" valid="false">
         <!-- From 1872 to 1948, February 11 was known as Kigen-setsu -->
-        <definition firstyear="1872" lastyear="1948"/>
+        <definition firstyear="1872" lastyear="1948">
             <fixed day="11" month="February"/>
         </definition>
     </holiday>
@@ -57,7 +63,7 @@
             <fixed day="3" month="March"/>
         </definition>
     </holiday>
-
+    
     <!-- http://www.japan-guide.com/topic/0003.html -->
     <holiday name="hina matsuri" type="national holiday"
              international="White Day">
@@ -65,11 +71,11 @@
             <fixed day="14" month="March"/>
         </definition>
     </holiday>
-
-
+    
+    
     <!-- Prior to 1948, the vernal equinox was an imperial
-         ancestor worship festival called Shunki kōrei-sai -->
-<!--    <holiday name="Shunki kōrei-sai">
+    ancestor worship festival called Shunki kōrei-sai -->
+    <!--    <holiday name="Shunki kōrei-sai">
         <definition lastyear="1947">
              <equinox type="vernal"/>
         </definition>
@@ -78,7 +84,7 @@
 
     <!-- This national holiday was established in 1948 -->
     <!-- Around March 20 -->
-<!--    <holiday name="Shunbun no hi" type="national holiday"
+    <!--    <holiday name="Shunbun no hi" type="national holiday"
              international="Vernal equinox">
          <definition firstyear="1948">
              <equinox type="vernal"/>
@@ -102,50 +108,168 @@
             <fixed day="3" month="May"/>
         </definition>
     </holiday>
-
+    
     <!-- From 1986 to 2006, May 4 was a holiday known as Kokumin no kyūjitsu -->
     <holiday name="Kokumin no kyūjitsu" valid="false">
-        <definition firstyear="1986" lastyear="2006"/>
-             <fixed day="4" month="May"/>
+        <definition firstyear="1986" lastyear="2006">
+            <fixed day="4" month="May"/>
         </definition>
     </holiday>
     
     <holiday name="Midori no hi" type="national holiday"
              international="Greenery Day">
+        <!-- April 29 remained a public holiday, posthumously renamed
+             Greenery Day in 1989 -->
         <!-- Until 2006, Greenery Day was celebrated on April 29 -->
-        <definition lastyear="2006">
-             <fixed day="29" month="April"/>
-         </definition>
+        <definition firstyear="1989" lastyear="2006">
+            <fixed day="29" month="April"/>
+        </definition>
         <!-- in 2007, Greenery Day was moved to May 4 -->
         <definition firstyear="2007">
             <fixed day="4" month="May"/>
         </definition>
     </holiday>
-
+    
     <holiday name="Kodomo no hi" type="national holiday"
              international="Children's Day">
-         <!-- This national holiday was established in 1948 -->
-         <definition>
-              <fixed day="5" month="May"/>
-         </definition>
+        <!-- This national holiday was established in 1948 -->
+        <definition>
+            <fixed day="5" month="May"/>
+        </definition>
     </holiday>
     
     <holiday name="Umi no hi" type="national holiday"
              international="Marine Day">
-          <!-- This national holiday was established in 1995
+        <!-- This national holiday was established in 1995
                (and first held in 1996) -->
-          <defintion firstyear="1996" lastyear="2002">
-              <fixed day="20" month="July"/>
-          </defintion>
-          <!-- Originally held on July 20, in 2003 it was changed to
+        <definition firstyear="1996" lastyear="2002">
+            <fixed day="20" month="July"/>
+        </definition>
+        <!-- Originally held on July 20, in 2003 it was changed to
                the third Monday of July -->
-          <definition firstyear="2003">
-              <rule nth="3rd" weekday="Monday" month="July"/>
-          </definition>
+        <definition firstyear="2003">
+            <rule nth="3rd" weekday="Monday" month="July"/>
+        </definition>
     </holiday>
     
-
+    <holiday name="Keirō no hi" type="national holiday"
+             international="Respect-for-the-Aged Day">
+        <!-- This national holiday was established in 1966 -->
+        <definition firstyear="1966" lastyear="2002">
+            <fixed day="15" month="September"/>
+        </definition>
+        <!-- Originally held on September 15.
+               In 2003, it was changed to the third Monday of September -->
+        <definition firstyear="2003">
+            <rule nth="3rd" weekday="Monday" month="September"/>
+        </definition>
+    </holiday>
     
+    <!-- Prior to 1948, the autumnal equinox was an imperial
+    ancestor worship festival called Shūki kōrei-sai -->
+    <!--    <holiday name="Shūki kōrei-sai">
+        <definition lastyear="1947">
+             <equinox type="autumnal"/>
+        </definition>
+    </holiday>
+-->
+
+
+    <!-- This national holiday was established in 1948 -->
+    <!-- Around September 23 -->
+    <!--    <holiday name="Shūbun no hi" type="national holiday"
+             international="Autumnal equinox">
+         <definition firstyear="1948">
+             <equinox type="autumnal"/>
+         </definition>
+    </holiday>
+-->
+    
+    <holiday name="Taiiku no hi" type="national holiday"
+             international="Health and Sports Day">
+        <!-- This national holiday was established in 1966
+               Originally held on October 10th to commemorate the anniversary
+               of the opening ceremony of the 1964 Tokyo Olympics -->
+        <definition firstyear="1966" lastyear="1999">
+            <fixed day="10" month="October"/>
+        </definition>
+        <!-- in 2000 it was changed to the second Monday of October -->
+        <definition firstyear="2000">
+            <rule nth="2nd" weekday="Monday" month="October"/>
+        </definition>
+    </holiday>
+    
+    <!-- prior to the establishment of Culture Day in 1948,
+         November 3 was also a national holiday called Meiji-setsu -->
+    <!-- http://en.wikipedia.org/wiki/Emperor_Meiji -->
+    <!-- Coronation of the Meiji Emperor was on 3 February 1867 -->
+    <holiday name="Meiji-setsu" type="national holiday">
+        <definition firstyear="1867" lastyear="1947">
+            <fixed day="3" month="November"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Bunka no hi" type="national holiday"
+             international="Culture Day">
+        <!-- This national holiday was established in 1948. -->
+        <definition firstyear="1948">
+            <fixed day="3" month="November"/>
+        </definition>
+    </holiday>
+    
+    <!-- Prior to the establishment of the Labor Thanksgiving Day,
+         November 23rd was celebrated as an imperial harvest festival called 
+         Niiname-sai -->
+    <holiday name="Niiname-sai" type="festival" valid="false">
+        <definition lastyear="1948">
+            <fixed day="23" month="November"/>
+        </definition>    
+    </holiday>
+    
+    <holiday name="Kinrō kansha no hi" type="national holiday"
+             international="Labor Thanksgiving Day">
+        <!-- This national holiday was established in 1948. -->
+        <definition firstyear="1948">
+            <fixed day="23" month="November"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Tenchōsetsu" valid="false">
+        <!--
+          The birthday of the reigning emperor has been a national holiday
+          since 1868.
+          Previous to World War II, it was called Tenchōsetsu, but after
+          the war the new government renamed it Tennō tanjōbi, or
+          "The Emperor's Birthday", in 1948, when it was established as
+          a holiday by law.               
+        -->
+        <definition firstyear="1868" lastyear="1872">
+            <unknown/> <!-- Japanese Calendar was used -->
+        </definition>
+        <!-- Since January 1, 1873, Japan has used the Gregorian calendar -->
+        <definition firstyear="1873" lastyear="1947">
+            <fixed day="29" month="April"/>
+        </definition>
+    </holiday>
+    
+    <!-- http://en.wikipedia.org/wiki/The_Emperor%27s_Birthday -->
+    <!-- Originally known as Tenchō-setsu, it was renamed Tennō tanjōbi in 1948.
+         It is currently celebrated on December 23. Prior to the death of Emperor
+         Hirohito in 1989, this holiday was celebrated on April 29.
+         See "Shōwa Day". -->
+    <holiday name="Tennō tanjōbi" type="national holiday"
+             international="The Emperor's Birthday">
+        <!-- During the reign of Hirohito (Showa period, 1926-1989),
+             the Emperor's birthday was observed on April 29. 
+        -->
+        <definition firstyear="1948" lastyear="1989">
+            <fixed day="29" month="April"/>
+        </definition>
+        <definition firstyear="1948">
+            <!-- Emperor Akihito was born on this date (Dec 23) in 1933. -->
+            <fixed day="23" month="December"/>
+        </definition>
+    </holiday>
     
     <holiday name="Begin Daylight Saving Time (DST)">
         <definition>
