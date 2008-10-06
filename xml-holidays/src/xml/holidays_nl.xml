@@ -1,77 +1,146 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
-
+<!-- 
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+-->
 <holidays country="nl">
-    <!-- Niederlande http://mobile.feiertagskalender.ch/index.php?geo=3192&jahr=2007&klasse=5&hl=de -->
-
-    <holiday name="Neujahrstag" type="gesetzlich" international="New Year's Day">
-        <definition>
-            <fixed month="January" day="1"/>
-        </definition>
+    <!-- http://en.wikipedia.org/wiki/Public_holidays_in_the_Netherlands -->
+    
+    <holiday name="Nieuwjaar" type="public holiday">
+        <import name="New Year's Day"/>
     </holiday>
-    <holiday name="Beginn der Sommerzeit (Uhren 1 h vorstellen)" international="Begin Daylight Saving Time">
-        <definition>
-            <dst timezone="Europe/Amsterdam" action="start"/>
-        </definition>
+    
+    <holiday name="'Goede Vrijdag" type="public holiday">
+        <import name="Good Friday"/>
     </holiday>
-    <holiday name="Karfreitag" type="gesetzlich" international="Good Friday">
-        <definition>
-            <easter/>
-            <add days="-2"/>
-        </definition>
-    </holiday>
-    <holiday name="Ostern" type="gesetzlich">
+    
+    <holiday name="Pasen (Sunday)" type="public holiday">
         <import name="Easter Sunday"/>
     </holiday>
-    <holiday name="Ostermontag (Emmaustag)" type="gesetzlich">
+    
+    <holiday name="Pasen (Monday)" type="public holiday">
         <import name="Easter Monday"/>
     </holiday>
-    <holiday name="Koninginnedag (Nationalfeiertag)">
-    	<!-- Wenn Sonntag dann wird Samstag gefeiert -->
-        <definition>
-            <fixed month="April" day="30"/>
+
+    <!-- It started with the celebration of the birthday of Princess Wilhelmina
+         on 31 August 1885. From 1885 to 1890 the celebration was therefore
+         called Prinsessedag or Princess' Day, until the Coronation of
+         Wilhelmina in 1890. -->
+    <holiday name="Prinsessedag" international="Princess' Day" valid="false">
+        <definition firstyear="1885" lastyear="1890">
+            <fixed day="31" month="August"/>
+        </definition>
+    </holiday>
+    
+    <!-- http://en.wikipedia.org/wiki/Koninginnedag -->
+    <!-- Since 31 August 1891 the celebration was called Koninginnedag
+         or Queen's Day. -->
+    <holiday name="Koninginnedag" type="public holiday"
+             international="Queen's day">
+        <definition firstyear="1891" lastyear="1948">
+            <fixed day="31" month="August"/>
+        </definition>
+        <!-- In September 1948 Queen Juliana ascended to the Dutch throne and
+             from 1949 onwards Queen's Day was on her birthday on 30 April.
+             When 30 April is a Sunday, Queen's Day is celebrated on
+             29 April. -->
+        <definition firstyear="1949">
+            <fixed day="30" month="April"/>
+            <!-- If April 30 is a Sunday, Koninginnedag is celebrated
+            on the April 29. -->
             <add days="-1" ifweekday="Sunday"/>
         </definition>
     </holiday>
-    <holiday name="Tag der Befreiung">
+    
+    <!-- http://en.wikipedia.org/wiki/Remembrance_of_the_Dead -->
+    <holiday name="Dodenherdenking" type="national holiday"
+             international="Remembrance of the dead">
         <definition>
-            <fixed month="May" day="5"/>
+            <fixed day="4" month="May"/>
         </definition>
     </holiday>
-    <holiday name="Muttertag">
-        <!-- 2. Sonntag im Mai -->
+    
+    <!--
+      http://en.wikipedia.org/wiki/Liberation_Day_(The_Netherlands)
+      Celebration of the 1945 capitulation of German forces
+      in World War II. -->
+    <holiday name="Bevrijdingsdag" type="public holiday"
+             international="Liberation day">
+        <!-- After the liberation in 1945, Liberation Day was commemorated
+             every 5 years. -->
+        <definition firstyear="1945" lastyear="1989" frequency="5">
+            <fixed day="5" month="May"/>
+        </definition>
+        <!-- Finally, in 1990, the day was declared to be a national holiday,
+             when the liberation would be commemorated and celebrated
+             every year. -->
+        <definition firstyear="1990">
+            <fixed day="5" month="May"/>
+        </definition>
+    </holiday>
+
+    <holiday name="Mother's Day">
         <definition>
             <rule nth="2nd" weekday="Sunday" month="May"/>
         </definition>
     </holiday>
-    <holiday name="Christi Himmelfahrt" type="gesetzlich">
-        <definition>
-            <easter/>
-            <add days="+39"/>
-        </definition>
+
+    <holiday name="Hemelvaartsdag" type="public holiday">
+        <import name="Ascension of Jesus"/>
     </holiday>
-    <holiday name="Pfingstsonntag (Pfingsten)" type="gesetzlich" international="Whit Sunday">
+    
+    <!-- The Dutch celebrate two days of Pentecost
+         (on Sunday and the subsequent Monday). -->
+    <holiday name="Pinksteren (Sunday)" type="public holiday">
+        <!-- 7 weeks after Easter -->
         <import name="Pentecost"/>
     </holiday>
-    <holiday name="Pfingstmontag" type="gesetzlich" international="Whit Monday">
+    
+    <!-- The Dutch celebrate two days of Pentecost
+         (on Sunday and the subsequent Monday). -->
+    <holiday name="Pinksteren (Monday)" type="public holiday">
         <definition>
             <easter/>
             <add days="+50"/>
         </definition>
     </holiday>
-    <holiday name="Ende der Sommerzeit (Uhren 1 h zurückstellen)" international="End Daylight Saving Time">
+    
+    <holiday name="Sinterklaas"
+             international="Saint Nicholas' Eve">
+        <definition>
+            <fixed day="5" month="December"/>
+        </definition>
+    </holiday>
+    
+    <!-- The Dutch celebrate two days of Christmas:
+         Eerste Kerstdag (the first day of Christmas)
+         and Tweede Kerstdag (the second day of Christmas). -->
+    <holiday name="Eerste Kerstdag" type="public holiday"
+             international="Christmas Day">
+        <definition>
+            <fixed day="25" month="December"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Tweede Kerstdag" type="public holiday"
+             international="Christmas Day">
+        <definition>
+            <fixed day="26" month="December"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Begin Daylight Saving Time (DST)" international="Begin Daylight Saving Time (DST)">
+        <definition>
+            <dst timezone="Europe/Amsterdam" action="start"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="End Daylight Saving Time (DST)" international="End Daylight Saving Time (DST)">
         <definition>
             <dst timezone="Europe/Amsterdam" action="end"/>
         </definition>
     </holiday>
-    <holiday name="1. Weihnachtsfeiertag (Weihnachten)" type="gesetzlich" international="Christmas Day">
-        <definition>
-            <fixed month="December" day="25"/>
-        </definition>
-    </holiday>
-    <holiday name="2. Weihnachtsfeiertag" type="gesetzlich" international="Boxing Day">
-        <definition>
-            <fixed month="December" day="26"/>
-        </definition>
-    </holiday>
+
 </holidays>
