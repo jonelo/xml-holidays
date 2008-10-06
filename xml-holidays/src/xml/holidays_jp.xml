@@ -74,23 +74,22 @@
     
     
     <!-- Prior to 1948, the vernal equinox was an imperial
-    ancestor worship festival called Shunki kōrei-sai -->
-    <!--    <holiday name="Shunki kōrei-sai">
+         ancestor worship festival called Shunki kōrei-sai -->
+    <holiday name="Shunki kōrei-sai">
         <definition lastyear="1947">
-             <equinox type="vernal"/>
+             <equinox type="March"/>
         </definition>
     </holiday>
--->
 
-    <!-- This national holiday was established in 1948 -->
-    <!-- Around March 20 -->
-    <!--    <holiday name="Shunbun no hi" type="national holiday"
+    <!-- This national holiday was established in 1948.
+         Around March 20 -->
+    <holiday name="Shunbun no hi" type="national holiday"
              international="Vernal equinox">
          <definition firstyear="1948">
-             <equinox type="vernal"/>
+             <equinox type="March"/>
          </definition>
     </holiday>
--->
+
 
     <!-- http://en.wikipedia.org/wiki/Sh%C5%8Dwa_Day -->
     <holiday name="Shōwa no hi" type="national holiday"
@@ -166,24 +165,21 @@
     </holiday>
     
     <!-- Prior to 1948, the autumnal equinox was an imperial
-    ancestor worship festival called Shūki kōrei-sai -->
-    <!--    <holiday name="Shūki kōrei-sai">
+         ancestor worship festival called Shūki kōrei-sai -->
+    <holiday name="Shūki kōrei-sai">
         <definition lastyear="1947">
-             <equinox type="autumnal"/>
+             <equinox type="September"/>
         </definition>
     </holiday>
--->
 
-
-    <!-- This national holiday was established in 1948 -->
-    <!-- Around September 23 -->
-    <!--    <holiday name="Shūbun no hi" type="national holiday"
+    <!-- This national holiday was established in 1948.
+         Around September 23 -->
+    <holiday name="Shūbun no hi" type="national holiday"
              international="Autumnal equinox">
          <definition firstyear="1948">
-             <equinox type="autumnal"/>
+             <equinox type="September"/>
          </definition>
     </holiday>
--->
     
     <holiday name="Taiiku no hi" type="national holiday"
              international="Health and Sports Day">
