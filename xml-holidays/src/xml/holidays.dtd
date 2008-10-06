@@ -10,7 +10,7 @@
 <!ENTITY % weekdays "Monday | Tuesday | Wednesday | Thursday |
                      Friday | Saturday | Sunday">
 <!ENTITY % nth "1st | 2nd | 3rd | 4th | Last">
-<!ENTITY % startdate "fixed | easter | advent | rule | dst">
+<!ENTITY % startdate "fixed | easter | advent | rule | dst | equinox | solstice">
 <!ENTITY % modifiers "add | goto">
 <!ENTITY % directions "next | previous | nearest">
 
@@ -119,6 +119,25 @@
             This is the startdate of the 1st advent
           -->
           <!ELEMENT advent EMPTY>
+
+          <!--
+            http://en.wikipedia.org/wiki/Equinox
+            "March equinox" and "September equinox"
+            Names avoid the classical Northern Hemisphere bias implied by the
+            assumption that March is in springtime and September is in autumn;
+            only true for those in the Northern Hemisphere but actually the
+            complete opposite for dwellers in the Southern Hemisphere.
+          -->          
+          <!ELEMENT equinox EMPTY>
+          <!ATTLIST equinox
+                    type (March|September) #REQUIRED>
+          
+          <!--
+            http://en.wikipedia.org/wiki/Solstice
+          -->
+          <!ELEMENT solstice EMPTY>
+          <!ATTLIST solstice
+                    type (June|December) #REQUIRED>          
           
           <!--
             The rule defines the nth weekday of a month
