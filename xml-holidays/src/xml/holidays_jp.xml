@@ -77,7 +77,7 @@
          ancestor worship festival called Shunki kōrei-sai -->
     <holiday name="Shunki kōrei-sai">
         <definition lastyear="1947">
-             <equinox type="March"/>
+             <equinox type="March" timezone="Asia/Tokyo"/>
         </definition>
     </holiday>
 
@@ -86,7 +86,7 @@
     <holiday name="Shunbun no hi" type="national holiday"
              international="Vernal equinox">
          <definition firstyear="1948">
-             <equinox type="March"/>
+             <equinox type="March" timezone="Asia/Tokyo"/>
          </definition>
     </holiday>
 
@@ -168,7 +168,7 @@
          ancestor worship festival called Shūki kōrei-sai -->
     <holiday name="Shūki kōrei-sai">
         <definition lastyear="1947">
-             <equinox type="September"/>
+             <equinox type="September" timezone="Asia/Tokyo"/>
         </definition>
     </holiday>
 
@@ -177,7 +177,7 @@
     <holiday name="Shūbun no hi" type="national holiday"
              international="Autumnal equinox">
          <definition firstyear="1948">
-             <equinox type="September"/>
+             <equinox type="September" timezone="Asia/Tokyo"/>
          </definition>
     </holiday>
     

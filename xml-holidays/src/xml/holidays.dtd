@@ -130,14 +130,16 @@
           -->          
           <!ELEMENT equinox EMPTY>
           <!ATTLIST equinox
-                    type (March|September) #REQUIRED>
+                    type (March|September) #REQUIRED
+                    timezone CDATA #REQUIRED>
           
           <!--
             http://en.wikipedia.org/wiki/Solstice
           -->
           <!ELEMENT solstice EMPTY>
           <!ATTLIST solstice
-                    type (June|December) #REQUIRED>          
+                    type (June|December) #REQUIRED
+                    timezone CDATA #REQUIRED>
           
           <!--
             The rule defines the nth weekday of a month
