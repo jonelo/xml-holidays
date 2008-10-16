@@ -1,153 +1,275 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
-
+<!-- 
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+-->
 <holidays country="gb">
-    <!-- Groszbritannien -->
-
-    <holiday name="New Year's Day" type="gesetzlich" international="New Year's Day">
-        <definition>
-            <fixed month="January" day="1"/>
+    <!-- http://www.great-britain.co.uk/A-to-Z/public-holidays.htm -->
+    <!-- http://en.wikipedia.org/wiki/Bank_Holiday -->
+    <!-- http://www.berr.gov.uk/whatwedo/employment/bank-public-holidays/index.html -->
+    <!-- http://www.2008bankholidays.co.uk/ -->
+    
+    <!-- Royal proclamation is also used to shift bank holidays that would
+         otherwise fall on a weekend. In this way, public holidays are not
+         'lost' in years when they coincide with weekends. These deferred
+         bank holiday days are termed a 'bank holiday in lieu' of the typical
+         anniversary date.  -->
+    
+    <holiday name="New Year's Day" type="bank holiday">
+        <definition firstyear="1971">
+            <fixed day="1" month="January"/>
+            <add days="+1" ifweekday="Sunday"/>
+            <add days="+2" ifweekday="Saturday"/>
         </definition>
     </holiday>
-    <holiday name="2nd January (SCT)" type="local">
-        <definition>
-            <fixed month="January" day="2"/>
+    
+    <holiday name="2nd January" type="bank holiday, Scotland only">
+        <definition firstyear="1971">
+            <fixed day="2" month="January"/>
+            <add days="+1" ifweekday="Sunday"/>
+            <add days="+2" ifweekday="Saturday"/>
         </definition>
     </holiday>
-    <holiday name="Burns' Night (SCT)" type="local">
+    
+    <!-- http://en.wikipedia.org/wiki/Burns_Night -->
+    <holiday name="Burns Night (Burns Supper)" type="local, Scotland only">
         <definition>
             <fixed month="January" day="25"/>
         </definition>
     </holiday>
-    <holiday name="St. David's Day (WAL)" type="local">
+    
+    <holiday name="St. Patrick's Day" type="bank holiday, Northern Ireland only">
+        <definition firstyear="1971">
+            <fixed day="17" month="March"/>
+            <add days="+1" ifweekday="Sunday"/>
+            <add days="+2" ifweekday="Saturday"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Good Friday" type="bank holiday">
+        <definition firstyear="1971">
+            <easter/>
+            <add days="-3"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Easter Sunday">
         <definition>
+            <easter/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Easter Monday" type="bank holiday, except Scotland">
+        <definition firstyear="1971">
+            <easter/>
+            <add days="+1"/>
+        </definition>
+    </holiday>
+    
+    <!-- http://en.wikipedia.org/wiki/Saint_David%27s_Day
+        The date was declared a national day of celebration within Wales in the 18th century.-->
+    <holiday name="Saint David's Day" type="local, Wales, Catholics">
+        <!-- 1801 is the first year of the 19th century, therfore probably also earlier -->
+        <definition firstyear="1801" lastyear="2005">
+            <fixed month="March" day="1"/>
+        </definition>
+        <!-- In 2006 Saint David's Day was officially celebrated on 28 February
+             by Roman Catholics and on 2 March by the Anglican Church in Wales,
+             because 1 March 2006 was Ash Wednesday, which is a day of penitence
+             on which feast days are not celebrated. -->
+        <definition firstyear="2006" lastyear="2006">
+            <fixed month="February" day="28"/>
+        </definition>
+        <definition firstyear="2007">
             <fixed month="March" day="1"/>
         </definition>
     </holiday>
-    <holiday name="Mothering Sunday" type="local">
-        <definition>
-        	<rule nth="1st" weekday="Sunday" month="March"/>
+    
+    <!-- http://en.wikipedia.org/wiki/Saint_David%27s_Day
+        The date was declared a national day of celebration within Wales in the 18th century.-->
+    <holiday name="Saint David's Day" type="local, Wales, Anglican Church">
+        <!-- 1801 is the first year of the 19th century, therfore probably also earlier -->
+        <definition firstyear="1801" lastyear="2005">
+            <fixed month="March" day="1"/>
+        </definition>
+        <!-- In 2006 Saint David's Day was officially celebrated on 28 February
+             by Roman Catholics and on 2 March by the Anglican Church in Wales,
+             because 1 March 2006 was Ash Wednesday, which is a day of penitence
+             on which feast days are not celebrated. -->
+        <definition firstyear="2006" lastyear="2006">
+            <fixed month="March" day="2"/>
+        </definition>
+        <definition firstyear="2007">
+            <fixed month="March" day="1"/>
         </definition>
     </holiday>
-    <holiday name="St. Patricks Day (NIR)" type="local">
+    
+    <!-- http://en.wikipedia.org/wiki/Mothering_Sunday -->
+    <holiday name="Mothering Sunday" type="local">
+        <definition>
+            <easter/>
+            <!-- on the fourth Sunday of Lent. -->
+            <add days="-21" />
+        </definition>
+    </holiday>
+    
+    <!-- http://en.wikipedia.org/wiki/Saint_patricks_day -->
+    <holiday name="Saint Patrick's Day" type="local, Northern Ireland">
         <definition>
             <fixed month="March" day="17"/>
         </definition>
     </holiday>
-    <holiday name="Vernal equinox" type="local">
-    	<!-- Tagegleiche im Frühling need to be done -->
+    
+    <holiday name="Vernal Equinox">
         <definition>
-            <fixed month="March" day="20"/>
+            <equinox type="March" timezone="Europe/London"/>
         </definition>
     </holiday>
+    
     <holiday name="Begin Daylight Saving Time">
         <definition>
             <dst timezone="Europe/London" action="start"/>
         </definition>
     </holiday>
-    <holiday name="Good Friday" type="gesetzlich">
-        <definition>
-            <easter/>
-            <add days="-2"/>
-        </definition>
-    </holiday>
-    <holiday name="Easter Sunday" type="gesetzlich">
-        <import name="Easter Sunday"/>
-    </holiday>
-    <holiday name="Easter Monday" type="local">
-        <import name="Easter Monday"/>
-    </holiday>
-    <holiday name="St. George's Day (ENG)">
+    
+    <!-- For England, St. George's Day also marks its National Day -->
+    <holiday name="St. George's Day" type="National day of England">
         <definition>
             <fixed month="April" day="23"/>
         </definition>
     </holiday>
-    <holiday name="Early May Bank Holiday">
-        <definition>
-        	<rule nth="1st" weekday="Sunday" month="May"/>
-        	<goto weekday="Monday" />
+    
+    <!-- Early May Bank Holiday in Scotland, or, Labour Day in Ireland -->
+    <holiday name="May Day Bank Holiday" type="bank holiday">
+        <definition firstyear="1971" lastyear="1994">
+            <fixed day="1" month="May"/>
+            <add days="+1" ifweekday="Sunday"/>
+            <add days="+2" ifweekday="Saturday"/>
+        </definition>
+        <!-- For one year only, 1995, this holiday was moved to
+             the second Monday in May - i.e., from 1 May to 8 May -
+             to commemorate the 50th anniversary of VE Day.  -->
+        <definition firstyear="1995" lastyear="1995">
+            <rule nth="2nd" weekday="Monday" month="May"/>
+        </definition>
+        <definition firstyear="1996">
+            <fixed day="1" month="May"/>
+            <add days="+1" ifweekday="Sunday"/>
+            <add days="+2" ifweekday="Saturday"/>
         </definition>
     </holiday>
+    
+    <holiday name="Spring Bank Holiday" type="bank holiday">
+        <definition firstyear="1971">
+            <rule nth="Last" weekday="Monday" month="May"/>
+        </definition>
+        <!-- For one year only, 2002, this holiday was moved
+         to 4 June. This caused it to follow an extra bank
+         holiday on 3 June, making a four-day weekend
+         to celebrate the Golden Jubilee of Elizabeth II. -->
+        <definition firstyear="2002" lastyear="2002">
+            <fixed day="4" month="June"/>
+        </definition>
+        <definition firstyear="2003">
+            <rule nth="Last" weekday="Monday" month="May"/>
+        </definition>        
+    </holiday>
+    
+    <!-- http://en.wikipedia.org/wiki/Father%27s_Day -->
     <holiday name="Father's Day">
         <definition>
-        	<rule nth="3rd" weekday="Sunday" month="June"/>
+            <rule nth="3rd" weekday="Sunday" month="June"/>
         </definition>
     </holiday>
+    
     <holiday name="June Solstice">
-    	<!-- Sommersonnwende needs to be done !! -->
         <definition>
-            <fixed month="June" day="20"/>
+            <solstice type="June" timezone="Europe/London"/>
         </definition>
     </holiday>
-    <holiday name="Orangemen's Day (NIR)">
-        <definition>
-        	<rule nth="1st" weekday="Sunday" month="July"/>
-        	<goto weekday="Saturday" />
+    
+    <holiday name="Battle of the Boyne - Orangemen's Day" type="bank holiday, Northern Ireland only">
+        <definition firstyear="1971">
+            <fixed day="12" month="July"/>
+            <add days="+1" ifweekday="Sunday"/>
+            <add days="+2" ifweekday="Saturday"/>
         </definition>
     </holiday>
-    <holiday name="'Orangemen's Day' observed (NIR)">
-        <definition>
-        	<rule nth="2nd" weekday="Sunday" month="July"/>
-        	<goto weekday="Monday" />
+    
+    <holiday name="Summer Bank Holiday" type="bank holiday in Scotland only">
+        <definition firstyear="1971">
+            <rule nth="1st" weekday="Monday" month="August"/>
         </definition>
     </holiday>
-    <holiday name="Summer Bank Holiday (SCT)">
-        <definition>
-        	<rule nth="1st" weekday="Sunday" month="August"/>
-        	<goto weekday="Monday" />
+    
+    <holiday name="Summer Bank Holiday" type="bank holiday in England, Wales and Northern Ireland">
+        <definition firstyear="1971">
+            <rule nth="Last" weekday="Monday" month="August"/>
         </definition>
     </holiday>
-    <holiday name="Summer Bank Holiday (WAL, ENG, NIR)">
-        <definition>
-        	<rule nth="Last" weekday="Monday" month="August"/>
-        </definition>
-    </holiday>
+    
     <holiday name="Autumnal equinox">
-    	<!-- Tagegleiche im Herbst needs to be done !! -->
         <definition>
-            <fixed month="September" day="22"/>
+            <equinox type="September" timezone="Europe/London"/>
         </definition>
     </holiday>
+    
     <holiday name="Daylight Saving Time ends">
         <definition>
             <dst timezone="Europe/London" action="end"/>
         </definition>
     </holiday>
+    
     <holiday name="Halloween">
         <definition>
             <fixed month="October" day="31"/>
         </definition>
     </holiday>
-    <holiday name="Guy Fawkes Day">
+    
+    <!-- http://en.wikipedia.org/wiki/Guy_Fawkes_Night -->
+    <holiday name="Guy Fawkes Night (Bonfire Night)">
         <definition>
             <fixed month="November" day="5"/>
         </definition>
     </holiday>
-    <holiday name="St. Andrew's Day (SCT)" type="local">
-        <definition>
-            <rule nth="Last" weekday="Sunday" month="November"/>
+    
+    <!-- In January 2007, the St Andrew's Day Bank Holiday (Scotland)
+         Act 2007 was given royal assent, making 30 November
+         (or the nearest Monday if a weekend) a bank holiday in Scotland. -->
+    <holiday name="St. Andrew's Day" type="bank holiday, Scotland only">
+        <definition firstyear="2007">
+            <fixed day="30" month="November"/>
+            <add days="1" ifweekday="Sunday"/> <!-- can become Monday -->
+            <add days="2" ifweekday="Saturday"/> <!-- can become Monday -->
         </definition>
     </holiday>
-    <holiday name="'St. Andrew's Day' observed (SCT)" type="local">
-        <definition>
-            <rule nth="Last" weekday="Sunday" month="November"/>
-            <goto weekday="Monday" />
-        </definition>
-    </holiday>
+    
     <holiday name="Autumnal equinox">
-    	<!-- Wintersonnenwende needs to be done !! -->
         <definition>
-            <fixed month="December" day="21"/>
+            <equinox type="September" timezone="Europe/London"/>
         </definition>
     </holiday>
-    <holiday name="Christmas Day" type="gesetzlich">
-        <definition>
-            <fixed month="December" day="25"/>
+    
+    <holiday name="Christmas Day" type="bank holiday">
+        <definition firstyear="1971">
+            <fixed day="25" month="December"/>
+            <add days="+2" ifweekday="Saturday"/>
+            <!-- becomes Monday, 27 (Substitute Bank Holiday in lieu of 26 Dec) -->
+            <add days="+2" ifweekday="Sunday"/>
+            <!-- becomes Thursday, 27 (Substitute Holiday in lieu of 25 Dec) -->
         </definition>
     </holiday>
-    <holiday name="Boxing Day" type="gesetzlich">
-        <definition>
-            <fixed month="December" day="26"/>
+    
+    <holiday name="Boxing Day, St. Stephen's Day" type="bank holiday">
+        <definition firstyear="1971">
+            <fixed day="26" month="December"/>
+            <add days="+2" ifweekday="Saturday"/>
+            <!-- becomes Monday, 28 (Substitute Bank Holiday in lieu of 26 Dec) -->
+            <add days="+2" ifweekday="Sunday"/>
+            <!-- becomes Thursday, 28 (Substitute Holiday in lieu of 25 Dec) -->
         </definition>
-    </holiday>
+    </holiday> 
+
 </holidays>
