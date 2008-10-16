@@ -7,132 +7,183 @@
     <holiday name="Neujahrstag" type="gesetzlich">
         <import name="New Year's Day"/>
     </holiday>
+
     <holiday name="Hl. Drei Könige" international="Three Kings Day">
         <definition>
             <fixed month="January" day="6"/>
         </definition>
     </holiday>
+
     <holiday name="Josef" type="local [Kärnten, Steiermark, Tirol, Vorlarlberg]">
         <definition>
             <fixed month="March" day="19"/>
         </definition>
     </holiday>
+
     <holiday name="Beginn der Sommerzeit (Uhren 1 h vorstellen)">
-    	<definition>
-    		<dst timezone="Europe/Vienna" action="start" />
-    	</definition>
+        <definition>
+            <dst timezone="Europe/Vienna" action="start" />
+        </definition>
     </holiday>
+
     <holiday name="Karfreitag" international="Easter Day">
-    	<definition>
-    		<easter />
-    		<add days="-2"></add>
-    	</definition>
+        <definition>
+            <easter/>
+            <add days="-2"></add>
+        </definition>
     </holiday>
+
     <holiday name="Ostersonntag (Ostern)">
-    	<import name="Easter Sunday"/>
+        <import name="Easter Sunday"/>
     </holiday>
+
     <holiday name="Ostermontag">
-    	<definition>
-    		<easter />
-    		<add days="+1" />
-    	</definition>
+        <definition>
+            <easter />
+            <add days="+1" />
+        </definition>
     </holiday>
+
     <holiday name="Staatsfeiertag (Tag der Arbeit)">
-    	<definition>
-    		<fixed day="1" month="May" />
-    	</definition>
+        <definition>
+            <fixed day="1" month="May" />
+        </definition>
     </holiday>
+
     <holiday name="Florian" type="local [Oberösterreich]">
-    	<definition>
-    		<fixed day="4" month="May" />	
-    	</definition>
+        <definition>
+            <fixed day="4" month="May" />	
+        </definition>
     </holiday>
+
     <holiday name="Christi Himmelfahrt">
-    	<definition>
-    		<easter />
-    		<add days="+39" />
-    	</definition>
+        <definition>
+            <easter/>
+            <add days="+39" />
+        </definition>
     </holiday>
+
     <holiday name="Pfingstsonntag (Pfingsten)">
-    	<import name="Pentecost"/>
+        <import name="Pentecost"/>
     </holiday>
+
     <holiday name="Pfingstmontag">
-    	<definition>
-    		<easter /><add days="+50" />		
-    	</definition>
+        <definition>
+            <easter /><add days="+50" />		
+        </definition>
     </holiday>
+
     <holiday name="Fronleichnam">
-    	<definition>
-    		<easter /><add days="+60" />		
-    	</definition>
+        <definition>
+            <easter /><add days="+60" />		
+        </definition>
     </holiday>
+
     <holiday name="Mariä Himmelfahrt">
-    	<definition>
-    		<fixed day="15" month="August" />	
-    	</definition>
+        <definition>
+            <fixed day="15" month="August" />	
+        </definition>
     </holiday>
+
     <holiday name="Rupert" type="local [Salzburg]">
-    	<definition>
-    		<fixed day="24" month="September" />	
-    	</definition>
+        <definition>
+            <fixed day="24" month="September" />	
+        </definition>
     </holiday>
+
     <holiday name="Tag der Volksabstimmung" type="local [Kärnten]">
-    	<definition firstyear="1920">
-    		<fixed day="10" month="October" />	
-    	</definition>
+        <definition firstyear="1920">
+            <fixed day="10" month="October" />	
+        </definition>
     </holiday>
+
     <holiday name="Nationalfeiertag">
-    	<definition firstyear="1965">
-    		<fixed day="26" month="October" />	
-    	</definition>
+        <definition firstyear="1965">
+            <fixed day="26" month="October" />	
+        </definition>
     </holiday>
+
     <holiday name="Ende der Sommerzeit (Uhren 1 h zurückstellen)">
-    	<definition>
-    		<dst timezone="Europe/Vienna" action="end" />	
-    	</definition>
+        <definition>
+            <dst timezone="Europe/Vienna" action="end" />	
+        </definition>
     </holiday>
+
     <holiday name="Weltspartag (gefeiert)">
         <import name="Weltspartag (gefeiert)"/>
     </holiday>
+
     <holiday name="Weltspartag (offiziell)">
         <import name="Weltspartag (offiziell)"/>
     </holiday>
+
     <holiday name="Allerheiligen">
-    	<import name="All Saints' Day"/>
+        <import name="All Saints' Day"/>
     </holiday>
+
     <holiday name="Martin" type="local [Burgenland]">
-    	<definition>
-    		<fixed day="11" month="November" />		
-    	</definition>
+        <definition>
+            <fixed day="11" month="November" />		
+        </definition>
     </holiday>
+
     <holiday name="Leopold" type="local [Niederösterreich, Wien]">
-    	<definition>
-    		<fixed day="15" month="November" />	
-    	</definition>
+        <definition>
+            <fixed day="15" month="November" />	
+        </definition>
     </holiday>
+
     <holiday name="Mariä Empfängnis">
-    	<definition>
-    		<fixed day="8" month="December" />		
-    	</definition>
+        <definition>
+            <fixed day="8" month="December" />		
+        </definition>
     </holiday>
+
     <holiday name="Heiliger Abend">
-    	<definition>
-    		<fixed day="24" month="December" />		
-    	</definition>
+        <definition>
+            <fixed day="24" month="December" />		
+        </definition>
     </holiday>
+
     <holiday name="Christtag">
-    	<definition>
-    		<fixed day="25" month="December" />	
-    	</definition>
+        <definition>
+            <fixed day="25" month="December" />	
+        </definition>
     </holiday>
+
     <holiday name="Stefanitag">
-    	<definition>
-    		<fixed day="26" month="December" />	
-    	</definition>
+        <definition>
+            <fixed day="26" month="December" />	
+        </definition>
     </holiday>
+
     <holiday name="Silvester">
-    	<definition>
-    		<fixed day="31" month="December" />	
-    	</definition>
+        <definition>
+            <fixed day="31" month="December" />	
+        </definition>
+    </holiday>
+
+    <holiday name="Frühlingsanfang" international="Equinox March">
+        <definition>
+            <equinox type="March" timezone="Europe/Vienna"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Sommeranfang (Sommersonnenwende)" international="Solstice June">
+        <definition>
+            <solstice type="June" timezone="Europe/Vienna"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Herbstanfang" international="Equinox September">
+        <definition>
+            <equinox type="September" timezone="Europe/Vienna"/>
+        </definition>
+    </holiday>
+
+    <holiday name="Winteranfang (Wintersonnenwende)" international="Solstice December">
+        <definition>
+            <solstice type="December" timezone="Europe/Vienna"/>
+        </definition>
     </holiday>
 </holidays>

@@ -565,4 +565,29 @@
     <holiday name="Silvester">
         <import name="New Year's Eve"/>
     </holiday>
+    
+    <holiday name="Frühlingsanfang" international="Equinox March">
+        <definition>
+            <equinox type="March" timezone="Europe/Berlin"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Sommeranfang (Sommersonnenwende)" international="Solstice June">
+        <definition>
+            <solstice type="June" timezone="Europe/Berlin"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Herbstanfang" international="Equinox September">
+        <definition>
+            <equinox type="September" timezone="Europe/Berlin"/>
+        </definition>
+    </holiday>
+
+    <holiday name="Winteranfang (Wintersonnenwende)" international="Solstice December">
+        <definition>
+            <solstice type="December" timezone="Europe/Berlin"/>
+        </definition>
+    </holiday>
+
 </holidays>
