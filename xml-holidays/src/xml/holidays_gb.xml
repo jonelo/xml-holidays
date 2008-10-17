@@ -49,7 +49,7 @@
     </holiday>
     
     <holiday name="Good Friday" type="bank holiday">
-        <definition firstyear="1971">
+        <definition>
             <easter/>
             <add days="-3"/>
         </definition>
@@ -60,9 +60,12 @@
             <easter/>
         </definition>
     </holiday>
-    
+        
     <holiday name="Easter Monday" type="bank holiday, except Scotland">
-        <definition firstyear="1971">
+        <!-- In 1871, the first legislation relating to bank holidays was
+             passed when Sir John Lubbock introduced the Bank Holidays
+             Act 1871 -->
+        <definition firstyear="1871">
             <easter/>
             <add days="+1"/>
         </definition>
@@ -161,6 +164,13 @@
         </definition>
     </holiday>
     
+    <holiday name="Whit Monday" type="bank holiday until 1970 in England, Wales, Northern Ireland" valid="false">
+        <definition firstyear="1871" lastyear="1970">
+            <easter/>
+            <add days="+50"/>
+        </definition>
+    </holiday>
+    
     <holiday name="Spring Bank Holiday" type="bank holiday">
         <definition firstyear="1971">
             <rule nth="Last" weekday="Monday" month="May"/>
@@ -253,6 +263,14 @@
     </holiday>
     
     <holiday name="Christmas Day" type="bank holiday">
+        <definition lastyear="1970">
+            <!-- The Bank Holidays Act 1871 does not specify Good Friday and
+                 Christmas Day as bank holidays in England, Wales and Ireland
+                 because they were already recognised there as common law
+                 holidays, and because of common observance, they became
+                 customary holidays since before records began. -->
+            <fixed day="25" month="December"/>
+        </definition>
         <definition firstyear="1971">
             <fixed day="25" month="December"/>
             <add days="+2" ifweekday="Saturday"/>
@@ -263,6 +281,9 @@
     </holiday>
     
     <holiday name="Boxing Day, St. Stephen's Day" type="bank holiday">
+        <definition lastyear="1970">
+            <fixed day="26" month="December"/>
+        </definition>
         <definition firstyear="1971">
             <fixed day="26" month="December"/>
             <add days="+2" ifweekday="Saturday"/>
