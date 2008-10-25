@@ -148,7 +148,9 @@
           <!ATTLIST rule
                     nth (%nth;) #REQUIRED
                     weekday (%weekdays;) #REQUIRED
-                    month (%months;) #REQUIRED>
+                    month (%months;) #REQUIRED
+                    ifdaytype CDATA #IMPLIED
+                    ifday CDATA #IMPLIED>
 
           <!--
             The add modifier
