@@ -166,7 +166,7 @@
     
     <holiday name="El Solsticio de junio" international="June Solstice">
         <definition>
-            <fixed type="June" timezone="Europe/Madrid"/>
+            <solstice type="June" timezone="Europe/Madrid"/>
         </definition>
     </holiday>
     
@@ -272,13 +272,5 @@
             <fixed day="26" month="December"/>
         </definition>
     </holiday> 
-    
-    
-    
-    ---------------------
-    
-    
-    
-
 
 </holidays>
