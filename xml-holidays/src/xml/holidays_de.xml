@@ -247,10 +247,7 @@
     </holiday>
     
     <holiday name="Pfingstmontag" type="gesetzlich">
-        <definition>
-            <easter/>
-            <add days="+50"/>
-        </definition>
+        <import name="Whit Monday"/>
     </holiday>
     
     <holiday name="Nationaler Gedenktag" type="1953-1990" valid="false">
