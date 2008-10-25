@@ -43,6 +43,7 @@
         <xi:include href="holidays_se.xml"/>
         <xi:include href="holidays_si.xml"/>
         <xi:include href="holidays_sk.xml"/>
+        <xi:include href="holidays_tr.xml"/>
 
         <!-- Africa -->
         <xi:include href="holidays_sc.xml"/>
