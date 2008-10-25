@@ -73,6 +73,14 @@
         </definition>
     </holiday>
     
+    <!-- http://en.wikipedia.org/wiki/Whit_Monday -->
+    <holiday name="Whit Monday">
+        <definition>
+            <easter/>
+            <add days="+50"/>
+        </definition>
+    </holiday>    
+    
     <!-- http://en.wikipedia.org/wiki/Corpus_Christi_(feast) -->
     <holiday name="Corpus Christi">
         <definition>
