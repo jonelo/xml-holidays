@@ -1,147 +1,75 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
-
+<!-- 
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+-->
 <holidays country="fr">
-    <!-- Frankreich http://www.feiertagskalender.ch -->
+    <!-- http://en.wikipedia.org/wiki/Public_holidays_in_France -->
 
-    <holiday name="Le Jour de l'An" type="gesetzlich" international="New Year's Day">
-        <definition>
-            <fixed month="January" day="1"/>
-        </definition>
+    <holiday name="Jour de l'An">
+        <include name="New Year's Day"/>
     </holiday>
-
+    
     <holiday name="Valentinstag">
         <import name="Valentine's Day"/>
-    </holiday>
-
-    <holiday name="Beginn der Sommerzeit (Uhren 1 h vorstellen)" international="Begin Daylight Saving Time">
-        <definition>
-            <dst timezone="Europe/Paris" action="start"/>
-        </definition>
-    </holiday>
-
-    <holiday name="Palmsonntag (Palmarum)" international="Palm Sunday">
-        <definition>
-            <easter/>
-            <add days="-7"/>
-        </definition>
-    </holiday>
-
-    <holiday name="Karfreitag" type="katholisch" international="Good Friday">
-        <definition>
-            <easter/>
-            <add days="-2"/>
-        </definition>
-    </holiday>
-
-    <holiday name="Pâques" type="gesetzlich">
-        <import name="Easter Sunday"/>
-    </holiday>
-
-    <holiday name="Le lundi de Le lundi de Pâques" type="gesetzlich">
-        <import name="Easter Monday"/>
-    </holiday>
-
-    <holiday name="La fête du Travail" type="gesetzlich" international="Labour Day">
-        <definition>
-            <fixed month="May" day="1"/>
-        </definition>
-    </holiday>
-
-    <holiday name="L'Ascension" type="gesetzlich" international="Ascension Day">
-        <definition>
-            <easter/>
-            <add days="+39"/>
-        </definition>
-    </holiday>
-
-    <holiday name="Fête de la Victoire 1945" type="gesetzlich" international="WWII Victory Day">
-        <definition firstyear="1945">
-            <fixed month="May" day="8"/>
-        </definition>
-    </holiday>
-
-    <holiday name="Pfingstsonntag (Pfingsten)" type="katholisch">
-        <import name="Pentecost"/>
-    </holiday>
-
-    <holiday name="Muttertag">
-        <!-- 2. Sonntag im Mai -->
-        <definition>
-            <rule nth="2nd" weekday="Sunday" month="May"/>
-        </definition>
-    </holiday>
-
-    <holiday name="La fête nationale" type="gesetzlich" international="Bastille Day">
-        <definition>
-            <fixed month="July" day="14"/>
-        </definition>
-    </holiday>
-
-    <holiday name="L'Assomption" type="gesetzlich" international="Assumption of Mary">
-        <definition>
-            <fixed month="August" day="15"/>
-        </definition>
-    </holiday>
-
-    <holiday name="Ende der Sommerzeit (Uhren 1 h zurückstellen)" international="End Daylight Saving Time">
-        <definition>
-            <dst timezone="Europe/Paris" action="end"/>
-        </definition>
-    </holiday>
-
-    <holiday name="La Toussaint" type="gesetzlich" international="All Saints’ Day">
-        <!-- All Saint's Day is a Christian holy day observed by many Western churches on November 1 -->
-        <import name="All Saints’ Day"/>
-    </holiday>
-
-    <holiday name="L'Armistice" type="gesetzlich" international="Armistice Day">
-        <definition firstyear="1918">
-            <fixed month="November" day="11"/>
-        </definition>
-    </holiday>
-
-    <holiday name="St. Nikolaus" type="katholisch">
-        <definition>
-            <fixed month="December" day="6"/>
-        </definition>
-    </holiday>
-
-    <holiday name="1. Advent" type="katholisch">
-        <import name="1st Advent"/>
-    </holiday>
-
-    <holiday name="2. Advent" type="katholisch">
-        <import name="2nd Advent"/>
-    </holiday>
-
-    <holiday name="3. Advent (Gaudete)" type="katholisch">
-        <import name="3rd Advent"/>
-    </holiday>
-
-    <holiday name="4. Advent" type="katholisch">
-        <import name="4th Advent"/>
-    </holiday>
-
-    <holiday name="Noël" type="gesetzlich">
-        <definition>
-            <fixed month="December" day="25"/>
-        </definition>
-    </holiday>
-
-    <holiday name="2. Noël" type="katholisch">
-        <definition>
-            <fixed month="December" day="26"/>
-        </definition>
-    </holiday>
-
-    <holiday name="Silvester" type="katholisch">
-        <import name="New Year's Eve"/>
     </holiday>
     
     <holiday name="Équinoxe mars">
         <definition>
             <equinox type="March" timezone="Europe/Paris"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Begin Daylight Saving Time" international="Begin Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Paris" action="start"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Pâques">
+        <import name="Easter Sunday"/>
+    </holiday>   
+    
+    <holiday name="Lundi de Pâques">
+        <import name="Easter Monday"/>
+    </holiday>
+    
+    <holiday name="Fête du Travail" type="public holiday" international="Labour Day">
+        <definition>
+            <fixed month="May" day="1"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Ascension" international="Ascension Day">
+        <definition>
+            <easter/>
+            <add days="+39"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Victoire 1945" international="V-E Day">
+        <definition firstyear="1945">
+            <fixed month="May" day="8"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Pentecôte">
+        <import name="Pentecost"/>
+    </holiday>
+    
+    <holiday name="Lundi de Pentecôte">
+        <import name="Whit Monday"/>
+    </holiday>
+    
+    <!-- http://fr.wikipedia.org/wiki/F%C3%AAte_des_M%C3%A8res -->
+    <!-- http://en.wikipedia.org/wiki/Mother%27s_Day#Dates_around_the_world -->
+    <holiday name="Fête des Mères">
+        <definition>
+            <rule nth="Last" weekday="Sunday" month="May"/>
+            <!-- First Sunday of June if Pentecost occurs on this day -->
+            <rule nth="First" weekday="Sunday" month="June" ifday="Pentecôte"/>
         </definition>
     </holiday>
     
@@ -151,9 +79,37 @@
         </definition>
     </holiday>
     
+    <holiday name="Fête Nationale" international="Bastille Day">
+        <definition>
+            <fixed month="July" day="14"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Assomption" international="Assumption of Mary">
+        <definition>
+            <fixed month="August" day="15"/>
+        </definition>
+    </holiday>
+    
     <holiday name="Équinoxe sept">
         <definition>
             <equinox type="September" timezone="Europe/Paris"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="End Daylight Saving Time" international="End Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Paris" action="end"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Toussaint">
+        <import name="All Saint's Day"/>
+    </holiday>
+    
+    <holiday name="Armistice 1918" international="Veterans Day">
+        <definition firstyear="1918">
+            <fixed month="November" day="11"/>
         </definition>
     </holiday>
     
@@ -162,5 +118,13 @@
             <equinox type="December" timezone="Europe/Paris"/>
         </definition>
     </holiday> 
+    
+    <holiday name="Noël">
+        <import name="Christmas Day"/>
+    </holiday>
+    
+    <holiday name="La Saint-Sylvestre">
+        <import name="New Year's Eve"/>
+    </holiday>
     
 </holidays>
