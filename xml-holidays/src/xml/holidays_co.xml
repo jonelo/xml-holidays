@@ -71,7 +71,7 @@
     </holiday>
     
     <holiday name="Ascensión" type="public holiday">
-        <import name="Ascension of Jesus">
+        <import name="Ascension of Jesus"/>
     </holiday>
     
     <holiday name="Corpus Christi" type="public holiday">

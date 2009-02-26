@@ -11,7 +11,7 @@
                      Friday | Saturday | Sunday">
 <!ENTITY % nth "1st | 2nd | 3rd | 4th | Last">
 <!ENTITY % startdate "fixed | easter | advent | rule | dst | equinox | solstice">
-<!ENTITY % modifiers "add | goto">
+<!ENTITY % modifiers "add | goto | rule">
 <!ENTITY % directions "next | previous | nearest">
 
 <!ELEMENT holidays (holiday+)>

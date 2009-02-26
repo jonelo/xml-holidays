@@ -2,56 +2,63 @@
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
 
 <holidays country="dk">
-    <!-- Daenemark http://www.denmarkt.de/Feiertage_DK.html -->
-    <!-- WARNING .. die astronomischen Tag/Nachtgleiche und Sommer- u.
-         Wintersonnwende sind hier fixed !! d.h. stimmen nicht immer mit
-         den tatsächlichen Feiertagen überein. -->
+    <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Denmark -->
 
-    <holiday name="Nytårsdag(Neujahrstag)" type="gesetzlich" international="New Year's Day">
+    <holiday name="Nytårsdag" type="public">
         <import name="New Year's Day"/>
     </holiday>
+
     <holiday name="Valentine's Day">
         <import name="Valentine's Day"/>
     </holiday>
+
     <holiday name="Fastelavn(Rosensonntag)">
         <definition>
             <easter/>
             <add days="-49"/>
         </definition>
     </holiday>
+
     <holiday name="Forårsjævndøgn" international="Vernal equinox">
         <definition>
             <fixed month="March" day="20"/>
         </definition>
     </holiday>
+
     <holiday name="Skærtorsdag(Gründonnerstag)" type="gesetzlich" international="Maundy Thursday">
         <definition>
             <easter/>
             <add days="-3"/>
         </definition>
     </holiday>
+
     <holiday name="Langfredag(Karfreitag)" type="gesetzlich" international="Good Friday">
         <definition>
             <easter/>
             <add days="-2"/>
         </definition>
     </holiday>
+
     <holiday name="Påskedag(Ostern)" type="gesetzlich">
         <import name="Easter Sunday"/>
     </holiday>
+
     <holiday name="2. påskedag(Ostermontag)" type="gesetzlich">
         <import name="Easter Monday"/>
     </holiday>
+
     <holiday name="Arbejdernes kampdag" international="Labour Day">
         <definition>
             <fixed month="May" day="1"/>
         </definition>
     </holiday>
+
     <holiday name="Sommertid starter" international="Begin Daylight Saving Time">
         <definition>
             <dst timezone="Europe/Copenhagen" action="start"/>
         </definition>
     </holiday>
+
     <!-- 4. Freitag nach Ostern -->
     <holiday name="Stor Bededag(großer Bettag)" type="gesetzlich">
         <definition>
@@ -59,60 +66,73 @@
            <add days="+26"/>
         </definition>
     </holiday>
+
     <holiday name="Kristi Himmelfartsdag(Ascension Day)" type="gesetzlich">
         <definition>
             <easter/>
             <add days="+39"/>
         </definition>
     </holiday>
+
     <holiday name="Pinsedag(Pfingsten)" type="gesetzlich">
         <import name="Pentecost"/>
     </holiday>
+
     <holiday name="2. pinsedag(Pfingstmontag)" type="gesetzlich">
         <definition>
             <easter/>
             <add days="+50"/>
         </definition>
     </holiday>
+
     <holiday name="Grundlovsdag(from 12pm)" international="Constitution Day">
         <definition>
             <fixed month="June" day="5"/>
         </definition>
     </holiday>
+    
     <holiday name="Sommersolhverv(from 12pm)" international="June Solstice">
         <definition>
-            <fixed month="June" day="20"/>
+            <solstice type="June" timezone="Europe/Copenhagen"/>
         </definition>
     </holiday>
+
     <holiday name="Efterårsjævndøgn" international="Autumnal equinox">
         <definition>
-            <fixed month="September" day="22"/>
+            <equinox type="September" timezone="Europe/Copenhagen"/>
         </definition>
     </holiday>
+
     <holiday name="Sommertid slutter" international="End Daylight Saving Time">
         <definition>
             <dst timezone="Europe/Copenhagen" action="end"/>
         </definition>
     </holiday>
+
     <holiday name="Vintersolhverv" international="December Solstice">
         <definition>
-            <fixed month="June" day="20"/>
+            <solstice type="June" timezone="Europe/Copenhagen"/>
         </definition>
     </holiday>
+
     <holiday name="Juleaften" international="Christmas Eve">
         <import name="Christmas Eve"/>
     </holiday>
+
     <holiday name="Juledag" type="gesetzlich">
         <definition>
             <fixed month="December" day="25"/>
         </definition>
     </holiday>
+
     <holiday name="2. juledag" type="gesetzlich">
         <definition>
             <fixed month="December" day="26"/>
         </definition>
     </holiday>
+
     <holiday name="Nytår">
         <import name="New Year's Eve"/>
     </holiday>
+
 </holidays>

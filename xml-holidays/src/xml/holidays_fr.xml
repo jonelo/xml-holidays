@@ -9,7 +9,7 @@
     <!-- http://en.wikipedia.org/wiki/Public_holidays_in_France -->
 
     <holiday name="Jour de l'An">
-        <include name="New Year's Day"/>
+        <import name="New Year's Day"/>
     </holiday>
     
     <holiday name="Valentinstag">
@@ -68,14 +68,15 @@
     <holiday name="Fête des Mères">
         <definition>
             <rule nth="Last" weekday="Sunday" month="May"/>
+            
             <!-- First Sunday of June if Pentecost occurs on this day -->
-            <rule nth="First" weekday="Sunday" month="June" ifday="Pentecôte"/>
+            <rule nth="1st" weekday="Sunday" month="June" ifday="Pentecôte"/>
         </definition>
     </holiday>
     
     <holiday name="Solstice juin">
         <definition>
-            <equinox type="June" timezone="Europe/Paris"/>
+            <solstice type="June" timezone="Europe/Paris"/>
         </definition>
     </holiday>
     
@@ -115,7 +116,7 @@
     
     <holiday name="Solstice déc">
         <definition>
-            <equinox type="December" timezone="Europe/Paris"/>
+            <solstice type="December" timezone="Europe/Paris"/>
         </definition>
     </holiday> 
     
