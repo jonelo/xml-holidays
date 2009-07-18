@@ -9,9 +9,9 @@
                    October | November | December">
 <!ENTITY % weekdays "Monday | Tuesday | Wednesday | Thursday |
                      Friday | Saturday | Sunday">
-<!ENTITY % nth "1st | 2nd | 3rd | 4th | Last">
+<!ENTITY % nth "First | Second | Third | Fourth | Last">
 <!ENTITY % startdate "fixed | easter | advent | rule | dst | equinox | solstice">
-<!ENTITY % modifiers "add | goto | rule">
+<!ENTITY % modifiers "add | goto">
 <!ENTITY % directions "next | previous | nearest">
 
 <!ELEMENT holidays (holiday+)>
@@ -58,9 +58,9 @@
         The definition is either
         * undefined or 
         * unkonwn or
-        * it is a startdate, followed by a modifier
+        * it is a startdate, followed by a modifier or a condition
       -->
-      <!ELEMENT definition (undefined | unknown | ((%startdate;),(%modifiers;)*))>
+      <!ELEMENT definition (undefined | unknown | ((%startdate;),(%modifiers; | condition)*))>
       <!--
         year       the year when the holiday is valid,
                    same as if firstyear equals lastyear
@@ -71,107 +71,109 @@
         frequency  how many years must pass, until the next year is valid?
                    (the actual start of the frequency depends on the firstyear
                    respectively on the lastyear if firstyear is not set)
+        ifweekday  only valid if the date is on a particular weekday.
+        ifdaytype  only valid if the type of the date is of a particular type.
+        ifdayofmonth only valid if the day is a particular day of a month
       -->
       <!ATTLIST definition
                 year CDATA #IMPLIED
                 firstyear CDATA #IMPLIED
                 lastyear CDATA #IMPLIED
                 frequency CDATA #IMPLIED>
-
-          <!--
-            The undefined element says that a holiday wasn't/isn't
-            defined during the years of the definition
-          -->
-          <!ELEMENT undefined EMPTY>
+      <!--
+        a condition can be undefined, unknown or it can have multiple modifiers
+      -->
+      <!ELEMENT condition (undefined | unknown | (%modifiers;)*)>
+      <!ATTLIST condition
+                ifweekday (%weekdays;) #IMPLIED
+                ifdaytype CDATA #IMPLIED
+                ifdayname CDATA #IMPLIED
+                ifdayofmonth CDATA #IMPLIED>
           
-          <!--
-            The empty element defines that we don't know the definition
-          -->
-          <!ELEMENT unknown EMPTY>
-
-          <!--
-            The fixed element defines a fixed date
-          -->
-          <!ELEMENT fixed EMPTY>
-          <!ATTLIST fixed 
-	            month (%months;) #REQUIRED
-	            day CDATA #REQUIRED>
-
-          <!--
-            The Daylight Saving Time (dst) definition
-            action defines whether the DST starts or whether the DST ends
-          -->
-          <!ELEMENT dst EMPTY>
-          <!ATTLIST dst
-                    timezone CDATA #REQUIRED
-                    action (start|end) #IMPLIED>
-
-          <!--
-            This is the startdate of Easter
-            Western churches use the Gregorian Calendar to calculate the date
-            of Easter and Eastern Orthodox churches use the Julian Calendar
-          -->
-          <!ELEMENT easter EMPTY>
-          <!ATTLIST easter
-                    church (western|eastern) "western">
-
-          <!--
-            This is the startdate of the 1st advent
-          -->
-          <!ELEMENT advent EMPTY>
-
-          <!--
-            http://en.wikipedia.org/wiki/Equinox
-            "March equinox" and "September equinox"
-            Names avoid the classical Northern Hemisphere bias implied by the
-            assumption that March is in springtime and September is in autumn;
-            only true for those in the Northern Hemisphere but actually the
-            complete opposite for dwellers in the Southern Hemisphere.
-          -->          
-          <!ELEMENT equinox EMPTY>
-          <!ATTLIST equinox
-                    type (March|September) #REQUIRED
-                    timezone CDATA #REQUIRED>
+      <!--
+        The undefined element says that a holiday wasn't/isn't
+        defined during the years of the definition
+      -->
+      <!ELEMENT undefined EMPTY>
           
-          <!--
-            http://en.wikipedia.org/wiki/Solstice
-          -->
-          <!ELEMENT solstice EMPTY>
-          <!ATTLIST solstice
-                    type (June|December) #REQUIRED
-                    timezone CDATA #REQUIRED>
-          
-          <!--
-            The rule defines the nth weekday of a month
-          -->
-          <!ELEMENT rule EMPTY>
-          <!ATTLIST rule
-                    nth (%nth;) #REQUIRED
-                    weekday (%weekdays;) #REQUIRED
-                    month (%months;) #REQUIRED
-                    ifdaytype CDATA #IMPLIED
-                    ifday CDATA #IMPLIED>
+      <!--
+        The empty element defines that we don't know the definition
+      -->
+      <!ELEMENT unknown EMPTY>
 
-          <!--
-            The add modifier
-            the "add" property value can become positive or negative
-            if the condition called "ifweekday" is present, it adds days
-            only when the startdate is set on a particular weekday.
-            if the condition called "ifdaytype" is present, it adds days
-            only when the startdate is set on a day of a particular type.
-          -->
-          <!ELEMENT add EMPTY>
-          <!ATTLIST add
-                    days CDATA #REQUIRED
-                    ifweekday (%weekdays;) #IMPLIED
-                    ifdaytype CDATA #IMPLIED
-                    ifday CDATA #IMPLIED>
+      <!--
+        The fixed element defines a fixed date
+      -->
+      <!ELEMENT fixed EMPTY>
+      <!ATTLIST fixed 
+	        month (%months;) #REQUIRED
+	        day CDATA #REQUIRED>
+
+      <!--
+        The Daylight Saving Time (dst) definition
+        action defines whether the DST starts or whether the DST ends
+      -->
+      <!ELEMENT dst EMPTY>
+      <!ATTLIST dst
+                timezone CDATA #REQUIRED
+                action (start|end) #IMPLIED>
+
+      <!--
+        This is the startdate of Easter
+        Western churches use the Gregorian Calendar to calculate the date
+        of Easter and Eastern Orthodox churches use the Julian Calendar
+      -->
+      <!ELEMENT easter EMPTY>
+      <!ATTLIST easter
+                church (western|eastern) "western">
+
+      <!--
+        This is the startdate of the 1st advent
+      -->
+      <!ELEMENT advent EMPTY>
+
+      <!--
+        http://en.wikipedia.org/wiki/Equinox
+        "March equinox" and "September equinox"
+        Names avoid the classical Northern Hemisphere bias implied by the
+        assumption that March is in springtime and September is in autumn;
+        only true for those in the Northern Hemisphere but actually the
+        complete opposite for dwellers in the Southern Hemisphere.
+      -->          
+      <!ELEMENT equinox EMPTY>
+      <!ATTLIST equinox
+                month (March|September) #REQUIRED
+                timezone CDATA #REQUIRED>
           
-          <!--
-            The goto modifier
-            moves to the next (or previous) weekday
-          -->
-          <!ELEMENT goto EMPTY>
-          <!ATTLIST goto
-                    weekday (%weekdays;) #REQUIRED
-                    direction (%directions;) "next">
+      <!--
+        http://en.wikipedia.org/wiki/Solstice
+      -->
+      <!ELEMENT solstice EMPTY>
+      <!ATTLIST solstice
+                month (June|December) #REQUIRED
+                timezone CDATA #REQUIRED>
+        
+      <!--
+        The rule defines the nth weekday of a month
+      -->
+      <!ELEMENT rule EMPTY>
+      <!ATTLIST rule
+                nth (%nth;) #REQUIRED
+                weekday (%weekdays;) #REQUIRED
+                month (%months;) #REQUIRED>
+      <!--
+        The add modifier
+        the "add" property value can become positive or negative
+      -->
+      <!ELEMENT add EMPTY>
+      <!ATTLIST add
+                days CDATA #REQUIRED>
+        
+      <!--
+        The goto modifier
+        moves to the next (or previous) weekday
+      -->
+      <!ELEMENT goto EMPTY>
+      <!ATTLIST goto
+                weekday (%weekdays;) #REQUIRED
+                direction (%directions;) "next">

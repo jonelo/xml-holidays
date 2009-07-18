@@ -31,7 +31,7 @@
     -->
     <holiday name="Martin Luther King Day" type="national">
         <definition firstyear="1986">
-            <rule nth="3rd" weekday="Monday" month="January"/>
+            <rule nth="Third" weekday="Monday" month="January"/>
         </definition>
     </holiday>
 
@@ -49,7 +49,9 @@
         </definition>
         <definition firstyear="1793" lastyear="1936" frequency="4">
             <fixed month="March" day="4"/>
-            <add days="+1" ifweekday="Sunday"/>
+            <condition ifweekday="Sunday">
+                <add days="+1"/>
+            </condition>
         </definition>
         <!-- In 1933, the day of inauguration was changed by constitutional
              amendment from March 4 to noon on January 20, beginning with
@@ -59,7 +61,9 @@
             <!-- Should January 20 be a Sunday, the President is usually
                  administered the oath of office in a private ceremony on that
                  day, followed by a public ceremony the following day. -->
-            <add days="+1" ifweekday="Sunday"/>
+            <condition ifweekday="Sunday">
+                <add days="+1"/>
+            </condition>
         </definition>
     </holiday>
 
@@ -124,7 +128,7 @@
         <!-- On January 1, 1971 the federal holiday was shifted to the third
              Monday in February by the Uniform Monday Holiday Act. -->
         <definition firstyear="1971">
-            <rule nth="3rd" weekday="Monday" month="February"/>
+            <rule nth="Third" weekday="Monday" month="February"/>
         </definition>
     </holiday>
 
@@ -138,7 +142,7 @@
         <!-- NEA and its affiliates continued to observe National Teacher Day
              on the first Tuesday in March until 1985 -->
         <definition firstyear="1981" lastyear="1985">
-            <rule nth="1st" weekday="Tuesday" month="March"/>
+            <rule nth="First" weekday="Tuesday" month="March"/>
         </definition>
         <!-- when the National PTA established Teacher Appreciation Week as the
              first full week of May. The NEA Representative Assembly then voted
@@ -149,7 +153,7 @@
             <!-- the first full week of May in the US
                  (the week begins with Sunday)
             -->
-            <rule nth="1st" weekday="Sunday" month="May"/>
+            <rule nth="First" weekday="Sunday" month="May"/>
             <add days="+2"/> <!-- will become Tuesday -->
         </definition>
     </holiday>
@@ -188,8 +192,12 @@
         </definition>
         <definition firstyear="1777">
             <fixed month="April" day="15"/>
-            <add days="+2" ifweekday="Saturday"/>
-            <add days="+1" ifweekday="Sunday"/>
+            <condition ifweekday="Saturday">
+                <add days="+2"/>
+            </condition>
+            <condition ifweekday="Sunday">
+                <add days="+1"/>
+            </condition>
         </definition>
     </holiday>
 
@@ -284,7 +292,7 @@
         <!-- The holiday was declared officially by some states
              beginning in 1912 -->
         <definition firstyear="1912">
-            <rule nth="2nd" weekday="Sunday" month="May"/>
+            <rule nth="Second" weekday="Sunday" month="May"/>
         </definition>
     </holiday>
 
@@ -320,7 +328,7 @@
          recognized until 1972, during the presidency of Richard Nixon. -->
     <holiday name="Father's Day">
         <definition firstyear="1972">
-            <rule nth="3rd" weekday="Sunday" month="June"/>
+            <rule nth="Third" weekday="Sunday" month="June"/>
         </definition>
     </holiday>
 
@@ -335,7 +343,7 @@
     <holiday name="Labor Day" type="federal holiday">
         <!-- Congress made Labor Day a federal holiday on June 28, 1894 -->
         <definition firstyear="1894">
-            <rule nth="1st" weekday="Monday" month="September"/>
+            <rule nth="First" weekday="Monday" month="September"/>
         </definition>
     </holiday>
 
@@ -359,7 +367,7 @@
         <!-- Since 1969, the holiday has been observed on the
              third Monday in April -->
         <definition firstyear="1969">
-            <rule nth="3rd" weekday="Monday" month="April"/>
+            <rule nth="Third" weekday="Monday" month="April"/>
         </definition>
     </holiday>
 
@@ -367,7 +375,7 @@
     <holiday name="Grandparents Day" type="national">
         <definition firstyear="1978">
             <!-- Grandparents Day is always celebrated on the first Sunday after Labor Day -->
-            <rule nth="1st" weekday="Monday" month="September"/>
+            <rule nth="First" weekday="Monday" month="September"/>
             <add days="+6"/><!-- set Sunday after the date -->
         </definition>
     </holiday>
@@ -378,7 +386,7 @@
             City celebrated the 300th anniversary of his landing in the
             New World. -->
         <definition firstyear="1792">
-            <rule nth="2nd" weekday="Monday" month="October"/>
+            <rule nth="Second" weekday="Monday" month="October"/>
         </definition>
     </holiday>
 
@@ -427,7 +435,7 @@
           same as the first Tuesday in November!
         -->
         <definition firstyear="1845" lastyear="1874" frequency="4">
-            <rule nth="1st" weekday="Monday" month="November"/>
+            <rule nth="First" weekday="Monday" month="November"/>
             <add days="1"/><!-- Tuesday -->
         </definition>
         <!--
@@ -435,7 +443,7 @@
           in every even numbered year.
         -->
         <definition firstyear="1876" frequency="2">
-            <rule nth="1st" weekday="Monday" month="November"/>
+            <rule nth="First" weekday="Monday" month="November"/>
             <add days="1"/><!-- Tuesday -->
         </definition>
     </holiday>
@@ -462,7 +470,7 @@
          in the United States -->
     <holiday name="Thanksgiving" type="federal holiday">
         <definition firstyear="1776">
-            <rule nth="4th" weekday="Thursday" month="November"/>
+            <rule nth="Fourth" weekday="Thursday" month="November"/>
         </definition>
     </holiday>
 

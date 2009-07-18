@@ -38,7 +38,9 @@
     </holiday>
     
     <holiday name="Easter">
-        <easter/>
+        <definition>
+            <easter/>
+        </definition>
     </holiday>
     
     <holiday name="May Day" international="Labour Day" type="public holiday">

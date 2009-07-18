@@ -8,25 +8,25 @@
 <holidays country="gr">
     <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Greece -->
 
-    <holiday name="Πρωτοχρονιά (Protochronia)" type="public holiday">
+    <holiday name="Πρωτοχρονιά / Protochronia" type="public holiday">
         <import name="New Year's Day"/>
     </holiday>
     
-    <holiday name="Θεοφάνεια (Theofania)" type="public holiday"
+    <holiday name="Θεοφάνεια / Theofania" type="public holiday"
              international="Epiphany">
         <definition>
             <fixed month="January" day="6"/>
         </definition>
     </holiday>
     
-    <holiday name="Τριών Ιεραρχών (Trion Ierarchon)" type="school holiday only"
+    <holiday name="Τριών Ιεραρχών / Trion Ierarchon" type="school holiday only"
              international="The Three Holy Hierarchs">
         <definition>
             <fixed month="January" day="30"/>
         </definition>
     </holiday>
     
-    <holiday name="Καθαρή Δευτέρα (Kathari Devtera)" type="public holiday"
+    <holiday name="Καθαρή Δευτέρα / Kathari Devtera" type="public holiday"
              international="Ash Monday (eastern churches)">
         <definition>
             <easter church="eastern"/>
@@ -34,7 +34,7 @@
         </definition>
     </holiday>
     
-    <holiday name="Ευαγγελισμός Θεοτόκου (Eikosti-pempti Martiou)" type ="public holiday"
+    <holiday name="Ευαγγελισμός Θεοτόκου / Eikosti-pempti Martiou" type ="public holiday"
              international="25th of March">
         <definition>
             <fixed month="March" day="25"/>
@@ -47,14 +47,14 @@
         </definition>
     </holiday>
     
-    <holiday name="Κυριακή του Πάσχα (Kyriaki tou Pascha)"
+    <holiday name="Κυριακή του Πάσχα / Kyriaki tou Pascha"
              international="Easter Sunday (eastern churches)">
         <definition>
             <easter church="eastern"/>
         </definition>
     </holiday>
     
-    <holiday name="Δευτέρα του Πάσχα (Deutera tou Pascha)" type="public holiday"
+    <holiday name="Δευτέρα του Πάσχα / Deutera tou Pascha" type="public holiday"
              international="Easter Monday (eastern churches)">
         <definition>
             <easter church="eastern"/>
@@ -62,14 +62,14 @@
         </definition>
     </holiday>
     
-    <holiday name="Εργατική Πρωτομαγιά (Ergatiki Protomagia)" type="public holiday"
+    <holiday name="Εργατική Πρωτομαγιά / Ergatiki Protomagia" type="public holiday"
              international="Labour Day">
         <definition>
             <fixed month="May" day="1"/>
         </definition>
     </holiday>
     
-    <holiday name="Πνευματος (Pnevmatos)" type="public holiday"
+    <holiday name="Πνευματος / Pnevmatos" type="public holiday"
              international="Pentecost (eastern churches)">
         <definition>
             <easter church="eastern"/>
@@ -77,7 +77,7 @@
         </definition>
     </holiday>
     
-    <holiday name="Αγιου Πνευματος (Tou Agiou Pnevmatos)" type="public holiday"
+    <holiday name="Αγιου Πνευματος / Tou Agiou Pnevmatos" type="public holiday"
              international="Pentecost Monday (eastern churches)">
         <definition>
             <easter church="eastern"/>
@@ -85,7 +85,7 @@
         </definition>
     </holiday>
     
-    <holiday name="Η Κοίμησις της Θεοτόκου (Panaghias)" type="public holiday"
+    <holiday name="Η Κοίμησις της Θεοτόκου / Panaghias" type="public holiday"
              international="The Dormition of the Holy Virgin">
         <definition>
             <fixed month="August" day="15"/>
@@ -100,28 +100,28 @@
     </holiday>
     
     <!-- http://en.wikipedia.org/wiki/Oxi_Day -->
-    <holiday name="Το Όχι (To Ochi)" type="public holiday"
+    <holiday name="Το Όχι / To Ochi" type="public holiday"
              international="The Ochi day">
         <definition firstyear="1942">
             <fixed month="October" day="28"/>
         </definition>
     </holiday>
     
-    <holiday name="Πολυτεχνείο (Polytechneio)" type="school holiday only"
+    <holiday name="Πολυτεχνείο / Polytechneio" type="school holiday only"
              international="Polytechneio">
         <definition firstyear="1973">
             <fixed month="November" day="17"/>
         </definition>
     </holiday>
     
-    <holiday name="Χριστούγεννα (Christougenna)" type="public holiday"
+    <holiday name="Χριστούγεννα / Christougenna" type="public holiday"
              international="Christmas Day">
         <definition>
             <fixed month="December" day="25"/>
         </definition>
     </holiday>
     
-    <holiday name="Σύναξις Θεοτόκου (Synaxis Theotokou)" type="public holiday"
+    <holiday name="Σύναξις Θεοτόκου / Synaxis Theotokou" type="public holiday"
              international="Boxing Day">
         <definition>
             <fixed month="December" day="26"/>

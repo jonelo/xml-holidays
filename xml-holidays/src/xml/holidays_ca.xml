@@ -31,14 +31,14 @@
     <!-- http://en.wikipedia.org/wiki/Family_Day -->
     <holiday name="Family Day / Fête de la famille" type="common statutory holiday, Alberta, Ontario, Saskatchewan">
         <definition firstyear="1990">
-            <rule nth="3rd" weekday="Monday" month="February"/>
+            <rule nth="Third" weekday="Monday" month="February"/>
         </definition>
     </holiday>
     
     <!-- http://en.wikipedia.org/wiki/Louis_Riel_Day -->
     <holiday name="Louis Riel Day" type="public holiday in the Canadian province of Manitoba">
          <definition firstyear="2008">
-             <rule nth="3rd" weekday="Monday" month="February"/>
+             <rule nth="Third" weekday="Monday" month="February"/>
          </definition>
     </holiday>
     
@@ -49,7 +49,7 @@
          festival is strongly rooted. -->
     <holiday name="Caribana">
         <definition>
-            <rule nth="1st" weekday="Saturday" month="August"/>
+            <rule nth="First" weekday="Saturday" month="August"/>
         </definition>
     </holiday>
     
@@ -103,7 +103,7 @@
     <!-- http://en.wikipedia.org/wiki/Mother%27s_Day -->
     <holiday name="Mother's Day / Fête des Mères">
         <definition>
-            <rule nth="2nd" weekday="Sunday" month="May"/>
+            <rule nth="Second" weekday="Sunday" month="May"/>
         </definition>
     </holiday> 
 
@@ -119,7 +119,9 @@
              Victoria Day. -->
         <definition firstyear="1901" lastyear="1952">
             <fixed month="May" day="24"/>
-            <add days="1" ifweekday="Sunday"/>
+            <condition ifweekday="Sunday">
+                <add days="1"/>
+            </condition>
         </definition>
         <!-- An amendment to the Statutes of Canada in 1952 established the
              celebration of Victoria Day on the Monday preceding May 25. -->
@@ -139,7 +141,9 @@
             <fixed month="July" day="1"/>
             <!-- The Holidays Act provides that July 2 is Canada Day when
                  July 1 is a Sunday -->
-            <add days="1" ifweekday="Sunday"/>
+            <condition ifweekday="Sunday">
+                <add days="1"/>
+            </condition>
         </definition>
     </holiday>
     
@@ -154,7 +158,7 @@
          "Heritage Day" in Alberta -->
     <holiday name="August Civic Holiday / Premier lundi d'août" type="local">
         <definition>
-            <rule nth="1st" weekday="Monday" month="August"/>
+            <rule nth="First" weekday="Monday" month="August"/>
         </definition>
     </holiday>
 
@@ -163,7 +167,7 @@
          which started the Klondike Gold Rush. -->
     <holiday name="Discovery Day (Yukon)" type="statutory holiday in the Yukon">
         <definition firstyear="1896">
-            <rule nth="3rd" weekday="Monday" month="August"/>
+            <rule nth="Third" weekday="Monday" month="August"/>
         </definition>
     </holiday>
     
@@ -239,7 +243,7 @@
          traced back to April 14, 1872. -->
     <holiday name="Labour Day / La fête du travail" type="nationwide statutory holiday">
         <definition firstyear="1872">
-            <rule nth="1st" weekday="Monday" month="September"/>
+            <rule nth="First" weekday="Monday" month="September"/>
         </definition>
     </holiday>
 
@@ -361,20 +365,20 @@
             <rule nth="Last" weekday="Monday" month="October"/>
         </definition>
         <definition firstyear="1913" lastyear="1913">
-             <rule nth="3rd" weekday="Monday" month="October"/>
+             <rule nth="Third" weekday="Monday" month="October"/>
         </definition>
         <definition firstyear="1914" lastyear="1919">
-            <rule nth="2nd" weekday="Monday" month="October"/>
+            <rule nth="Second" weekday="Monday" month="October"/>
         </definition>
         <definition firstyear="1920" lastyear="1920">
-            <rule nth="3rd" weekday="Monday" month="October"/>
+            <rule nth="Third" weekday="Monday" month="October"/>
         </definition>
         <definition firstyear="1921" lastyear="1930">
            <fixed day="11" month="November"/>
            <goto weekday="Monday" direction="previous"/>
         </definition>
         <definition firstyear="1931" lastyear="1934">
-            <rule nth="2nd" weekday="Monday" month="October"/>
+            <rule nth="Second" weekday="Monday" month="October"/>
         </definition>
         <!-- first fixed on Monday Oct. 14, then changed to Oct. 24, due to
              General elections on Oct. 14 -->
@@ -385,7 +389,7 @@
             <!-- Since 1936 it was already the 2nd Monday in October.
                  On January 31, 1957, the Canadian Parliament proclaimed 
                  the holiday to be observed on the 2nd Monday in October -->
-            <rule nth="2nd" weekday="Monday" month="October"/>
+            <rule nth="Second" weekday="Monday" month="October"/>
         </definition>
     </holiday>
 

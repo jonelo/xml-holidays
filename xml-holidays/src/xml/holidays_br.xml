@@ -60,7 +60,7 @@
     <!-- http://en.wikipedia.org/wiki/Mothers_Day -->
     <holiday name="Dia das Mães" international="Mother's Day">
         <definition>
-            <rule nth="2nd" weekday="Sunday" month="May"/>
+            <rule nth="Second" weekday="Sunday" month="May"/>
         </definition>
     </holiday>
 
@@ -83,7 +83,7 @@
 
     <holiday name="Dia dos Pais" international="Father's Day">
         <definition>
-            <rule nth="2nd" weekday="Sunday" month="August"/>
+            <rule nth="Second" weekday="Sunday" month="August"/>
         </definition>
     </holiday>
 

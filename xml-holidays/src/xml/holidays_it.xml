@@ -1,87 +1,120 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
-
+<!-- 
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+-->
 <holidays country="it">
-    <!-- Italien -->
+    <!-- Italy -->
+    <!-- http://en.wikipedia.org/wiki/Holidays_in_Italy
+         http://de.wikipedia.org/wiki/Feiertage_in_Italien
+      -->
 
-    <holiday name="Capodanno" type="gesetzlich" international="New Year's Day">
+    <holiday name="Capodanno" type="public holiday">
+        <import name="New Year's Day"/>
+    </holiday>
+    
+    <holiday name="Epifania" type="public holiday" international="Epiphany">
         <definition>
-            <fixed month="January" day="1"/>
+            <fixed day="6" month="January" />
         </definition>
     </holiday>
-    <holiday name="Epifania" type="gesetzlich" international="The Epiphany (Three Kings Day)">
-    	<definition>
-    		<fixed day="6" month="January" />
-    	</definition>
-    </holiday>
-    <holiday name="Beginn der Sommerzeit (Uhren 1 h vorstellen)" international="Begin Daylight Saving Time">
+    
+    <holiday name="Begin Daylight Saving Time (+1 h)" international="Begin Daylight Saving Time">
         <definition>
             <dst timezone="Europe/Rome" action="start"/>
         </definition>
     </holiday>
-    <holiday name="Pasqua" type="gesetzlich" international="Easter Sunday">
-    	<definition>
-    		<easter />
-    	</definition>
+    
+    <holiday name="Pasqua" type="public holiday" international="Easter Sunday">
+        <definition>
+            <easter/>
+        </definition>
     </holiday>
-    <holiday name="Lunedì di Pasqua" type="gesetzlich" international="Easter Monday">
-    	<definition>
-    		<easter /><add days="+1" />
-    	</definition>
+    
+    <holiday name="Lunedì dell'Angelo, Pasquetta" type="public holiday" international="Easter Monday">
+        <definition>
+            <easter/>
+            <add days="+1"/>
+        </definition>
     </holiday>
-    <holiday name="Festa della Liberazione" type="gesetzlich">
-    	<definition>
-    		<fixed day="25" month="April" />
-    	</definition>
+    
+    <holiday name="Festa della Liberazione" type="public holiday">
+        <definition firstyear="1945">
+            <fixed day="25" month="April"/>
+        </definition>
     </holiday>
-    <holiday name="Festa del Lavoro" type="gesetzlich" international="Labor Day">
-    	<definition>
-    		<fixed day="1" month="May" />
-    	</definition>
+    
+    <holiday name="Festa dei Lavoratori" type="public holiday" international="Labor Day">
+        <definition>
+            <fixed day="1" month="May"/>
+        </definition>
     </holiday>
-    <holiday name="Festa della Repubblica" type="gesetzlich">
-    	<definition>
-    		<fixed day="2" month="June" />
-    	</definition>
+    
+    <holiday name="Festa della Repubblica" type="public holiday">
+        <definition firstyear="1946">
+            <fixed day="2" month="June"/>
+        </definition>
     </holiday>
+    
     <holiday name="San Giovanni">
-    	<definition>
-    		<fixed day="24" month="June" />
-    	</definition>
+        <definition>
+            <fixed day="24" month="June"/>
+        </definition>
     </holiday>
-    <holiday name="Assunzione della B. V. Maria" type="gesetzlich">
-    	<definition>
-    		<fixed day="15" month="August" />
-    	</definition>
+    
+    <holiday name="Assunzione (Ferragosto)" type="public holiday">
+        <definition>
+            <fixed day="15" month="August"/>
+        </definition>
     </holiday>
-    <holiday name="Ende der Sommerzeit (Uhren 1 h zurückstellen)" international="End Daylight Saving Time">
+    
+    <holiday name="End Daylight Saving Time (-1 h)" international="End Daylight Saving Time">
         <definition>
             <dst timezone="Europe/Rome" action="end"/>
         </definition>
     </holiday>
-    <holiday name="Ognissanti (Tutti i Santi)" type="gesetzlich">
-    	<definition>
-    		<fixed day="1" month="November" />
-    	</definition>
+    
+    <holiday name="Ognissanti (Tutti i Santi)" type="public holiday">
+        <definition>
+            <fixed day="1" month="November"/>
+        </definition>
     </holiday>
-    <holiday name="Immacolata Concezione" type="gesetzlich">
-    	<definition>
-    		<fixed day="8" month="December" />
-    	</definition>
+    
+    <holiday name="Il giorno dei morti" type="public holiday" international="Day of the dead">
+        <definition>
+            <fixed day="2" month="November"/>
+        </definition>
     </holiday>
-    <holiday name="Santo Natale" type="gesetzlich">
-    	<definition>
-    		<fixed day="25" month="December" />
-    	</definition>
+    
+    <holiday name="Giorno della Vittoria" type="public holiday" international="Victory Day">
+        <definition firstyear="1918">
+            <fixed day="4" month="November"/>
+        </definition>
     </holiday>
-    <holiday name="Santo Stefano" type="gesetzlich">
-    	<definition>
-    		<fixed day="26" month="December" />
-    	</definition>
+    
+    <holiday name="Immacolata Concezione (Immacolata)" type="public holiday">
+        <definition>
+            <fixed day="8" month="December"/>
+        </definition>
     </holiday>
+    
+    <holiday name="Natale" type="public holiday">
+        <definition>
+            <fixed day="25" month="December"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Santo Stefano" type="public holiday">
+        <definition>
+            <fixed day="26" month="December"/>
+        </definition>
+    </holiday>
+    
     <holiday name="San Silvestro">
-    	<definition>
-    		<fixed day="31" month="December" />
-    	</definition>
+        <definition>
+            <fixed day="31" month="December"/>
+        </definition>
     </holiday>
 </holidays>

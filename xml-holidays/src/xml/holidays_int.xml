@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
+<!-- 
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+-->
 <holidays country="int">
+    <!-- See also http://en.wikipedia.org/wiki/Category:United_Nations_days -->
 
     <!--
       http://en.wikipedia.org/wiki/Earth_Day
@@ -22,6 +28,15 @@
         <definition firstyear="2001">
             <fixed month="May" day="25"/>
         </definition>
+    </holiday>
+    
+    <!--
+       http://en.wikipedia.org/wiki/World_AIDS_Day
+    -->
+    <holiday name="World AIDS Day">
+         <definition firstyear="1988">
+             <fixed month="December" day="1"/>
+         </definition>
     </holiday>
 
 </holidays>

@@ -21,12 +21,12 @@
               Movable holiday: when it does not fall on a Monday,
               the holiday is observed on the following Monday.
             -->
-            <add days="6" ifweekday="Tuesday"/>
-            <add days="5" ifweekday="Wednesday"/>
-            <add days="4" ifweekday="Thursday"/>
-            <add days="3" ifweekday="Friday"/>
-            <add days="2" ifweekday="Saturday"/>
-            <add days="1" ifweekday="Sunday"/>
+            <condition ifweekday="Tuesday"><add days="6"/></condition>
+            <condition ifweekday="Wednesday"><add days="5"/></condition>
+            <condition ifweekday="Thursday"><add days="4"/></condition>
+            <condition ifweekday="Friday"><add days="3"/></condition>
+            <condition ifweekday="Saturday"><add days="2"/></condition>
+            <condition ifweekday="Sunday"><add days="1"/></condition>
         </definition>
     </holiday>
     
@@ -46,12 +46,12 @@
               Movable holiday: when they do not fall on a Monday,
               the holiday is observed on the following Monday.
             -->
-            <add days="6" ifweekday="Tuesday"/>
-            <add days="5" ifweekday="Wednesday"/>
-            <add days="4" ifweekday="Thursday"/>
-            <add days="3" ifweekday="Friday"/>
-            <add days="2" ifweekday="Saturday"/>
-            <add days="1" ifweekday="Sunday"/>
+            <condition ifweekday="Tuesday"><add days="6"/></condition>
+            <condition ifweekday="Wednesday"><add days="5"/></condition>
+            <condition ifweekday="Thursday"><add days="4"/></condition>
+            <condition ifweekday="Friday"><add days="3"/></condition>
+            <condition ifweekday="Saturday"><add days="2"/></condition>
+            <condition ifweekday="Sunday"><add days="1"/></condition>
         </definition>
     </holiday>
     
@@ -95,12 +95,12 @@
               Movable holiday: when it does not fall on a Monday,
               the holiday is observed on the following Monday.
             -->
-            <add days="6" ifweekday="Tuesday"/>
-            <add days="5" ifweekday="Wednesday"/>
-            <add days="4" ifweekday="Thursday"/>
-            <add days="3" ifweekday="Friday"/>
-            <add days="2" ifweekday="Saturday"/>
-            <add days="1" ifweekday="Sunday"/>
+            <condition ifweekday="Tuesday"><add days="6"/></condition>
+            <condition ifweekday="Wednesday"><add days="5"/></condition>
+            <condition ifweekday="Thursday"><add days="4"/></condition>
+            <condition ifweekday="Friday"><add days="3"/></condition>
+            <condition ifweekday="Saturday"><add days="2"/></condition>
+            <condition ifweekday="Sunday"><add days="1"/></condition>
         </definition>
     </holiday>
     
@@ -124,12 +124,12 @@
               Movable holiday: when it does not fall on a Monday,
               the holiday is observed on the following Monday.
             -->
-            <add days="6" ifweekday="Tuesday"/>
-            <add days="5" ifweekday="Wednesday"/>
-            <add days="4" ifweekday="Thursday"/>
-            <add days="3" ifweekday="Friday"/>
-            <add days="2" ifweekday="Saturday"/>
-            <add days="1" ifweekday="Sunday"/>
+            <condition ifweekday="Tuesday"><add days="6"/></condition>
+            <condition ifweekday="Wednesday"><add days="5"/></condition>
+            <condition ifweekday="Thursday"><add days="4"/></condition>
+            <condition ifweekday="Friday"><add days="3"/></condition>
+            <condition ifweekday="Saturday"><add days="2"/></condition>
+            <condition ifweekday="Sunday"><add days="1"/></condition>
         </definition>
     </holiday>
     
@@ -147,12 +147,12 @@
               Movable holiday: when it does not fall on a Monday,
               the holiday is observed on the following Monday.
             -->
-            <add days="6" ifweekday="Tuesday"/>
-            <add days="5" ifweekday="Wednesday"/>
-            <add days="4" ifweekday="Thursday"/>
-            <add days="3" ifweekday="Friday"/>
-            <add days="2" ifweekday="Saturday"/>
-            <add days="1" ifweekday="Sunday"/>
+            <condition ifweekday="Tuesday"><add days="6"/></condition>
+            <condition ifweekday="Wednesday"><add days="5"/></condition>
+            <condition ifweekday="Thursday"><add days="4"/></condition>
+            <condition ifweekday="Friday"><add days="3"/></condition>
+            <condition ifweekday="Saturday"><add days="2"/></condition>
+            <condition ifweekday="Sunday"><add days="1"/></condition>
         </definition>
     </holiday>
     
@@ -163,12 +163,12 @@
               Movable holiday: when it does not fall on a Monday,
               the holiday is observed on the following Monday.
             -->
-            <add days="6" ifweekday="Tuesday"/>
-            <add days="5" ifweekday="Wednesday"/>
-            <add days="4" ifweekday="Thursday"/>
-            <add days="3" ifweekday="Friday"/>
-            <add days="2" ifweekday="Saturday"/>
-            <add days="1" ifweekday="Sunday"/>
+            <condition ifweekday="Tuesday"><add days="6"/></condition>
+            <condition ifweekday="Wednesday"><add days="5"/></condition>
+            <condition ifweekday="Thursday"><add days="4"/></condition>
+            <condition ifweekday="Friday"><add days="3"/></condition>
+            <condition ifweekday="Saturday"><add days="2"/></condition>
+            <condition ifweekday="Sunday"><add days="1"/></condition>
         </definition>
     </holiday>
     

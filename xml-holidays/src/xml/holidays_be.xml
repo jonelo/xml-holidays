@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
 
 <holidays country="be">
@@ -23,7 +23,7 @@
     <holiday name="Taufe des Herrn [katholisch]">
        <definition>
           <fixed month="January" day="6"/>
-          <goto weekday="Sunday" direction="forward"/>
+          <goto weekday="Sunday" direction="next"/>
        </definition>
     </holiday>
     <holiday name="Darstellung des Herrn (Mariä Lichtmess)">
@@ -160,7 +160,7 @@
     <holiday name="Muttertag">
        <!-- 2. Sonntag im Mai -->
        <definition>
-          <rule nth="2nd" weekday="Sunday" month="May"/>
+          <rule nth="Second" weekday="Sunday" month="May"/>
        </definition>
     </holiday>
     <holiday name="Kantate" type="evangelisch">
@@ -223,7 +223,7 @@
     </holiday>
     <holiday name="Erntedankfest">
        <definition>
-          <rule nth="1st" weekday="Sunday" month="October"/>
+          <rule nth="First" weekday="Sunday" month="October"/>
        </definition>
     </holiday>
     <holiday name="Ende der Sommerzeit (Uhren 1 h zurückstellen)">
@@ -237,7 +237,7 @@
       -->
     <holiday name="Rosenkranzfest">
        <definition firstyear="1573" lastyear="1912">
-          <rule nth="1st" weekday="Sunday" month="October"/>
+          <rule nth="First" weekday="Sunday" month="October"/>
        </definition>
        <definition firstyear="1913">
           <fixed month="October" day="7"/>                                     
@@ -257,8 +257,12 @@
        </definition>
        <definition firstyear="1989">
           <fixed day="30" month="October"/>
-          <add days="-1" ifweekday="Saturday"/> <!-- kann Freitag werden -->
-          <add days="-2" ifweekday="Sunday"/>   <!-- kann Freitag werden -->
+          <condition ifweekday="Saturday">
+              <add days="-1" /> <!-- kann Freitag werden -->
+          </condition>
+          <condition ifweekday="Sunday">
+              <add days="-2"/>   <!-- kann Freitag werden -->
+          </condition>
        </definition>        
     </holiday>
     <holiday name="Weltspartag (offiziell)">

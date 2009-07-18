@@ -111,29 +111,37 @@
     -->
     <holiday name="Dreifacher Hexensabbat, großer Verfallstag (1. Quartal)" type="Börse">
         <definition>
-            <rule nth="3rd" weekday="Friday" month="March"/>             
-            <add days="-1" ifdaytype="gesetzlich"/>
+            <rule nth="Third" weekday="Friday" month="March"/>
+            <condition ifdaytype="gesetzlich">
+                <add days="-1"/>
+            </condition>
         </definition>
     </holiday>
     
     <holiday name="Dreifacher Hexensabbat, großer Verfallstag (2. Quartal)" type="Börse">
         <definition>
-            <rule nth="3rd" weekday="Friday" month="June"/>
-            <add days="-1" ifdaytype="gesetzlich"/>
+            <rule nth="Third" weekday="Friday" month="June"/>
+            <condition ifdaytype="gesetzlich">
+                <add days="-1"/>
+            </condition>
         </definition>
     </holiday>
     
     <holiday name="Dreifacher Hexensabbat, großer Verfallstag (3. Quartal)" type="Börse">
         <definition>
-            <rule nth="3rd" weekday="Friday" month="September"/>
-            <add days="-1" ifdaytype="gesetzlich"/>
+            <rule nth="Third" weekday="Friday" month="September"/>
+            <condition ifdaytype="gesetzlich">
+                <add days="-1"/>
+            </condition>
         </definition>
     </holiday>
     
     <holiday name="Dreifacher Hexensabbat, großer Verfallstag (4. Quartal)" type="Börse">
         <definition>
-            <rule nth="3rd" weekday="Friday" month="December"/>
-            <add days="-1" ifdaytype="gesetzlich"/>
+            <rule nth="Third" weekday="Friday" month="December"/>
+            <condition ifdaytype="gesetzlich">
+                <add days="-1"/>
+            </condition>
         </definition>
     </holiday>
     
@@ -215,7 +223,7 @@
     <holiday name="Muttertag">
         <!-- 2. Sonntag im Mai -->
         <definition>
-            <rule nth="2nd" weekday="Sunday" month="May"/>
+            <rule nth="Second" weekday="Sunday" month="May"/>
         </definition>
     </holiday>
     
@@ -360,39 +368,39 @@
              international="Oktoberfest (End)">
         <!-- Ende des Festes ist traditionell der erste Sonntag im Oktober. -->
         <definition firstyear="1810" lastyear="1812">
-            <rule nth="1st" weekday="Sunday" month="October"/>
+            <rule nth="First" weekday="Sunday" month="October"/>
         </definition>
         
         <definition firstyear="1814" lastyear="1853">
-            <rule nth="1st" weekday="Sunday" month="October"/>
+            <rule nth="First" weekday="Sunday" month="October"/>
         </definition>
         
         <definition firstyear="1855" lastyear="1865">
-            <rule nth="1st" weekday="Sunday" month="October"/>
+            <rule nth="First" weekday="Sunday" month="October"/>
         </definition>
         
         <definition firstyear="1867" lastyear="1869">
-            <rule nth="1st" weekday="Sunday" month="October"/>
+            <rule nth="First" weekday="Sunday" month="October"/>
         </definition>
         
         <definition firstyear="1871" lastyear="1872">
-            <rule nth="1st" weekday="Sunday" month="October"/>
+            <rule nth="First" weekday="Sunday" month="October"/>
         </definition>
         
         <definition firstyear="1874" lastyear="1913">
-            <rule nth="1st" weekday="Sunday" month="October"/>
+            <rule nth="First" weekday="Sunday" month="October"/>
         </definition>
         
         <definition firstyear="1921" lastyear="1922">
-            <rule nth="1st" weekday="Sunday" month="October"/>
+            <rule nth="First" weekday="Sunday" month="October"/>
         </definition>
         
         <definition firstyear="1925" lastyear="1938">
-            <rule nth="1st" weekday="Sunday" month="October"/>
+            <rule nth="First" weekday="Sunday" month="October"/>
         </definition>
         
         <definition firstyear="1949" lastyear="1999">
-            <rule nth="1st" weekday="Sunday" month="October"/>
+            <rule nth="First" weekday="Sunday" month="October"/>
         </definition>
         
         <!-- Seit 2000 gilt folgende Regel: Ist der 1. oder 2. Oktober ein Sonntag,
@@ -402,9 +410,13 @@
          frühestens am 16., spätestens am 22. September und endet frühestens
          am 3., spätestens am 7. Oktober. -->
         <definition firstyear="2000">
-            <rule nth="1st" weekday="Sunday" month="October"/>
-            <add days="2" ifday="1"/>
-            <add days="1" ifday="2"/>
+            <rule nth="First" weekday="Sunday" month="October"/>
+            <condition ifdayofmonth="1">
+                <add days="2"/> <!-- will become the 3rd of October -->
+            </condition>
+            <condition ifdayofmonth="2">
+                <add days="1"/> <!-- will become the 3rd of October -->
+            </condition>
         </definition>
     </holiday>
 
@@ -416,7 +428,7 @@
     
     <holiday name="Erntedankfest">
         <definition>
-            <rule nth="1st" weekday="Sunday" month="October"/>
+            <rule nth="First" weekday="Sunday" month="October"/>
         </definition>
     </holiday>
     
@@ -431,7 +443,7 @@
       -->
     <holiday name="Rosenkranzfest">
         <definition firstyear="1573" lastyear="1912">
-            <rule nth="1st" weekday="Sunday" month="October"/>
+            <rule nth="First" weekday="Sunday" month="October"/>
         </definition>
         <definition firstyear="1913">
             <fixed month="October" day="7"/>                                     
@@ -455,8 +467,12 @@
            <add days="-1"/>
            -->
             <fixed day="30" month="October"/>
-            <add days="-1" ifweekday="Saturday"/> <!-- kann Freitag werden -->
-            <add days="-2" ifweekday="Sunday"/>   <!-- kann Freitag werden -->
+            <condition ifweekday="Saturday">
+                <add days="-1"/> <!-- kann Freitag werden -->
+            </condition>
+            <condition ifweekday="Sunday">
+                <add days="-2"/>  <!-- kann Freitag werden -->
+            </condition>
         </definition>        
     </holiday>
     
@@ -565,25 +581,25 @@
     
     <holiday name="Frühlingsanfang" international="Equinox March">
         <definition>
-            <equinox type="March" timezone="Europe/Berlin"/>
+            <equinox month="March" timezone="Europe/Berlin"/>
         </definition>
     </holiday>
     
     <holiday name="Sommeranfang (Sommersonnenwende)" international="Solstice June">
         <definition>
-            <solstice type="June" timezone="Europe/Berlin"/>
+            <solstice month="June" timezone="Europe/Berlin"/>
         </definition>
     </holiday>
     
     <holiday name="Herbstanfang" international="Equinox September">
         <definition>
-            <equinox type="September" timezone="Europe/Berlin"/>
+            <equinox month="September" timezone="Europe/Berlin"/>
         </definition>
     </holiday>
 
     <holiday name="Winteranfang (Wintersonnenwende)" international="Solstice December">
         <definition>
-            <solstice type="December" timezone="Europe/Berlin"/>
+            <solstice month="December" timezone="Europe/Berlin"/>
         </definition>
     </holiday>
 

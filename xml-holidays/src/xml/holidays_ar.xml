@@ -74,13 +74,13 @@
     <holiday name="Día de la Bandera" international="National Flag Day"
              type="public holiday">
         <definition>
-            <rule nth="3rd" weekday="Monday" month="June"/>
+            <rule nth="Third" weekday="Monday" month="June"/>
         </definition>
     </holiday>
     
     <holiday name="Father's Day">
         <definition>
-            <rule nth="3rd" weekday="Sunday" month="June"/>
+            <rule nth="Third" weekday="Sunday" month="June"/>
         </definition>
     </holiday>
     
@@ -103,13 +103,13 @@
         international="Anniversary of the death of General José de San Martín"
         type="public holiday">
         <definition>
-            <rule nth="3rd" weekday="Monday" month="August"/>
+            <rule nth="Third" weekday="Monday" month="August"/>
         </definition>
     </holiday>
     
     <holiday name="Children's Day">
         <definition>
-            <rule nth="2nd" weekday="Sunday" month="August"/>
+            <rule nth="Second" weekday="Sunday" month="August"/>
         </definition>
     </holiday>
     
@@ -122,15 +122,23 @@
               If the date falls on a Tuesday or Wednesday,
               the holiday is the preceding Monday.
             -->
-            <add days="-1" ifweekday="Tuesday"/> <!-- can become the preceding Monday -->
-            <add days="-2" ifweekday="Wednesday"/> <!-- can become the preceding Monday -->
+            <condition ifweekday="Tuesday">
+                <add days="-1"/>  <!-- can become the preceding Monday -->
+            </condition>
+            <condition ifweekday="Wednesday">
+                <add days="-2"/>  <!-- can become the preceding Monday -->
+            </condition>
             <!--
               If it falls on a Thursday or a Friday then
               the holiday is the following Monday.
             -->
-            <add days="+4" ifweekday="Thursday"/> <!-- can become the following Monday -->
-            <add days="+3" ifweekday="Friday"/> <!-- can become the following Monday -->
-        </definition>
+            <condition ifweekday="Thursday">
+                <add days="+4"/>  <!-- can become the following Monday -->
+            </condition>
+            <condition ifweekday="Friday">
+                <add days="+3"/> <!-- can become the following Monday -->
+            </condition>
+        </definition>        
     </holiday>
     
     <holiday name="Día del Maestro" international="Teacher's Day" type="only observed by primary school students">
@@ -142,7 +150,7 @@
     <!-- http://en.wikipedia.org/wiki/Mother%27s_Day -->
     <holiday name="Mother's Day">
         <definition>
-            <rule nth="3rd" weekday="Sunday" month="October"/>
+            <rule nth="Third" weekday="Sunday" month="October"/>
         </definition>
     </holiday>
     

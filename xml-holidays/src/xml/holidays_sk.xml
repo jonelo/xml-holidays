@@ -52,7 +52,7 @@
     <holiday name="Muttertag">
         <!-- 2. Sonntag im Mai -->
         <definition>
-            <rule nth="2nd" weekday="Sunday" month="May"/>
+            <rule nth="Second" weekday="Sunday" month="May"/>
         </definition>
     </holiday>
     <holiday name="Sviatok svätého Cyrila a Metoda (St. Cyril and St. Methodius Day)" type="gesetzlich">
