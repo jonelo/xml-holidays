@@ -18,7 +18,7 @@
     
     <holiday name="Équinoxe mars">
         <definition>
-            <equinox type="March" timezone="Europe/Paris"/>
+            <equinox month="March" timezone="Europe/Paris"/>
         </definition>
     </holiday>
     
@@ -68,15 +68,16 @@
     <holiday name="Fête des Mères">
         <definition>
             <rule nth="Last" weekday="Sunday" month="May"/>
-            
-            <!-- First Sunday of June if Pentecost occurs on this day -->
-            <rule nth="1st" weekday="Sunday" month="June" ifday="Pentecôte"/>
+            <condition ifdayname="Pentecôte">
+                <!-- First Sunday of June if Pentecost occurs on this day -->
+                <add days="7"/>
+            </condition>
         </definition>
     </holiday>
     
     <holiday name="Solstice juin">
         <definition>
-            <solstice type="June" timezone="Europe/Paris"/>
+            <solstice month="June" timezone="Europe/Paris"/>
         </definition>
     </holiday>
     
@@ -94,7 +95,7 @@
     
     <holiday name="Équinoxe sept">
         <definition>
-            <equinox type="September" timezone="Europe/Paris"/>
+            <equinox month="September" timezone="Europe/Paris"/>
         </definition>
     </holiday>
     
@@ -116,7 +117,7 @@
     
     <holiday name="Solstice déc">
         <definition>
-            <solstice type="December" timezone="Europe/Paris"/>
+            <solstice month="December" timezone="Europe/Paris"/>
         </definition>
     </holiday> 
     

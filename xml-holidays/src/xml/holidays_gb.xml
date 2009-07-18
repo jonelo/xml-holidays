@@ -20,16 +20,24 @@
     <holiday name="New Year's Day" type="bank holiday">
         <definition firstyear="1971">
             <fixed day="1" month="January"/>
-            <add days="+1" ifweekday="Sunday"/>
-            <add days="+2" ifweekday="Saturday"/>
+            <condition ifweekday="Sunday">
+                <add days="+1"/>
+            </condition>
+            <condition ifweekday="Saturday">
+                <add days="+2"/>
+            </condition>
         </definition>
     </holiday>
     
     <holiday name="2nd January" type="bank holiday, Scotland only">
         <definition firstyear="1971">
             <fixed day="2" month="January"/>
-            <add days="+1" ifweekday="Sunday"/>
-            <add days="+2" ifweekday="Saturday"/>
+            <condition ifweekday="Sunday">
+                <add days="+1"/>
+            </condition>
+            <condition ifweekday="Saturday">
+                <add days="+2"/>
+            </condition>
         </definition>
     </holiday>
     
@@ -43,8 +51,12 @@
     <holiday name="St. Patrick's Day" type="bank holiday, Northern Ireland only">
         <definition firstyear="1971">
             <fixed day="17" month="March"/>
-            <add days="+1" ifweekday="Sunday"/>
-            <add days="+2" ifweekday="Saturday"/>
+            <condition ifweekday="Sunday">
+                <add days="+1"/>
+            </condition>
+            <condition ifweekday="Saturday">
+                <add days="+2"/>
+            </condition>
         </definition>
     </holiday>
     
@@ -127,7 +139,7 @@
     
     <holiday name="Vernal Equinox">
         <definition>
-            <equinox type="March" timezone="Europe/London"/>
+            <equinox month="March" timezone="Europe/London"/>
         </definition>
     </holiday>
     
@@ -148,19 +160,27 @@
     <holiday name="May Day Bank Holiday" type="bank holiday">
         <definition firstyear="1971" lastyear="1994">
             <fixed day="1" month="May"/>
-            <add days="+1" ifweekday="Sunday"/>
-            <add days="+2" ifweekday="Saturday"/>
+            <condition ifweekday="Sunday">
+                <add days="+1"/>
+            </condition>
+            <condition ifweekday="Saturday">
+                <add days="+2"/>
+            </condition>
         </definition>
         <!-- For one year only, 1995, this holiday was moved to
              the second Monday in May - i.e., from 1 May to 8 May -
              to commemorate the 50th anniversary of VE Day.  -->
         <definition firstyear="1995" lastyear="1995">
-            <rule nth="2nd" weekday="Monday" month="May"/>
+            <rule nth="Second" weekday="Monday" month="May"/>
         </definition>
         <definition firstyear="1996">
             <fixed day="1" month="May"/>
-            <add days="+1" ifweekday="Sunday"/>
-            <add days="+2" ifweekday="Saturday"/>
+            <condition ifweekday="Sunday">
+                <add days="+1"/>
+            </condition>
+            <condition ifweekday="Saturday">
+                <add days="+2"/>
+            </condition>
         </definition>
     </holiday>
     
@@ -190,27 +210,31 @@
     <!-- http://en.wikipedia.org/wiki/Father%27s_Day -->
     <holiday name="Father's Day">
         <definition>
-            <rule nth="3rd" weekday="Sunday" month="June"/>
+            <rule nth="Third" weekday="Sunday" month="June"/>
         </definition>
     </holiday>
     
     <holiday name="June Solstice">
         <definition>
-            <solstice type="June" timezone="Europe/London"/>
+            <solstice month="June" timezone="Europe/London"/>
         </definition>
     </holiday>
     
     <holiday name="Battle of the Boyne - Orangemen's Day" type="bank holiday, Northern Ireland only">
         <definition firstyear="1971">
             <fixed day="12" month="July"/>
-            <add days="+1" ifweekday="Sunday"/>
-            <add days="+2" ifweekday="Saturday"/>
+            <condition ifweekday="Sunday">
+                <add days="+1"/>
+            </condition>
+            <condition ifweekday="Saturday">
+                <add days="+2"/>
+            </condition>
         </definition>
     </holiday>
     
     <holiday name="Summer Bank Holiday" type="bank holiday in Scotland only">
         <definition firstyear="1971">
-            <rule nth="1st" weekday="Monday" month="August"/>
+            <rule nth="First" weekday="Monday" month="August"/>
         </definition>
     </holiday>
     
@@ -222,7 +246,7 @@
     
     <holiday name="Autumnal equinox">
         <definition>
-            <equinox type="September" timezone="Europe/London"/>
+            <equinox month="September" timezone="Europe/London"/>
         </definition>
     </holiday>
     
@@ -251,14 +275,18 @@
     <holiday name="St. Andrew's Day" type="bank holiday, Scotland only">
         <definition firstyear="2007">
             <fixed day="30" month="November"/>
-            <add days="1" ifweekday="Sunday"/> <!-- can become Monday -->
-            <add days="2" ifweekday="Saturday"/> <!-- can become Monday -->
+            <condition ifweekday="Sunday">
+                <add days="+1"/>
+            </condition>
+            <condition ifweekday="Saturday">
+                <add days="+2"/>
+            </condition>
         </definition>
     </holiday>
     
     <holiday name="Autumnal equinox">
         <definition>
-            <equinox type="September" timezone="Europe/London"/>
+            <equinox month="September" timezone="Europe/London"/>
         </definition>
     </holiday>
     
@@ -273,10 +301,12 @@
         </definition>
         <definition firstyear="1971">
             <fixed day="25" month="December"/>
-            <add days="+2" ifweekday="Saturday"/>
-            <!-- becomes Monday, 27 (Substitute Bank Holiday in lieu of 26 Dec) -->
-            <add days="+2" ifweekday="Sunday"/>
-            <!-- becomes Thursday, 27 (Substitute Holiday in lieu of 25 Dec) -->
+            <condition ifweekday="Saturday">
+                <add days="+2"/> <!-- becomes Monday, 27 (Substitute Bank Holiday in lieu of 26 Dec) -->
+            </condition>
+            <condition  ifweekday="Sunday">
+                <add days="+2"/> <!-- becomes Thursday, 27 (Substitute Holiday in lieu of 25 Dec) -->
+            </condition>
         </definition>
     </holiday>
     
@@ -286,10 +316,12 @@
         </definition>
         <definition firstyear="1971">
             <fixed day="26" month="December"/>
-            <add days="+2" ifweekday="Saturday"/>
-            <!-- becomes Monday, 28 (Substitute Bank Holiday in lieu of 26 Dec) -->
-            <add days="+2" ifweekday="Sunday"/>
-            <!-- becomes Thursday, 28 (Substitute Holiday in lieu of 25 Dec) -->
+            <condition ifweekday="Saturday">
+                <add days="+2"/> <!-- becomes Monday, 28 (Substitute Bank Holiday in lieu of 26 Dec) -->
+            </condition>
+            <condition  ifweekday="Sunday">
+                <add days="+2"/> <!-- becomes Thursday, 28 (Substitute Holiday in lieu of 25 Dec) -->
+            </condition>            
         </definition>
     </holiday> 
 

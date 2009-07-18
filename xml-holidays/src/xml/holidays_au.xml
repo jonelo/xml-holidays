@@ -16,17 +16,17 @@
     </holiday>
     <holiday name="Labour Day (Western Australia only)" type="local">
         <definition>
-            <rule nth="1st" weekday="Monday" month="March"/>
+            <rule nth="First" weekday="Monday" month="March"/>
         </definition>
     </holiday>
     <holiday name="Eight Hours Day (Tasmania only)" type="local">
         <definition>
-            <rule nth="2nd" weekday="Monday" month="March"/>
+            <rule nth="Second" weekday="Monday" month="March"/>
         </definition>
     </holiday>
     <holiday name="Labour Day (Victoria only)" type="local">
         <definition>
-            <rule nth="2nd" weekday="Monday" month="March"/>
+            <rule nth="Second" weekday="Monday" month="March"/>
         </definition>
     </holiday>
     <holiday name="Good Friday" type="gesetzlich">
@@ -54,37 +54,37 @@
     </holiday>
     <holiday name="May Day (Northern Territory only)" type="local">
         <definition>
-            <rule nth="1st" weekday="Monday" month="May"/>
+            <rule nth="First" weekday="Monday" month="May"/>
         </definition>
     </holiday>
     <holiday name="Labour Day (Queensland only)" type="local">
         <definition>
-            <rule nth="1st" weekday="Monday" month="May"/>
+            <rule nth="First" weekday="Monday" month="May"/>
         </definition>
     </holiday>
     <holiday name="Foundation Day(Western Australia only)" type="local">
         <definition>
-            <rule nth="1st" weekday="Monday" month="June"/>
+            <rule nth="First" weekday="Monday" month="June"/>
         </definition>
     </holiday>
     <holiday name="Queen's Birthday(all exept WA)" type="local">
         <definition>
-            <rule nth="2nd" weekday="Monday" month="June"/>
+            <rule nth="Second" weekday="Monday" month="June"/>
         </definition>
     </holiday>
     <holiday name="Queen's Birthday(West Australia only)" type="local">
         <definition>
-            <rule nth="1st" weekday="Monday" month="October"/>
+            <rule nth="First" weekday="Monday" month="October"/>
         </definition>
     </holiday>
     <holiday name="Labour Day(SA, ACT, NSW)" type="local">
         <definition>
-            <rule nth="1st" weekday="Monday" month="October"/>
+            <rule nth="First" weekday="Monday" month="October"/>
         </definition>
     </holiday>
     <holiday name="Melbourne Cup Day(Victoria only)" type="local">
         <definition>
-            <rule nth="1st" weekday="Tuesday" month="November"/>
+            <rule nth="First" weekday="Tuesday" month="November"/>
         </definition>
     </holiday>
     <holiday name="Christmas Day" type="gesetzlich">

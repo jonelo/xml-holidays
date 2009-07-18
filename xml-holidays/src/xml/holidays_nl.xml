@@ -50,7 +50,9 @@
             <fixed day="30" month="April"/>
             <!-- If April 30 is a Sunday, Koninginnedag is celebrated
             on the April 29. -->
-            <add days="-1" ifweekday="Sunday"/>
+            <condition ifweekday="Sunday">
+                <add days="-1"/>
+            </condition>
         </definition>
     </holiday>
     
@@ -83,7 +85,7 @@
 
     <holiday name="Mother's Day">
         <definition>
-            <rule nth="2nd" weekday="Sunday" month="May"/>
+            <rule nth="Second" weekday="Sunday" month="May"/>
         </definition>
     </holiday>
 

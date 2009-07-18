@@ -1,86 +1,100 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
-
+<!-- 
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+-->
 <holidays country="ie">
-    <!-- Irland http://www.irlandguide.de/feiertage-in-irland/35/ -->
+    <!-- http://www.irlandguide.de/feiertage-in-irland/35/ 
+         http://en.wikipedia.org/wiki/Public_holidays_in_the_Republic_of_Ireland
+         http://www.citizensinformation.ie/categories/employment/employment-rights-and-conditions/leave-and-holidays/public-holidays-in-ireland
+      -->
 
-    <holiday name="New Year's Day" type="gesetzlich" international="New Year's Day">
-        <definition>
-            <fixed month="January" day="1"/>
-        </definition>
+    <holiday name="New Year's Day" type="public holiday">
+        <import name="New Year's Day"/>
     </holiday>
-    <holiday name="St. Patrick's Day" type="gesetzlich">
+    
+    <holiday name="St. Patrick's Day" type="public holiday">
         <definition>
             <fixed month="March" day="17"/>
         </definition>
     </holiday>
+    
     <holiday name="Begin Daylight Saving Time">
         <definition>
             <dst timezone="Europe/Dublin" action="start"/>
         </definition>
     </holiday>
+    
+    <!-- Good Friday is not a public holiday in the Republic of Ireland -->
     <holiday name="Good Friday">
         <definition>
             <easter/>
             <add days="-2"/>
         </definition>
     </holiday>
-    <holiday name="Easter" type="gesetzlich">
+    
+    <holiday name="Easter">
         <import name="Easter Sunday"/>
     </holiday>
-    <holiday name="Easter Monday" type="gesetzlich">
+    
+    <holiday name="Easter Monday" type="public holiday">
         <import name="Easter Monday"/>
     </holiday>
-    <holiday name="Labour Day">
+    
+    <holiday name="May Day" type="public holiday">
         <definition>
-            <fixed month="May" day="1"/>
+            <rule weekday="Monday" month="May" nth="First"/>
         </definition>
     </holiday>
-    <holiday name="May Bank Holiday " type="gesetzlich">
+    
+    <holiday name="Spring Bank Holiday" type="local [Northern Ireland]">
         <definition>
-        	<!-- 1. Montag im Mai -->
-        	<rule weekday="Monday" month="May" nth="1st"/>
+            <rule weekday="Monday" month="May" nth="Last"/>
         </definition>
     </holiday>
-    <holiday name="Spring Bank Holiday (Northern Irland)">
+    
+    <holiday name="June Bank Holiday" type="public holiday">
         <definition>
-        	<rule weekday="Monday" month="May" nth="Last"/>
+            <rule weekday="Monday" month="June" nth="First"/>
         </definition>
     </holiday>
-    <holiday name="June Bank Holiday (Republic Ireland)" type="gesetzlich">
-        <definition>
-        	<!-- 1. Montag im Juni -->
-        	<rule weekday="Monday" month="June" nth="1st"/>
-        </definition>
-    </holiday>
-    <holiday name="Battle of the Boyne Day (Northern Irland)">
+    
+    <holiday name="Battle of the Boyne Day" type="local [Northern Ireland]">
         <definition>
             <fixed month="July" day="12"/>
         </definition>
     </holiday>
-    <holiday name="August Bank Holiday" type="gesetzlich">
+    
+    <holiday name="August Bank Holiday" type="public holiday">
         <definition>
-        	<rule weekday="Monday" month="August" nth="1st"/>
+            <rule weekday="Monday" month="August" nth="First"/>
         </definition>
     </holiday>
+    
     <holiday name="End Daylight Saving Time">
         <definition>
             <dst timezone="Europe/Dublin" action="end"/>
         </definition>
     </holiday>
-    <holiday name="October Bank Holiday">
+    
+    <holiday name="October Bank Holiday" type="public holiday">
         <definition>
-        	<rule weekday="Monday" month="October" nth="Last"/>
+            <rule weekday="Monday" month="October" nth="Last"/>
         </definition>
     </holiday>
-    <holiday name="Christmas Day" type="gesetzlich" international="Christmas Day">
+    
+    <holiday name="Christmas Day" type="public holiday" international="Christmas Day">
         <definition>
             <fixed month="December" day="25"/>
         </definition>
     </holiday>
-    <holiday name="St. Stephen's Day" type="gesetzlich" international="Boxing Day">
+    
+    <holiday name="St. Stephen's Day" type="public holiday">
         <definition>
             <fixed month="December" day="26"/>
         </definition>
     </holiday>
+    
 </holidays>

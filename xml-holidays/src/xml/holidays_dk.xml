@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
-
+<!-- 
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+-->
 <holidays country="dk">
     <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Denmark -->
 
@@ -8,11 +12,20 @@
         <import name="New Year's Day"/>
     </holiday>
 
+    <!-- This is not celebrated a lot, yet, but one day she might become Queen of Denmark. -->
+    <holiday name="Prinsesse Marys fødselsdag"
+             type="other"
+             international="Crown Princess Mary's birthday">
+        <definition>
+            <fixed day="5" month="February"/>
+        </definition>
+    </holiday>
+
     <holiday name="Valentine's Day">
         <import name="Valentine's Day"/>
     </holiday>
 
-    <holiday name="Fastelavn(Rosensonntag)">
+    <holiday name="Fastelavn" type="other">
         <definition>
             <easter/>
             <add days="-49"/>
@@ -21,35 +34,78 @@
 
     <holiday name="Forårsjævndøgn" international="Vernal equinox">
         <definition>
-            <fixed month="March" day="20"/>
+            <equinox month="March" timezone="Europe/Copenhagen"/>
         </definition>
     </holiday>
 
-    <holiday name="Skærtorsdag(Gründonnerstag)" type="gesetzlich" international="Maundy Thursday">
+    <holiday name="Palmesøndag" type="public" international="Palm Sunday">
+        <definition>
+            <easter/>
+            <add days="-7"/>
+        </definition>
+    </holiday>
+
+    <holiday name="Skærtorsdag" type="public" international="Maundy Thursday">
         <definition>
             <easter/>
             <add days="-3"/>
         </definition>
     </holiday>
 
-    <holiday name="Langfredag(Karfreitag)" type="gesetzlich" international="Good Friday">
+    <holiday name="Langfredag" type="public" international="Good Friday">
         <definition>
             <easter/>
             <add days="-2"/>
         </definition>
     </holiday>
 
-    <holiday name="Påskedag(Ostern)" type="gesetzlich">
+    <holiday name="Påskedag" type="public">
         <import name="Easter Sunday"/>
     </holiday>
 
-    <holiday name="2. påskedag(Ostermontag)" type="gesetzlich">
+    <holiday name="2. Påskedag" type="public">
         <import name="Easter Monday"/>
     </holiday>
 
-    <holiday name="Arbejdernes kampdag" international="Labour Day">
+    <holiday name="1. April" international="April Fools' Day">
+        <definition>
+            <fixed month="April" day="1"/>
+        </definition>
+    </holiday>
+
+    <holiday name="Danmarks besættelse" international="Occupation of Denmark">
+        <definition>
+            <fixed month="April" day="9"/>
+        </definition>
+    </holiday>
+
+    <holiday name="Dronningens fødselsdag" international="Birthday of Queen Margrethe II">
+        <definition>
+            <fixed month="April" day="16"/>
+        </definition>
+    </holiday>
+
+    <holiday name="Prinsesse Benedikte fødselsdag" international="Princess Benedikte's birthday">
+        <definition>
+            <fixed month="April" day="29"/>
+        </definition>
+    </holiday>
+
+    <holiday name="Arbejdernes kampdag / 1. maj" international="Labour Day">
         <definition>
             <fixed month="May" day="1"/>
+        </definition>
+    </holiday>
+  
+    <holiday name="Danmarks befrielse" type="other" international="Liberation day">
+        <definition>
+            <fixed month="May" day="5"/>
+        </definition>
+    </holiday>
+  
+    <holiday name="Kronprins Frederiks fødselsdag" international="Birthday of Crown Prince Frederik">
+        <definition>
+            <fixed month="May" day="26"/>
         </definition>
     </holiday>
 
@@ -59,49 +115,74 @@
         </definition>
     </holiday>
 
-    <!-- 4. Freitag nach Ostern -->
-    <holiday name="Stor Bededag(großer Bettag)" type="gesetzlich">
+    <!-- The 4th Friday after Easter -->
+    <holiday name="Stor Bededag" type="public" international="General Prayer Day">
         <definition>
            <easter/>
            <add days="+26"/>
         </definition>
     </holiday>
 
-    <holiday name="Kristi Himmelfartsdag(Ascension Day)" type="gesetzlich">
+    <holiday name="Kristi Himmelfartsdag" type="public" international="Ascension Day">
         <definition>
             <easter/>
             <add days="+39"/>
         </definition>
     </holiday>
 
-    <holiday name="Pinsedag(Pfingsten)" type="gesetzlich">
+    <holiday name="Pinsedag" type="public">
         <import name="Pentecost"/>
     </holiday>
 
-    <holiday name="2. pinsedag(Pfingstmontag)" type="gesetzlich">
+    <holiday name="2. pinsedag" type="public">
         <definition>
             <easter/>
             <add days="+50"/>
         </definition>
     </holiday>
 
-    <holiday name="Grundlovsdag(from 12pm)" international="Constitution Day">
+    <holiday name="Grundlovsdag" type="public" international="Constitution Day">
         <definition>
             <fixed month="June" day="5"/>
         </definition>
     </holiday>
-    
-    <holiday name="Sommersolhverv(from 12pm)" international="June Solstice">
+
+    <holiday name="Sommersolhverv" international="June Solstice">
         <definition>
-            <solstice type="June" timezone="Europe/Copenhagen"/>
+            <solstice month="June" timezone="Europe/Copenhagen"/>
         </definition>
     </holiday>
 
     <holiday name="Efterårsjævndøgn" international="Autumnal equinox">
         <definition>
-            <equinox type="September" timezone="Europe/Copenhagen"/>
+            <equinox month="September" timezone="Europe/Copenhagen"/>
         </definition>
     </holiday>
+
+    <holiday name="Prins Joachims fødselsdag" type="other" international="Birthday of Prince Joachim">
+        <definition>
+            <fixed month="June" day="7"/>
+        </definition>
+    </holiday>
+
+    <holiday name="Prins Henriks fødselsdag" type="other" international="Birthday of Prince Henrik">
+        <definition>
+            <fixed month="June" day="11"/>
+        </definition>
+    </holiday>
+
+    <holiday name="Valdemarsdag og Genforeningsdag" type="other" international="Day of Valdemar and Reunion day">
+        <definition>
+            <fixed month="June" day="15"/>
+        </definition>
+    </holiday>
+
+    <holiday name="Sankt Hans aften" type="other" international="Saint John's Eve">
+        <definition>
+            <fixed month="June" day="23"/>
+        </definition>
+    </holiday>
+
 
     <holiday name="Sommertid slutter" international="End Daylight Saving Time">
         <definition>
@@ -109,29 +190,41 @@
         </definition>
     </holiday>
 
-    <holiday name="Vintersolhverv" international="December Solstice">
+    <holiday name="Mortensaften" type="other" international="The eve before Saint Martin's day">
         <definition>
-            <solstice type="June" timezone="Europe/Copenhagen"/>
+            <fixed month="November" day="10"/>
         </definition>
     </holiday>
 
-    <holiday name="Juleaften" international="Christmas Eve">
+    <holiday name="Vintersolhverv" international="December Solstice">
+        <definition>
+            <solstice month="December" timezone="Europe/Copenhagen"/>
+        </definition>
+    </holiday>
+
+    <holiday name="Sankt Lucia" type="other" international="Saint Lucy's Day">
+        <definition>
+            <fixed month="December" day="13"/>
+        </definition>
+    </holiday>
+
+    <holiday name="Juleaftensdag" type="public" international="Christmas Eve">
         <import name="Christmas Eve"/>
     </holiday>
 
-    <holiday name="Juledag" type="gesetzlich">
+    <holiday name="1. Juledag" type="public" international="First Day of Christmas">
         <definition>
             <fixed month="December" day="25"/>
         </definition>
     </holiday>
 
-    <holiday name="2. juledag" type="gesetzlich">
+    <holiday name="2. juledag" type="public" international="Second Day of Christmas">
         <definition>
             <fixed month="December" day="26"/>
         </definition>
     </holiday>
 
-    <holiday name="Nytår">
+    <holiday name="Nytårsaften">
         <import name="New Year's Eve"/>
     </holiday>
 

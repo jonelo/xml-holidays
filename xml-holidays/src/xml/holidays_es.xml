@@ -54,7 +54,7 @@
     
     <holiday name="Equinocio de marzo" international="Vernal equinox">
         <definition>
-            <equinox type="March" timezone="Europe/Madrid"/>
+            <equinox month="March" timezone="Europe/Madrid"/>
         </definition>
     </holiday>
     
@@ -164,7 +164,7 @@
     
     <holiday name="El Solsticio de junio" international="June Solstice">
         <definition>
-            <solstice type="June" timezone="Europe/Madrid"/>
+            <solstice month="June" timezone="Europe/Madrid"/>
         </definition>
     </holiday>
     
@@ -212,7 +212,7 @@
     
     <holiday name="Equinoccio de septiembre" international="Autumnal equinox">
         <definition>
-            <equinox type="September" timezone="Europe/Madrid"/>
+            <equinox month="September" timezone="Europe/Madrid"/>
         </definition>
     </holiday>
   
@@ -256,7 +256,7 @@
     
     <holiday name="El Solsticio de diciembre" international="December Solstice">
         <definition>
-            <solstice type="December" timezone="Europe/Madrid"/>
+            <solstice month="December" timezone="Europe/Madrid"/>
         </definition>
     </holiday>
     

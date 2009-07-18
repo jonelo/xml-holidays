@@ -26,7 +26,7 @@
             <fixed day="5" month="February"/>
         </definition>
         <definition firstyear="2006">
-            <rule nth="1st" weekday="Monday" month="February"/>
+            <rule nth="First" weekday="Monday" month="February"/>
         </definition>
     </holiday>
     
@@ -39,7 +39,7 @@
     <holiday name="Natalicio de Benito Juárez" type="statutory holiday"
              international="Benito Juárez's birthday">
         <definition firstyear="1858"> <!-- UNCLEAR: probably later -->
-            <rule nth="3rd" weekday="Monday" month="March"/>
+            <rule nth="Third" weekday="Monday" month="March"/>
         </definition>
     </holiday>
     
@@ -77,7 +77,7 @@
              <fixed day="20" month="November"/>
         </definition>
         <definition firstyear="2006">
-            <rule nth="3rd" weekday="Monday" month="November"/>
+            <rule nth="Third" weekday="Monday" month="November"/>
         </definition>
     </holiday>
     
@@ -252,7 +252,7 @@
     <holiday name="Día del Padre" type="Festivity"
              international="Father's Day">
         <definition>
-            <rule nth="3rd" weekday="Sunday" month="June"/>
+            <rule nth="Third" weekday="Sunday" month="June"/>
         </definition>
     </holiday>
     

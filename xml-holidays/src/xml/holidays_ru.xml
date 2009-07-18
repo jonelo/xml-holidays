@@ -1,45 +1,79 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
 
+<!-- Russia -->
 <holidays country="ru">
-    <!-- Russland http://www.russlandjournal.de/russland/reiseinformationen/feiertage/-->
-	<!-- generell gilt: fällt ein Feiertage auf Sonntag oder Samstag wird der Feiertag auf einen
+    <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Russia
+    Russland http://www.russlandjournal.de/russland/reiseinformationen/feiertage/-->
+	<!-- generell gilt: fällt ein Feiertag auf Samstag oder Sonntag wird der Feiertag auf einen
 	     Arbeitstag verlegt !! -->
-	<!-- viele Geschäfte bleiben vom 31.12 - 7.1 durchgehend geschlossen -->
+	<!-- viele Geschäfte bleiben vom 31.12 - 7.1 durchgehend geschlossen 
+        If the date of observance falls on a Saturday or Sunday, the following Monday will be a day off in lieu of the holiday
+        -->
 
-    <holiday name="Новый Год" type="gesetzlich" international="New Year's Day">
+    <holiday name="Новый Год / Novy God" type="public holiday" international="New Year's Day">
         <definition>
             <fixed month="January" day="1"/>
+            <condition ifweekday="Sunday">
+                <add days="1"/>
+            </condition>
+            <condition ifweekday="Saturday">
+                <add days="+2"/>
+            </condition>
         </definition>
     </holiday>
-    <holiday name="православное Рождество" type="gesetzlich" international="Orthodox Christmas Day">
-        <!-- maybe not fixed !! -->
+
+    <holiday name="Рождество / Rozhdestvo" type="public holiday" international="Orthodox Christmas Day">
         <definition>
             <fixed month="January" day="7"/>
+            <condition ifweekday="Sunday">
+                <add days="1"/>
+            </condition>
+            <condition ifweekday="Saturday">
+                <add days="+2"/>
+            </condition>
         </definition>
     </holiday>
-    <holiday name="День Защитника Отечества" type="gesetzlich" international="Defender of the Fatherland Day">
+    
+    <holiday name="День Защитника Отечества / Den' zashchitnika Otechestva" type="public holiday"
+             international="Defender of the Fatherland Day">
         <definition>
             <fixed month="February" day="23"/>
+            <condition ifweekday="Sunday">
+                <add days="1"/>
+            </condition>
+            <condition ifweekday="Saturday">
+                <add days="+2"/>
+            </condition>
         </definition>
     </holiday>
+    
     <!-- "Масленица (Russische Fastnacht)" Ende Februar/Anfangs März -->
-    <holiday name="Международный Женский День" type="gesetzlich" international="International Women's Day">
+    <holiday name="Международный Женский День" type="public holiday" international="International Women's Day">
         <definition>
             <fixed month="March" day="23"/>
         </definition>
     </holiday>
+    
     <!-- "Пасха (Russisch-Orthodox Ostern)"  March/April/May -->
     <holiday name="День Знамени (Tag der Nationalflagge)">
         <definition>
             <fixed month="August" day="22"/>
         </definition>
     </holiday>
-    <holiday name="День народного единства (Tag der Einheit des Volkes)" type="gesetzlich">
-        <definition>
+    
+    <holiday name="День народного единства" type="public holiday" international="Unity Day">
+        <definition firstyear="2005">
             <fixed month="November" day="4"/>
+            <condition ifweekday="Sunday">
+                <add days="1"/>
+            </condition>
+            <condition ifweekday="Saturday">
+                <add days="+2"/>
+            </condition>
         </definition>
     </holiday>
+    
     <holiday name="День Конституции (Tag der Verfassung)">
         <definition>
             <fixed month="December" day="12"/>

@@ -28,7 +28,7 @@
         <!-- Originally held on January 15, in 2000 it was changed to
              the second Monday of January -->
         <definition firstyear="2000">
-            <rule nth="2nd" weekday="Monday" month="January"/>
+            <rule nth="Second" weekday="Monday" month="January"/>
         </definition>
     </holiday>
     
@@ -77,7 +77,7 @@
          ancestor worship festival called Shunki kōrei-sai -->
     <holiday name="Shunki kōrei-sai">
         <definition lastyear="1947">
-             <equinox type="March" timezone="Asia/Tokyo"/>
+             <equinox month="March" timezone="Asia/Tokyo"/>
         </definition>
     </holiday>
 
@@ -86,7 +86,7 @@
     <holiday name="Shunbun no hi" type="national holiday"
              international="Vernal equinox">
          <definition firstyear="1948">
-             <equinox type="March" timezone="Asia/Tokyo"/>
+             <equinox month="March" timezone="Asia/Tokyo"/>
          </definition>
     </holiday>
 
@@ -147,7 +147,7 @@
         <!-- Originally held on July 20, in 2003 it was changed to
                the third Monday of July -->
         <definition firstyear="2003">
-            <rule nth="3rd" weekday="Monday" month="July"/>
+            <rule nth="Third" weekday="Monday" month="July"/>
         </definition>
     </holiday>
     
@@ -160,7 +160,7 @@
         <!-- Originally held on September 15.
                In 2003, it was changed to the third Monday of September -->
         <definition firstyear="2003">
-            <rule nth="3rd" weekday="Monday" month="September"/>
+            <rule nth="Third" weekday="Monday" month="September"/>
         </definition>
     </holiday>
     
@@ -168,7 +168,7 @@
          ancestor worship festival called Shūki kōrei-sai -->
     <holiday name="Shūki kōrei-sai">
         <definition lastyear="1947">
-             <equinox type="September" timezone="Asia/Tokyo"/>
+             <equinox month="September" timezone="Asia/Tokyo"/>
         </definition>
     </holiday>
 
@@ -177,7 +177,7 @@
     <holiday name="Shūbun no hi" type="national holiday"
              international="Autumnal equinox">
          <definition firstyear="1948">
-             <equinox type="September" timezone="Asia/Tokyo"/>
+             <equinox month="September" timezone="Asia/Tokyo"/>
          </definition>
     </holiday>
     
@@ -191,7 +191,7 @@
         </definition>
         <!-- in 2000 it was changed to the second Monday of October -->
         <definition firstyear="2000">
-            <rule nth="2nd" weekday="Monday" month="October"/>
+            <rule nth="Second" weekday="Monday" month="October"/>
         </definition>
     </holiday>
     
@@ -261,7 +261,7 @@
         <definition firstyear="1948" lastyear="1989">
             <fixed day="29" month="April"/>
         </definition>
-        <definition firstyear="1948">
+        <definition firstyear="1990">
             <!-- Emperor Akihito was born on this date (Dec 23) in 1933. -->
             <fixed day="23" month="December"/>
         </definition>
