@@ -119,8 +119,7 @@
         <definition>
             <!-- Friday between June 19 and June 25 -->
             <fixed day="19" month="June"/>
-            <add days="-1"/> <!-- inclusive the 19th-->
-            <goto weekday="Friday"/>
+            <goto weekday="Friday" direction="nextpossible"/> <!-- inclusive the 19th-->
         </definition>
     </holiday>
 
@@ -135,8 +134,7 @@
         <definition>
             <!-- Saturday between June 20 and June 26 -->
             <fixed day="20" month="June"/>
-            <add days="-1"/> <!-- inclusive the 20th-->
-            <goto weekday="Saturday"/>
+            <goto weekday="Saturday" direction="nextpossible"/> <!-- inclusive the 20th-->
         </definition>
     </holiday>
 
@@ -144,8 +142,7 @@
         <!-- Saturday between October 31 and November 6 -->
         <definition>
             <fixed day="31" month="October"/>
-            <add days="-1"/>
-            <goto weekday="Saturday"/>
+            <goto weekday="Saturday" direction="nextpossible"/>
         </definition>
     </holiday>
 

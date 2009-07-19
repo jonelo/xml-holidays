@@ -16,7 +16,21 @@
             <fixed month="April" day="22"/>
         </definition>
     </holiday>
-    
+
+    <!--
+       http://en.wikipedia.org/wiki/United_Nations
+       http://www.cbd.int/
+     -->
+    <holiday name="International Day for Biological Diversity">
+        <definition firstyear="1993" lastyear="2000">
+            <fixed month="December" day="29"/>
+        </definition>
+        <definition firstyear="2001">
+            <fixed month="May" day="22"/>
+        </definition>
+    </holiday>
+
+
     <!-- 
       http://www.sueddeutsche.de/kultur/artikel/690/115575/
       0x25+0x5=37+5=42 ;)
@@ -29,7 +43,16 @@
             <fixed month="May" day="25"/>
         </definition>
     </holiday>
-    
+
+    <!--
+      http://en.wikipedia.org/wiki/Africa_Industrialization_Day
+    -->
+    <holiday name="Africa Industrialization Day">
+         <definition firstyear="1989">
+             <fixed month="November" day="20"/>
+         </definition>
+    </holiday>
+
     <!--
        http://en.wikipedia.org/wiki/World_AIDS_Day
     -->

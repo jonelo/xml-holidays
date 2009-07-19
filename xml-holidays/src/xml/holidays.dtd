@@ -12,7 +12,7 @@
 <!ENTITY % nth "First | Second | Third | Fourth | Last">
 <!ENTITY % startdate "fixed | easter | advent | rule | dst | equinox | solstice">
 <!ENTITY % modifiers "add | goto">
-<!ENTITY % directions "next | previous | nearest">
+<!ENTITY % directions "nearest | next | nextpossible | previous | previouspossible">
 
 <!ELEMENT holidays (holiday+)>
 <!ATTLIST holidays
@@ -22,7 +22,7 @@
      A holiday can have one import element or a combination of both definitions
      and code 
      "name"          is the localized name for the holiday, it must be set in
-                     any case. Don't use english, except your local language
+                     any case. Don't use english, except the local language
                      is english. Use the local description of the holiday
                      in your country.
      "international" is the english (international) well known name for the
@@ -171,9 +171,17 @@
         
       <!--
         The goto modifier
-        moves to the next (or previous) weekday
+        moves to the next, previous or nearest weekday
+        the direction can become
+        nearest - the nearest weekday, go not more than 3 days in one direction
+        next - the next weekday
+        nextpossible - a "goto next" action happens only if the current
+                       weekday is not the specified weekday
+        previous - the previous weekday
+        previouspossible - a "goto previous" action happens only if the current
+                           weekday is not the specified weekday
       -->
       <!ELEMENT goto EMPTY>
       <!ATTLIST goto
                 weekday (%weekdays;) #REQUIRED
-                direction (%directions;) "next">
+                direction (%directions;) "nearest">

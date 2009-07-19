@@ -178,7 +178,7 @@
             <!-- http://www.pch.gc.ca/progs/cpsc-ccsp/jfa-ha/prov_e.cfm -->
             <!-- it is celebrated on the Monday nearest June 24th -->
             <fixed day="24" month="June"/>
-            <goto weekday="Monday" direction="nearest"/>
+            <goto direction="nearest" weekday="Monday"/>
         </definition>
     </holiday>
     
@@ -203,7 +203,7 @@
         <definition>
             <!-- it is celebrated on the Monday nearest July 1st -->
             <fixed day="1" month="July"/>
-            <goto weekday="Monday" direction="nearest"/>
+            <goto direction="nearest" weekday="Monday"/>
         </definition>
     </holiday>
     
@@ -212,7 +212,7 @@
         <definition firstyear="1690">
             <!-- it is celebrated on the Monday nearest July 12th -->
             <fixed day="12" month="July"/>
-            <goto weekday="Monday" direction="nearest"/>
+            <goto direction="nearest" weekday="Monday"/>
         </definition> 
     </holiday>
 
@@ -222,7 +222,7 @@
         <definition>
             <!-- it is celebrated on the Monday nearest March 17 -->
             <fixed day="17" month="March"/>
-            <goto weekday="Monday" direction="nearest"/>
+            <goto direction="nearest" weekday="Monday"/>
         </definition>
     </holiday>
 
@@ -233,7 +233,7 @@
         <definition>
             <!-- it is celebrated on the Monday nearest April 23 -->
             <fixed day="23" month="April"/>
-            <goto weekday="Monday" direction="nearest"/>
+            <goto direction="nearest" weekday="Monday"/>
         </definition>
     </holiday>
     
@@ -375,7 +375,7 @@
         </definition>
         <definition firstyear="1921" lastyear="1930">
            <fixed day="11" month="November"/>
-           <goto weekday="Monday" direction="previous"/>
+           <goto direction="previous" weekday="Monday"/>
         </definition>
         <definition firstyear="1931" lastyear="1934">
             <rule nth="Second" weekday="Monday" month="October"/>
