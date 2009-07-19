@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
-
+<!--
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+-->
 <holidays country="be">
     <!-- Belgien http://www.belgien-tourismus.de/urlauber/praktische-infos/feste-und-feiertage.html-->
 
@@ -23,7 +27,7 @@
     <holiday name="Taufe des Herrn [katholisch]">
        <definition>
           <fixed month="January" day="6"/>
-          <goto weekday="Sunday" direction="next"/>
+          <goto direction="next" weekday="Sunday"/>
        </definition>
     </holiday>
     <holiday name="Darstellung des Herrn (Mariä Lichtmess)">

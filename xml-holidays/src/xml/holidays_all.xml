@@ -2,59 +2,60 @@
 <combined xmlns:xi="http://www.w3.org/2001/XInclude">
     <countries>
         <!-- International -->
-        <xi:include href="holidays_int.xml"/>
+        <xi:include href="holidays_int.xml"/> <!--many holidays are missing-->
         
         <!-- America -->
-        <xi:include href="holidays_us.xml"/>
-        <xi:include href="holidays_ca.xml"/>
-        <xi:include href="holidays_br.xml"/>
-        <xi:include href="holidays_ve.xml"/>
-        <xi:include href="holidays_cl.xml"/>
-        <xi:include href="holidays_ar.xml"/>
-        <xi:include href="holidays_ni.xml"/>
-        <xi:include href="holidays_pa.xml"/>
-        <xi:include href="holidays_mx.xml"/>
-        <xi:include href="holidays_co.xml"/>
+        <xi:include href="holidays_us.xml"/> <!--ok-->
+        <xi:include href="holidays_ca.xml"/> <!--ok-->
+        <xi:include href="holidays_br.xml"/> <!--ok-->
+        <xi:include href="holidays_ve.xml"/> <!--many holidays are missing-->
+        <xi:include href="holidays_cl.xml"/> <!--many holidays are missing-->
+        <xi:include href="holidays_ar.xml"/> <!--Judaism & Islamic holidays-->
+        <xi:include href="holidays_ni.xml"/> <!--many holidays are missing-->
+        <xi:include href="holidays_pa.xml"/> <!--ok-->
+        <xi:include href="holidays_mx.xml"/> <!--ok-->
+        <xi:include href="holidays_co.xml"/> <!--ok-->
 
         <!-- Europe -->
-        <xi:include href="holidays_at.xml"/>
-        <xi:include href="holidays_be.xml"/>
-        <xi:include href="holidays_ch.xml"/>
-        <xi:include href="holidays_cz.xml"/>
-        <xi:include href="holidays_de.xml"/>
-        <xi:include href="holidays_dk.xml"/>
-        <xi:include href="holidays_es.xml"/>
-        <xi:include href="holidays_fi.xml"/>
-        <xi:include href="holidays_fr.xml"/>
-        <xi:include href="holidays_gb.xml"/>
-        <xi:include href="holidays_gr.xml"/>
-        <xi:include href="holidays_hr.xml"/>
-        <xi:include href="holidays_hu.xml"/>
-        <xi:include href="holidays_ie.xml"/>
-        <xi:include href="holidays_it.xml"/>
-        <xi:include href="holidays_li.xml"/>
-        <xi:include href="holidays_lu.xml"/>
-        <xi:include href="holidays_nl.xml"/>
-        <xi:include href="holidays_no.xml"/>
-        <xi:include href="holidays_pl.xml"/>
-        <xi:include href="holidays_pt.xml"/>
-        <xi:include href="holidays_ro.xml"/>
-        <xi:include href="holidays_ru.xml"/>
-        <xi:include href="holidays_se.xml"/>
-        <xi:include href="holidays_si.xml"/>
-        <xi:include href="holidays_sk.xml"/>
-        <xi:include href="holidays_tr.xml"/>
+        <xi:include href="holidays_at.xml"/> <!--ok-->
+        <xi:include href="holidays_be.xml"/> <!--check needed-->
+        <xi:include href="holidays_ch.xml"/> <!--ok-->
+        <xi:include href="holidays_cz.xml"/> <!--check needed-->
+        <xi:include href="holidays_de.xml"/> <!--ok-->
+        <xi:include href="holidays_dk.xml"/> <!--ok-->
+        <xi:include href="holidays_es.xml"/> <!--ok-->
+        <xi:include href="holidays_fi.xml"/> <!--check needed-->
+        <xi:include href="holidays_fr.xml"/> <!--ok-->
+        <xi:include href="holidays_gb.xml"/> <!--ok-->
+        <xi:include href="holidays_gr.xml"/> <!--ok-->
+        <xi:include href="holidays_hr.xml"/> <!--check needed-->
+        <xi:include href="holidays_hu.xml"/> <!--check needed-->
+        <xi:include href="holidays_ie.xml"/> <!--check needed-->
+        <xi:include href="holidays_it.xml"/> <!--ok-->
+        <xi:include href="holidays_li.xml"/> <!--check needed-->
+        <xi:include href="holidays_lu.xml"/> <!--check needed-->
+        <xi:include href="holidays_nl.xml"/> <!--ok-->
+        <xi:include href="holidays_no.xml"/> <!--check needed-->
+        <xi:include href="holidays_pl.xml"/> <!--check needed-->
+        <xi:include href="holidays_pt.xml"/> <!--check needed-->
+        <xi:include href="holidays_ro.xml"/> <!--check needed-->
+        <xi:include href="holidays_ru.xml"/> <!--check needed-->
+        <xi:include href="holidays_se.xml"/> <!--ok-->
+        <xi:include href="holidays_si.xml"/> <!--check needed-->
+        <xi:include href="holidays_sk.xml"/> <!--check needed-->
+        <xi:include href="holidays_tr.xml"/> <!--Islamic holidays missing-->
 
         <!-- Africa -->
-        <xi:include href="holidays_sc.xml"/>
+        <xi:include href="holidays_sc.xml"/> <!--check needed-->
         
         <!-- Asia and Pacific -->
-        <xi:include href="holidays_au.xml"/>
-        <xi:include href="holidays_cn.xml"/>
-        <xi:include href="holidays_jp.xml"/>
+        <xi:include href="holidays_ar.xml"/> <!--Judaism & Islamic holidays missing-->
+        <xi:include href="holidays_au.xml"/> <!--check needed-->
+        <xi:include href="holidays_cn.xml"/> <!--Chinese holidays missing-->
+        <xi:include href="holidays_jp.xml"/> <!--ok-->
         
         <!-- Historic -->
-        <xi:include href="holidays_ddr.xml"/>
+        <xi:include href="holidays_ddr.xml"/> <!--check needed-->
         
     </countries>
 </combined>

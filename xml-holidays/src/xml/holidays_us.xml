@@ -339,6 +339,23 @@
         </definition>
     </holiday>
 
+    <!-- http://en.wikipedia.org/wiki/Independence_Day_(United_States) -->
+    <!-- http://www.timeanddate.com/holidays/us/independence-day -->
+    <holiday name="Independence Day (observed)" type="federal holiday">
+        <definition firstyear="1776">
+            <fixed day="4" month="July"/>
+
+            <!-- If July 4 is a Saturday, it is observed on Friday, July 3. -->
+            <condition ifweekday="Saturday">
+                <add days="-1"/> <!-- cannot become Sunday -->
+            </condition>
+            <!-- If July 4 is a Sunday, it is observed on Monday, July 5. -->
+            <condition ifweekday="Sunday">
+                <add days="+1"/>
+            </condition>
+        </definition>
+    </holiday>
+
     <!-- http://en.wikipedia.org/wiki/Labor_Day -->
     <holiday name="Labor Day" type="federal holiday">
         <!-- Congress made Labor Day a federal holiday on June 28, 1894 -->

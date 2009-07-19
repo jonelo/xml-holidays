@@ -155,16 +155,16 @@
     <!-- The Friday during the period 19–25 June -->
     <holiday name="Midsommarafton" type="de facto full holiday" international="Midsummer's Eve">
         <definition>
-            <fixed month="June" day="18"/>
-            <goto weekday="Friday" direction="next"/>
+            <fixed month="June" day="19"/>
+            <goto weekday="Friday" direction="nextpossible"/>
         </definition>
     </holiday>
     
     <!-- The Saturday during the period 20–26 June -->
     <holiday name="Midsommardagen" type="public holiday" international="Midsummer's Day">
         <definition>
-            <fixed month="June" day="19"/>
-            <goto weekday="Saturday" direction="next"/>
+            <fixed month="June" day="20"/>
+            <goto weekday="Saturday" direction="nextpossible"/>
         </definition>
     </holiday>
     
@@ -190,7 +190,7 @@
     <holiday name="Allhelgonaafton" type="de facto half holiday" international="All Saints' Eve">
         <definition>
             <fixed month="October" day="30"/>
-            <goto weekday="Saturday" direction="next"/>
+            <goto weekday="Saturday" direction="nextpossible"/>
             <add days="-1"/>
         </definition>
     </holiday>
@@ -198,8 +198,8 @@
     <!-- The Saturday during the period October 31–November 6 -->
     <holiday name="Alla helgons dag" type="public holiday" international="All Saints' Day">
         <definition>
-            <fixed month="October" day="30"/>
-            <goto weekday="Saturday" direction="next"/>
+            <fixed month="October" day="31"/>
+            <goto weekday="Saturday" direction="nextpossible"/>
         </definition>
     </holiday>
     
