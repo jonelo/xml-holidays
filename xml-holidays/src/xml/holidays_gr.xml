@@ -5,7 +5,7 @@
     http://xml-holidays.sourceforge.net/
     Thank you for keeping the comment.
 -->
-<holidays country="gr">
+<holidays country="GR">
     <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Greece -->
 
     <holiday name="Πρωτοχρονιά / Protochronia" type="public holiday">

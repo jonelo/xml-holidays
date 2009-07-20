@@ -5,7 +5,7 @@
     http://xml-holidays.sourceforge.net/
     Thank you for keeping the comment.
 -->
-<holidays country="at">
+<holidays country="AT">
     <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Austria.html#Austria -->
 
     <holiday name="Neujahrstag" type="gesetzlich">

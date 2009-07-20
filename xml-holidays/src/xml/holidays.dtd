@@ -14,6 +14,11 @@
 <!ENTITY % modifiers "add | goto">
 <!ENTITY % directions "nearest | next | nextpossible | previous | previouspossible">
 
+<!--
+  The element called holidays can have multiple elements called holiday (at least one)
+  "country"         is the id of the country, if possible the id should be a
+                    ISO 3166-1-alpha-2 code in uppercase characters
+  -->
 <!ELEMENT holidays (holiday+)>
 <!ATTLIST holidays
           country CDATA #REQUIRED>

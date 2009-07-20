@@ -5,7 +5,7 @@
     http://xml-holidays.sourceforge.net/
     Thank you for keeping the comment.
 -->
-<holidays country="nl">
+<holidays country="NL">
     <!-- http://en.wikipedia.org/wiki/Public_holidays_in_the_Netherlands -->
     
     <holiday name="Nieuwjaar" type="public holiday">

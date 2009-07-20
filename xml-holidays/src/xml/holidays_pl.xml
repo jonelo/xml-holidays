@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
 
-<holidays country="pl">
+<holidays country="PL">
     <!-- Polen http://www.polen-total.de/Feiertage.52.0.html -->
 
     <holiday name="Nowy Rok" type="gesetzlich" international="New Year's Day">

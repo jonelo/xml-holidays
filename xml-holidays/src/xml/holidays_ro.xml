@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
 
-<holidays country="ro">
+<holidays country="RO">
     <!-- Rumaenien https://claroline.uni-klu.ac.at/eeo/index.php/Rum%c3%a4nien_(Land) -->
 
     <holiday name="Anul nou" type="gesetzlich" international="New Year's Day">

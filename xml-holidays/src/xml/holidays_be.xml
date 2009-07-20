@@ -5,7 +5,7 @@
     http://xml-holidays.sourceforge.net/
     Thank you for keeping the comment.
 -->
-<holidays country="be">
+<holidays country="BE">
     <!-- Belgien http://www.belgien-tourismus.de/urlauber/praktische-infos/feste-und-feiertage.html-->
 
     <holiday name="Neujahrstag" type="gesetzlich" international="New Year's Day">
