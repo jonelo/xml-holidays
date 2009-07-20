@@ -2,77 +2,162 @@
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
 
 <holidays country="RO">
-    <!-- Rumaenien https://claroline.uni-klu.ac.at/eeo/index.php/Rum%c3%a4nien_(Land) -->
+    <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Romania -->
 
-    <holiday name="Anul nou" type="gesetzlich" international="New Year's Day">
+    <holiday name="Anul nou" type="Official non-working holiday" international="New Year's Day">
         <definition>
             <fixed month="January" day="1"/>
         </definition>
     </holiday>
-    <holiday name="2. Anul nou">
+
+    <holiday name="2. Anul nou" type="Official non-working holiday" international="Day after New Year's Day">
         <definition>
             <fixed month="January" day="2"/>
         </definition>
     </holiday>
-    <holiday name="Hl. Drei Könige (Dreikönigsfest)" type="gesetzlich in BW,BY,ST" international="Epiphany">
+
+    <holiday name="Ziua Unirii" type="Official holiday" international="Unification Day">
         <definition>
-            <fixed month="January" day="6"/>
+            <fixed month="January" day="24"/>
         </definition>
     </holiday>
-    <holiday name="Beginn der Sommerzeit (Uhren 1 h vorstellen)" international="Begin Daylight Saving Time">
+    
+    <holiday name="Dragobetele" type="Traditional festival" international="St. Valentine's Day">
+        <definition>
+            <fixed month="February" day="24"/>
+        </definition>
+    </holiday>
+
+    <holiday name="Mărţişorul" type="Traditional festival" international="Spring festival">
+        <definition>
+            <fixed month="March" day="1"/>
+        </definition>
+    </holiday>
+
+    <holiday name="Ziua Unirii" type="Official holiday" international="Women's Day">
+        <definition>
+            <fixed month="March" day="8"/>
+        </definition>
+    </holiday>
+
+    <holiday name="Paştele" type="Official non-working holiday" international="Easter">
+        <definition>
+            <easter church="eastern"/>
+        </definition>
+    </holiday>
+
+    <holiday name="NATO Day" international="NATO Day" type="Not a public holiday">
+        <definition>
+            <rule nth="First" weekday="Sunday" month="April"/>
+        </definition>
+    </holiday>
+
+    <holiday name="Ziua Eroilor (Înălţarea)" type="Official non-working holiday" international="Heroes' Day (Ascension)">
+        <definition>
+            <easter church="eastern"/>
+            <!-- 40 days after the Orthodox Easter. -->
+            <add days="40"/>
+        </definition>
+    </holiday>
+
+    <holiday name="1. Rusaliile" type="Official non-working holiday" international="Pentecost, Whit Monday">
+        <definition>
+            <easter church="eastern"/>
+            <!-- 50 days after the Orthodox Easter. -->
+            <add days="50"/>
+        </definition>
+    </holiday>
+
+    <holiday name="2. Rusaliile" type="Official non-working holiday" international="Whit Monday">
+        <definition>
+            <easter church="eastern"/>
+            <!-- 51 days after the Orthodox Easter. -->
+            <add days="51"/>
+        </definition>
+    </holiday>
+
+    <holiday name="DST start" international="Begin Daylight Saving Time">
         <definition>
             <dst timezone="Europe/Bucharest" action="start"/>
         </definition>
     </holiday>
-    <!-- orthodoxe Ostersonntag & Ostermontag fehlen -->
-    <holiday name="Maifeiertag (Tag der Arbeit)" type="gesetzlich" international="Labour Day">
+
+    <holiday name="Ziua muncii" type="Official non-working holiday"
+             international="Labour Day">
         <definition>
             <fixed month="May" day="1"/>
         </definition>
     </holiday>
-    <holiday name="Ziua Copilului (Children's Day)">
+
+    <holiday name="Ziua Copilului" international="Child's day"
+             type="Official holiday">
         <definition>
             <fixed month="June" day="1"/>
         </definition>
     </holiday>
-    <holiday name="Ziua Eroilor (Ascension Day)">
-        <definition>
-            <fixed month="June" day="5"/>
-        </definition>
-    </holiday>
-    <holiday name="Ziua Tricolorului (Flag Day)">
-        <definition>
+    
+    <holiday name="Ziua Tricolorului" international="Flag Day"
+             type="Official holiday">
+        <!-- was first performed, in 1848 at Râmnicu Vâlcea -->
+        <definition firstyear="1848">
             <fixed month="June" day="26"/>
         </definition>
-    </holiday>
-    <holiday name="Ziua Imnului naţional (National Anthem Day)">
+    </holiday>    
+
+    <holiday name="Ziua Imnului naţional" international="National Anthem Day"
+             type="Official holiday">
         <definition>
             <fixed month="July" day="29"/>
         </definition>
     </holiday>
-    <holiday name="Ende der Sommerzeit (Uhren 1 h zurückstellen)" international="End Daylight Saving Time">
+
+    <holiday name="Adormirea Maicii Domnului" type="Official non-working holiday"
+             international="Dormition of the Theotokos">
         <definition>
-            <dst timezone="Europe/Bucharest" action="end"/>
+            <fixed month="August" day="15"/>
         </definition>
     </holiday>
-    <holiday name="Ziua Naţională (National holiday)" type="gesetzlich">
+
+    <holiday name="Armed Forces Day" type="Not a public holiday"
+             international="Armed Forces Day">
+        <definition>
+            <fixed month="October" day="25"/>
+        </definition>
+    </holiday>
+
+    <holiday name="Ziua Naţională (Ziua Marii Uniri)" type="Official non-working holiday"
+             international="National holiday (Great Union Day)">
         <definition>
             <fixed month="December" day="1"/>
         </definition>
     </holiday>
-    <holiday name="Ziua Constituţiei (Constitution Day)">
+
+    <holiday name="Ziua Constituţiei" international="Constitution Day">
         <definition>
             <fixed month="December" day="8"/>
         </definition>
     </holiday>
-    <holiday name="Crăciunul" type="gesetzlich" international="Christmas Day">
+
+    <holiday name="Crăciunul" type="Official non-working holiday"
+             international="Christmas Day">
         <definition>
             <fixed month="December" day="25"/>
         </definition>
     </holiday>
-    <holiday name="A doua zi de Crăciun" type="gesetzlich" international="Boxing Day">
+
+    <holiday name="A doua zi de Crăciun" type="Official non-working holiday"
+             international="Boxing Day">
         <definition>
             <fixed month="December" day="26"/>
         </definition>
     </holiday>
+
+    <holiday name="DST end" international="End Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Bucharest" action="end"/>
+        </definition>
+    </holiday>
+
 </holidays>
+
+
