@@ -2,114 +2,135 @@
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
 
 <holidays country="SI">
-    <!-- Slowenien http://www.goruma.de/Laender/Europa/Slowenien/Wissenswertes/index_1.html-->
-	<!-- enthält keine Feiertage der orthodoxen Christen !! -->
+    <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Slovenia -->
 
-    <holiday name="Neujahrstag" type="gesetzlich" international="New Year's Day">
+    <holiday name="novo leto" type="state holiday, work-free" international="New Year's Day">
         <definition>
             <fixed month="January" day="1"/>
         </definition>
     </holiday>
-    <holiday name="2. Neujahrtag" type="gesetzlich">
+
+    <holiday name="2. novo leto" type="state holiday, work-free" international="New Year's Day">
         <definition>
             <fixed month="January" day="2"/>
         </definition>
     </holiday>
-    <holiday name="Prešeren-Tag (slowenischer Kulturfeiertag)" type="gesetzlich">
-        <definition>
+
+    <holiday name="Prešernov dan, slovenski kulturni praznik"
+             type="state holiday, work-free"
+             international="rešeren Day, the Slovenian Cultural Holiday">
+        <!-- established as the national cultural day in 1944, work-free since 1991. -->
+        <definition firstyear="1944">
             <fixed month="February" day="8"/>
         </definition>
     </holiday>
-    <holiday name="Beginn der Sommerzeit (Uhren 1 h vorstellen)" international="Begin Daylight Saving Time">
+
+    <holiday name="DST start" international="Begin Daylight Saving Time">
         <definition>
             <dst timezone="Europe/Ljubljana" action="start"/>
         </definition>
     </holiday>
-    <holiday name="Karfreitag" international="Good Friday">
-        <definition>
-            <easter/>
-            <add days="-2"/>
-        </definition>
-    </holiday>
-    <holiday name="Ostersonntag (Ostern)" type="gesetzlich">
+    
+    <holiday name="velika noč in velikonočni ponedeljek" type="work-free day">
         <import name="Easter Sunday"/>
     </holiday>
-    <holiday name="Ostermontag (Emmaustag)" type="gesetzlich">
+
+    <holiday name="2. velika noč in velikonočni ponedeljek" type="work-free day">
         <import name="Easter Monday"/>
     </holiday>
-    <holiday name="Tag des Aufstandes gegen die Besatzung" type="gesetzlich">
+
+    <holiday name="dan upora proti okupatorju" type="state holiday, work-free"
+             international="Day of Uprising Against Occupation">
         <definition>
             <fixed month="April" day="27"/>
         </definition>
     </holiday>
-    <holiday name="Tag der Arbeit" type="gesetzlich">
+
+    <holiday name="praznik dela" type="state holiday">
         <definition>
             <fixed month="May" day="1"/>
         </definition>
     </holiday>
-    <holiday name="2. Tag der Arbeit" type="gesetzlich">
+
+    <holiday name="2. praznik dela" type="state holiday">
         <definition>
             <fixed month="May" day="2"/>
         </definition>
     </holiday>
-    <holiday name="Christi Himmelfahrt" type="katholisch">
-        <definition>
-            <easter/>
-            <add days="+39"/>
-        </definition>
-    </holiday>
-    <holiday name="Pfingstsonntag (Pfingsten)" type="gesetzlich" international="Whit Sunday">
+
+    <holiday name="binkoštna nedelja" type="work-free day"
+             international="Pentecostal Sunday">
         <import name="Pentecost"/>
     </holiday>
-    <holiday name="Pfingstmontag">
-        <definition>
-            <easter/>
-            <add days="+50"/>
-        </definition>
-    </holiday>
-    <holiday name="Fronleichnam" international="Corpus Christi">
-        <definition>
-            <easter/>
-            <add days="+60"/>
-        </definition>
-    </holiday>
-    <holiday name="Staatsfeiertag" type="gesetzlich">
+
+    <holiday name="dan državnosti" type="state holiday" international="Statehood Day">
         <definition>
             <fixed month="June" day="25"/>
         </definition>
     </holiday>
-    <holiday name="Unabhängigkeitstag/ Nationalfeiertag" type="gesetzlich">
-        <definition>
-            <fixed month="August" day="1"/>
-        </definition>
-    </holiday>
-    <holiday name="Mariä Himmelfahrt" type="gesetzlich">
+
+    <holiday name="Marijino vnebovzetje" type="work-free day"
+             international="Assumption Day">
         <definition>
             <fixed month="August" day="15"/>
         </definition>
     </holiday>
-    <holiday name="Ende der Sommerzeit (Uhren 1 h zurückstellen)" international="End Daylight Saving Time">
+
+    <holiday name="dan združitve prekmurskih Slovencev z matičnim narodom po prvi svetovni vojni" type="state holiday, not work-free"
+             international="Union of the Slovenians in Prekmurje with the mother nation after the First World War">
+        <definition>
+            <fixed month="August" day="17"/>
+        </definition>
+    </holiday>
+
+    <holiday name="DST end" international="End Daylight Saving Time">
         <definition>
             <dst timezone="Europe/Ljubljana" action="end"/>
         </definition>
     </holiday>
-    <holiday name="Reformationstag" type="gesetzlich">
+
+    <holiday name="dan vrnitve Primorske k matični domovini" type="state holiday, not work-free"
+             international="Reunion of Slovenian Littoral with the motherland">
         <definition>
-            <fixed month="October" day="31"/>
+            <fixed month="September" day="15"/>
         </definition>
     </holiday>
-    <holiday name="Allerheiligen" type="gesetzlich" international="All Saints">
-        <!-- All Saint's Day is a Christian holy day observed by many Western churches on November 1 -->
-        <import name="All Saints’ Day"/>
+
+    <holiday name="dan reformacije" type="work-free day"
+             international="Reformation Day">
+        <definition>
+            <fixed month="October" day="15"/>
+        </definition>
     </holiday>
-    <holiday name="1. Weihnachtsfeiertag (Weihnachten)" type="gesetzlich" international="Christmas Day">
+
+    <holiday name="dan spomina na mrtve" type="state holiday, work-free"
+             international="Remembrance day">
+        <definition>
+            <fixed month="November" day="1"/>
+        </definition>
+    </holiday>
+
+    <holiday name="dan Rudolfa Maistra" type="state holiday, not work-free"
+             international="Rudolf Maister Day">
+        <definition>
+            <fixed month="November" day="23"/>
+        </definition>
+    </holiday>
+
+    <holiday name="Božič" type="work-free day" international="Christmas Day">
         <definition>
             <fixed month="December" day="25"/>
         </definition>
     </holiday>
-    <holiday name="2. Weihnachtsfeiertag" type="gesetzlich" international="Boxing Day">
-        <definition>
+
+    <holiday name="dan samostojnosti in enotnosti" type="state holiday, work free" international="Independence and Unity Day">
+        <!-- Commemorates the proclamation of the independence plebiscite results in 1990 -->
+        <definition firstyear="1990">
             <fixed month="December" day="26"/>
         </definition>
     </holiday>
+
 </holidays>
+
+
+
