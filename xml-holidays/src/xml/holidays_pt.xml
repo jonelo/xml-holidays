@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
 
-<holidays country="pt">
+<holidays country="PT">
     <!-- Portugal http://www.algarve-live.de/landundleute/index.php?cat=11200&id2=1&id4=6&id5=1-->
 
     <holiday name="Ano Novo" type="gesetzlich" international="New Year's Day">

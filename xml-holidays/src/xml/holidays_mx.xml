@@ -5,7 +5,7 @@
     http://xml-holidays.sourceforge.net/
     Thank you for keeping the comment.
 -->
-<holidays country="mx">
+<holidays country="MX">
     <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Mexico --> 
 
     <holiday name="Año Nuevo" type="statutory holiday">

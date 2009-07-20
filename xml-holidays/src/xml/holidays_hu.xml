@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
 
-<holidays country="hu">
+<holidays country="HU">
     <!-- Ungarn -->
 
     <holiday name="Újév" type="gesetzlich" international="New Year's Day">

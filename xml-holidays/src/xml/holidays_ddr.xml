@@ -5,7 +5,7 @@
     http://xml-holidays.sourceforge.net/
     Thank you for keeping the comment.
  -->
-<holidays country="ddr">
+<holidays country="DDR">
     <!-- Die DDR bestand vom 7. Oktober 1949 bis zum 2. Oktober 1990 -->
     
     <holiday name="Neujahrstag" type="gesetzlich" international="New Year's Day">

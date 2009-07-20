@@ -5,7 +5,7 @@
     http://xml-holidays.sourceforge.net/
     Thank you for keeping the comment.
  -->
-<holidays country="ch">
+<holidays country="CH">
     <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Switzerland -->
     
     <holiday name="Neujahr / Nouvel an / Capodanno / Bumaun" type="public">

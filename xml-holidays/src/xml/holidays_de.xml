@@ -5,7 +5,7 @@
     http://xml-holidays.sourceforge.net/
     Thank you for keeping the comment.
 -->
-<holidays country="de">
+<holidays country="DE">
     <!-- http://de.wikipedia.org/wiki/Feiertage_in_Deutschland -->
 
     <holiday name="Neujahrstag" type="gesetzlich">

@@ -2,7 +2,7 @@
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
 
 <!-- Russia -->
-<holidays country="ru">
+<holidays country="RU">
     <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Russia
     Russland http://www.russlandjournal.de/russland/reiseinformationen/feiertage/-->
 	<!-- generell gilt: fällt ein Feiertag auf Samstag oder Sonntag wird der Feiertag auf einen
