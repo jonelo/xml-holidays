@@ -1,81 +1,101 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
 
-<holidays country="PL">
-    <!-- Polen http://www.polen-total.de/Feiertage.52.0.html -->
+<holidays country id="PL">
+    <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Poland -->
 
-    <holiday name="Nowy Rok" type="gesetzlich" international="New Year's Day">
+    <holiday name="Nowy Rok (Nowy Rok)" type="public holiday" international="New Year's Day">
         <definition>
             <fixed month="January" day="1"/>
         </definition>
     </holiday>
-    <holiday name="Begin Daylight Saving Time">
+
+    <!-- In February 2004, 2 May was named Flag Day; it was not, however,
+         made a public holiday. -->
+    <holiday name="Dzień Flagi Rzeczypospolitej Polskiej" type="non public holiday" international="Flag of the Republic of Poland Day (Flag Day)">
+        <definition firstyear="2004">
+            <fixed month="February" day="2"/>
+        </definition>
+    </holiday>
+
+    <holiday name="DST start" international="Begin Daylight Saving Time">
         <definition>
             <dst timezone="Europe/Warsaw" action="start"/>
         </definition>
     </holiday>
-    <holiday name="Niedziela Wielkanocna" type="gesetzlich" international="Easter">
+
+    <holiday name="pierwszy dzień Wielkiej Nocy (Niedziela Wielkanocna)" type="public holiday">
         <import name="Easter Sunday"/>
     </holiday>
-    <holiday name="Ostermontag (Emmaustag)" type="gesetzlich" international="Easter Monday">
+
+    <holiday name="drugi dzień Wielkiej Nocy (Poniedziałek Wielkanocny)" type="public holiday">
         <import name="Easter Monday"/>
     </holiday>
-    <holiday name="Święto Pracy" type="gesetzlich" international="Labour Day">
+
+    <holiday name="Święto Państwowe (Święto Pracy)" type="public holiday" international="State Holiday">
         <definition>
             <fixed month="May" day="1"/>
         </definition>
     </holiday>
-    <holiday name="Święto Konstytucji Trzeciego Maja (Constitution Day)" type="gesetzlich">
+
+    <holiday name="Święto Narodowe Trzeciego Maja (Święto Konstytucji Trzeciego Maja)" type="public holiday"
+             international="National 3rd of May Holiday">
         <definition>
             <fixed month="May" day="3"/>
         </definition>
     </holiday>
-    <holiday name="Tag des Friedens">
-        <definition>
-            <fixed month="May" day="8"/>
-        </definition>
-    </holiday>
-    <holiday name="Zielone Świątki" type="gesetzlich" international="Whit Sunday">
+
+    <holiday name="pierwszy dzień Zielonych Świątek (Zielone Świątki)" type="public holiday">
         <import name="Pentecost"/>
     </holiday>
-    <holiday name="Boże Ciało" type="gesetzlich" international="Corpus Christi">
+
+    <holiday name="dzień Bożego Ciała (Boże Ciało)" type="public holiday" international="Corpus Christi">
         <definition>
             <easter/>
             <add days="+60"/>
         </definition>
     </holiday>
-    <holiday name="Wniebowzięcie Najświętszej Maryi Panny" type="gesetzlich" international="Assumption of Mary">
+
+    <holiday name="Wniebowzięcie Najświętszej Maryi Panny" type="public holiday" international="Assumption of the Blessed Virgin Mary">
         <definition>
             <fixed month="August" day="15"/>
         </definition>
     </holiday>
-    <holiday name="Tag der polnischen Armee">
-        <definition>
+
+    <holiday name="Dzień Wojska Polskiego">
+        <definition firstyear="1920">
             <fixed month="August" day="15"/>
         </definition>
     </holiday>
-    <holiday name="End Daylight Saving Time">
+
+    <holiday name="DST end" international="End Daylight Saving Time">
         <definition>
             <dst timezone="Europe/Warsaw" action="end"/>
         </definition>
     </holiday>
-    <holiday name="Wszystkich Świętych" type="gesetzlich" international="All Saints">
-        <!-- All Saint's Day is a Christian holy day observed by many Western churches on November 1 -->
+
+    <holiday name="Wszystkich Świętych" type="public holiday">
         <import name="All Saints’ Day"/>
     </holiday>
-    <holiday name="Dzień Niepodległości (Independence Day)" type="gesetzlich">
+    
+    <holiday name="Narodowe Święto Niepodległości (Dzień Niepodległości)" type="public holiday"
+             inernational="Independence Day">
         <definition firstyear="1918">
         	<fixed month="November" day="11" />
         </definition>
     </holiday>
-    <holiday name="pierwszy dzień Bożego Narodzenia" type="gesetzlich" international="Christmas Day">
+
+    <holiday name="pierwszy dzień Bożego Narodzenia" type="public holiday" international="Christmas Day">
         <definition>
             <fixed month="December" day="25"/>
         </definition>
     </holiday>
-    <holiday name="Boxing Day" type="gesetzlich" international="Boxing Day">
+
+    <holiday name="drugi dzień Bożego Narodzenia" type="public holiday">
         <definition>
             <fixed month="December" day="26"/>
         </definition>
     </holiday>
+
 </holidays>
+
