@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
 
-<holidays country id="PL">
+<holidays country="PL">
     <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Poland -->
 
     <holiday name="Nowy Rok (Nowy Rok)" type="public holiday" international="New Year's Day">
@@ -79,7 +79,7 @@
     </holiday>
     
     <holiday name="Narodowe Święto Niepodległości (Dzień Niepodległości)" type="public holiday"
-             inernational="Independence Day">
+             international="Independence Day">
         <definition firstyear="1918">
         	<fixed month="November" day="11" />
         </definition>
