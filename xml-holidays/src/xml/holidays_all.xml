@@ -36,7 +36,7 @@
         <xi:include href="holidays_lu.xml"/> <!--check needed-->
         <xi:include href="holidays_nl.xml"/> <!--ok-->
         <xi:include href="holidays_no.xml"/> <!--check needed-->
-        <xi:include href="holidays_pl.xml"/> <!--check needed-->
+        <xi:include href="holidays_pl.xml"/> <!--only plublic holidays-->
         <xi:include href="holidays_pt.xml"/> <!--ok-->
         <xi:include href="holidays_ro.xml"/> <!--ok-->
         <xi:include href="holidays_ru.xml"/> <!--check needed-->
