@@ -2,72 +2,161 @@
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
 
 <holidays country="HU">
-    <!-- Ungarn -->
+    <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Hungary -->
 
-    <holiday name="Újév" type="gesetzlich" international="New Year's Day">
+    <holiday name="Újév" type="public holiday">
+        <names>
+            <name language="hu" text="Újév" official="true"/>
+            <name language="en" text="New Year's Day"/>
+        </names>
         <definition>
             <fixed month="January" day="1"/>
         </definition>
     </holiday>
-    <holiday name="Nemzeti ünnep (National Day)" type="gesetzlich">
+
+    <holiday name="Nemzeti ünnep" type="public holiday">
+        <names>
+            <name language="hu" text="Nemzeti ünnep" official="true"/>
+            <name language="en" text="National Day"/>
+        </names>
         <definition>
             <fixed month="March" day="15"/>
         </definition>
     </holiday>
-    <holiday name="Húsvétvasárnap" type="gesetzlich" international="Easter">
+
+    <holiday name="Húsvétvasárnap" type="public holiday">
+        <names>
+           <name language="hu" text="Húsvétvasárnap" official="true"/>
+        </names>
         <import name="Easter Sunday"/>
     </holiday>
-    <holiday name="Húsvéthétfő" type="gesetzlich" international="Easter Monday">
+
+    <holiday type="public holiday">
+        <names>
+            <name language="hu" text="Húsvéthétfő" official="true"/>
+        </names>
         <import name="Easter Monday"/>
     </holiday>
-    <holiday name="Begin Daylight Saving Time">
+
+    <holiday>
+        <names>
+            <name language="en" text="Begin Daylight Saving Time"/>
+        </names>
         <definition>
             <dst timezone="Europe/Budapest" action="start"/>
         </definition>
     </holiday>
-    <holiday name="A munka ünnepe" type="gesetzlich" international="Labour Day">
+
+    <holiday type="public holiday">
+        <names>
+            <name language="pt" text="A munka ünnepe" official="true"/>
+            <name language="en" text="Labour Day"/>
+        </names>
         <definition>
             <fixed month="May" day="1"/>
         </definition>
     </holiday>
-    <holiday name="Pünkösd" type="gesetzlich" international="Whit Sunday">
+
+    <holiday type="public holiday">
+        <names>
+            <name language="hu" text="Pünkösdvasárnap" official="true"/>
+            <name language="en" text="Pentecost Sunday"/>
+        </names>
         <import name="Pentecost"/>
     </holiday>
-    <holiday name="Szent István ünnepe (National Day)" type="gesetzlich">
+    
+    <holiday type="public holiday">
+        <names>
+            <name language="hu" text="Pünkösdhétfő" official="true"/>
+            <name language="en" text="Pentecost Monday"/>
+        </names>
+        <definition>
+            <easter/>
+            <add days="51"/>
+        </definition>
+    </holiday>
+
+    <holiday type="public holiday">
+        <names>
+            <name language="hu" text="Szent István ünnepe" official="true"/>
+            <name language="en" text="Saint Stephen Day"/>
+        </names>
         <definition>
             <fixed month="August" day="20"/>
         </definition>
     </holiday>
-    <holiday name="Nemzeti ünnep (National Day)" type="gesetzlich">
+
+    <holiday type="public holiday">
+        <names>
+            <name language="hu" text="Nemzeti ünnep" official="true"/>
+            <name language="en" text="National Day"/>
+        </names>
         <definition>
             <fixed month="October" day="23"/>
         </definition>
     </holiday>
-    <holiday name="End Daylight Saving Time">
+
+    <holiday>
+        <names>
+            <name language="en" text="End Daylight Saving Time"/>
+        </names>
         <definition>
             <dst timezone="Europe/Budapest" action="end"/>
         </definition>
     </holiday>
-    <holiday name="Mindenszentek" type="gesetzlich" international="All Saints">
-        <!-- All Saint's Day is a Christian holy day observed by many Western churches on November 1 -->
+
+    <holiday type="public holiday">
+        <names>
+            <name language="hu" text="Mindenszentek, Halottak napja" official="true"/>
+            <name language="en" text="All Saints"/>
+        </names>
         <import name="All Saints’ Day"/>
     </holiday>
-    <holiday name="Télapó Mikulás" international="Saint Nicholas Day">
+
+    <holiday>
+        <names>
+            <name language="hu" text="Mikulás, Télapó" official="true"/>
+            <name language="en" text="Santa Claus, Saint Nicholas Day"/>
+        </names>
         <definition>
             <fixed month="December" day="6"/>
         </definition>
     </holiday>
-    <holiday name="Karácsony" type="gesetzlich" international="Christmas Day">
+
+    <holiday type="public holiday">
+        <names>
+            <name language="hu" text="Szenteste, Karácsony" official="true"/>
+            <name language="en" text="Christmas Day"/>
+        </names>
         <definition>
             <fixed month="December" day="25"/>
         </definition>
     </holiday>
-    <holiday name="Karácsony másnapja" type="gesetzlich" international="Boxing Day">
+
+    <holiday type="public holiday">
+        <names>
+            <name language="hu" text="Karácsony másnapja" official="true"/>
+            <name language="en" text="Second Day of Christmas"/>
+        </names>        
         <definition>
             <fixed month="December" day="26"/>
         </definition>
     </holiday>
-    <holiday name="Szilveszter" international="New Year's Eve">
+
+    <holiday>
+        <names>
+            <name language="hu" text="Szilveszter" official="true"/>
+            <name language="en" text="New Year's Eve"/>
+        </names>
         <import name="New Year's Eve"/>
     </holiday>
+
+    <holiday>
+        <names>
+            <name language="hu" text="Farsang" official="true"/>
+            <name language="en" text="New Year's Eve"/>
+        </names>
+        <import name="Carnival"/>
+    </holiday>
+
 </holidays>
