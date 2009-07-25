@@ -12,13 +12,19 @@
         <import name="New Year's Day"/>
     </holiday>
     
-    <holiday name="Hl. Drei Könige (Dreikönigsfest)" type="gesetzlich in BW,BY,ST" international="Epiphany">
+    <holiday name="Hl. Drei Könige (Dreikönigsfest)" type="gesetzlich in BW,BY,ST">
+        <names>
+            <name language="en" text="Biblical Magi"/>
+        </names>
         <definition>
             <fixed month="January" day="6"/>
         </definition>
     </holiday>
     
-    <holiday name="Erscheinung des Herrn (Epiphanie)" type="evangelisch" international="Epiphany">
+    <holiday name="Erscheinung des Herrn (Epiphanie)" type="evangelisch">
+        <names>
+            <name language="en" text="Epiphany"/>
+        </names>
         <definition>
             <fixed month="January" day="6"/>
         </definition>
