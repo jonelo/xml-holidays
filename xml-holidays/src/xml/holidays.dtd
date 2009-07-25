@@ -26,10 +26,10 @@
    <!--
      A holiday can have one import element or a combination of both definitions
      and code 
-     "name"          is the localized name for the holiday, it must be set in
-                     any case. Don't use english, except the local language
-                     is english. Use the local description of the holiday
-                     in your country.
+     "name"          the name of the holiday. It must be set in any case, since
+                     the "names" element is optional.
+                     Use the "names" element in order to specify the name of the
+                     holiday in different languages.
      "international" is the english (international) well known name for the
                      holiday (optional). The local rules don't need to 
                      necessarily match with the well known english holiday.
@@ -38,13 +38,30 @@
                      describes the type of the holiday (e.g. legal holiday,
                      de facto legal holiday, katholic, etc.)
    -->
-   <!ELEMENT holiday (import|(definition+|code+)+)>
+   <!ELEMENT holiday (names*,(import|(definition+|code+)+))>
    <!ATTLIST holiday
              name CDATA #REQUIRED
              type CDATA #IMPLIED
              valid (true|false) "true"
              international CDATA #IMPLIED>
-      
+
+      <!-- a holiday must have at least one name, it
+           can have multiple names in many different languages -->
+      <!ELEMENT names (name+)>
+
+      <!-- 
+        "language"   the language in which the name of the holiday is expressed
+        "text"       the name of the holiday expressed in "language"
+        "official"   determines whether the name is the official (formal) name
+                     of the holiday. Use this flag for names that are expressed
+                     in the official languages of a country.
+        -->
+      <!ELEMENT name EMPTY>
+      <!ATTLIST name
+                language CDATA #REQUIRED
+                text CDATA #REQUIRED
+                official (true|false) "false">
+
       <!--
         An import element imports the definitions of a holiday from the
         file called holidays_shared.xml
