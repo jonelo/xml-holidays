@@ -26,24 +26,20 @@
    <!--
      A holiday can have one import element or a combination of both definitions
      and code 
-     "name"          the name of the holiday. It must be set in any case, since
-                     the "names" element is optional.
+     "name"          the name of the holiday in the local language.
                      Use the "names" element in order to specify the name of the
-                     holiday in different languages.
-     "international" is the english (international) well known name for the
-                     holiday (optional). The local rules don't need to 
-                     necessarily match with the well known english holiday.
-     "valid"         determines whether the holiday is still valid or not
-     "type"          currently free text, it can be anything, it further
-                     describes the type of the holiday (e.g. legal holiday,
-                     de facto legal holiday, katholic, etc.)
+                     holiday in many different languages.
+     "type"          free text, it should further describe the type of the
+                     holiday (e.g. legal holiday, de facto legal holiday,
+                     katholic, etc.)
+     "valid"         indicates whether the holiday is still valid or not
+                     (use false if it is a history or obsolete holiday)
    -->
    <!ELEMENT holiday (names*,(import|(definition+|code+)+))>
    <!ATTLIST holiday
-             name CDATA #REQUIRED
+             name CDATA #IMPLIED
              type CDATA #IMPLIED
-             valid (true|false) "true"
-             international CDATA #IMPLIED>
+             valid (true|false) "true">
 
       <!-- a holiday must have at least one name, it
            can have multiple names in many different languages -->
