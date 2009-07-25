@@ -4,7 +4,11 @@
 <holidays country="PL">
     <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Poland -->
 
-    <holiday name="Nowy Rok (Nowy Rok)" type="public holiday" international="New Year's Day">
+    <holiday name="Nowy Rok" type="public holiday" international="New Year's Day">
+        <names>
+            <name language="pl" text="Nowy Rok" official="true"/>
+            <name language="en" text="New Year's Day"/>
+        </names>
         <definition>
             <fixed month="January" day="1"/>
         </definition>
@@ -13,6 +17,10 @@
     <!-- In February 2004, 2 May was named Flag Day; it was not, however,
          made a public holiday. -->
     <holiday name="Dzień Flagi Rzeczypospolitej Polskiej" type="non public holiday" international="Flag of the Republic of Poland Day (Flag Day)">
+        <names>
+            <name language="pl" text="Dzień Flagi Rzeczypospolitej Polskiej" official="true"/>
+            <name language="en" text="Flag of the Republic of Poland Day (Flag Day)"/>
+        </names>
         <definition firstyear="2004">
             <fixed month="February" day="2"/>
         </definition>
@@ -24,11 +32,19 @@
         </definition>
     </holiday>
 
-    <holiday name="pierwszy dzień Wielkiej Nocy (Niedziela Wielkanocna)" type="public holiday">
+    <holiday name="pierwszy dzień Wielkiej Nocy" type="public holiday">
+        <names>
+            <name language="pl" text="pierwszy dzień Wielkiej Nocy" official="true"/>
+            <name language="pl" text="Niedziela Wielkanocna"/>
+        </names>
         <import name="Easter Sunday"/>
     </holiday>
 
-    <holiday name="drugi dzień Wielkiej Nocy (Poniedziałek Wielkanocny)" type="public holiday">
+    <holiday name="drugi dzień Wielkiej Nocy" type="public holiday">
+        <names>
+            <name language="pl" text="drugi dzień Wielkiej Nocy" official="true"/>
+            <name language="pl" text="Poniedziałek Wielkanocny"/>
+        </names>
         <import name="Easter Monday"/>
     </holiday>
 

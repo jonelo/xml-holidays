@@ -8,13 +8,26 @@
 <holidays country="CH">
     <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Switzerland -->
     
-    <holiday name="Neujahr / Nouvel an / Capodanno / Bumaun" type="public">
+    <holiday name="Neujahr" type="public">
+        <names>
+            <name language="de" text="Neujahr" official="true"/>
+            <name language="fr" text="Nouvel an" official="true"/>
+            <name language="it" text="Capodanno" official="true"/>
+            <name language="rm" text="Bumaun" official="true"/>
+        </names>
         <import name="New Year's Day"/>
     </holiday>
     
-    <holiday name="Berchtoldstag (Bächtelistag) / Saint Berchtold / San Basilio / Firà da Bumaun" 
-             type="public; AG (partly), BE, FR, GL, JU, LU, NE, OW, SH, SO, TG, VD, ZG, ZH" 
-             international="Saint Berchtold">
+    <holiday name="Berchtoldstag" 
+             type="public; AG (partly), BE, FR, GL, JU, LU, NE, OW, SH, SO, TG, VD, ZG, ZH">
+        <names>
+            <name language="de" text="Berchtoldstag" official="true"/>
+            <name language="de" text="Bächtelistag" official="true"/>
+            <name language="fr" text="Saint Berchtold" official="true"/>
+            <name language="it" text="San Basilio" official="true"/>
+            <name language="rm" text="Firà da Bumaun" official="true"/>
+            <name language="en" text="Saint Berchtold"/>
+        </names>
         <definition>
             <fixed day="2" month="January"/>
         </definition>
@@ -22,7 +35,7 @@
     
     <holiday name="Heilige drei Könige / Epiphanie / Epifania"
              type="public; GR (partly), SZ, TI, UR, LU" 
-             international="Epiphany">
+             international="Biblical Magi">
         <definition>
             <fixed month="January" day="6"/>
         </definition>
@@ -346,18 +359,30 @@
         </definition>
     </holiday>
 
-    <holiday name="Stephanstag / Saint Etienne / Santo Stefano / Son Steffan"
-             type="public; all of Switzerland, except GE, JU, VD, VS, NE"
-             international="St. Stephen's Day">
+    <holiday name="Stephanstag"
+             type="public; all of Switzerland, except GE, JU, VD, VS, NE">
+        <names>
+            <name language="de" text="Stephanstag" official="true"/>
+            <name language="fr" text="Saint Etienne" official="true"/>
+            <name language="it" text="Santo Stefano" official="true"/>
+            <name language="rm" text="Son Steffan" official="true"/>
+            <name language="en" text="St. Stephen's Day"/>
+        </names>
         <definition>
             <fixed day="26" month="December"/>
         </definition>
     </holiday>
     
     <!-- in NE only if it falls on Monday -->
-    <holiday name="Stephanstag / Saint Etienne / Santo Stefano / Son Steffan"
-             type="public; only NE"
-             international="St. Stephen's Day">
+    <holiday name="Stephanstag"
+             type="public; only NE">
+        <names>
+            <name language="de" text="Stephanstag" official="true"/>
+            <name language="fr" text="Saint Etienne" official="true"/>
+            <name language="it" text="Santo Stefano" official="true"/>
+            <name language="rm" text="Son Steffan" official="true"/>
+            <name language="en" text="St. Stephen's Day"/>
+        </names>
         <definition>
             <fixed day="26" month="December"/>
             <condition ifweekday="Tuesday"><undefined/></condition>
@@ -370,8 +395,10 @@
     </holiday>
     
     <holiday name="Restoration of the Republic"
-             type="regional; only GE"
-             international="Restoration of the Republic">
+             type="regional; only GE">
+        <names>
+            <name language="en" text="Restoration of the Republic"/>
+        </names>
         <definition>
             <fixed day="31" month="December" />
         </definition>
