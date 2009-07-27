@@ -8,7 +8,7 @@
         <xi:include href="holidays_us.xml"/> <!--ok-->
         <xi:include href="holidays_ca.xml"/> <!--ok-->
         <xi:include href="holidays_br.xml"/> <!--ok-->
-        <xi:include href="holidays_ve.xml"/> <!--many holidays are missing-->
+        <xi:include href="holidays_ve.xml"/> <!--ok-->
         <xi:include href="holidays_cl.xml"/> <!--many holidays are missing-->
         <xi:include href="holidays_ar.xml"/> <!--Judaism & Islamic holidays-->
         <xi:include href="holidays_ni.xml"/> <!--many holidays are missing-->
@@ -18,7 +18,7 @@
 
         <!-- Europe -->
         <xi:include href="holidays_at.xml"/> <!--ok-->
-        <xi:include href="holidays_be.xml"/> <!--check needed-->
+        <xi:include href="holidays_be.xml"/> <!--ok-->
         <xi:include href="holidays_ch.xml"/> <!--ok-->
         <xi:include href="holidays_cz.xml"/> <!--check needed-->
         <xi:include href="holidays_de.xml"/> <!--ok-->
