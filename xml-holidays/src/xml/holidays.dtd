@@ -12,51 +12,54 @@
 <!ENTITY % nth "First | Second | Third | Fourth | Last">
 <!ENTITY % startdate "fixed | easter | advent | rule | dst | equinox | solstice">
 <!ENTITY % modifiers "add | goto">
-<!ENTITY % directions "nearest | next | nextpossible | previous | previouspossible">
+<!ENTITY % directions "nearest | next | nextinclusive | previous | previousinclusive">
 
 <!--
-  The element called holidays can have multiple elements called holiday (at least one)
-  "country"         is the id of the country, if possible the id should be a
-                    ISO 3166-1-alpha-2 code in uppercase characters
+  The element called holidays must have at least one element called holiday
+  "country"         the ID of the country
+                    use ISO 3166-1-alpha-2 code in uppercase characters
+                    if applicable
   -->
-<!ELEMENT holidays (holiday+)>
+<!ELEMENT holidays (default+,holiday+)>
 <!ATTLIST holidays
           country CDATA #REQUIRED>
 
    <!--
+     The default element specifies a language which is common in a country
+     "language"      specify the language for a holiday name.
+                     Use ISO 639-1-alpha-2 code in lowercase characters
+                     if applicable.
+    -->
+   <!ELEMENT default EMPTY>
+   <!ATTLIST default
+             language CDATA #REQUIRED>
+   <!--
      A holiday can have one import element or a combination of both definitions
-     and code 
-     "name"          the name of the holiday in the local language.
-                     Use the "names" element in order to specify the name of the
-                     holiday in many different languages.
-     "type"          free text, it should further describe the type of the
-                     holiday (e.g. legal holiday, de facto legal holiday,
-                     katholic, etc.)
+     and code
+     "id"            an optional identification (holiday is usually identified
+                     by the holiday name)
      "valid"         indicates whether the holiday is still valid or not
                      (use false if it is a history or obsolete holiday)
    -->
-   <!ELEMENT holiday (names*,(import|(definition+|code+)+))>
+   <!ELEMENT holiday (description+,(import|(definition+|code+)+))>
    <!ATTLIST holiday
-             name CDATA #IMPLIED
-             type CDATA #IMPLIED
+             id CDATA #IMPLIED
              valid (true|false) "true">
-
-      <!-- a holiday must have at least one name, it
-           can have multiple names in many different languages -->
-      <!ELEMENT names (name+)>
 
       <!-- 
         "language"   the language in which the name of the holiday is expressed
-        "text"       the name of the holiday expressed in "language"
-        "official"   determines whether the name is the official (formal) name
-                     of the holiday. Use this flag for names that are expressed
-                     in the official languages of a country.
+        "name"       the name of the holiday expressed in "language"
+        "type"       free text, it should further describe the type of the
+                     holiday (e.g. legal holiday, de facto legal holiday,
+                     katholic, etc.)
+        "region"     free text, the region of the holiday if applicable
         -->
-      <!ELEMENT name EMPTY>
-      <!ATTLIST name
+      <!ELEMENT description EMPTY>
+      <!ATTLIST description
                 language CDATA #REQUIRED
-                text CDATA #REQUIRED
-                official (true|false) "false">
+                name CDATA #REQUIRED
+                type CDATA #IMPLIED
+                region CDATA #IMPLIED>
 
       <!--
         An import element imports the definitions of a holiday from the
@@ -64,7 +67,7 @@
       -->
       <!ELEMENT import EMPTY>
       <!ATTLIST import
-                name CDATA #REQUIRED>
+                id CDATA #REQUIRED>
 
       <!-- The code element can keep Java code -->
       <!ELEMENT code (#PCDATA)>
@@ -106,7 +109,8 @@
                 ifweekday (%weekdays;) #IMPLIED
                 ifdaytype CDATA #IMPLIED
                 ifdayname CDATA #IMPLIED
-                ifdayofmonth CDATA #IMPLIED>
+                ifdayofmonth CDATA #IMPLIED
+                language CDATA #IMPLIED>
           
       <!--
         The undefined element says that a holiday wasn't/isn't
@@ -191,13 +195,14 @@
         The goto modifier
         moves to the next, previous or nearest weekday
         the direction can become
-        nearest - the nearest weekday, go not more than 3 days in one direction
-        next - the next weekday
-        nextpossible - a "goto next" action happens only if the current
-                       weekday is not the specified weekday
-        previous - the previous weekday
-        previouspossible - a "goto previous" action happens only if the current
-                           weekday is not the specified weekday
+        nearest           - the nearest weekday, go not more than 3 days
+                            in one direction
+        next              - the next weekday
+        nextinclusive     - a goto action happens only if the current
+                            weekday is not the specified weekday
+        previous          - the previous weekday
+        previousinclusive - a goto action happens only if the current
+                            weekday is not the specified weekday
       -->
       <!ELEMENT goto EMPTY>
       <!ATTLIST goto

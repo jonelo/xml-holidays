@@ -9,56 +9,70 @@
     <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Brazil
          http://pt.wikipedia.org/wiki/Feriados_no_Brasil -->
 
-    <holiday name="Confraternização Universal" type="public holiday" international="New Year's Day">
+    <default language="pt"/>
+
+    <holiday>
+        <description language="pt" name="Confraternização Universal"/>
+        <description language="en" name="New Year's Day" type="public holiday"/>
         <definition>
             <fixed month="January" day="1"/>
         </definition>
     </holiday>
 
-    <holiday name="Carnaval (Carnival festivities begin)">
-       <definition>
-          <easter/>
-          <add days="-50"/>
-       </definition>
+    <holiday>
+        <description language="pt" name="Carnaval"/>
+        <description language="en" name="Carnival festivities begin" type="public holiday"/>
+        <definition>
+            <easter/>
+            <add days="-40"/>
+        </definition>
     </holiday>
 
-    <holiday name="Carnaval" type="public holiday">
-        <import name="Carnival"/>
+    <holiday>
+        <description language="pt" name="Quarta-feira de Cinzas"
+                     type="public holiday, but only the morning is considered a holiday"/>
+        <description language="en" name="Ash Wednesday"/>
+        <definition>
+            <easter/>
+            <add days="-46"/>
+        </definition>
     </holiday>
 
-    <holiday name="Quarta-feira de Cinzas" type="public holiday, but only the morning is considered a holiday" international="Ash Wednesday">
-       <definition>
-          <easter/>
-          <add days="-46"/>
-       </definition>
+    <holiday>
+        <description language="pt" name="Sexta-Feira Santa"/>
+        <description language="en" name="Good Friday" type="public holiday"/>
+        <definition>
+            <easter/>
+            <add days="-2"/>
+        </definition>
     </holiday>
 
-    <holiday name="Sexta-Feira Santa" type="public holiday" international="Good Friday">
-       <definition>
-          <easter/>
-          <add days="-2"/>
-       </definition>
+    <holiday>
+        <description language="pt" name="Páscoa"/>
+        <import id="Easter Sunday"/>
     </holiday>
 
-    <holiday name="Páscoa">
-        <import name="Easter Sunday"/>
-    </holiday>
-
-    <holiday name="Tiradentes" type="public holiday">
-       <definition>
-          <fixed month="April" day="21"/>
-       </definition>
+    <holiday>
+        <description language="pt" name="Tiradentes"/>
+        <description language="en" name="Tiradentes" type="public holiday"/>
+        <definition>
+            <fixed month="April" day="21"/>
+        </definition>
     </holiday>
 
     <!-- http://en.wikipedia.org/wiki/Labour_Day -->
-    <holiday name="Dia do Trabalho" type="public holiday" international="Labour Day">
-       <definition>
-          <fixed month="May" day="1"/>
-       </definition>
+    <holiday>
+        <description language="pt" name="Dia do Trabalho"/>
+        <description language="en" name="Labour Day" type="public holiday"/>
+        <definition>
+            <fixed month="May" day="1"/>
+        </definition>
     </holiday>
 
     <!-- http://en.wikipedia.org/wiki/Mothers_Day -->
-    <holiday name="Dia das Mães" international="Mother's Day">
+    <holiday>
+        <description language="pt" name="Dia das Mães"/>
+        <description language="en" name="Mother's Day"/>
         <definition>
             <rule nth="Second" weekday="Sunday" month="May"/>
         </definition>
@@ -68,27 +82,34 @@
     <!-- The February 14's Valentine's Day is not celebrated at all, mainly for
          cultural and commercial reasons, since it usually falls too little
          before or after Carnival, a major floating holiday in Brazil -->
-    <holiday name="Dia dos Namorados">
+    <holiday>
+        <description language="pt" name="Dia dos Namorados"/>
+        <description language="en" name="Valentine's Day"/>
         <definition>
             <fixed day="12" month="June"/>
         </definition>
     </holiday>
     
-    <holiday name="Corpus Christi" type="public holiday">
-       <definition>
-          <easter/>
-          <add days="+60"/>
-       </definition>
+    <holiday>
+        <description language="en" name="Corpus Christi" type="public holiday"/>
+        <definition>
+            <easter/>
+            <add days="+60"/>
+        </definition>
     </holiday>
 
-    <holiday name="Dia dos Pais" international="Father's Day">
+    <holiday>
+        <description language="pt" name="Dia dos Pais"/>
+        <description language="en" name="Father's Day"/>
         <definition>
             <rule nth="Second" weekday="Sunday" month="August"/>
         </definition>
     </holiday>
 
     <!-- http://en.wikipedia.org/wiki/Dia_do_Soldado -->
-    <holiday name="Dia do Soldado" international="Soldier's Day">
+    <holiday>
+        <description language="pt" name="Dia do Soldado"/>
+        <description language="en" name="Soldier's Day"/>
         <definition firstyear="1923">
             <fixed day="25" month="August"/>
         </definition>
@@ -99,39 +120,52 @@
          declared by Dom Pedro I, son of the King of Portugal and the first
          Brazilian Emperor, but the independence act was not recognized until
          August 29, 1825. -->
-    <holiday name="Dia da Independência" type="public holiday" international="Independence Day">
-       <definition firstyear="1825">
-          <fixed month="September" day="7"/>
-       </definition>
+    <holiday>
+        <description language="pt" name="Dia da Independência"/>
+        <description language="en" name="Independence Day" type="public holiday"/>
+        <definition firstyear="1825">
+            <fixed month="September" day="7"/>
+        </definition>
     </holiday>
 
     <!-- http://en.wikipedia.org/wiki/Our_Lady_of_Aparecida -->
-    <holiday name="Nossa Senhora de Aparecida" type="public holiday, catholic" international="Our Lady of Aparecida">
-       <definition>
-          <fixed month="October" day="12"/>
-       </definition>
+    <holiday>
+        <description language="pt" name="Nossa Senhora de Aparecida"/>
+        <description language="en" name="Our Lady of Aparecida" type="public holiday, catholic"/>
+        <definition>
+            <fixed month="October" day="12"/>
+        </definition>
     </holiday>
 
-    <holiday name="Dia de Todos-os-Santos">
-        <import name="All Saints’ Day"/>
+    <holiday>
+        <description language="pt" name="Dia de Todos-os-Santos"/>
+        <import id="All Saint's Day"/>
     </holiday>
 
-    <holiday name="Dia de Finados" type="public holiday">
-       <import name="All Soul's Day"/>
+    <holiday>
+        <description language="pt" name="Dia de Finados"/>
+        <description language="en" name="All Soul's Day" type="public holiday"/>
+        <import id="All Soul's Day"/>
     </holiday>
 
-    <holiday name="Proclamação da República" type="public holiday" international="Proclamation of the Republic Day">
-       <definition>
-          <fixed month="November" day="15"/>
-       </definition>
+    <holiday>
+        <description language="pt" name="Proclamação da República"/>
+        <description language="en" name="Proclamation of the Republic Day" type="public holiday"/>
+        <definition>
+            <fixed month="November" day="15"/>
+        </definition>
     </holiday>
 
-    <holiday name="Natal" type="public holiday">
-        <import name="Christmas Day"/>
+    <holiday>
+        <description language="pt" name="Natal"/>
+        <description language="en" name="Christmas Day" type="public holiday"/>
+        <import id="Christmas Day"/>
     </holiday>
 
-    <holiday name="Véspera de Ano Novo">
-        <import name="New Year's Eve"/>
+    <holiday>
+        <description language="pt" name="Véspera de Ano Novo"/>
+        <description language="en" name="New Year's Eve"/>
+        <import id="New Year's Eve"/>
     </holiday>
 
 </holidays>

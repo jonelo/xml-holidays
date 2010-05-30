@@ -12,34 +12,47 @@
        http://en.wikipedia.org/wiki/Public_holidays_in_Canada
     -->
 
-    <holiday name="New Year's Day / Le jour de l'An" type="nationwide statutory holiday">
-        <import name="New Year's Day"/>
+    <default language="en"/>
+    <default language="fr"/>
+
+    <holiday>
+        <description language="en" name="New Year's Day" type="nationwide statutory holiday"/>
+        <description language="fr" name="Le jour de l'An"/>
+        <import id="New Year's Day"/>
     </holiday>
 
     <!-- http://en.wikipedia.org/wiki/Valentines_Day -->
-    <holiday name="Valentine's Day / Saint-Valentin">
-        <import name="Valentine's Day"/>
+    <holiday>
+        <description language="en" name="Valentine's Day"/>
+        <description language="fr" name="Saint-Valentin"/>
+        <import id="Valentine's Day"/>
     </holiday>
 
     <!-- http://en.wikipedia.org/wiki/National_Flag_of_Canada_Day -->
-    <holiday name="National Flag of Canada Day">
+    <holiday>
+        <description language="en" name="National Flag of Canada Day"/>
         <definition firstyear="1965">
             <fixed month="February" day="15"/>
         </definition>
     </holiday>
 
     <!-- http://en.wikipedia.org/wiki/Family_Day -->
-    <holiday name="Family Day / Fête de la famille" type="common statutory holiday, Alberta, Ontario, Saskatchewan">
+    <holiday>
+        <description language="en" name="Family Day"
+                     type="common statutory holiday" region="Alberta, Ontario, Saskatchewan"/>
+        <description language="fr" name="Fête de la famille"/>
         <definition firstyear="1990">
             <rule nth="Third" weekday="Monday" month="February"/>
         </definition>
     </holiday>
     
     <!-- http://en.wikipedia.org/wiki/Louis_Riel_Day -->
-    <holiday name="Louis Riel Day" type="public holiday in the Canadian province of Manitoba">
-         <definition firstyear="2008">
-             <rule nth="Third" weekday="Monday" month="February"/>
-         </definition>
+    <holiday>
+        <description language="en" name="Louis Riel Day"
+                     type="public holiday" region="Canadian province of Manitoba"/>
+        <definition firstyear="2008">
+            <rule nth="Third" weekday="Monday" month="February"/>
+        </definition>
     </holiday>
     
     <!-- http://en.wikipedia.org/wiki/Carnival#Canada -->
@@ -47,13 +60,15 @@
          Caribbean costumes may be paraded comfortably, rather than adhering to
          the traditional winter dates of the other carnivals in which the
          festival is strongly rooted. -->
-    <holiday name="Caribana">
+    <holiday>
+        <description language="en" name="Caribana"/>
         <definition>
             <rule nth="First" weekday="Saturday" month="August"/>
         </definition>
     </holiday>
     
-    <holiday name="Shrove Monday (Rose Monday)">
+    <holiday>
+        <description language="en" name="Shrove Monday (Rose Monday)"/>
         <definition>
             <easter/>
             <add days="-48"/>
@@ -61,39 +76,49 @@
     </holiday>
     
     <!-- http://en.wikipedia.org/wiki/Shrove_Tuesday -->
-    <holiday name="Strove Thuesday (Pancake Day, Pancake Tuesday)">
-         <import name="Carnival"/>
+    <holiday>
+        <description language="en" name="Strove Thuesday (Pancake Day, Pancake Tuesday)"/>
+        <import id="Carnival"/>
     </holiday>
 
-    <holiday name="Ash Wednesday">
-        <import name="Ash Wednesday"/>
+    <holiday>
+        <description language="en" name="Ash Wednesday"/>
+        <import id="Ash Wednesday"/>
     </holiday>
 
-    <holiday name="Daylight Saving Time starts (change time 1 h forward)">
+    <holiday>
+        <description language="en" name="Daylight Saving Time starts (change time 1 h forward)"/>
         <definition>
             <dst timezone="Canada/Central" action="start"/>
         </definition>
     </holiday>
 
-    <holiday name="Good Friday / Le vendredi saint" type="nationwide statutory holiday">
+    <holiday>
+        <description language="en" name="Good Friday" type="nationwide statutory holiday"/>
+        <description language="fr" name="Le vendredi saint"/>
         <definition>
             <easter/>
             <add days="-2"/>
         </definition>
     </holiday>
 
-    <holiday name="Holy Saturday">
+    <holiday>
+        <description language="en" name="Holy Saturday"/>
         <definition>
             <easter/>
             <add days="-1"/>
         </definition>
     </holiday>
 
-    <holiday name="Easter Sunday / Pâques">
-        <import name="Easter Sunday"/>
+    <holiday>
+        <description language="en" name="Easter Sunday"/>
+        <description language="fr" name="Pâques"/>
+        <import id="Easter Sunday"/>
     </holiday>
 
-    <holiday name="Easter Monday / Lundi de Pâques" type="statutory holiday">
+    <holiday>
+        <description language="en" name="Easter Monday" type="statutory holiday"/>
+        <description language="fr" name="Lundi de Pâques"/>
         <definition>
             <easter/>
             <add days="+1"/>
@@ -101,18 +126,22 @@
     </holiday>
 
     <!-- http://en.wikipedia.org/wiki/Mother%27s_Day -->
-    <holiday name="Mother's Day / Fête des Mères">
+    <holiday>
+        <description language="en" name="Mother's Day"/>
+        <description language="fr" name="Fête des Mères"/>
         <definition>
             <rule nth="Second" weekday="Sunday" month="May"/>
         </definition>
-    </holiday> 
+    </holiday>
 
     <!-- http://en.wikipedia.org/wiki/Victoria_Day_(Canada) -->
     <!-- http://www.pch.gc.ca/PROGS/CPSC-CCSP/JFA-HA/victoria_e.cfm -->
     <!-- http://en.wikipedia.org/wiki/Queen_Victoria
          24 May 1819 – 22 January 1901
          -->
-    <holiday name="Victoria Day / La fête de la Reine" type="statutory holiday">
+    <holiday>
+        <description language="en" name="Victoria Day" type="statutory holiday"/>
+        <description language="fr" name="La fête de la Reine"/>
         <!-- After the death of Queen Victoria in 1901, an Act was passed by the
              Parliament of Canada establishing a legal holiday on May 24 in each
              year (or May 25 if May 24 fell on a Sunday) under the name
@@ -136,7 +165,9 @@
 
     <!-- http://en.wikipedia.org/wiki/Canada_Day -->
     <!-- celebrating the anniversary of the July 1, 1867 -->
-    <holiday name="Canada Day / La fête du Canada" type="nationwide statutory holiday">
+    <holiday>
+        <description language="en" name="Canada Day" type="nationwide statutory holiday"/>
+        <description language="fr" name="La fête du Canada"/>
         <definition firstyear="1867">
             <fixed month="July" day="1"/>
             <!-- The Holidays Act provides that July 2 is Canada Day when
@@ -156,7 +187,9 @@
          "Civic Holiday" in in Nunavut and Northwest Territories
          "Natal Day" in Nova Scotia and Prince Edward Island
          "Heritage Day" in Alberta -->
-    <holiday name="August Civic Holiday / Premier lundi d'août" type="local">
+    <holiday>
+        <description language="en" name="August Civic Holiday" type="local"/>
+        <description language="fr" name="Premier lundi d'août"/>
         <definition>
             <rule nth="First" weekday="Monday" month="August"/>
         </definition>
@@ -165,7 +198,8 @@
     <!-- http://en.wikipedia.org/wiki/Discovery_Day#Canada -->
     <!-- commemorating the anniversary of the discovery of gold in 1896,
          which started the Klondike Gold Rush. -->
-    <holiday name="Discovery Day (Yukon)" type="statutory holiday in the Yukon">
+    <holiday>
+        <description language="en" name="Discovery Day" type="statutory holiday" region="Yukon"/>
         <definition firstyear="1896">
             <rule nth="Third" weekday="Monday" month="August"/>
         </definition>
@@ -173,7 +207,8 @@
     
     <!-- http://en.wikipedia.org/wiki/Discovery_Day#Canada -->
     <!-- commemorates John Cabot's discovery in 1497 -->
-    <holiday name="Discovery Day (Newfoundland and Labrador)">
+    <holiday>
+        <description language="en" name="Discovery Day" region="Newfoundland and Labrador"/>
         <definition firstyear="1497">
             <!-- http://www.pch.gc.ca/progs/cpsc-ccsp/jfa-ha/prov_e.cfm -->
             <!-- it is celebrated on the Monday nearest June 24th -->
@@ -183,14 +218,16 @@
     </holiday>
     
     <!-- http://www.pch.gc.ca/progs/cpsc-ccsp/jfa-ha/prov_e.cfm -->
-    <holiday name="Nunavut Day" type="Nunavut">
+    <holiday>
+        <description language="en" name="Nunavut Day" region="Nunavut"/>
         <definition>
             <fixed day="9" month="July"/>
         </definition>
     </holiday>
     
     <!-- http://en.wikipedia.org/wiki/National_Aboriginal_Day -->
-    <holiday name="National Aboriginal Day" type="Northwest Territories">
+    <holiday>
+        <description language="en" name="National Aboriginal Day" region="Northwest Territories"/>
         <!-- The day was first celebrated in 1996, after it was proclaimed
              that year -->
         <definition firstyear="1996">
@@ -199,7 +236,8 @@
     </holiday>
     
     <!-- http://en.wikipedia.org/wiki/Memorial_Day -->
-    <holiday name="Memorial Day" type="Newfoundland and Labrador">
+    <holiday>
+        <description language="en" name="Memorial Day" region="Newfoundland and Labrador"/>
         <definition>
             <!-- it is celebrated on the Monday nearest July 1st -->
             <fixed day="1" month="July"/>
@@ -208,17 +246,19 @@
     </holiday>
     
     <!-- http://en.wikipedia.org/wiki/Orangemen%27s_Day -->
-    <holiday name="Orangemen's Day " type="Newfoundland and Labrador">
+    <holiday>
+        <description language="en" name="Orangemen's Day " region="Newfoundland and Labrador"/>
         <definition firstyear="1690">
             <!-- it is celebrated on the Monday nearest July 12th -->
             <fixed day="12" month="July"/>
             <goto direction="nearest" weekday="Monday"/>
-        </definition> 
+        </definition>
     </holiday>
 
     <!-- http://en.wikipedia.org/wiki/Saint_Patrick%27s_Day -->
-    <!--  -->
-    <holiday name="St. Patrick's Day" type="public holiday in Newfoundland and Labrador">
+    <holiday>
+        <description language="en" name="St. Patrick's Day"
+                     type="public holiday" region="Newfoundland and Labrador"/>
         <definition>
             <!-- it is celebrated on the Monday nearest March 17 -->
             <fixed day="17" month="March"/>
@@ -229,7 +269,9 @@
     
     <!-- http://en.wikipedia.org/wiki/St_George%27s_Day -->
     <!-- St. George's Day is a provincial government holiday in Newfoundland -->
-    <holiday name="St. George's Day" type="Newfoundland and Labrador">
+    <holiday>
+        <description language="en" name="St. George's Day"
+                     region="Newfoundland and Labrador"/>
         <definition>
             <!-- it is celebrated on the Monday nearest April 23 -->
             <fixed day="23" month="April"/>
@@ -241,7 +283,9 @@
     <!-- Labour Day has been celebrated on the first Monday in September in
          Canada since the 1880s. The origins of Labour Day in Canada can be
          traced back to April 14, 1872. -->
-    <holiday name="Labour Day / La fête du travail" type="nationwide statutory holiday">
+    <holiday>
+        <description language="en" name="Labour Day" type="nationwide statutory holiday"/>
+        <description language="fr" name="La fête du travail"/>
         <definition firstyear="1872">
             <rule nth="First" weekday="Monday" month="September"/>
         </definition>
@@ -249,7 +293,9 @@
 
     <!-- http://en.wikipedia.org/wiki/Thanksgiving_(Canada) -->
     <!-- http://www.pch.gc.ca/progs/cpsc-ccsp/jfa-ha/graces_e.cfm -->
-    <holiday name="Thanksgiving / L'Action de grâce" type="statutory holiday, cultural">
+    <holiday>
+        <description language="en" name="Thanksgiving" type="statutory holiday, cultural"/>
+        <description language="fr" name="L'Action de grâce"/>
         <definition lastyear="1971">
             <unknown/>
         </definition>
@@ -365,7 +411,7 @@
             <rule nth="Last" weekday="Monday" month="October"/>
         </definition>
         <definition firstyear="1913" lastyear="1913">
-             <rule nth="Third" weekday="Monday" month="October"/>
+            <rule nth="Third" weekday="Monday" month="October"/>
         </definition>
         <definition firstyear="1914" lastyear="1919">
             <rule nth="Second" weekday="Monday" month="October"/>
@@ -374,8 +420,8 @@
             <rule nth="Third" weekday="Monday" month="October"/>
         </definition>
         <definition firstyear="1921" lastyear="1930">
-           <fixed day="11" month="November"/>
-           <goto direction="previous" weekday="Monday"/>
+            <fixed day="11" month="November"/>
+            <goto direction="previous" weekday="Monday"/>
         </definition>
         <definition firstyear="1931" lastyear="1934">
             <rule nth="Second" weekday="Monday" month="October"/>
@@ -394,46 +440,55 @@
     </holiday>
 
     <!-- http://en.wikipedia.org/wiki/Halloween#United_States_and_Canada -->
-    <holiday name="Halloween">
+    <holiday>
+        <description language="en" name="Halloween"/>
         <definition>
             <fixed month="October" day="31"/>
         </definition>
     </holiday>
 
-    <holiday name="Daylight Saving Time ends (change time 1 h back)">
+    <holiday>
+        <description language="en" name="Daylight Saving Time ends (change time 1 h back)"/>
         <definition>
             <dst timezone="Canada/Central" action="end"/>
         </definition>
     </holiday>
 
     <!-- http://en.wikipedia.org/wiki/Remembrance_Day -->
-    <holiday name="Remembrance Day / Le jour du Souvenir" type="all except NB, NS, ON, QC">
+    <holiday>
+        <description language="en" name="Remembrance Day"
+                     region="all except NB, NS, ON, QC"/>
+        <description language="fr" name="Le jour du Souvenir"/>
         <definition>
             <fixed month="November" day="11"/>
         </definition>
     </holiday>
 
-    <holiday name="First Sunday Advent">
+    <holiday>
+        <description language="en" name="First Sunday Advent"/>
         <definition>
             <advent/>
         </definition>
     </holiday>
 
-    <holiday name="Second Sunday Advent">
+    <holiday>
+        <description language="en" name="Second Sunday Advent"/>
         <definition>
             <advent/>
             <add days="+7"/>
         </definition>
     </holiday>
 
-    <holiday name="Third Sunday Advent (Gaudete)">
+    <holiday>
+        <description language="en" name="Third Sunday Advent (Gaudete)"/>
         <definition>
             <advent/>
             <add days="+14"/>
         </definition>
     </holiday>
 
-    <holiday name="Fourth Sunday Advent">
+    <holiday>
+        <description language="en" name="Fourth Sunday Advent"/>
         <definition>
             <advent/>
             <add days="+21"/>
@@ -441,17 +496,23 @@
     </holiday>
 
     <!-- http://en.wikipedia.org/wiki/Christmas_Eve -->
-    <holiday name="Christmas Eve / Réveillon de Noël">
-        <import name="Christmas Eve"/>
+    <holiday>
+        <description language="en" name="Christmas Eve"/>
+        <description language="fr" name="Réveillon de Noël"/>
+        <import id="Christmas Eve"/>
     </holiday>
 
     <!-- http://en.wikipedia.org/wiki/Christmas -->
-    <holiday name="Christmas Day / Noël" type="nationwide statutory holiday">
-        <import name="Christmas Day"/>
+    <holiday>
+        <description language="en" name="Christmas Day" type="nationwide statutory holiday"/>
+        <description language="fr" name="Noël"/>
+        <import id="Christmas Day"/>
     </holiday>
 
     <!-- http://en.wikipedia.org/wiki/Boxing_Day#Canada -->
-    <holiday name="Boxing Day / Le lendemain de Noël" type="statutory holiday">
+    <holiday>
+        <description language="en" name="Boxing Day" type="statutory holiday"/>
+        <description language="fr" name="Le lendemain de Noël"/>
         <definition>
             <fixed month="December" day="26"/>
         </definition>

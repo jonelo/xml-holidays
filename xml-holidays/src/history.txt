@@ -1,3 +1,48 @@
+
+version 1.0, May 30, 2010
+-------------------------
+- with the xml-holidays 1.0 schema you can describe actual holidays which are
+  based on the Gregorian Calendar
+
+- this package includes more than 800 actual holiday definitions for the
+  following 31 countries:
+  
+  Australia
+  Austria
+  Belgium
+  Brazil
+  Canada
+  Colombia
+  Denmark
+  Finland
+  France
+  Germany
+  Great Britain
+  Greece
+  Ireland
+  Italy
+  Japan
+  Mexico
+  Netherlands
+  New Zealand
+  Norway
+  Panama
+  Poland
+  Portugal
+  Romania
+  Russia
+  Slovenia
+  South Africa
+  Spain
+  Sweden
+  Switzerland
+  United States of America  
+  Venezuela
+
+- In addition to the country specific holiday definition, this package provide
+  also international holiday definitions and UNO holiday definitions
+
+
 version 0.1, Sep 9, 2008
 ------------------------
 - first public release with a first holidays.dtd proposal

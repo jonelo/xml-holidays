@@ -7,59 +7,67 @@
  -->
 <holidays country="CH">
     <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Switzerland -->
-    
-    <holiday name="Neujahr" type="public">
-        <names>
-            <name language="de" text="Neujahr" official="true"/>
-            <name language="fr" text="Nouvel an" official="true"/>
-            <name language="it" text="Capodanno" official="true"/>
-            <name language="rm" text="Bumaun" official="true"/>
-        </names>
-        <import name="New Year's Day"/>
+
+    <default language="de"/>
+    <default language="fr"/>
+    <default language="it"/>
+    <default language="rm"/>
+
+    <holiday>
+        <description language="de" name="Neujahr"/>
+        <description language="fr" name="Nouvel an"/>
+        <description language="it" name="Capodanno"/>
+        <description language="rm" name="Bumaun"/>
+        <description language="en" name="New Year's Day" type="public"/>
+        <definition>
+            <fixed day="1" month="January"/>
+        </definition>
     </holiday>
     
-    <holiday name="Berchtoldstag" 
-             type="public; AG (partly), BE, FR, GL, JU, LU, NE, OW, SH, SO, TG, VD, ZG, ZH">
-        <names>
-            <name language="de" text="Berchtoldstag" official="true"/>
-            <name language="de" text="Bächtelistag" official="true"/>
-            <name language="fr" text="Saint Berchtold" official="true"/>
-            <name language="it" text="San Basilio" official="true"/>
-            <name language="rm" text="Firà da Bumaun" official="true"/>
-            <name language="en" text="Saint Berchtold"/>
-        </names>
+    <holiday>
+        <description language="de" name="Berchtoldstag (Bächtelistag)"/>
+        <description language="fr" name="Saint Berchtold"/>
+        <description language="it" name="San Basilio"/>
+        <description language="rm" name="Firà da Bumaun"/>
+        <description language="en" name="Saint Berchtold"
+                      type="public; AG (partly), BE, FR, GL, JU, LU, NE, OW, SH, SO, TG, VD, ZG, ZH"/>
         <definition>
             <fixed day="2" month="January"/>
         </definition>
     </holiday>
     
-    <holiday name="Heilige drei Könige / Epiphanie / Epifania"
-             type="public; GR (partly), SZ, TI, UR, LU" 
-             international="Biblical Magi">
+    <holiday>
+        <description language="de" name="Heilige drei Könige"/>
+        <description language="fr" name="Epiphanie"/>
+        <description language="it" name="Epifania"/>
+        <description language="en" name="Biblical Magi" type="public" region="GR (partly), SZ, TI, UR, LU"/>
         <definition>
             <fixed month="January" day="6"/>
         </definition>
     </holiday>
 
-    <holiday name="Valentinstag">
+    <holiday>
+        <description language="de" name="Valentinstag"/>
         <definition>
             <fixed day="14" month="January" />
         </definition>
     </holiday>
 
-    <holiday name="Josefstag / Saint Joseph / San Giuseppe"
-             type="public; cath. regions: GR (partly), LU (partly), NW, SO (partly), SZ, TI, UR, VS"
-             international="Saint Joseph's Day">
-           <!-- TODO:       <definition firstyear="1729"> -->
+    <holiday>
+        <description language="de" name="Josefstag"/>
+        <description language="fr" name="Saint Joseph"/>
+        <description language="it" name="San Giuseppe"/>
+        <description language="en" name="Saint Joseph's Day"
+                     type="public" region="cath. regions: GR (partly), LU (partly), NW, SO (partly), SZ, TI, UR, VS"/>
+        <!-- TODO:       <definition firstyear="1729"> -->
         <definition>
             <fixed day="19" month="March" />
         </definition>
     </holiday>
 
     <!-- 6 days before Ash Wednesday -->
-    <holiday name="Fat Thursday"
-             type="regional; LU, NW, UR"
-             international="Fat Thursday">
+    <holiday>
+        <description language="en" name="Fat Thursday" region="LU, NW, UR"/>
         <definition>
             <easter/>
             <add days="-46"/> <!-- Ash Wednesday -->
@@ -69,9 +77,8 @@
 
     <!-- Monday, Tuesday before Ash Wednesday 
          SZ, GL only Monday-->
-    <holiday name="Carnival"
-             type="regional; SZ, GL"
-             international="Carnival">
+    <holiday>
+        <description language="en" name="Carnival" region="SZ, GL"/>
         <definition>
             <easter/>
             <add days="-46"/> <!-- Ash Wednesday -->
@@ -80,9 +87,8 @@
     </holiday>
 
     <!-- Monday, Tuesday before Ash Wednesday -->
-    <holiday name="Carnival"
-             type="regional; SZ"
-             international="Carnival">
+    <holiday>
+        <description language="en" name="Carnival" region="SZ"/>
         <definition>
             <easter/>
             <add days="-46"/> <!-- Ash Wednesday -->
@@ -91,9 +97,8 @@
     </holiday>
     
     <!-- Monday, Tuesday, Wednesday after Ash Wednesday -->
-    <holiday name="Carnival in Basel (begin)"
-             type="regional; only BS"
-             international="Carnival in Basel (begin)">
+    <holiday>
+        <description language="en" name="Carnival in Basel (begin)" region="only BS"/>
         <definition>
             <easter/>
             <add days="-46"/> <!-- Ash Wednesday -->
@@ -102,9 +107,9 @@
     </holiday>
 
     <!-- Monday, Tuesday, Wednesday after Ash Wednesday -->
-    <holiday name="Carnival in Basel (end)"
-             type="regional; only BS"
-             international="Carnival in Basel (end)">
+    <holiday>
+        <description language="en" name="Carnival in Basel (end)"
+                     region="only BS"/>
         <definition>
             <easter/>
             <add days="-46"/> <!-- Ash Wednesday -->
@@ -112,13 +117,15 @@
         </definition>
     </holiday>
 
-    <holiday name="Republic's day" type="regional; only NE">
+    <holiday>
+        <description language="en" name="Republic's day" region="only NE"/>
         <definition>
             <fixed day="1" month="March"/>
         </definition>
     </holiday>
 
-    <holiday name="Näfelser Fahrt" type="regional; only GL">
+    <holiday>
+        <description language="en" name="Näfelser Fahrt" region="only GL"/>
         <definition>
             <rule nth="First" weekday="Thursday" month="April"/>
         </definition>
@@ -130,14 +137,16 @@
         </definition>
     </holiday>
     -->    
-    <holiday name="Independence day" type="regional; only JU">
+    <holiday>
+        <description language="en" name="Independence day" region="only JU"/>
         <definition>
             <fixed day="23" month="June"/>
         </definition>
     </holiday>
     
     <!-- Thursday following the first Sunday in September -->
-    <holiday name="Jeûne genevois" type="regional; only GE">
+    <holiday>
+        <description language="en" name="Jeûne genevois" type="GE"/>
         <definition>
             <rule nth="First" weekday="Sunday" month="September"/>
             <add days="5"/> <!-- Thursday -->
@@ -145,16 +154,18 @@
     </holiday>
     
     <!-- Second weekend (and afternoon of following Monday) in September -->
-    <holiday name="Knabenschiessen (begin)"
-             type="regional; only city (and agglomeration) of Zurich">
+    <holiday>
+        <description language="en" name="Knabenschiessen (begin)"
+             region="only city (and agglomeration) of Zurich"/>
         <definition>
             <rule nth="Second" weekday="Saturday" month="September"/>
         </definition>
     </holiday>
 
     <!-- Second weekend (and afternoon of following Monday) in September -->
-    <holiday name="Knabenschiessen (end)"
-             type="regional; only city (and agglomeration) of Zurich">
+    <holiday>
+        <description language="en" name="Knabenschiessen (end)"
+            region="only city (and agglomeration) of Zurich"/>
         <definition>
             <rule nth="Second" weekday="Saturday" month="September"/>
             <add days="2"/>
@@ -177,228 +188,281 @@
     </holiday>
     -->
 
-    <holiday name="Beginn der Sommerzeit (Uhren 1 h vorstellen)">
+    <holiday>
+        <description language="de" name="Beginn der Sommerzeit (Uhren 1 h vorstellen)"/>
         <definition>
             <dst timezone="Europe/Zurich" action="start" />
         </definition>
     </holiday>
 
-    <holiday name="Karfreitag / Vendredi Saint / Venerdì santo / Venderdi sontg"
-             type="public; all of Switzerland except TI, VS"
-             international="Good Friday">
+    <holiday>
+        <description language="de" name="Karfreitag"/>
+        <description language="fr" name="Vendredi Saint"/>
+        <description language="it" name="Venerdì santo"/>
+        <description language="fr" name="Venderdi sontg"/>
+        <description language="en" name="Good Friday" type="public" region="all of Switzerland except TI, VS"/>
         <definition>
             <easter/>
             <add days="-2" />
         </definition>
     </holiday>
 
-    <holiday name="Ostersonntag (Ostern)"
-             international="Easter">
+    <holiday>
+        <description language="de" name="Ostersonntag (Ostern)"/>
         <definition>
             <easter/>
         </definition>
     </holiday>
 
-    <holiday name="Ostermontag / Lundi de Pâques / Lunedì di Pasqua / Glindesdi da Pasca"
-             type="public; all of Switzerland, except VS"
-             international="Easter Monday">
+    <holiday>
+        <description language="de" name="Ostermontag"/>
+        <description language="fr" name="Lundi de Pâques"/>
+        <description language="it" name="Lunedì di Pasqua"/>
+        <description language="rm" name="Glindesdi da Pasca"/>
+        <description language="en" name="Easter Monday" type="public" region="all of Switzerland, except VS"/>
         <definition>
             <easter/>
             <add days="+1"/>
         </definition>
     </holiday>
 
-    <holiday name="May Day / Tag der Arbeit / Fête du travail / Festa del lavoro / Di da la lavur"
-             type="public; BL, BS, FR (partly), JU, LU (partly), SH, SO (partly), TG, TI, ZH"
-             international="Labour Day">
-         <definition>
-             <fixed day="1" month="May"/>
-         </definition>
+    <holiday>
+        <description language="de" name="Tag der Arbeit"/>
+        <description language="fr" name="Fête du travail"/>
+        <description language="it" name="Festa del lavoro"/>
+        <description language="rm" name="Di da la lavur"/>
+        <description language="en" name="Labour Day"  type="public" region="BL, BS, FR (partly), JU, LU (partly), SH, SO (partly), TG, TI, ZH"/>
+        <definition>
+            <fixed day="1" month="May"/>
+        </definition>
     </holiday>
     
-    <holiday name="Auffahrt / Ascension / Ascensione / Anzainzas"
-             type="public; all of Switzerland"
-             international="Ascension Day">
+    <holiday>
+        <description language="de" name="Auffahrt"/>
+        <description language="fr" name="Ascension"/>
+        <description language="it" name="Ascensione"/>
+        <description language="rm" name="Anzainzas"/>
+        <description language="en" name="Ascension Day" type="public" region="all of Switzerland"/>
         <definition>
             <easter/>
             <add days="+39" />
         </definition>
     </holiday>
 
-    <holiday name="Pfingstsonntag (Pfingsten)"
-             international="Pentecost">
+    <holiday>
+        <description language="de" name="Pfingstsonntag (Pfingsten)"/>
+        <description language="en" name="Pentecost"/>
         <definition>
             <easter/>
             <add days="+49" />
         </definition>
     </holiday>
 
-    <holiday name="Pfingstmontag / Lundi de Pentecôte / Lunedì di Pentecoste / Glindesdi da Tschuncaisma"
-             type="public; all of Switzerland, except VS"
-             international="Whit Monday">
+    <holiday>
+        <description language="de" name="Pfingstmontag"/>
+        <description language="fr" name="Lundi de Pentecôte"/>
+        <description language="it" name="Lunedì di Pentecoste"/>
+        <description language="rm" name="Glindesdi da Tschuncaisma"/>
+        <description language="en" name="Whit Monday" type="public" region="all of Switzerland, except VS"/>
         <definition>
             <easter />
             <add days="+49" />
         </definition>
     </holiday>
 
-    <holiday name="Fronleichnam / Fête-Dieu / Corpus Domini / Sontgilcrest"
-             type="public; Catholic regions: AG (partly), AI, FR (partly), GR (partly), JU, LU, NW, OW, SO, SZ, TI, UR, VS, ZG"
-             international="Corpus Christi">
+    <holiday>
+        <description language="de" name="Fronleichnam"/>
+        <description language="fr" name="Fête-Dieu"/>
+        <description language="it" name="Corpus Domini"/>
+        <description language="rm" name="Sontgilcrest"/>
+        <description language="en" name="Corpus Christi" type="public" region="Catholic regions: AG (partly), AI, FR (partly), GR (partly), JU, LU, NW, OW, SO, SZ, TI, UR, VS, ZG"/>
         <definition>
             <easter/>
             <add days="+60"/>
         </definition>
     </holiday>
 
-
-    <holiday name="Peter und Paul / Sts Pierre et Paul / SS. Pietro e Paolo"
-             type="public; GR (partly), TI"
-             international="St. Peter and St. Paul">
+    <holiday>
+        <description language="de" name="Peter und Paul"/>
+        <description language="fr" name="Sts Pierre et Paul"/>
+        <description language="it" name="SS. Pietro e Paolo"/>
+        <description language="en" name="St. Peter and St. Paul" type="public" region="GR (partly), TI"/>
         <definition>
             <fixed day="29" month="June"/>
         </definition>
     </holiday>
     
-    <holiday name="Schweizer Nationalfeiertag / Fête nationale Suisse / Festa nazionale della Svizzera / Festa naziunala"
-             type="public, all of Switzerland"
-             international="Swiss National Day">
-                 <!--  TODO: firstyear="1899" ?? -->
+    <holiday>
+        <!--  TODO: firstyear="1899" ?? -->
+        <description language="de" name="Schweizer Nationalfeiertag"/>
+        <description language="fr" name="Fête nationale Suisse"/>
+        <description language="it" name="Festa nazionale della Svizzera"/>
+        <description language="rm" name="Festa naziunala"/>
+        <description language="en" name="Swiss National Day" type="public" region="all of Switzerland"/>
         <definition>
             <fixed day="1" month="August" />
         </definition>
     </holiday>
 
-    <holiday name="Mariä Himmelfahrt / Assomption / Assunzione / Assumziun"
-             type="public; Catholic regions: AG (partly), AI, FR (partly), GR (partly), JU, LU, NW, OW, SO, SZ, TI, UR, VS, ZG"
-             international="Assumption of Mary">
+    <holiday>
+        <description language="de" name="Mariä Himmelfahrt"/>
+        <description language="fr" name="Assomption"/>
+        <description language="it" name="Assunzione"/>
+        <description language="rm" name="Assumziun"/>
+        <description language="en" name="Assumption of Mary" type="public" region="Catholic regions: AG (partly), AI, FR (partly), GR (partly), JU, LU, NW, OW, SO, SZ, TI, UR, VS, ZG"/>
         <definition>
             <fixed day="15" month="August"/>
         </definition>
     </holiday>
 
-    <holiday name="Eidgenössischer Dank-, Buss- und Bettag / Jeûne fédéral / Digiuno federale / Festa da la rogaziun federala"
-             type="public; all of Switzerland, except GE"
-             international="Swiss federal fast">
+    <holiday>
+        <description language="de" name="Eidgenössischer Dank-, Buss- und Bettag"/>
+        <description language="fr" name="Jeûne fédéral"/>
+        <description language="it" name="Digiuno federale"/>
+        <description language="rm" name="Festa da la rogaziun federala"/>
+        <description language="en" name="Swiss federal fast" type="public" region="all of Switzerland, except GE"/>
         <definition firstyear="1832">
             <rule nth="Third" weekday="Sunday" month="September" />
         </definition>
     </holiday>
 
-    <holiday name="Ende der Sommerzeit (Uhren 1 h zurückstellen)">
+    <holiday>
+        <description language="de" name="Ende der Sommerzeit (Uhren 1 h zurückstellen)"/>
         <definition>
             <dst timezone="Europe/Zurich" action="start" />
         </definition>
     </holiday>
 
     <!-- Monday after third Sunday in September -->
-    <holiday name="Bettagsmontag / Lundi du Jeûne fédéral / Lunedì del digiuno federale / Gliendischdis da la rogaziun federala"
-             type="public; VD, NE (partly), BE (partly)"
-             international="Swiss federal fast Monday">
-         <definition>
-             <rule nth="Third" weekday="Sunday" month="September"/>
-             <add days="1"/> <!-- becomes Monday -->
-         </definition>
+    <holiday>
+        <description language="de" name="Bettagsmontag"/>
+        <description language="fr" name="Lundi du Jeûne fédéral"/>
+        <description language="it" name="Lunedì del digiuno federale"/>
+        <description language="rm" name="Gliendischdis da la rogaziun federala"/>
+        <description language="en" name="Swiss federal fast Monday" type="public" region="VD, NE (partly), BE (partly)"/>
+        <definition>
+            <rule nth="Third" weekday="Sunday" month="September"/>
+            <add days="1"/> <!-- becomes Monday -->
+        </definition>
     </holiday>
 
-    <holiday name="Bruderklausenfest"
-             type="regional; only OW">
-         <definition>
-              <fixed day="25" month="September"/>
-         </definition>
+    <holiday>
+        <description language="en" name="Bruderklausenfest" region="only OW"/>
+        <definition>
+            <fixed day="25" month="September"/>
+        </definition>
     </holiday>
 
-    <holiday name="Allerheiligen / Toussaint / Ognissanti / Numnasontga"
-             type="public; Catholic regions: AG (partly), AI, FR (partly), GL, GR (partly), JU, LU, NW, OW, SG, SO, SZ, TI, UR, VS, ZG"
-             international="All Saints">
+    <holiday>
+        <description language="de" name="Allerheiligen"/>
+        <description language="fr" name="Toussaint"/>
+        <description language="it" name="Ognissanti"/>
+        <description language="rm" name="Numnasontga"/>
+        <description language="en" name="All Saints" type="public" region="Catholic regions: AG (partly), AI, FR (partly), GL, GR (partly), JU, LU, NW, OW, SG, SO, SZ, TI, UR, VS, ZG"/>
         <definition>
             <fixed day="1" month="November" />
         </definition>
     </holiday>
     
-    <holiday name="1. Advent">
+    <holiday>
+        <description language="de" name="1. Advent"/>
         <definition>
             <advent/>
         </definition>
     </holiday>
     
-    <holiday name="2. Advent">
+    <holiday>
+        <description language="de" name="2. Advent"/>
         <definition>
             <advent/>
             <add days="+7" />
         </definition>
     </holiday>
     
-    <holiday name="3. Advent">
+    <holiday>
+        <description language="de" name="3. Advent"/>
         <definition>
             <advent/>
             <add days="+14"/>
         </definition>
     </holiday>
     
-    <holiday name="4. Advent">
+    <holiday>
+        <description language="de" name="4. Advent"/>
         <definition>
             <advent/>
             <add days="+21"/>
         </definition>
     </holiday>
 
-    <holiday name="Mariä Empfängnis / Immaculée Conception / Immacolata Concezione / Immaculata concepziun"
-             type="public; Catholic regions: AG (partly), AI, FR (partly), GR (partly), LU, NW, OW, SO (partly), SZ, TI, UR, VS, ZG"
-             international="Immaculate Conception">
+    <holiday>
+        <description language="de" name="Mariä Empfängnis"/>
+        <description language="fr" name="Immaculée Conception"/>
+        <description language="it" name="Immacolata Concezione"/>
+        <description language="rm" name="Immaculata concepziun"/>
+        <description language="en" name="Immaculate Conception" type="public" region="Catholic regions: AG (partly), AI, FR (partly), GR (partly), LU, NW, OW, SO (partly), SZ, TI, UR, VS, ZG"/>
         <definition>
-             <fixed day="8" month="December" />
+            <fixed day="8" month="December" />
         </definition>
     </holiday>
 
-    <holiday name="Weihnachtstag / Noël / Natale / Di da Nadal"
-             type="public; all of Switzerland"
-             international="Christmas">
+    <holiday>
+        <description language="de" name="Weihnachtstag"/>
+        <description language="fr" name="Noël"/>
+        <description language="it" name="Natale"/>
+        <description language="rm" name="Di da Nadal"/>
+        <description language="en" name="Christmas" type="public" region="all of Switzerland"/>
         <definition>
             <fixed day="25" month="December" />
         </definition>
     </holiday>
 
-    <holiday name="Stephanstag"
-             type="public; all of Switzerland, except GE, JU, VD, VS, NE">
-        <names>
-            <name language="de" text="Stephanstag" official="true"/>
-            <name language="fr" text="Saint Etienne" official="true"/>
-            <name language="it" text="Santo Stefano" official="true"/>
-            <name language="rm" text="Son Steffan" official="true"/>
-            <name language="en" text="St. Stephen's Day"/>
-        </names>
+    <holiday>
+        <description language="de" name="Stephanstag"/>
+        <description language="fr" name="Saint Etienne"/>
+        <description language="it" name="Santo Stefano"/>
+        <description language="rm" name="Son Steffan"/>
+        <description language="en" name="St. Stephen's Day"
+                     type="public" region="all of Switzerland, except GE, JU, VD, VS, NE"/>
         <definition>
             <fixed day="26" month="December"/>
         </definition>
     </holiday>
     
     <!-- in NE only if it falls on Monday -->
-    <holiday name="Stephanstag"
-             type="public; only NE">
-        <names>
-            <name language="de" text="Stephanstag" official="true"/>
-            <name language="fr" text="Saint Etienne" official="true"/>
-            <name language="it" text="Santo Stefano" official="true"/>
-            <name language="rm" text="Son Steffan" official="true"/>
-            <name language="en" text="St. Stephen's Day"/>
-        </names>
+    <holiday>
+        <description language="de" name="Stephanstag"/>
+        <description language="fr" name="Saint Etienne"/>
+        <description language="it" name="Santo Stefano"/>
+        <description language="rm" name="Son Steffan"/>
+        <description language="en" name="St. Stephen's Day"
+             type="public" region="only NE"/>
         <definition>
             <fixed day="26" month="December"/>
-            <condition ifweekday="Tuesday"><undefined/></condition>
-            <condition ifweekday="Wednesday"><undefined/></condition>
-            <condition ifweekday="Thursday"><undefined/></condition>
-            <condition ifweekday="Friday"><undefined/></condition>
-            <condition ifweekday="Saturday"><undefined/></condition>
-            <condition ifweekday="Sunday"><undefined/></condition>
+            <condition ifweekday="Tuesday">
+                <undefined/>
+            </condition>
+            <condition ifweekday="Wednesday">
+                <undefined/>
+            </condition>
+            <condition ifweekday="Thursday">
+                <undefined/>
+            </condition>
+            <condition ifweekday="Friday">
+                <undefined/>
+            </condition>
+            <condition ifweekday="Saturday">
+                <undefined/>
+            </condition>
+            <condition ifweekday="Sunday">
+                <undefined/>
+            </condition>
         </definition>
     </holiday>
     
-    <holiday name="Restoration of the Republic"
-             type="regional; only GE">
-        <names>
-            <name language="en" text="Restoration of the Republic"/>
-        </names>
+    <holiday>
+        <description language="en" name="Restoration of the Republic"
+            region="only GE"/>
         <definition>
             <fixed day="31" month="December" />
         </definition>

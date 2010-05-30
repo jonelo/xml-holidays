@@ -6,95 +6,133 @@
     Thank you for keeping the comment.
 -->
 <holidays country="IE">
-    <!-- http://www.irlandguide.de/feiertage-in-irland/35/ 
-         http://en.wikipedia.org/wiki/Public_holidays_in_the_Republic_of_Ireland
-         http://www.citizensinformation.ie/categories/employment/employment-rights-and-conditions/leave-and-holidays/public-holidays-in-ireland
+    <!--
+       http://en.wikipedia.org/wiki/Public_holidays_in_the_Republic_of_Ireland
+       http://www.citizensinformation.ie/categories/employment/employment-rights-and-conditions/leave-and-holidays/public-holidays-in-ireland
       -->
 
-    <holiday name="New Year's Day" type="public holiday">
-        <import name="New Year's Day"/>
+    <default language="ga"/>
+    <default language="en"/>
+
+    <holiday>
+        <description language="en" name="New Year's Day" type="public holiday"/>
+        <description language="ga" name="Lá Caille"/>
+        <description language="de" name="Neujahr"/>
+        <import id="New Year's Day"/>
     </holiday>
     
-    <holiday name="St. Patrick's Day" type="public holiday">
+    <holiday>
+        <description language="en" name="St. Patrick's Day" type="public holiday"/>
+        <description language="ga" name="Lá Fhéile Pádraig"/>
         <definition>
             <fixed month="March" day="17"/>
         </definition>
     </holiday>
-    
-    <holiday name="Begin Daylight Saving Time">
+
+    <holiday>
+        <description language="en" name="Begin Daylight Saving Time"/>
         <definition>
             <dst timezone="Europe/Dublin" action="start"/>
         </definition>
     </holiday>
+
+    <holiday>
+        <description language="en" name="Easter"/>
+        <description language="ga" name="Domhnach Cásca"/>
+        <import id="Easter Sunday"/>
+    </holiday>
     
-    <!-- Good Friday is not a public holiday in the Republic of Ireland -->
-    <holiday name="Good Friday">
+    <holiday>
+        <description language="en" name="Easter Monday" type="public holiday"/>
+        <description language="ga" name="Luan Cásca"/>
+        <import id="Easter Monday"/>
+    </holiday>
+    
+    <holiday>
+        <description language="en" name="Labour Day" type="public holiday"/>
+        <description language="en" name="Lá an Lucht Oibre"/>
         <definition>
-            <easter/>
-            <add days="-2"/>
+            <rule nth="First" weekday="Monday" month="May"/>
         </definition>
     </holiday>
-    
-    <holiday name="Easter">
-        <import name="Easter Sunday"/>
-    </holiday>
-    
-    <holiday name="Easter Monday" type="public holiday">
-        <import name="Easter Monday"/>
-    </holiday>
-    
-    <holiday name="May Day" type="public holiday">
-        <definition>
-            <rule weekday="Monday" month="May" nth="First"/>
-        </definition>
-    </holiday>
-    
-    <holiday name="Spring Bank Holiday" type="local [Northern Ireland]">
-        <definition>
-            <rule weekday="Monday" month="May" nth="Last"/>
-        </definition>
-    </holiday>
-    
-    <holiday name="June Bank Holiday" type="public holiday">
+
+    <holiday>
+        <description language="en" name="June Holiday" type="public holiday"/>
+        <description language="ga" name="Lá Saoire i mí Mheitheamh"/>
         <definition>
             <rule weekday="Monday" month="June" nth="First"/>
         </definition>
     </holiday>
-    
-    <holiday name="Battle of the Boyne Day" type="local [Northern Ireland]">
+   
+    <holiday>
+        <description language="en" name="August Holiday" type="public holiday"/>
+        <description language="ga" name="Lá Saoire i mí Lúnasa"/>
         <definition>
-            <fixed month="July" day="12"/>
+            <rule nth="First" weekday="Monday" month="August"/>
         </definition>
     </holiday>
     
-    <holiday name="August Bank Holiday" type="public holiday">
-        <definition>
-            <rule weekday="Monday" month="August" nth="First"/>
-        </definition>
-    </holiday>
-    
-    <holiday name="End Daylight Saving Time">
+    <holiday>
+        <description language="en" name="End Daylight Saving Time"/>
         <definition>
             <dst timezone="Europe/Dublin" action="end"/>
         </definition>
     </holiday>
     
-    <holiday name="October Bank Holiday" type="public holiday">
+    <holiday>
+        <description language="en" name="October Holiday" type="public holiday"/>
+        <description language="ga" name="Lá Saoire i mí Dheireadh Fómhair"/>
         <definition>
             <rule weekday="Monday" month="October" nth="Last"/>
         </definition>
     </holiday>
     
-    <holiday name="Christmas Day" type="public holiday" international="Christmas Day">
+    <holiday>
+        <description language="en" name="Christmas Day" type="public holiday"/>
+        <description language="ga" name="Lá Nollag"/>
         <definition>
             <fixed month="December" day="25"/>
         </definition>
     </holiday>
     
-    <holiday name="St. Stephen's Day" type="public holiday">
+    <holiday>
+        <description language="en" name="St. Stephen's Day" type="public holiday"/>
+        <description language="ga" name="Lá Fhéile Stiofáin or Lá an Dreoilín"/>
         <definition>
             <fixed month="December" day="26"/>
         </definition>
     </holiday>
-    
+
+    <holiday>
+        <description language="de" name="Frühlingsanfang"/>
+        <description language="en" name="Equinox March"/>
+        <definition>
+            <equinox month="March" timezone="Europe/Dublin"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Sommeranfang (Sommersonnenwende)"/>
+        <description language="en" name="Solstice June"/>
+        <definition>
+            <solstice month="June" timezone="Europe/Dublin"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Herbstanfang"/>
+        <description language="en" name="Equinox September"/>
+        <definition>
+            <equinox month="September" timezone="Europe/Dublin"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Winteranfang (Wintersonnenwende)"/>
+        <description language="en" name="Solstice December"/>
+        <definition>
+            <solstice month="December" timezone="Europe/Dublin"/>
+        </definition>
+    </holiday>
+
 </holidays>
