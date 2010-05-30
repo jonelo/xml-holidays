@@ -7,19 +7,24 @@
 -->
 <holidays country="PA">
     <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Panama -->
-    
-    <holiday name="New Year's Day" type="public holiday">
-        <import name="New Year's Day"/>
+
+    <default language="es"/>
+
+    <holiday>
+        <description language="en" name="New Year's Day" type="public holiday"/>
+        <import id="New Year's Day"/>
     </holiday>
-    
+
     <!-- http://en.wikipedia.org/wiki/Martyrs%27_Day_(Panama) -->
-    <holiday name="Martyrs' Day" type="public holiday">
+    <holiday>
+        <description language="en" name="Martyrs' Day" type="public holiday"/>
         <definition firstyear="1964">
             <fixed day="9" month="January"/>
         </definition>
     </holiday>
     
-    <holiday name="Carnival's Monday" type="public holiday">
+    <holiday>
+        <description language="en" name="Carnival's Monday" type="public holiday"/>
         <!-- The Monday before Ash Wednesday -->
         <definition>
             <easter/>
@@ -27,84 +32,97 @@
         </definition>
     </holiday>
     
-    <holiday name="Carnival's Tuesday" type="public holiday">
+    <holiday>
+        <description language="en" name="Carnival's Tuesday" type="public holiday"/>
         <!-- The Tuesday before Ash Wednesday -->
-        <import name="Carnival"/>
+        <import id="Carnival"/>
     </holiday>
     
-    <holiday name="Holy Friday" type="public holiday">
+    <holiday>
+        <description language="en" name="Holy Friday" type="public holiday"/>
         <!-- Friday of Roman Catholic Holy Week - Death of Christ -->
-        <import name="Good Friday"/>
+        <import id="Good Friday"/>
     </holiday>
     
-    <holiday name="Easter">
+    <holiday>
+        <description language="en" name="Easter"/>
         <definition>
             <easter/>
         </definition>
     </holiday>
     
-    <holiday name="May Day" international="Labour Day" type="public holiday">
+    <holiday>
+        <description language="en" name="May Day" type="public holiday"/>
         <definition>
             <fixed day="1" month="May"/>
         </definition>
     </holiday>
     
     <!-- http://en.wikipedia.org/wiki/Panama_City -->
-    <holiday name="Anniversary of the Founding of  Panama City">
+    <holiday>
+        <description language="en" name="Anniversary of the Founding of  Panama City"/>
         <definition firstyear="1519">
             <fixed day="15" month="August"/>
         </definition>
     </holiday>
         
-    <holiday name="Separation Day (from Colombia)" type="public holiday">
+    <holiday>
+        <description language="en" name="Separation Day (from Colombia)" type="public holiday"/>
         <definition firstyear="1903">
             <fixed day="3" month="November"/>
         </definition>
     </holiday>
     
-    <holiday name="Flag Day" type="public holiday">
+    <holiday>
+        <description language="en" name="Flag Day" type="public holiday"/>
         <definition>
             <fixed day="4" month="November"/>
         </definition>
     </holiday>
     
-    <holiday name="Colon Day" type="public holiday">
+    <holiday>
+        <description language="en" name="Colon Day" type="public holiday"/>
         <definition>
             <fixed day="5" month="November"/>
         </definition>
     </holiday>
     
-    <holiday name="Primer Grito de Independencia de la Villa de los Santos"
-             international="The uprise in the Villa de los Santos against Spain"
-             type="public holiday">
+    <holiday>
+        <description language="es" name="Primer Grito de Independencia de la Villa de los Santos"/>
+        <description language="en" name="The uprise in the Villa de los Santos against Spain" type="public holiday"/>
         <definition firstyear="1821">
             <fixed day="10" month="November"/>
         </definition>
     </holiday>
     
-    <holiday name="Independence Day (from Spain)" type="public holiday">
+    <holiday>
+        <description language="en" name="Independence Day (from Spain)" type="public holiday"/>
         <definition>
             <fixed day="28" month="November"/>
         </definition>
     </holiday>
     
-    <holiday name="Mothers' Day" type="public holiday">
+    <holiday>
+        <description language="en" name="Mothers' Day" type="public holiday"/>
         <definition>
             <fixed day="8" month="December"/>
         </definition>
     </holiday>
     
-    <holiday name="Christmas" type="public holiday">
-        <import name="Christmas Day"/>
+    <holiday>
+        <description language="en" name="Christmas" type="public holiday"/>
+        <import id="Christmas Day"/>
     </holiday> 
     
-    <holiday name="Begin Daylight Saving Time (DST)">
+    <holiday>
+        <description language="en" name="Begin Daylight Saving Time (DST)"/>
         <definition>
             <dst timezone="America/Panama" action="start"/>
         </definition>
     </holiday>
     
-    <holiday name="End Daylight Saving Time (DST)">
+    <holiday>
+        <description language="en" name="End Daylight Saving Time (DST)"/>
         <definition>
             <dst timezone="America/Panama" action="end"/>
         </definition>

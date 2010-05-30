@@ -1,102 +1,133 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
-
+<!--
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+-->
 <holidays country="PT">
     <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Portugal -->
 
-    <holiday name="Ano Novo" type="public holiday" international="New Year's Day">
+    <default language="pt"/>
+
+    <holiday>
+        <description language="pt" name="Ano Novo"/>
+        <description language="en" name="New Year's Day" type="public holiday"/>
         <definition>
             <fixed month="January" day="1"/>
         </definition>
     </holiday>
 
-    <holiday name="Carnival" international="Carnival">
-        <import name="Carnival"/>
+    <holiday>
+        <description language="en" name="Carnival"/>
+        <import id="Carnival"/>
     </holiday>
 
-    <holiday name="DST start" international="Begin Daylight Saving Time">
+    <holiday>
+        <description language="en" name="Begin Daylight Saving Time"/>
         <definition>
             <dst timezone="Europe/Lisbon" action="start"/>
         </definition>
     </holiday>
 
-    <holiday name="Sexta-Feira Santa" type="public holiday" international="Good Friday">
+    <holiday>
+        <description language="pt" name="Sexta-Feira Santa"/>
+        <description language="en" name="Good Friday" type="public holiday"/>
         <definition>
             <easter/>
             <add days="-2"/>
         </definition>
     </holiday>
     
-    <holiday name="Páscoa" type="public holiday">
-        <import name="Easter Sunday"/>
+    <holiday>
+        <description language="pt" name="Páscoa"/>
+        <description language="en" name="Easter Sunday" type="public holiday"/>
+        <import id="Easter Sunday"/>
     </holiday>
     
     <!-- Celebrates the 1974 Revolution that ended the 
          Dictatorship and started Democracy -->
-    <holiday name="Dia da Liberdade" type="public holiday"
-             international="Freedom Day">
+    <holiday>
+        <description language="pt" name="Dia da Liberdade"/>
+        <description language="en" name="Freedom Day" type="public holiday"/>
         <definition firstyear="1974">
         	<fixed month="April" day="25" />
         </definition>
     </holiday>
 
-    <holiday name="Dia do Trabalhador" type="public holiday"
-    international="Labour Day">
+    <holiday>
+        <description language="pt" name="Dia do Trabalhador"/>
+        <description language="en" name="Labour Day" type="public holiday"/>
         <definition>
             <fixed month="May" day="1"/>
         </definition>
     </holiday>
 
-    <holiday name="Corpo de Deus" type="public holiday" international="Corpus Christi">
+    <holiday>
+        <description language="pt" name="Corpo de Deus"/>
+        <description language="en" name="Corpus Christi" type="public holiday"/>
         <definition>
             <easter/>
             <add days="+60"/>
         </definition>
     </holiday>
 
-    <holiday name="Dia de Portugal, de Camões e das Comunidades Portuguesas" type="public holiday"
-             international="Portugal Day">
+    <holiday>
+        <description language="pt" name="Dia de Portugal, de Camões e das Comunidades Portuguesas"/>
+        <description language="en" name="Portugal Day" type="public holiday"/>
         <definition firstyear="1580">
         	<fixed month="June" day="10" />
         </definition>
     </holiday>
 
-    <holiday name="Assunção de Nossa Senhora" type="public holiday" international="Assumption of Mary">
+    <holiday>
+        <description language="pt" name="Assunção de Nossa Senhora"/>
+        <description language="en" name="Assumption of Mary" type="public holiday"/>
         <definition>
             <fixed month="August" day="15"/>
         </definition>
     </holiday>
 
-    <holiday name="Implantação da República" type="public holiday"
-             international="Republic Day">
+    <holiday>
+        <description language="pt" name="Implantação da República"/>
+        <description language="en" name="Republic Day" type="public holiday"/>
         <definition firstyear="1910">
         	<fixed month="October" day="5" />
         </definition>
     </holiday>
 
-    <holiday name="DST end" international="End Daylight Saving Time">
+    <holiday>
+        <description language="en" name="End Daylight Saving Time"/>
         <definition>
             <dst timezone="Europe/Lisbon" action="end"/>
         </definition>
     </holiday>
 
-    <holiday name="Todos os Santos" type="public holiday" international="All Saints">
-        <import name="All Saints’ Day"/>
+    <holiday>
+        <description language="pt" name="Todos os Santos"/>
+        <description language="en" name="All Saint's Day" type="public holiday"/>
+        <import id="All Saint's Day"/>
     </holiday>
 
-    <holiday name="Restauração da Independência" type="Restoration of Independence">
+    <holiday>
+        <description language="pt" name="Restauração da Independência"/>
+        <description language="en" name="Restoration of Independence"/>
         <definition>
             <fixed month="December" day="1"/>
         </definition>
     </holiday>
 
-    <holiday name="Imaculada Conceição" type="public holiday" international="Immaculate Conception's day">
+    <holiday>
+        <description language="pt" name="Imaculada Conceição"/>
+        <description language="en" name="Immaculate Conception's day" type="public holiday"/>
         <definition>
             <fixed month="December" day="8"/>
         </definition>
     </holiday>
 
-    <holiday name="Natal" type="public holiday" international="Christmas Day">
+    <holiday>
+        <description language="pt" name="Natal"/>
+        <description language="en" name="Christmas Day" type="public holiday"/>
         <definition>
             <fixed month="December" day="25"/>
         </definition>

@@ -8,8 +8,12 @@
 <holidays country="MX">
     <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Mexico --> 
 
-    <holiday name="Año Nuevo" type="statutory holiday">
-        <import name="New Year's Day"/>
+    <default language="es"/>
+
+    <holiday>
+        <description language="es" name="Año Nuevo"/>
+        <description language="en" name="New Year's Day" type="statutory holiday"/>
+        <import id="New Year's Day"/>
     </holiday>
     
     <!-- http://en.wikipedia.org/wiki/Fiestas_Patrias_(Mexico) -->
@@ -20,8 +24,9 @@
          This was a modification of the law made in 2005, effective since 2006;
          before, it was the February 5th regardless of the day, and all schools
          gave extended holidays if the day was a Tuesday or Thursday. -->
-    <holiday name="Día de la Constitución" type="statutory holiday"
-             international="Constitution day">
+    <holiday>
+        <description language="es" name="Día de la Constitución"/>
+        <description language="en" name="Constitution day" type="statutory holiday"/>
         <definition firstyear="1917" lastyear="2005">
             <fixed day="5" month="February"/>
         </definition>
@@ -36,8 +41,9 @@
     <!-- Benito Pablo Juárez García served five terms (1858–1861 as interim),
          (1861–1865), (1865–1867), (1867–1871), and (1871–1872), as
          President of Mexico. -->
-    <holiday name="Natalicio de Benito Juárez" type="statutory holiday"
-             international="Benito Juárez's birthday">
+    <holiday>
+        <description language="es" name="Natalicio de Benito Juárez"/>
+        <description language="en" name="Benito Juárez's birthday" type="statutory holiday"/>
         <definition firstyear="1858"> <!-- UNCLEAR: probably later -->
             <rule nth="Third" weekday="Monday" month="March"/>
         </definition>
@@ -46,8 +52,9 @@
     <!-- commemorates the Mexican workers' union movements on May 1 — 
          specifically, the 1906 Cananea, Sonora, and the 1907 Río Blanco, 
          Veracruz, labor unrest and repression. -->
-    <holiday name="Día del Trabajo" type="statutory holiday"
-             international="Labour Day">
+    <holiday>
+        <description language="es" name="Día del Trabajo"/>
+        <description language="en" name="Labour Day" type="statutory holiday"/>
         <definition firstyear="1906"> <!-- UNCLEAR: probably later -->
             <fixed day="1" month="May"/>
         </definition>
@@ -55,8 +62,9 @@
     
     <!-- On October 18, 1825, the Republic of Mexico officially declared
          September 16th its national Independence Day -->
-    <holiday name="Día de Independencia" type="statutory holiday"
-             international="Independence Day">
+    <holiday>
+        <description language="es" name="Día de Independencia"/>
+        <description language="en" name="Independence Day" type="statutory holiday"/>
         <definition firstyear="1826">
             <fixed day="16" month="September"/>
         </definition>
@@ -71,8 +79,9 @@
          This was a modification of the law made in 2005, effective since 2006;
          before then, it was November 20 regardless of the day, and all schools
          gave extended holidays if the day was a Tuesday or Thursday. -->
-    <holiday name="Día de la Revolución" type="statutory holiday"
-             international="Revolution day">
+    <holiday>
+        <description language="es" name="Día de la Revolución"/>
+        <description language="en" name="Revolution day" type="statutory holiday"/>
         <definition firstyear="1910" lastyear="2005">
              <fixed day="20" month="November"/>
         </definition>
@@ -83,8 +92,9 @@
     
     <!-- http://en.wikipedia.org/wiki/President_of_Mexico#Presidential_elections
          Presidential elections have been held every six years since 1934 -->
-    <holiday name="Transmisión del Poder Ejecutivo Federal" type="statutory holiday"
-             international="Change of Federal Government">
+    <holiday>
+        <description language="es" name="Transmisión del Poder Ejecutivo Federal"/>
+        <description language="en" name="Change of Federal Government" type="statutory holiday"/>
         <!-- Every six years, when a new President is sworn in office.
              Next observance: December 1, 2012 -->
         <definition firstyear="1934" frequency="6">
@@ -92,8 +102,10 @@
         </definition>
     </holiday>
     
-    <holiday name="Navidad" type="statutory holiday">
-        <import name="Christmas' Day"/>
+    <holiday>
+        <description language="es" name="Navidad"/>
+        <description language="en" name="Christmas' Day" type="statutory holiday"/>
+        <import id="Christmas' Day"/>
     </holiday>
     
     <!-- Celebrates the Mexican Army on the Loyalty day ("Día de la Lealtad"),
@@ -103,16 +115,18 @@
     <!-- Francisco Indalecio Madero González (October 30, 1873 – February 22,
          1913) was a politician, writer and revolutionary who served as
          President of Mexico from 1911 to 1913. -->
-    <holiday name="Día del Ejército" type="civic holiday"
-             international="Army's Day">
+    <holiday>
+        <description language="es" name="Día del Ejército"/>
+        <description language="en" name="Army's Day" type="civic holiday"/>
         <definition firstyear="1911"> <!-- UNCLEAR: probably later -->
             <fixed day="1" month="December"/>
         </definition>
     </holiday>
     
     <!-- Flag Day was implemented by President Lázaro Cárdenas in 1937. -->
-    <holiday name="Día de la Bandera" type="civic holiday"
-             international="Flag Day">
+    <holiday>
+        <description language="es" name="Día de la Bandera"/>
+        <description language="en" name="Flag Day" type="civic holiday"/>
         <definition firstyear="1937">
             <fixed day="24" month="February"/>
         </definition>
@@ -120,16 +134,18 @@
     
     <!-- Celebrates the Oil Expropriation by President Gral. Lázaro
          Cárdenas in 1938. -->
-    <holiday name="Aniversario de la Expropiación petrolera" type="civic holiday"
-             international="Anniversary of the Oil Expropriation">
+    <holiday>
+        <description language="es" name="Aniversario de la Expropiación petrolera"/>
+        <description language="en" name="Anniversary of the Oil Expropriation" type="civic holiday"/>
         <definition firstyear="1938">
             <fixed day="18" month="March"/>
         </definition>
     </holiday>
     
     <!-- Commemorates the United States occupation of Veracruz in 1914. -->
-    <holiday name="Heroica Defensa de Veracruz" type="civic holiday"
-             international="Heroic Defense of Veracruz">
+    <holiday>
+        <description language="es" name="Heroica Defensa de Veracruz"/>
+        <description language="en" name="Heroic Defense of Veracruz" type="civic holiday"/>
         <definition firstyear="1914">
             <fixed day="21" month="April"/>
         </definition>
@@ -138,8 +154,9 @@
     <!-- Celebrates the victory of the Mexican Army, led by Gral. Ignacio
          Zaragoza, against French forces in the city of Puebla, on
          May 5, 1862. -->
-    <holiday name="Batalla de Puebla" type="civic holiday"
-             international="Cinco de Mayo">
+    <holiday>
+        <description language="es" name="Batalla de Puebla"/>
+        <description language="en" name="Cinco de Mayo" type="civic holiday"/>
         <definition firstyear="1862">
             <fixed day="5" month="May"/>
         </definition>
@@ -147,8 +164,9 @@
     
     <!-- Commemorates the birth in 1753 of Miguel Hidalgo y Costilla, the
          initiator of the Mexican Independence War. -->
-    <holiday name="Natalicio de Miguel Hidalgo" type="civic holiday"
-             international="Miguel Hidalgo's birthday">
+    <holiday>
+        <description language="es" name="Natalicio de Miguel Hidalgo"/>
+        <description language="en" name="Miguel Hidalgo's birthday" type="civic holiday"/>
         <definition firstyear="1753"> <!-- UNCLEAR: probably later -->
             <fixed day="8" month="May"/>
         </definition>
@@ -156,8 +174,9 @@
     
     <!-- The Mexican Navy has its origins with the creation of the Ministry of
          War in the year 1821. -->
-    <holiday name="Día de la Marina" type="civic holiday"
-             international="Marine's Day">
+    <holiday>
+        <description language="es" name="Día de la Marina"/>
+        <description language="en" name="Marine's Day" type="civic holiday"/>
         <definition firstyear="1821"> <!-- UNCLEAR: probably later -->
             <fixed day="1" month="June"/>
         </definition>
@@ -165,8 +184,9 @@
     
     <!-- Celebrates the Battle of Chapultepec during the Mexican–American War
          of 1847. -->
-    <holiday name="Día de los Niños Héroes" type="civic holiday"
-             international="'Boy Heroes' or 'Heroic Cadets'">
+    <holiday>
+        <description language="es" name="Día de los Niños Héroes"/>
+        <description language="en" name="'Boy Heroes' or 'Heroic Cadets'" type="civic holiday"/>
         <definition firstyear="1847"> <!-- UNCLEAR: probably later -->
             <fixed day="13" month="September"/>
         </definition>
@@ -174,16 +194,18 @@
     
     <!-- Celebrates the Grito de Dolores, an event that marked the start of the
          independence war against Spain on the eve of September 16, 1810. -->
-    <holiday name="Grito de Dolores" type="civic holiday"
-             international="Cry of Dolores">
+    <holiday>
+        <description language="es" name="Grito de Dolores"/>
+        <description language="en" name="Cry of Dolores" type="civic holiday"/>
         <definition firstyear="1811"> <!-- UNCLEAR: probably later -->
             <fixed day="15" month="September"/>
         </definition>
     </holiday>
     
     <!-- Celebrates the end of the Mexican Independence War on 1821 -->
-    <holiday name="Consumación de la Independencia" type="civic holiday"
-             international="End of Independence War">
+    <holiday>
+        <description language="es" name="Consumación de la Independencia"/>
+        <description language="en" name="End of Independence War" type="civic holiday"/>
         <definition firstyear="1821"> <!-- UNCLEAR: probably later -->
             <fixed day="27" month="September"/>
         </definition>
@@ -191,8 +213,9 @@
     
     <!-- Commemorates the birth in 1765 of Father José María Morelos y Pavón,
          one of the founding fathers of the Mexican nation. -->
-    <holiday name="Natalicio de José Ma. Morelos y Pavón" type="civic holiday"
-             international="Morelos' birthday">
+    <holiday>
+        <description language="es" name="Natalicio de José Ma. Morelos y Pavón"/>
+        <description language="en" name="Morelos' birthday" type="civic holiday"/>
         <definition firstyear="1765"> <!-- UNCLEAR: probably later -->
             <fixed day="30" month="September"/>
         </definition>
@@ -200,102 +223,119 @@
     
     <!-- Commemorates the Discovery of the Americas in 1492 by the Italian
          navigator Christopher Columbus. -->
-    <holiday name="Descubrimiento de América y Día de la Raza" type="civic holiday"
-             international="Columbus Day">
+    <holiday>
+        <description language="es" name="Descubrimiento de América y Día de la Raza"/>
+        <description language="en" name="Columbus Day" type="civic holiday"/>
         <definition firstyear="1492"> <!-- UNCLEAR: probably later -->
             <fixed day="12" month="October"/>
         </definition>
     </holiday>
     
-    <holiday name="Día de los Santos Reyes" type="Festivity"
-             international="Epiphany">
+    <holiday>
+        <description language="es" name="Día de los Santos Reyes"/>
+        <description language="en" name="Epiphany" type="Festivity"/>
         <definition>
             <fixed day="6" month="January"/>
         </definition>
     </holiday>
     
-    <holiday name="Día de San Valentín" type="Festivity"
-             international="Valentine's Day">
+    <holiday>
+        <description language="es" name="Día de San Valentín"/>
+        <description language="en" name="Valentine's Day" type="Festivity"/>
         <definition>
             <fixed day="14" month="February"/>
         </definition>
     </holiday>
     
-    <holiday name="Día del Niño" type="Festivity"
-             international="Children's Day">
+    <holiday>
+        <description language="es" name="Día del Niño"/>
+        <description language="en" name="Children's Day" type="Festivity"/>
         <definition>
             <fixed day="30" month="April"/>
         </definition>
     </holiday>
     
-    <holiday name="Día de las Madres" type="Festivity"
-             international="Mother's Day">
+    <holiday>
+        <description language="es" name="Día de las Madres"/>
+        <description language="en" name="Mother's Day" type="Festivity"/>
         <definition>
             <fixed day="10" month="May"/>
         </definition>
     </holiday>
     
-    <holiday name="Día del Maestro" type="Festivity"
-             international="Teacher's Day">
+    <holiday>
+        <description language="es" name="Día del Maestro"/>
+        <description language="en" name="Teacher's Day" type="Festivity"/>
         <definition>
             <fixed day="15" month="May"/>
         </definition>
     </holiday>
     
-    <holiday name="Día del estudiante" type="Festivity"
-             international="Student's Day">
+    <holiday>
+        <description language="es" name="Día del estudiante"/>
+        <description language="en" name="Student's Day" type="Festivity"/>
         <definition>
             <fixed day="23" month="May"/>
         </definition>
     </holiday>
     
-    <holiday name="Día del Padre" type="Festivity"
-             international="Father's Day">
+    <holiday>
+        <description language="es" name="Día del Padre"/>
+        <description language="en" name="Father's Day" type="Festivity"/>
         <definition>
             <rule nth="Third" weekday="Sunday" month="June"/>
         </definition>
     </holiday>
     
-    <holiday name="All Saint's Day" type="Festivity">
-        <import name="All Saint's Day"/>
+    <holiday>
+        <description language="en" name="All Saint's Day" type="Festivity"/>
+        <import id="All Saint's Day"/>
     </holiday>
     
-    <holiday name="All Soul's Day" type="Festivity">
-        <import name="All Soul's Day"/>
+    <holiday>
+        <description language="en" name="All Soul's Day" type="Festivity"/>
+        <import id="All Soul's Day"/>
     </holiday>
     
-    <holiday name="Día de la Virgen de Guadalupe" type="Festivity"
-             international="Day of the Virgin of Guadalupe">
+    <holiday>
+        <description language="es" name="Día de la Virgen de Guadalupe"/>
+        <description language="en" name="Day of the Virgin of Guadalupe" type="Festivity"/>
         <definition>
             <fixed day="12" month="December"/>
         </definition>
     </holiday>
     
-    <holiday name="Las Posadas" type="Festivity"
-             international="The Inns">
+    <holiday>
+        <description language="es" name="Las Posadas"/>
+        <description language="en" name="The Inns" type="Festivity"/>
         <definition>
             <fixed day="16" month="December"/>
         </definition>
     </holiday>
     
-    <holiday name="Nochebuena" type="Festivity">
-        <import name="Christmas Eve"/>
+    <holiday>
+        <description language="es" name="Nochebuena"/>
+        <description language="en" name="Christmas Eve" type="Festivity"/>
+        <import id="Christmas Eve"/>
     </holiday>
     
-    <holiday name="Dia de los Santos Inocentes" type="Festivity"
-             international="Day of the Innocents">
+    <holiday>
+        <description language="es" name="Dia de los Santos Inocentes"/>
+        <description language="en" name="Day of the Innocents" type="Festivity"/>
         <definition>
             <fixed day="28" month="December"/>
         </definition>
     </holiday>
     
-    <holiday name="Begin Daylight Saving Time (DST)">
+    <holiday>
+        <description language="en" name="Begin Daylight Saving Time (DST)"/>
         <definition>
             <dst timezone="America/Mexico_City " action="start"/>
         </definition>
     </holiday>
     
-    <holiday name="End Daylight Saving Time (DST)">
+    <holiday>
+        <description language="en" name="End Daylight Saving Time (DST)"/>
         <definition>
             <dst timezone="America/Mexico_City " action="end"/>
         </definition>

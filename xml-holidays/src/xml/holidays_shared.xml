@@ -1,28 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
-
+<!--
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+-->
 <holidays country="shared">
+
+    <default language="en"/>
     
-    <holiday name="New Year's Day">
+    <holiday id="New Year's Day">
+        <description language="en" name="New Year's Day"/>
         <definition>
             <fixed month="January" day="1"/>
         </definition>
     </holiday>
     
-    <holiday name="Valentine's Day">
+    <holiday id="Valentine's Day">
+        <description language="en" name="Valentine's Day"/>
         <definition>
             <fixed month="February" day="14"/>
         </definition>
     </holiday>
     
-    <holiday name="Carnival">
+    <holiday id="Carnival">
+        <description language="en" name="Carnival"/>
         <definition>
             <easter/>
             <add days="-47"/>
         </definition>
     </holiday>
     
-    <holiday name="Ash Wednesday">
+    <holiday id="Ash Wednesday">
+        <description language="en" name="Ash Wednesday"/>
         <definition>
             <easter/>
             <add days="-46"/>
@@ -30,7 +40,8 @@
     </holiday>
 
     <!-- The Thursday before Easter Sunday -->
-    <holiday name="Maundy Thursday">
+    <holiday id="Maundy Thursday">
+        <description language="en" name="Maundy Thursday"/>
         <definition>
             <easter/>
             <add days="-3"/>
@@ -38,27 +49,31 @@
     </holiday>
 
     <!-- The Friday before Easter Sunday -->
-    <holiday name="Good Friday">
+    <holiday id="Good Friday">
+        <description language="en" name="Good Friday"/>
         <definition>
             <easter/>
             <add days="-2"/>
         </definition>
     </holiday>
 
-    <holiday name="Easter Sunday">
+    <holiday id="Easter Sunday">
+        <description language="en" name="Easter Sunday"/>
         <definition>
             <easter/>
         </definition>
     </holiday>
     
-    <holiday name="Easter Monday">
+    <holiday id="Easter Monday">
+        <description language="en" name="Easter Monday"/>
         <definition>
             <easter/>
             <add days="+1"/>
         </definition>
     </holiday>
     
-    <holiday name="Ascension of Jesus">
+    <holiday id="Ascension of Jesus">
+        <description language="en" name="Ascension of Jesus"/>
         <definition>
             <easter/>
             <add days="+39"/>
@@ -66,7 +81,8 @@
     </holiday>
     
     <!-- http://en.wikipedia.org/wiki/Pentecost -->
-    <holiday name="Pentecost">
+    <holiday id="Pentecost">
+        <description language="en" name="Pentecost"/>
         <definition>
             <easter/>
             <add days="+49"/>
@@ -74,7 +90,8 @@
     </holiday>
     
     <!-- http://en.wikipedia.org/wiki/Whit_Monday -->
-    <holiday name="Whit Monday">
+    <holiday id="Whit Monday">
+        <description language="en" name="Whit Monday"/>
         <definition>
             <easter/>
             <add days="+50"/>
@@ -82,7 +99,8 @@
     </holiday>    
     
     <!-- http://en.wikipedia.org/wiki/Corpus_Christi_(feast) -->
-    <holiday name="Corpus Christi">
+    <holiday id="Corpus Christi">
+        <description language="en" name="Corpus Christi"/>
         <definition>
             <easter/>
             <add days="+60"/>
@@ -90,58 +108,67 @@
     </holiday>
     
     <!-- All Saint's Day is a Christian holy day observed by many Western churches on November 1 -->
-    <holiday name="All Saint's Day">
+    <holiday id="All Saint's Day">
+        <description language="en" name="All Saint's Day"/>
         <definition>
             <fixed month="November" day="1"/>
         </definition>
     </holiday>
 
-    <holiday name="All Soul's Day">
+    <holiday id="All Soul's Day">
+        <description language="en" name="All Soul's Day"/>
         <definition>
             <fixed month="November" day="2"/>
         </definition>
     </holiday>
 
-    <holiday name="1st Advent">
+    <holiday id="1st Advent">
+        <description language="en" name="1st Advent"/>
         <definition>
             <advent/>
         </definition>
     </holiday>
     
-    <holiday name="2nd Advent">
+    <holiday id="2nd Advent">
+        <description language="en" name="2nd Advent"/>
         <definition>
             <advent/>
             <add days="+7"/>
         </definition>
     </holiday>
     
-    <holiday name="3rd Advent">
+    <holiday id="3rd Advent">
+        <description language="en" name="3rd Advent"/>
         <definition>
             <advent/>
             <add days="+14"/>
         </definition>
     </holiday>
     
-    <holiday name="4th Advent">
+    <holiday id="4th Advent">
+        <description language="en" name="4th Advent"/>
         <definition>
             <advent/>
             <add days="+21"/>
         </definition>
     </holiday>
 
-    <holiday name="Christmas Eve">
+    <holiday id="Christmas Eve">
+        <description language="en" name="Christmas Eve"/>
         <definition>
             <fixed month="December" day="24"/>
         </definition>
     </holiday>
 
-    <holiday name="Christmas Day">
+    <holiday id="Christmas Day">
+        <description language="en" name="Christmas Day"/>
         <definition>
             <fixed month="December" day="25"/>
         </definition>
     </holiday>
 
-    <holiday name="New Year's Eve">
+    <holiday id="New Year's Eve">
+        <description language="en" name="New Year's Eve"/>
         <definition>
             <fixed month="December" day="31"/>
         </definition>

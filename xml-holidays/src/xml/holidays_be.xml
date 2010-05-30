@@ -8,239 +8,206 @@
 <holidays country="BE">
     <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Belgium -->
 
-    <holiday type="plublic holiday">
-        <names>
-            <name language="nl" text="Nieuwjaar" official="true"/>
-            <name language="fr" text="Nouvel An" official="true"/>
-            <name language="de" text="Neujahr" official="true"/>
-            <name text="New Year's Day" language="en"/>
-        </names>
+    <default language="nl"/>
+    <default language="fr"/>
+    <default language="de"/>
+
+    <holiday>
+        <description language="nl" name="Nieuwjaar" />
+        <description language="fr" name="Nouvel An" />
+        <description language="de" name="Neujahr" />
+        <description language="en" name="New Year's Day" type="plublic holiday"/>
         <definition>
             <fixed month="January" day="1"/>
         </definition>
     </holiday>
 
-    <holiday type="non official public holiday">
-        <names>
-            <name language="nl" text="Driekoningen" official="true"/>
-            <name language="fr" text="Épiphanie" official="true"/>
-            <name language="de" text="Erscheinung des Herrn" official="true"/>
-            <name language="en" text="Epiphany"/>
-        </names>
+    <holiday>
+        <description language="nl" name="Driekoningen" />
+        <description language="fr" name="Épiphanie" />
+        <description language="de" name="Erscheinung des Herrn" />
+        <description language="en" name="Epiphany" type="non official public holiday"/>
         <definition>
             <fixed month="January" day="6"/>
         </definition>
     </holiday>
 
-    <holiday type="non official public holiday">
-        <names>
-            <name language="nl" text="Valentijnsdag" official="true"/>
-            <name language="fr" text="Saint-Valentin" official="true"/>
-            <name language="de" text="Valentinstag" official="true"/>
-            <name language="en" text="Valentine's Day"/>
-        </names>
+    <holiday>
+        <description language="nl" name="Valentijnsdag" />
+        <description language="fr" name="Saint-Valentin" />
+        <description language="de" name="Valentinstag" />
+        <description language="en" name="Valentine's Day" type="non official public holiday"/>
         <definition>
             <fixed month="February" day="14"/>
         </definition>
     </holiday>
 
-    <holiday type="plublic holiday">
-        <names>
-            <name language="nl" text="Pasen" official="true"/>
-            <name language="fr" text="Pâques" official="true"/>
-            <name language="de" text="Ostern" official="true"/>
-            <name language="en" text="Easter"/>
-        </names>
+    <holiday>
+        <description language="nl" name="Pasen" />
+        <description language="fr" name="Pâques" />
+        <description language="de" name="Ostern" />
+        <description language="en" name="Easter" type="plublic holiday"/>
         <definition>
             <easter/>
         </definition>
     </holiday>
 
-    <holiday type="plublic holiday">
-        <names>
-            <name language="nl" text="Paasmaandag" official="true"/>
-            <name language="fr" text="Lundi de Pâques" official="true"/>
-            <name language="de" text="Ostermontag" official="true"/>
-            <name language="en" text="Easter Monday"/>
-        </names>
+    <holiday>
+        <description language="nl" name="Paasmaandag" />
+        <description language="fr" name="Lundi de Pâques" />
+        <description language="de" name="Ostermontag" />
+        <description language="en" name="Easter Monday" type="plublic holiday"/>
         <definition>
             <easter/>
             <add days="+1"/>
         </definition>
     </holiday>
 
-    <holiday type="plublic holiday">
-        <names>
-            <name language="nl" text="Dag van de arbeid" official="true"/>
-            <name language="fr" text="Fête du Travail" official="true"/>
-            <name language="de" text="Tag der Arbeit" official="true"/>
-            <name language="en" text="Labour Day"/>
-        </names>
+    <holiday>
+        <description language="nl" name="Dag van de arbeid" />
+        <description language="fr" name="Fête du Travail" />
+        <description language="de" name="Tag der Arbeit" />
+        <description language="en" name="Labour Day" type="plublic holiday"/>
         <definition>
             <fixed month="May" day="1"/>
         </definition>
     </holiday>
 
-    <holiday type="non plublic holiday, observed in Flemish Community only">
-        <names>
-            <name language="nl" text="Feest van de Vlaamse Gemeenschap" official="true"/>
-            <name language="en" text="Day of the Flemish Community"/>
-        </names>
+    <holiday>
+        <description language="nl" name="Feest van de Vlaamse Gemeenschap" />
+        <description language="en" name="Day of the Flemish Community"
+                     type="non plublic holiday" region="observed in Flemish Community only"/>
         <definition>
             <fixed month="July" day="11"/>
         </definition>
     </holiday>
 
-    <holiday type="plublic holiday">
-        <names>
-            <name language="nl" text="Onze Lieve Heer hemelvaart" official="true"/>
-            <name language="fr" text="Ascension" official="true"/>
-            <name language="de" text="Christi Himmelfahrt" official="true"/>
-            <name language="en" text="Ascension"/>
-        </names>
+    <holiday>
+        <description language="nl" name="Onze Lieve Heer hemelvaart" />
+        <description language="fr" name="Ascension" />
+        <description language="de" name="Christi Himmelfahrt" />
+        <description language="en" name="Ascension" type="plublic holiday"/>
         <definition>
             <easter/>
             <add days="+39"/>
         </definition>
     </holiday>
 
-    <holiday type="plublic holiday">
-        <names>
-            <name language="nl" text="Pinksteren" official="true"/>
-            <name language="fr" text="Pentecôte" official="true"/>
-            <name language="de" text="Pfingsten" official="true"/>
-            <name language="en" text="Pentecost"/>
-        </names>
+    <holiday>
+        <description language="nl" name="Pinksteren" />
+        <description language="fr" name="Pentecôte" />
+        <description language="de" name="Pfingsten" />
+        <description language="en" name="Pentecost" type="plublic holiday"/>
         <definition>
             <easter/>
             <add days="+49"/>
         </definition>
     </holiday>
 
-    <holiday type="plublic holiday">
-        <names>
-            <name language="nl" text="Pinkstermaandag" official="true"/>
-            <name language="fr" text="Lundi de Pentecôte" official="true"/>
-            <name language="de" text="Pfingstmontag" official="true"/>
-            <name language="en" text="Pentecost Monday"/>
-        </names>
+    <holiday>
+        <description language="nl" name="Pinkstermaandag" />
+        <description language="fr" name="Lundi de Pentecôte" />
+        <description language="de" name="Pfingstmontag" />
+        <description language="en" name="Pentecost Monday" type="plublic holiday"/>
         <definition>
             <easter/>
             <add days="+50"/>
         </definition>
     </holiday>
 
-    <holiday type="plublic holiday">
-        <names>
-            <name language="nl" text="Nationale feestdag" official="true"/>
-            <name language="fr" text="Fête nationale" official="true"/>
-            <name language="de" text="Nationalfeiertag" official="true"/>
-            <name language="en" text="National holiday"/>
-        </names>
+    <holiday>
+        <description language="nl" name="Nationale feestdag" />
+        <description language="fr" name="Fête nationale" />
+        <description language="de" name="Nationalfeiertag" />
+        <description language="en" name="National holiday" type="plublic holiday"/>
         <definition>
             <fixed month="July" day="21"/>
         </definition>
     </holiday>
 
-    <holiday type="non plublic holiday, observed in the French Community only">
-        <names>
-            <name language="fr" text="Fête de la Communauté française de Belgique" official="true"/>
-            <name language="en" text="Day of the French Community of Belgium"/>
-        </names>
+    <holiday>
+        <description language="fr" name="Fête de la Communauté française de Belgique" />
+        <description language="en" name="Day of the French Community of Belgium"
+                     type="non plublic holiday" region="in the French Community only"/>
         <definition>
             <fixed month="September" day="27"/>
         </definition>
     </holiday>
 
-    <holiday type="plublic holiday">
-        <names>
-            <name language="nl" text="Onze Lieve Vrouw hemelvaart" official="true"/>
-            <name language="fr" text="Assomption" official="true"/>
-            <name language="de" text="Mariä Himmelfahrt" official="true"/>
-            <name language="en" text="Assumption of Mary"/>
-        </names>
+    <holiday>
+        <description language="nl" name="Onze Lieve Vrouw hemelvaart" />
+        <description language="fr" name="Assomption" />
+        <description language="de" name="Mariä Himmelfahrt" />
+        <description language="en" name="Assumption of Mary" type="plublic holiday"/>
         <definition>
             <fixed month="August" day="15"/>
         </definition>
     </holiday>
 
-    <holiday type="public holiday">
-        <names>
-            <name language="nl" text="Allerheiligen" official="true"/>
-            <name language="fr" text="Toussaint" official="true"/>
-            <name language="de" text="Allerheiligen" official="true"/>
-            <name language="en" text="All Saints"/>
-        </names>
+    <holiday>
+        <description language="nl" name="Allerheiligen" />
+        <description language="fr" name="Toussaint" />
+        <description language="de" name="Allerheiligen" />
+        <description language="en" name="All Saints" type="public holiday"/>
         <definition>
             <fixed month="November" day="1"/>
         </definition>
     </holiday>
 
     <holiday>
-        <names>
-            <name language="nl" text="Allerzielen" official="true"/>
-            <name language="fr" text="Fête des morts" official="true"/>
-            <name language="de" text="Allerseelen" official="true"/>
-            <name language="en" text="All Soul's Day"/>
-        </names>
+        <description language="nl" name="Allerzielen" />
+        <description language="fr" name="Fête des morts" />
+        <description language="de" name="Allerseelen" />
+        <description language="en" name="All Soul's Day"/>
         <definition>
             <fixed month="November" day="2"/>
         </definition>
     </holiday>
 
-    <holiday type="public holiday">
-        <names>
-            <name language="nl" text="Wapenstilstand" official="true"/>
-            <name language="fr" text="Jour de l'armistice" official="true"/>
-            <name language="de" text="Waffenstillstand" official="true"/>
-            <name language="en" text="Armistice Day"/>
-        </names>
+    <holiday>
+        <description language="nl" name="Wapenstilstand" />
+        <description language="fr" name="Jour de l'armistice" />
+        <description language="de" name="Waffenstillstand" />
+        <description language="en" name="Armistice Day" type="public holiday"/>
         <definition firstyear="1918">
             <fixed month="November" day="11"/>
         </definition>
     </holiday>
 
-    <holiday type="non public holiday, observed in the German-speaking region only">
-        <names>
-            <name language="de" text="Tag der Deutschsprachigen Gemeinschaft Belgiens" official="true"/>
-            <name language="en" text="Day of the German-speaking Community of Belgium"/>
-        </names>
+    <holiday>
+        <description language="de" name="Tag der Deutschsprachigen Gemeinschaft Belgiens" />
+        <description language="en" name="Day of the German-speaking Community of Belgium"
+                     type="non public holiday" region="in the German-speaking region only"/>
         <definition>
             <fixed month="November" day="15"/>
         </definition>
     </holiday>
 
-    <holiday type="non public holiday">
-        <names>
-            <name language="nl" text="Koningsdag" official="true"/>
-            <name language="fr" text="Fête du Roi" official="true"/>
-            <name language="de" text="Festtag des Königs" official="true"/>
-            <name language="en" text="King's Feast"/>
-        </names>
+    <holiday>
+        <description language="nl" name="Koningsdag" />
+        <description language="fr" name="Fête du Roi" />
+        <description language="de" name="Festtag des Königs" />
+        <description language="en" name="King's Feast" type="non public holiday"/>
         <definition>
             <fixed month="November" day="15"/>
         </definition>
     </holiday>
 
-    <holiday type="non public holiday">
-        <names>
-            <name language="nl" text="Sinterklaas" official="true"/>
-            <name language="fr" text="Saint-Nicolas (fête)" official="true"/>
-            <name language="de" text="Sankt Nikolaus" official="true"/>
-            <name language="en" text="Saint Nicholas"/>
-        </names>
+    <holiday>
+        <description language="nl" name="Sinterklaas" />
+        <description language="fr" name="Saint-Nicolas (fête)" />
+        <description language="de" name="Sankt Nikolaus" />
+        <description language="en" name="Saint Nicholas" type="non public holiday"/>
         <definition>
             <fixed month="December" day="6"/>
         </definition>
     </holiday>
 
-    <holiday type="plublic holiday">
-        <names>
-            <name language="nl" text="Kerstmis" official="true"/>
-            <name language="fr" text="Noël" official="true"/>
-            <name language="de" text="Weihnacht" official="true"/>
-            <name language="en" text="Christmas"/>
-        </names>
+    <holiday>
+        <description language="nl" name="Kerstmis" />
+        <description language="fr" name="Noël" />
+        <description language="de" name="Weihnacht" />
+        <description language="en" name="Christmas" type="plublic holiday"/>
         <definition>
             <fixed month="December" day="25"/>
         </definition>

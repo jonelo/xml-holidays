@@ -10,6 +10,8 @@
     <!-- http://en.wikipedia.org/wiki/Bank_Holiday -->
     <!-- http://www.berr.gov.uk/whatwedo/employment/bank-public-holidays/index.html -->
     <!-- http://www.2008bankholidays.co.uk/ -->
+
+    <default language="en"/>
     
     <!-- Royal proclamation is also used to shift bank holidays that would
          otherwise fall on a weekend. In this way, public holidays are not
@@ -17,7 +19,8 @@
          bank holiday days are termed a 'bank holiday in lieu' of the typical
          anniversary date.  -->
     
-    <holiday name="New Year's Day" type="bank holiday">
+    <holiday>
+        <description language="en" name="New Year's Day" type="bank holiday"/>
         <definition firstyear="1971">
             <fixed day="1" month="January"/>
             <condition ifweekday="Sunday">
@@ -29,7 +32,8 @@
         </definition>
     </holiday>
     
-    <holiday name="2nd January" type="bank holiday, Scotland only">
+    <holiday>
+        <description language="en" name="2nd January" type="bank holiday" region="Scotland only"/>
         <definition firstyear="1971">
             <fixed day="2" month="January"/>
             <condition ifweekday="Sunday">
@@ -42,13 +46,15 @@
     </holiday>
     
     <!-- http://en.wikipedia.org/wiki/Burns_Night -->
-    <holiday name="Burns Night (Burns Supper)" type="local, Scotland only">
+    <holiday>
+        <description language="en" name="Burns Night (Burns Supper)" type="local" region="Scotland only"/>
         <definition>
             <fixed month="January" day="25"/>
         </definition>
     </holiday>
     
-    <holiday name="St. Patrick's Day" type="bank holiday, Northern Ireland only">
+    <holiday>
+        <description language="en" name="St. Patrick's Day" type="bank holiday" region="Northern Ireland only"/>
         <definition firstyear="1971">
             <fixed day="17" month="March"/>
             <condition ifweekday="Sunday">
@@ -60,20 +66,23 @@
         </definition>
     </holiday>
     
-    <holiday name="Good Friday" type="bank holiday">
+    <holiday>
+        <description language="en" name="Good Friday" type="bank holiday"/>
         <definition>
             <easter/>
             <add days="-3"/>
         </definition>
     </holiday>
     
-    <holiday name="Easter Sunday">
+    <holiday>
+        <description language="en" name="Easter Sunday"/>
         <definition>
             <easter/>
         </definition>
     </holiday>
         
-    <holiday name="Easter Monday" type="bank holiday, except Scotland">
+    <holiday>
+        <description language="en" name="Easter Monday" type="bank holiday" region="except Scotland"/>
         <!-- In 1871, the first legislation relating to bank holidays was
              passed when Sir John Lubbock introduced the Bank Holidays
              Act 1871 -->
@@ -85,7 +94,8 @@
     
     <!-- http://en.wikipedia.org/wiki/Saint_David%27s_Day
         The date was declared a national day of celebration within Wales in the 18th century.-->
-    <holiday name="Saint David's Day" type="local, Wales, Catholics">
+    <holiday>
+        <description language="en" name="Saint David's Day" type="local" region="Wales, Catholics"/>
         <!-- 1801 is the first year of the 19th century, therfore probably also earlier -->
         <definition firstyear="1801" lastyear="2005">
             <fixed month="March" day="1"/>
@@ -104,7 +114,8 @@
     
     <!-- http://en.wikipedia.org/wiki/Saint_David%27s_Day
         The date was declared a national day of celebration within Wales in the 18th century.-->
-    <holiday name="Saint David's Day" type="local, Wales, Anglican Church">
+    <holiday>
+        <description language="en" name="Saint David's Day" type="local" region="Wales, Anglican Church"/>
         <!-- 1801 is the first year of the 19th century, therfore probably also earlier -->
         <definition firstyear="1801" lastyear="2005">
             <fixed month="March" day="1"/>
@@ -122,7 +133,8 @@
     </holiday>
     
     <!-- http://en.wikipedia.org/wiki/Mothering_Sunday -->
-    <holiday name="Mothering Sunday" type="local">
+    <holiday>
+        <description language="en" name="Mothering Sunday" type="local"/>
         <definition>
             <easter/>
             <!-- on the fourth Sunday of Lent. -->
@@ -131,33 +143,38 @@
     </holiday>
     
     <!-- http://en.wikipedia.org/wiki/Saint_patricks_day -->
-    <holiday name="Saint Patrick's Day" type="local, Northern Ireland">
+    <holiday>
+        <description language="en" name="Saint Patrick's Day" type="local" region="Northern Ireland"/>
         <definition>
             <fixed month="March" day="17"/>
         </definition>
     </holiday>
     
-    <holiday name="Vernal Equinox">
+    <holiday>
+        <description language="en" name="Vernal Equinox"/>
         <definition>
             <equinox month="March" timezone="Europe/London"/>
         </definition>
     </holiday>
     
-    <holiday name="Begin Daylight Saving Time">
+    <holiday>
+        <description language="en" name="Begin Daylight Saving Time"/>
         <definition>
             <dst timezone="Europe/London" action="start"/>
         </definition>
     </holiday>
     
     <!-- For England, St. George's Day also marks its National Day -->
-    <holiday name="St. George's Day" type="National day of England">
+    <holiday>
+        <description language="en" name="St. George's Day" type="National day of England"/>
         <definition>
             <fixed month="April" day="23"/>
         </definition>
     </holiday>
     
     <!-- Early May Bank Holiday in Scotland, or, Labour Day in Ireland -->
-    <holiday name="May Day Bank Holiday" type="bank holiday">
+    <holiday>
+        <description language="en" name="May Day Bank Holiday" type="bank holiday"/>
         <definition firstyear="1971" lastyear="1994">
             <fixed day="1" month="May"/>
             <condition ifweekday="Sunday">
@@ -184,14 +201,16 @@
         </definition>
     </holiday>
     
-    <holiday name="Whit Monday" type="bank holiday until 1970 in England, Wales, Northern Ireland" valid="false">
+    <holiday valid="false">
+        <description language="en" name="Whit Monday" type="bank holiday until 1970" region="in England, Wales, Northern Ireland"/>
         <definition firstyear="1871" lastyear="1970">
             <easter/>
             <add days="+50"/>
         </definition>
     </holiday>
     
-    <holiday name="Spring Bank Holiday" type="bank holiday">
+    <holiday>
+        <description language="en" name="Spring Bank Holiday" type="bank holiday"/>
         <definition firstyear="1971">
             <rule nth="Last" weekday="Monday" month="May"/>
         </definition>
@@ -208,19 +227,25 @@
     </holiday>
     
     <!-- http://en.wikipedia.org/wiki/Father%27s_Day -->
-    <holiday name="Father's Day">
+    <holiday>
+        <description language="en" name="Father's Day"/>
         <definition>
             <rule nth="Third" weekday="Sunday" month="June"/>
         </definition>
     </holiday>
     
-    <holiday name="June Solstice">
+    <holiday>
+        <description language="en" name="June Solstice"/>
         <definition>
             <solstice month="June" timezone="Europe/London"/>
         </definition>
     </holiday>
-    
-    <holiday name="Battle of the Boyne - Orangemen's Day" type="bank holiday, Northern Ireland only">
+
+    <!-- http://en.wikipedia.org/wiki/Battle_of_the_Boyne -->
+    <holiday>
+        <description language="en" name="Battle of the Boyne - Orangemen's Day"
+                     type="bank holiday" region="Northern Ireland only"/>
+        <description language="ga" name="Cath na Bóinne"/>
         <definition firstyear="1971">
             <fixed day="12" month="July"/>
             <condition ifweekday="Sunday">
@@ -231,39 +256,47 @@
             </condition>
         </definition>
     </holiday>
-    
-    <holiday name="Summer Bank Holiday" type="bank holiday in Scotland only">
+
+    <holiday>
+        <description language="en" name="Summer Bank Holiday"
+                     type="bank holiday" region="in Scotland only"/>
         <definition firstyear="1971">
             <rule nth="First" weekday="Monday" month="August"/>
         </definition>
     </holiday>
     
-    <holiday name="Summer Bank Holiday" type="bank holiday in England, Wales and Northern Ireland">
+    <holiday>
+        <description language="en" name="Summer Bank Holiday"
+                     type="bank holiday" region="in England, Wales and Northern Ireland"/>
         <definition firstyear="1971">
             <rule nth="Last" weekday="Monday" month="August"/>
         </definition>
     </holiday>
     
-    <holiday name="Autumnal equinox">
+    <holiday>
+        <description language="en" name="Autumnal equinox"/>
         <definition>
             <equinox month="September" timezone="Europe/London"/>
         </definition>
     </holiday>
     
-    <holiday name="Daylight Saving Time ends">
+    <holiday>
+        <description language="en" name="Daylight Saving Time ends"/>
         <definition>
             <dst timezone="Europe/London" action="end"/>
         </definition>
     </holiday>
     
-    <holiday name="Halloween">
+    <holiday>
+        <description language="en" name="Halloween"/>
         <definition>
             <fixed month="October" day="31"/>
         </definition>
     </holiday>
     
     <!-- http://en.wikipedia.org/wiki/Guy_Fawkes_Night -->
-    <holiday name="Guy Fawkes Night (Bonfire Night)">
+    <holiday>
+        <description language="en" name="Guy Fawkes Night (Bonfire Night)"/>
         <definition>
             <fixed month="November" day="5"/>
         </definition>
@@ -272,7 +305,9 @@
     <!-- In January 2007, the St Andrew's Day Bank Holiday (Scotland)
          Act 2007 was given royal assent, making 30 November
          (or the nearest Monday if a weekend) a bank holiday in Scotland. -->
-    <holiday name="St. Andrew's Day" type="bank holiday, Scotland only">
+    <holiday>
+        <description language="en" name="St. Andrew's Day" type="bank holiday"
+                     region="Scotland only"/>
         <definition firstyear="2007">
             <fixed day="30" month="November"/>
             <condition ifweekday="Sunday">
@@ -284,13 +319,15 @@
         </definition>
     </holiday>
     
-    <holiday name="Autumnal equinox">
+    <holiday>
+        <description language="en" name="Autumnal equinox"/>
         <definition>
             <equinox month="September" timezone="Europe/London"/>
         </definition>
     </holiday>
     
-    <holiday name="Christmas Day" type="bank holiday">
+    <holiday>
+        <description language="en" name="Christmas Day" type="bank holiday"/>
         <definition lastyear="1970">
             <!-- The Bank Holidays Act 1871 does not specify Good Friday and
                  Christmas Day as bank holidays in England, Wales and Ireland
@@ -310,7 +347,8 @@
         </definition>
     </holiday>
     
-    <holiday name="Boxing Day, St. Stephen's Day" type="bank holiday">
+    <holiday>
+        <description language="en" name="Boxing Day, St. Stephen's Day" type="bank holiday"/>
         <definition lastyear="1970">
             <fixed day="26" month="December"/>
         </definition>

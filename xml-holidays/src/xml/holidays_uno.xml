@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+<!--
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+-->
+<holidays country="UNO">
+    <!-- See also http://en.wikipedia.org/wiki/Category:United_Nations_days -->
+
+    <default language="en"/>
+
+    <!-- http://en.wikipedia.org/wiki/International_Holocaust_Remembrance_Day -->
+    <holiday>
+        <description language="en" name="International Holocaust Remembrance Day"/>
+        <definition firstyear="2005">
+            <fixed month="January" day="27"/>
+        </definition>
+    </holiday>
+
+    <!--
+       http://en.wikipedia.org/wiki/United_Nations
+       http://en.wikipedia.org/wiki/International_Day_for_Biological_Diversity
+       http://www.cbd.int/
+     -->
+    <holiday>
+        <description language="en" name="International Day for Biological Diversity"/>
+        <definition firstyear="1993" lastyear="2000">
+            <fixed month="December" day="29"/>
+        </definition>
+        <definition firstyear="2001">
+            <fixed month="May" day="22"/>
+        </definition>
+    </holiday>
+
+    <!--
+      http://en.wikipedia.org/wiki/Children%27s_Day
+     -->
+    <holiday>
+        <description language="en" name="Universal Children's Day"/>
+        <definition firstyear="1954">
+            <fixed month="November" day="20"/>
+        </definition>
+    </holiday>
+
+    <!--
+      http://en.wikipedia.org/wiki/World_Book_and_Copyright_Day
+      -->
+    <holiday>
+        <description language="en" name="World Book and Copyright Day"/>
+        <definition firstyear="1995">
+            <fixed month="April" day="23"/>
+        </definition>
+    </holiday>
+
+    <!--
+      http://en.wikipedia.org/wiki/Africa_Industrialization_Day
+    -->
+    <holiday>
+         <description language="en" name="Africa Industrialization Day"/>
+         <definition firstyear="1989">
+             <fixed month="November" day="20"/>
+         </definition>
+    </holiday>
+
+    <!--
+       http://en.wikipedia.org/wiki/World_AIDS_Day
+    -->
+    <holiday>
+         <description language="en" name="World AIDS Day"/>
+         <definition firstyear="1988">
+             <fixed month="December" day="1"/>
+         </definition>
+    </holiday>
+
+    <!--
+       http://en.wikipedia.org/wiki/Human_Rights_Day
+    -->
+    <holiday>
+         <description language="en" name="Human Rights Day"/>
+         <definition firstyear="1950">
+             <fixed month="December" day="10"/>
+         </definition>
+    </holiday>
+
+    <!--
+       http://en.wikipedia.org/wiki/United_Nations_Day
+    -->
+    <holiday>
+         <description language="en" name="United Nations Day"/>
+         <definition firstyear="1947">
+             <fixed month="October" day="24"/>
+         </definition>
+    </holiday>
+
+</holidays>

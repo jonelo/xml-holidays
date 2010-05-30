@@ -10,269 +10,385 @@
     <!-- http://sv.wikipedia.org/wiki/Helgdag -->
     <!-- http://www.schwedisch-translator.de/schweden/feste.html-->
 
-    <holiday name="Nyårsdagen" type="public holiday">
-        <import name="New Year's Day"/>
+    <default language="sv"/>
+
+    <holiday>
+        <description language="sv" name="Nyårsdagen"/>
+        <description language="en" name="New Year's Day" type="public holiday"/>
+        <import id="New Year's Day"/>
     </holiday>
     
-    <holiday name="Trettondagsafton" type="de facto half holiday" international="Twelfth Night">
+    <holiday>
+        <description language="sv" name="Trettondagsafton"/>
+        <description language="en" name="Twelfth Night" type="de facto half holiday"/>
         <definition>
             <fixed month="January" day="5"/>
         </definition>
     </holiday>
     
-    <holiday name="Trettondedag jul" type="public holiday" international="Epiphany">
+    <holiday>
+        <description language="sv" name="Trettondedag jul"/>
+        <description language="en" name="Epiphany" type="public holiday"/>
         <definition>
             <fixed month="January" day="6"/>
         </definition>
     </holiday>
     
-    <holiday name="Tjugondedag Knut"> <!-- Der 20. Tag Knut -->
+    <holiday>
+        <description language="sv" name="Tjugondedag Knut"/> <!-- Der 20. Tag Knut -->
         <definition>
             <fixed month="January" day="13"/>
         </definition>
     </holiday>
     
-    <holiday name="Karlsdag (Kungens namnsdag)"> <!-- Namenstag des Königs -->
+    <holiday>
+        <description language="sv" name="Karlsdag (Kungens namnsdag)"/> <!-- Namenstag des Königs -->
         <definition>
             <fixed month="January" day="28"/>
         </definition>
     </holiday>
     
-    <holiday name="Alla hjärtans dag">
-        <import name="Valentine's Day"/>
+    <holiday>
+        <description language="sv" name="Alla hjärtans dag"/>
+        <import id="Valentine's Day"/>
     </holiday>
     
-    <holiday name="Vasaloppet (Wasalauf)">
+    <holiday>
+        <description language="sv" name="Vasaloppet (Wasalauf)"/>
         <!-- 1. Wochenende im März -->
         <definition>
             <rule nth="First" weekday="Sunday" month="March"/>
         </definition>
     </holiday>
     
-    <holiday name="Victoriadag (Kronprizessans namsdag)"> <!-- Namenstag der Kronprinzessin -->
+    <holiday>
+        <description language="sv" name="Victoriadag (Kronprizessans namsdag)"/> <!-- Namenstag der Kronprinzessin -->
         <definition>
             <fixed month="March" day="12"/>
         </definition>
     </holiday>
     
-    <holiday name="Marie Bebådelsedag"> <!-- Mariä Verkündigung -->
+    <holiday>
+        <description language="sv" name="Marie Bebådelsedag"/> <!-- Mariä Verkündigung -->
         <definition>
             <fixed month="March" day="12"/>
         </definition>
     </holiday>
     
-    <holiday name="Skärtorsdagen" type="de facto half holiday" international="Maundy Thursday">
+    <holiday>
+        <description language="sv" name="Skärtorsdagen"/>
+        <description language="en" name="Maundy Thursday" type="de facto half holiday"/>
         <definition>
             <easter/>
             <add days="-3"/>
         </definition>
     </holiday>
     
-    <holiday name="Långfredagen" type="public holiday" international="Good Friday">
+    <holiday>
+        <description language="sv" name="Långfredagen"/>
+        <description language="en" name="Good Friday" type="public holiday"/>
         <definition>
             <easter/>
             <add days="-2"/>
         </definition>
     </holiday>
     
-    <holiday name="Påskdagen" type="public holiday" international="Easter Sunday">
-        <import name="Easter Sunday"/>
+    <holiday>
+        <description language="sv" name="Påskdagen"/>
+        <description language="en" name="Easter Sunday" type="public holiday"/>
+        <import id="Easter Sunday"/>
     </holiday>
     
-    <holiday name="Annandag påsk" type="public holiday" international="Easter Monday">
-        <import name="Easter Monday"/>
+    <holiday>
+        <description language="sv" name="Annandag påsk"/>
+        <description language="en" name="Easter Monday" type="public holiday"/>
+        <import id="Easter Monday"/>
     </holiday>
     
-    <holiday name="Första maj" type="public holiday" international="May Day">
+    <holiday>
+        <description language="sv" name="Första maj"/>
+        <description language="en" name="May Day" type="public holiday"/>
         <definition>
             <fixed month="May" day="1"/>
         </definition>
     </holiday>
     
-    <holiday name="Kristi himmelsfärdsdag" type="public holiday" international="Ascension Day">
+    <holiday>
+        <description language="sv" name="Kristi himmelsfärdsdag"/>
+        <description language="en" name="Ascension Day" type="public holiday"/>
         <definition>
             <easter/>
             <add days="+39"/>
         </definition>
     </holiday>
     
-    <holiday name="Pingstafton" type="de facto half holiday" international="Pentecost Eve">
+    <holiday>
+        <description language="sv" name="Pingstafton"/>
+        <description language="en" name="Pentecost Eve" type="de facto half holiday"/>
         <definition>
             <easter/>
             <add days="+48"/>
         </definition>
     </holiday>
     
-    <holiday name="Pingstdagen" type="public holiday">
-        <import name="Pentecost"/>
+    <holiday>
+        <description language="sv" name="Pingstdagen"/>
+        <description language="en" name="Pentecost" type="public holiday"/>
+        <import id="Pentecost"/>
     </holiday>
     
-    <holiday name="Annandag pingst" international="Whit Monday">
+    <holiday>
+        <description language="sv" name="Annandag pingst"/>
+        <description language="en" name="Whit Monday"/>
         <definition>
             <easter/>
             <add days="+50"/>
         </definition>
     </holiday>
     
-    <holiday name="Sveriges nationaldag / svenska flaggans dag" type="public holiday" international="National Day of Sweden / Swedish Flag Day">
+    <holiday>
+        <description language="sv" name="Sveriges nationaldag / svenska flaggans dag" />
+        <description language="en" name="National Day of Sweden / Swedish Flag Day" type="public holiday"/>
         <definition firstyear="2005">
             <fixed month="June" day="6"/>
         </definition>
     </holiday>
     
-    <holiday name="Begin of the Daylight Saving Time (+1h)" international="Begin Daylight Saving Time">
+    <holiday>
+        <description language="en" name="Begin Daylight Saving Time"/>
         <definition>
             <dst timezone="Europe/Stockholm" action="start"/>
         </definition>
     </holiday>
     
-    <holiday name="End of the Daylight Saving Time (-1h)" international="End Daylight Saving Time">
+    <holiday>
+        <description language="en" name="End Daylight Saving Time"/>
         <definition>
             <dst timezone="Europe/Stockholm" action="end"/>
         </definition>
     </holiday>
     
-    <!-- Walpurgisnacht -->
-    <holiday name="Valborgsmässoafton" type="de facto half holiday" international="Walpurgis Night">
+    <holiday>
+        <description language="sv" name="Valborgsmässoafton"/>
+        <description language="en" name="Walpurgis Night" type="de facto half holiday"/>
+        <description language="de" name="Walpurgisnacht"/>
         <definition>
             <fixed month="April" day="30"/>
         </definition>
     </holiday>
     
-    <holiday name="Morsdag">
+    <holiday>
+        <description language="sv" name="Morsdag"/>
         <!-- 4. Sonntag im Mai -->
         <definition>
             <rule nth="Fourth" weekday="Sunday" month="May"/>
         </definition>
     </holiday>
     
-    <holiday name="Sveriges nationaldag" type="public holiday"> <!-- National day -->
+    <holiday>
+        <description language="sv" name="Sveriges nationaldag"/>
+        <description language="en" name="National Day of Sweden" type="public holiday"/>
         <definition>
             <fixed month="June" day="6"/>
         </definition>
     </holiday>
     
     <!-- The Friday during the period 19–25 June -->
-    <holiday name="Midsommarafton" type="de facto full holiday" international="Midsummer's Eve">
+    <holiday>
+        <description language="sv" name="Midsommarafton"/>
+        <description language="en" name="Midsummer's Eve" type="de facto full holiday"/>
         <definition>
             <fixed month="June" day="19"/>
-            <goto weekday="Friday" direction="nextpossible"/>
+            <goto weekday="Friday" direction="nextinclusive"/>
         </definition>
     </holiday>
     
     <!-- The Saturday during the period 20–26 June -->
-    <holiday name="Midsommardagen" type="public holiday" international="Midsummer's Day">
+    <holiday>
+        <description language="sv" name="Midsommardagen"/>
+        <description language="en" name="Midsummer's Day" type="public holiday"/>
         <definition>
             <fixed month="June" day="20"/>
-            <goto weekday="Saturday" direction="nextpossible"/>
+            <goto weekday="Saturday" direction="nextinclusive"/>
         </definition>
     </holiday>
     
-    <holiday name="Kronprinzessan Victorias födelsedag"> <!-- Geburtstag der Kronprinzessin -->
+    <holiday>
+        <description language="sv" name="Kronprinzessan Victorias födelsedag"/>
+        <description language="de" name="Geburtstag der Kronprinzessin"/>
         <definition>
             <fixed month="July" day="14"/>
         </definition>
     </holiday>
     
-    <holiday name="Kräftskiva" international="Crayfish Party"> <!-- Krebs-Festessen -->
+    <holiday>
+        <description language="sv" name="Kräftskiva"/>
+        <description language="en" name="Crayfish Party"/>
+        <description language="de" name="Krebs-Festessen"/>
         <definition>
             <rule nth="Second" weekday="Thursday" month="August"/>
         </definition>
     </holiday>   
     
-    <holiday name="Skördefest"> <!-- Erntedankfest -->
+    <holiday>
+        <description language="sv" name="Skördefest"/>
+        <description language="de" name="Erntedankfest"/>
         <definition>
             <rule nth="Last" weekday="Sunday" month="September"/>
         </definition>
     </holiday>
     
     <!-- The day before All Saint's Day -->
-    <holiday name="Allhelgonaafton" type="de facto half holiday" international="All Saints' Eve">
+    <holiday>
+        <description language="sv" name="Allhelgonaafton"/>
+        <description language="en" name="All Saints' Eve" type="de facto half holiday"/>
         <definition>
             <fixed month="October" day="30"/>
-            <goto weekday="Saturday" direction="nextpossible"/>
+            <goto weekday="Saturday" direction="nextinclusive"/>
             <add days="-1"/>
         </definition>
     </holiday>
     
     <!-- The Saturday during the period October 31–November 6 -->
-    <holiday name="Alla helgons dag" type="public holiday" international="All Saints' Day">
+    <holiday>
+        <description language="sv" name="Alla helgons dag"/>
+        <description language="en" name="All Saints' Day" type="public holiday"/>
         <definition>
             <fixed month="October" day="31"/>
-            <goto weekday="Saturday" direction="nextpossible"/>
+            <goto weekday="Saturday" direction="nextinclusive"/>
         </definition>
     </holiday>
     
-    <holiday name="Gustav Adolfdagen"> <!-- Gustav-Adolfs-Tag -->
+    <holiday>
+        <description language="sv" name="Gustav Adolfdagen"/>
+        <description language="de" name="Gustav-Adolfs-Tag"/>
         <definition>
             <fixed month="November" day="6"/>
         </definition>
     </holiday>
     
-    <holiday name="Mårtensgås"> <!-- St. Martins Tag -->
+    <holiday>
+        <description language="sv" name="Mårtensgås"/>
+        <description language="de" name="St. Martins Tag"/>
         <definition>
             <fixed month="November" day="11"/>
         </definition>
     </holiday>
     
-    <holiday name="Fars dag"> <!-- Vatertag -->
+    <holiday>
+        <description language="sv" name="Fars dag"/>
+        <description language="de" name="Vatertag"/>
         <definition>
             <rule nth="Second" weekday="Sunday" month="November"/>
         </definition>
     </holiday>
     
-    <holiday name="1. Advent">
-        <import name="1st Advent"/>
+    <holiday>
+        <description language="sv" name="1. Advent"/>
+        <import id="1st Advent"/>
     </holiday>
     
-    <holiday name="Nobeldagen"> <!-- Verleihung des Nobelpreises -->
+    <holiday>
+        <description language="sv" name="Nobeldagen"/>
+        <description language="de" name="Verleihung des Nobelpreises"/>
         <definition>
             <fixed month="December" day="10"/>
         </definition>
     </holiday>
-    
-    <holiday name="2. Advent">
-        <import name="2nd Advent"/>
+
+    <holiday>
+        <description language="sv" name="2. Advent"/>
+        <import id="2nd Advent"/>
     </holiday>
     
-    <holiday name="Luciadagen"> <!-- Lucia-Fest -->
+    <holiday>
+        <description language="sv" name="Luciadagen"/>
+        <description language="de" name="Lucia-Fest"/>
         <definition>
             <fixed month="December" day="13"/>
         </definition>
     </holiday>
     
-    <holiday name="3. Advent (Gaudete)">
-        <import name="3rd Advent"/>
+    <holiday>
+        <description language="sv" name="3. Advent (Gaudete)"/>
+        <import id="3rd Advent"/>
     </holiday>
     
-    <holiday name="4. Advent">
-        <import name="4th Advent"/>
+    <holiday>
+        <description language="sv" name="4. Advent"/>
+        <import id="4th Advent"/>
     </holiday>
     
-    <holiday name="Drottnings födelsedag"> <!-- Geburtstag von Köningin Sylvia -->
+    <holiday>
+        <description language="sv" name="Drottnings födelsedag"/>
+        <description language="de" name="Geburtstag von Köningin Sylvia"/>
         <definition>
             <fixed month="December" day="23"/>
         </definition>
     </holiday>
     
-    <holiday name="Julafton" type="de facto full holiday" international="Christmas Eve">
-        <import name="Christmas Eve"/>
+    <holiday>
+        <description language="sv" name="Julafton"/>
+        <description language="en" name="Christmas Eve" type="de facto full holiday"/>
+        <import id="Christmas Eve"/>
     </holiday>
     
-    <holiday name="Juldagen" type="public holiday" international="Christmas Day">
+    <holiday>
+        <description language="sv" name="Juldagen"/>
+        <description language="en" name="Christmas Day" type="public holiday"/>
         <definition>
             <fixed month="December" day="25"/>
         </definition>
     </holiday>
     
-    <holiday name="Annandag jul" type="public holiday">
+    <holiday>
+        <description language="sv" name="Annandag jul"/>
+        <description language="en" name="Boxing Day" type="public holiday"/>
         <definition>
             <fixed month="December" day="26"/>
         </definition>
     </holiday>
     
-    <holiday name="Nyårsafton" type="de facto full holiday" international="New Year's Eve">
-        <import name="New Year's Eve"/>
+    <holiday>
+        <description language="sv" name="Nyårsafton"/>
+        <description language="en" name="New Year's Eve" type="de facto full holiday"/>
+        <import id="New Year's Eve"/>
     </holiday>
-    
+
+    <holiday>
+        <description language="sv" name="Vårdagjämningen Mars"/>
+        <description language="de" name="Frühlingsanfang"/>
+        <description language="en" name="Equinox March"/>
+        <definition>
+            <equinox month="March" timezone="Europe/Stockholm"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="sv" name="Sommar Juni"/>
+        <description language="de" name="Sommeranfang (Sommersonnenwende)"/>
+        <description language="en" name="Solstice June"/>
+        <definition>
+            <solstice month="June" timezone="Europe/Stockholm"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="sv" name="Höstdagjämningen September"/>
+        <description language="de" name="Herbstanfang"/>
+        <description language="en" name="Equinox September"/>
+        <definition>
+            <equinox month="September" timezone="Europe/Stockholm"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="sv" name="Vinter December"/>
+        <description language="de" name="Winteranfang (Wintersonnenwende)"/>
+        <description language="en" name="Solstice December"/>
+        <definition>
+            <solstice month="December" timezone="Europe/Stockholm"/>
+        </definition>
+    </holiday>
+
 </holidays>

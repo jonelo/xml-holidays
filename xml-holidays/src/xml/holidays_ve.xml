@@ -7,122 +7,155 @@
  -->
 <holidays country="VE">
     <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Venezuela -->
-    
-    <holiday type="public holiday">
-        <names>
-            <name language="es" text="Día de Año Nuevo" official="true"/>
-            <name language="en" text="New Year's Day"/>
-        </names>
+
+    <default language="es"/>
+
+    <holiday>
+        <description language="es" name="Día de Año Nuevo"/>
+        <description language="en" name="New Year's Day" type="public holiday"/>
         <definition>
             <fixed day="1" month="January"/>
         </definition>
     </holiday>
     
-    <holiday type="public holiday">
-        <names>
-            <name language="es" text="Día de Reyes" official="true"/>
-            <name language="en" text="Epiphany"/>
-        </names>
+    <holiday>
+        <description language="es" name="Día de Reyes"/>
+        <description language="en" name="Epiphany" type="public holiday"/>
         <definition>
             <fixed day="6" month="January"/>
         </definition>
     </holiday>
     
-    <holiday type="public holiday">
-        <names>
-            <name language="es" text="Carnaval" official="true"/>
-            <name language="en" text="Carnival"/>
-        </names>
-        <import name="Carnival"/>
+    <holiday>
+        <description language="es" name="Carnaval"/>
+        <description language="en" name="Carnival" type="public holiday"/>
+        <import id="Carnival"/>
     </holiday>
     
-    <holiday type="public holiday">
-        <names>
-            <name language="es" text="Semana Santa (Start)" official="true"/>
-            <name language="en" text="Holy Week Start"/>
-        </names>
+    <holiday>
+        <description language="es" name="Semana Santa (Start)"/>
+        <description language="en" name="Holy Week Start" type="public holiday"/>
         <definition>
             <easter/>
             <add days="-7"/>
         </definition>
     </holiday>
 
-    <holiday type="public holiday">
-        <names>
-            <name language="es" text="Semana Santa (End)" official="true"/>
-            <name language="en" text="Holy Week End"/>
-        </names>
+    <holiday>
+        <description language="es" name="Semana Santa (End)"/>
+        <description language="en" name="Holy Week End" type="public holiday"/>
         <definition>
             <easter/>
         </definition>
     </holiday>
 
-    <holiday type="public holiday">
-        <names>
-            <name language="es" text="Día de San José" official="true"/>
-            <name language="en" text="Saint Joseph's Day"/>
-        </names>
+
+    <holiday>
+        <description language="es" name="Jueves Santo"/>
+        <description language="en" name="Maundy Thursday"/>
+        <definition>
+            <easter/>
+            <add days="-3"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="es" name="Viernes Santo"/>
+        <description language="en" name="Good Friday"/>
+        <import id="Good Friday"/>
+    </holiday>
+
+    <holiday>
+        <description language="es" name="Pascua"/>
+        <description language="en" name="Easter Sunday"/>
+        <import id="Easter Sunday"/>
+    </holiday>
+
+    <holiday>
+        <description language="es" name="Lunes de Pascua"/>
+        <description language="en" name="Easter Monday"/>
+        <import id="Easter Monday"/>
+    </holiday>
+
+    <!-- http://www.guardian.co.uk/world/2010/mar/25/hugo-chavez-venezuela-easter-holidays -->
+    <!-- Chávez announced yesterday [March 24, 2010] that he had designated the three days after Easter Sunday as extra days off.
+         "It's not about lethargy, but saving energy," the president said. -->
+    <holiday>
+        <description language="en" name="Easter Extra Day I"/>
+        <definition firstyear="2010">
+            <easter/>
+            <add days="+1"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Easter Extra Day II"/>
+        <definition firstyear="2010">
+            <easter/>
+            <add days="+2"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Easter Extra Day III"/>
+        <definition firstyear="2010">
+            <easter/>
+            <add days="+3"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="es" name="Día de San José"/>
+        <description language="en" name="Saint Joseph's Day" type="public holiday"/>
         <definition>
             <fixed day="19" month="March"/>
         </definition>
     </holiday>
 
-    <holiday type="public holiday">
-        <names>
-            <name language="es" text="19 de abril" official="true"/>
-            <name language="en" text="Beginning of the Independence Movement"/>
-        </names>
+    <holiday>
+        <description language="es" name="19 de abril"/>
+        <description language="en" name="Beginning of the Independence Movement" type="public holiday"/>
         <definition firstyear="1810">
             <fixed day="19" month="April"/>
         </definition>
     </holiday>
 
-    <holiday type="public holiday">
-        <names>
-            <name language="es" text="Día del Trabajador" official="true"/>
-            <name language="en" text="Labour Day"/>
-        </names>
+    <holiday>
+        <description language="es" name="Día del Trabajador"/>
+        <description language="en" name="Labour Day" type="public holiday"/>
         <definition>
             <fixed day="1" month="May"/>
         </definition>
     </holiday>
 
-    <holiday type="public holiday">
-        <names>
-            <name language="es" text="Batalla de Carabobo" official="true"/>
-            <name language="en" text="Battle of Carabobo"/>
-            <name language="de" text="Schlacht von Carabobo"/>
-        </names>
+    <holiday>
+        <description language="es" name="Batalla de Carabobo"/>
+        <description language="en" name="Battle of Carabobo" type="public holiday"/>
+        <description language="de" name="Schlacht von Carabobo"/>
         <definition>
             <fixed day="24" month="June"/>
         </definition>
     </holiday>
 
-    <holiday type="public holiday">
-        <names>
-            <name language="es" text="5 de julio" official="true"/>
-            <name language="en" text="Independence Day"/>
-        </names>
+    <holiday>
+        <description language="es" name="5 de julio"/>
+        <description language="en" name="Independence Day" type="public holiday"/>
         <definition>
             <fixed day="5" month="July"/>
         </definition>
     </holiday>
 
-    <holiday type="public holiday">
-        <names>
-            <name language="es" text="Natalicio del Libertador" official="true"/>
-            <name language="en" text="Birth of Simón Bolívar"/>
-        </names>
+    <holiday>
+        <description language="es" name="Natalicio del Libertador"/>
+        <description language="en" name="Birth of Simón Bolívar" type="public holiday"/>
         <definition>
             <fixed day="24" month="July"/>
         </definition>
     </holiday>
 
-    <holiday type="public holiday">
-        <names>
-            <name language="es" text="Día de la Bandera" official="true"/>
-            <name language="en" text="Flag Day"/>
-        </names>
+    <holiday>
+        <description language="es" name="Día de la Bandera"/>
+        <description language="en" name="Flag Day" type="public holiday"/>
         <definition firstyear="1806" lastyear="2005">
         <!-- Previously, in Venezuela the Flag Day was celebrated
              in March 12, until August 3, 2006, in honor of the
@@ -135,11 +168,9 @@
     </holiday>
 
 
-    <holiday type="public holiday" valid="false">
-        <names>
-            <name language="es" text="Día de la Raza" official="true"/>
-            <name language="en" text="Columbus Day"/>
-        </names>
+    <holiday valid="false">
+        <description language="es" name="Día de la Raza"/>
+        <description language="en" name="Columbus Day" type="public holiday"/>
         <!-- Between 1921 and 2002, Venezuela had celebrated Día de la Raza 
              along with many other Latin American nations.-->
         <definition firstyear="1921" lastyear="2001">
@@ -151,73 +182,63 @@
          was changed to Día de la Resistencia Indígena (Day of Indigenous
          Resistance) to commemorate the Indigenous peoples' resistance to
          European settlement. -->
-    <holiday type="public holiday">
-        <names>
-            <name language="es" text="Día de la Resistencia Indígena" official="true"/>
-            <name language="en" text="Day of Indigenous Resistance"/>
-        </names>
+    <holiday>
+        <description language="es" name="Día de la Resistencia Indígena"/>
+        <description language="en" name="Day of Indigenous Resistance" type="public holiday"/>
         <definition firstyear="2002">
             <fixed day="12" month="October"/>
         </definition>
     </holiday>
 
-    <holiday type="public holiday">
-        <names>
-            <name language="es" text="Día de Todos los Santos" official="true"/>
-            <name language="en" text="All Saints Day"/>
-        </names>
+    <holiday>
+        <description language="es" name="Día de Todos los Santos"/>
+        <description language="en" name="All Saints Day" type="public holiday"/>
         <definition>
             <fixed day="1" month="November"/>
         </definition>
     </holiday>
 
-    <holiday type="public holiday, only in the Zulian region (3 days)">
-        <names>
-            <name language="es" text="Feria de la Chinita" official="true"/>
-            <name language="en" text="Feria of La Chinita"/>
-        </names>
+    <holiday>
+        <description language="es" name="Feria de la Chinita"/>
+        <description language="en" name="Feria of La Chinita" type="public holiday" region="only in the Zulian region (3 days)"/>
         <definition>
             <fixed day="17" month="November"/>
         </definition>
     </holiday>
 
-    <holiday type="public holiday">
-        <names>
-            <name language="es" text="Inmaculada Concepción" official="true"/>
-            <name language="en" text="Immaculate Conception"/>
-        </names>
+    <holiday>
+        <description language="es" name="Inmaculada Concepción"/>
+        <description language="en" name="Immaculate Conception" type="public holiday"/>
         <definition>
             <fixed day="8" month="December"/>
         </definition>
     </holiday>
 
-    <holiday type="public holiday">
-        <names>
-            <name language="es" text="Nochebuena" official="true"/>
-            <name language="en" text="Christmas Eve"/>
-        </names>
+    <holiday>
+        <description language="es" name="Nochebuena"/>
+        <description language="en" name="Christmas Eve" type="public holiday"/>
         <definition>
             <fixed day="24" month="December"/>
         </definition>
     </holiday>
 
-    <holiday type="public holiday">
-        <names>
-            <name language="es" text="Nochevieja" official="true"/>
-            <name language="en" text="New Year's Eve"/>
-        </names>
+    <holiday>
+        <description language="es" name="Nochevieja"/>
+        <description language="en" name="New Year's Eve" type="public holiday"/>
         <definition>
             <fixed day="31" month="December"/>
         </definition>
     </holiday>
 
-    <holiday name="Begin Daylight Saving Time (DST)">
+    <holiday>
+        <description language="en" name="Begin Daylight Saving Time (DST)"/>
         <definition>
             <dst timezone="America/Caracas" action="start"/>
         </definition>
     </holiday>
     
-    <holiday name="End Daylight Saving Time (DST)">
+    <holiday>
+        <description language="en" name="End Daylight Saving Time (DST)"/>
         <definition>
             <dst timezone="America/Caracas" action="end"/>
         </definition>

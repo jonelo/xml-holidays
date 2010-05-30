@@ -8,34 +8,34 @@
 <holidays country="INT">
     <!-- See also http://en.wikipedia.org/wiki/Category:United_Nations_days -->
 
+    <default language="en"/>
+
+    <!--
+      http://en.wikipedia.org/wiki/Pi_Day
+      -->
+    <holiday>
+        <description language="en" name="Pi Day"/>
+        <definition firstyear="1988">
+            <fixed month="March" day="14"/>
+        </definition>
+    </holiday>
+
     <!--
       http://en.wikipedia.org/wiki/Earth_Day
       -->
-    <holiday name="Earth Day">
+    <holiday>
+        <description language="en" name="Earth Day"/>
         <definition firstyear="1970">
             <fixed month="April" day="22"/>
         </definition>
     </holiday>
 
-    <!--
-       http://en.wikipedia.org/wiki/United_Nations
-       http://www.cbd.int/
-     -->
-    <holiday name="International Day for Biological Diversity">
-        <definition firstyear="1993" lastyear="2000">
-            <fixed month="December" day="29"/>
-        </definition>
-        <definition firstyear="2001">
-            <fixed month="May" day="22"/>
-        </definition>
-    </holiday>
-
-
     <!-- 
       http://www.sueddeutsche.de/kultur/artikel/690/115575/
       0x25+0x5=37+5=42 ;)
       -->
-    <holiday name="Towel Day">
+    <holiday>
+        <description language="en" name="Towel Day"/>
         <definition lastyear="2000">
             <undefined/>
         </definition>
@@ -43,23 +43,5 @@
             <fixed month="May" day="25"/>
         </definition>
     </holiday>
-
-    <!--
-      http://en.wikipedia.org/wiki/Africa_Industrialization_Day
-    -->
-    <holiday name="Africa Industrialization Day">
-         <definition firstyear="1989">
-             <fixed month="November" day="20"/>
-         </definition>
-    </holiday>
-
-    <!--
-       http://en.wikipedia.org/wiki/World_AIDS_Day
-    -->
-    <holiday name="World AIDS Day">
-         <definition firstyear="1988">
-             <fixed month="December" day="1"/>
-         </definition>
-    </holiday>
-
+    
 </holidays>
