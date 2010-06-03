@@ -1,5 +1,5 @@
 
-version 1.0, May 30, 2010
+version 1.0, June 3, 2010
 -------------------------
 - with the xml-holidays 1.0 schema you can describe actual holidays which are
   based on the Gregorian Calendar
