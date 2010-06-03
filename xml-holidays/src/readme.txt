@@ -4,7 +4,7 @@ Purpose:      The project suggests an open source standard how to phrase
               international holidays in XML and it provides actual
               holiday definitions for many countries
 Version:      1.0
-Date:         May 30, 2010
+Date:         June 3, 2010
 Home:         http://sourceforge.net/projects/xml-holidays
 Wiki:         https://sourceforge.net/apps/mediawiki/xml-holidays/index.php?title=Main_Page
 SVN:          http://xml-holidays.svn.sourceforge.net/viewvc/xml-holidays/xml-holidays/src/xml/
