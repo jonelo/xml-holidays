@@ -41,7 +41,7 @@
      "valid"         indicates whether the holiday is still valid or not
                      (use false if it is a history or obsolete holiday)
    -->
-   <!ELEMENT holiday (description+,(import|(definition+|code+)+))>
+   <!ELEMENT holiday (description+,(import|definition+))>
    <!ATTLIST holiday
              id CDATA #IMPLIED
              valid (true|false) "true">
@@ -68,12 +68,6 @@
       <!ELEMENT import EMPTY>
       <!ATTLIST import
                 id CDATA #REQUIRED>
-
-      <!-- The code element can keep Java code -->
-      <!ELEMENT code (#PCDATA)>
-      <!ATTLIST code
-                firstyear CDATA #IMPLIED
-                lastyear CDATA #IMPLIED>
 
       <!--
         The definition is either
