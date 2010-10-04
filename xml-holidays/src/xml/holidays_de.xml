@@ -497,7 +497,24 @@
          Damit dauert das Fest mindestens 16 und höchstens 18 Tage; es beginnt
          frühestens am 16., spätestens am 22. September und endet frühestens
          am 3., spätestens am 7. Oktober. -->
-        <definition firstyear="2000">
+        <definition firstyear="2000" lastyear="2009">
+            <rule nth="First" weekday="Sunday" month="October"/>
+            <condition ifdayofmonth="1">
+                <add days="2"/> <!-- will become the 3rd of October -->
+            </condition>
+            <condition ifdayofmonth="2">
+                <add days="1"/> <!-- will become the 3rd of October -->
+            </condition>
+        </definition>
+
+        <!-- Ausnahme der Regel im Jahr 2010 wegen "200 Jahre Oktoberfest" -->
+        <definition firstyear="2010" lastyear="2010">
+            <rule nth="First" weekday="Sunday" month="October"/>
+            <add days="1"/> <!-- will become the 4th of October -->
+        </definition>
+
+        <!-- Ab 2011 gilt wieder die Regel von 2000 -->
+        <definition firstyear="2011">
             <rule nth="First" weekday="Sunday" month="October"/>
             <condition ifdayofmonth="1">
                 <add days="2"/> <!-- will become the 3rd of October -->
