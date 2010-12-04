@@ -43,5 +43,16 @@
             <fixed month="May" day="25"/>
         </definition>
     </holiday>
-    
+
+    <!--
+      http://en.wikipedia.org/wiki/World_Animal_Day
+      -->
+    <holiday>
+        <description language="en" name="World_Animal_Day"/>
+        <description language="de" name="Welttierschutztag"/>
+        <definition firstyear="1931">
+            <fixed month="October" day="4"/>
+        </definition>
+    </holiday>
+
 </holidays>

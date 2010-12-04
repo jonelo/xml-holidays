@@ -19,6 +19,38 @@
     </holiday>
 
     <!--
+      http://en.wikipedia.org/wiki/International_Women%27s_Day
+      -->
+    <holiday>
+        <description language="en" name="International Women's Day"/>
+        <description language="de" name="Internationaler Frauentag (Weltfrauentag)"/>
+        <definition firstyear="1978">
+            <fixed month="March" day="8"/>
+        </definition>
+    </holiday>
+
+    <!--
+      http://en.wikipedia.org/wiki/World_Health_Day
+      -->
+    <holiday>
+        <description language="en" name="World Health Day"/>
+        <description language="de" name="Weltgesundheitstag"/>
+        <definition firstyear="1948">
+            <fixed month="April" day="7"/>
+        </definition>
+    </holiday>
+
+    <!--
+      http://en.wikipedia.org/wiki/World_Book_and_Copyright_Day
+      -->
+    <holiday>
+        <description language="en" name="World Book and Copyright Day"/>
+        <definition firstyear="1995">
+            <fixed month="April" day="23"/>
+        </definition>
+    </holiday>
+
+    <!--
        http://en.wikipedia.org/wiki/United_Nations
        http://en.wikipedia.org/wiki/International_Day_for_Biological_Diversity
        http://www.cbd.int/
@@ -34,22 +66,33 @@
     </holiday>
 
     <!--
+      http://en.wikipedia.org/wiki/World_Environment_Day
+      -->
+    <holiday>
+        <description language="en" name="World_Environment_Day"/>
+        <description language="de" name="Weltumwelttag (Tag der Umwelt)"/>
+        <definition firstyear="1972">
+            <fixed month="June" day="5"/>
+        </definition>
+    </holiday>
+
+    <!--
+       http://en.wikipedia.org/wiki/United_Nations_Day
+    -->
+    <holiday>
+         <description language="en" name="United Nations Day"/>
+         <definition firstyear="1947">
+             <fixed month="October" day="24"/>
+         </definition>
+    </holiday>
+
+    <!--
       http://en.wikipedia.org/wiki/Children%27s_Day
      -->
     <holiday>
         <description language="en" name="Universal Children's Day"/>
         <definition firstyear="1954">
             <fixed month="November" day="20"/>
-        </definition>
-    </holiday>
-
-    <!--
-      http://en.wikipedia.org/wiki/World_Book_and_Copyright_Day
-      -->
-    <holiday>
-        <description language="en" name="World Book and Copyright Day"/>
-        <definition firstyear="1995">
-            <fixed month="April" day="23"/>
         </definition>
     </holiday>
 
@@ -68,6 +111,7 @@
     -->
     <holiday>
          <description language="en" name="World AIDS Day"/>
+         <description language="de" name="Welt-AIDS-Tag"/>
          <definition firstyear="1988">
              <fixed month="December" day="1"/>
          </definition>
@@ -78,18 +122,9 @@
     -->
     <holiday>
          <description language="en" name="Human Rights Day"/>
+         <description language="de" name="Tag der Menschenrechte"/>
          <definition firstyear="1950">
              <fixed month="December" day="10"/>
-         </definition>
-    </holiday>
-
-    <!--
-       http://en.wikipedia.org/wiki/United_Nations_Day
-    -->
-    <holiday>
-         <description language="en" name="United Nations Day"/>
-         <definition firstyear="1947">
-             <fixed month="October" day="24"/>
          </definition>
     </holiday>
 
