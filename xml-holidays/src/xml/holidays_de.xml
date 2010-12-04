@@ -335,7 +335,42 @@
         <description language="en" name="Whit Monday" type="public holiday"/>
         <import id="Whit Monday"/>
     </holiday>
-    
+
+    <holiday>
+        <description language="de" name="Eisheilige: Mamertus"/>
+        <definition>
+            <fixed month="May" day="11"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Eisheilige: Pankratius"/>
+        <definition>
+            <fixed month="May" day="12"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Eisheilige: Servatius"/>
+        <definition>
+            <fixed month="May" day="13"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Eisheilige: Bonifatius"/>
+        <definition>
+            <fixed month="May" day="14"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Eisheilige: Sophie"/>
+        <definition>
+            <fixed month="May" day="15"/>
+        </definition>
+    </holiday>
+
     <holiday valid="false">
         <description language="de" name="Nationaler Gedenktag" type="1953-1990"/>
         <definition firstyear="1953" lastyear="1990">

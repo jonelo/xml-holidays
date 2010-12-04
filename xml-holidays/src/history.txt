@@ -2,6 +2,7 @@ version 1.1, ??? ??, 2011
 -------------------------
 - more international and UN holidays
 - fix for Germany's Oktoberfest for 2010
+- added Ice Saints for Germany
 
 version 1.0, June 3, 2010
 -------------------------
