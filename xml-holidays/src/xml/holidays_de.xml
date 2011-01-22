@@ -190,7 +190,8 @@
     <holiday>
         <description language="de" name="Erster April"/>
         <description language="en" name="April Fool's Day"/>
-        <definition>
+        <!-- In Deutschland ist das "In den April Schicken" erstmals für 1618 belegt -->
+        <definition firstyear="1618">
             <fixed month="April" day="1"/>
         </definition>
     </holiday>
