@@ -48,6 +48,9 @@
 
     <holiday>
         <description language="de" name="Valentinstag"/>
+        <description language="fr" name="Saint-Valentin"/>
+        <description language="it" name="San Valentino"/>
+        <description language="en" name="Valentine's Day"/>
         <definition>
             <fixed day="14" month="January" />
         </definition>
@@ -146,7 +149,7 @@
     
     <!-- Thursday following the first Sunday in September -->
     <holiday>
-        <description language="en" name="Jeûne genevois" type="GE"/>
+        <description language="en" name="Jeûne genevois" region="GE"/>
         <definition>
             <rule nth="First" weekday="Sunday" month="September"/>
             <add days="5"/> <!-- Thursday -->
@@ -190,6 +193,7 @@
 
     <holiday>
         <description language="de" name="Beginn der Sommerzeit (Uhren 1 h vorstellen)"/>
+        <description language="en" name="Daylight Saving Time (begin)"/>
         <definition>
             <dst timezone="Europe/Zurich" action="start" />
         </definition>
@@ -328,6 +332,7 @@
 
     <holiday>
         <description language="de" name="Ende der Sommerzeit (Uhren 1 h zurückstellen)"/>
+        <description language="en" name="Daylight Saving Time (end)"/>
         <definition>
             <dst timezone="Europe/Zurich" action="start" />
         </definition>
