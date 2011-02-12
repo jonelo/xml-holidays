@@ -112,7 +112,7 @@
     <!-- 
       http://en.wikipedia.org/wiki/Lincoln%27s_Birthday
     -->
-    <holiday>
+    <holiday valid="false">
         <description language="en" name="Lincoln's Birthday" type="local"/>
         <definition firstyear="1865" lastyear="1971">
             <fixed day="12" month="February"/>
@@ -239,7 +239,7 @@
          assistant such gifts as flowers, candy, trinkets, lunch at a
          restaurant, or time off.
      -->
-    <holiday>
+    <holiday valid="false">
         <description language="en" name="National Secretaries Day"/>
         <definition firstyear="1952" lastyear="1954">
             <fixed month="June" day="4"/>
@@ -255,7 +255,7 @@
     </holiday>
 
     <!-- The name was changed to Professional Secretaries Week in 1981 -->
-    <holiday>
+    <holiday valid="false">
         <description language="en" name="Professional Secretaries Day"/>
         <definition firstyear="1981" lastyear="1999">
             <rule nth="Last" weekday="Saturday" month="April"/>
@@ -517,7 +517,7 @@
          Veterans Day is an American holiday honoring military veterans. -->
     <!-- An Act (52 Stat. 351; 5 U. S. Code, Sec. 87a) approved May 13, 1938,
          made the 11th of November in each year a legal holiday -->
-    <holiday>
+    <holiday valid="false">
         <description language="en" name="Armistice's Day" type="federal holiday"/>
         <definition firstyear="1938" lastyear="1953">
             <fixed day="11" month="November"/>
