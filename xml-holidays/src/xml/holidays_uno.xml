@@ -69,7 +69,7 @@
       http://en.wikipedia.org/wiki/World_Environment_Day
       -->
     <holiday>
-        <description language="en" name="World_Environment_Day"/>
+        <description language="en" name="World Environment Day"/>
         <description language="de" name="Weltumwelttag (Tag der Umwelt)"/>
         <definition firstyear="1972">
             <fixed month="June" day="5"/>
