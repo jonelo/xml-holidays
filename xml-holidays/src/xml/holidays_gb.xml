@@ -174,7 +174,7 @@
 
     <holiday>
         <description language="en" name="Royal Wedding (of Prince William of Wales and Catherine Middleton)" type="bank holiday"/>
-        <description language="de" name="Königliche Hochzeit (von Prinz Prince William von Wales und Catherine Middleton)" type="bank holiday"/>
+        <description language="de" name="Königliche Hochzeit (von Prinz William von Wales und Catherine Middleton)" type="bank holiday"/>
         <definition firstyear="2011" lastyear="2011">
             <fixed month="April" day="29"/>
         </definition>
