@@ -219,7 +219,7 @@
     
     <holiday>
         <description language="en" name="Spring Bank Holiday" type="bank holiday"/>
-        <definition firstyear="1971">
+        <definition firstyear="1971" lastyear="2001">
             <rule nth="Last" weekday="Monday" month="May"/>
         </definition>
         <!-- For one year only, 2002, this holiday was moved
@@ -229,9 +229,35 @@
         <definition firstyear="2002" lastyear="2002">
             <fixed day="4" month="June"/>
         </definition>
-        <definition firstyear="2003">
+        <definition firstyear="2003" lastyear="2011">
             <rule nth="Last" weekday="Monday" month="May"/>
-        </definition>        
+        </definition>
+    <!-- In 2012, there will be a special holiday on Tuesday, 5 June to
+         celebrate the Queen's Diamond Jubilee. Therefore, to make it a four-day
+         weekend, the Spring Bank Holiday that would usually occur at the end of
+         May will be pushed back to Monday, 4 June 2012. -->
+        <definition firstyear="2012" lastyear="2012">
+            <fixed day="4" month="June"/>
+        </definition>
+        <definition firstyear="2013">
+            <rule nth="Last" weekday="Monday" month="May"/>
+        </definition>
+    </holiday>
+
+    <holiday valid="false">
+        <description language="en" name="Golden Jubilee of Elizabeth II" type="bank holiday"/>
+        <definition firstyear="2002" lastyear="2002">
+            <fixed month="June" day="3"/>
+        </definition>
+    </holiday>
+
+    <!-- In 2012, there will be a special holiday on Tuesday, 5 June to
+         celebrate the Queen's Diamond Jubilee. -->
+    <holiday>
+        <description language="en" name="Queen's Diamond Jubilee" type="bank holiday"/>
+        <definition firstyear="2012" lastyear="2012">
+            <fixed month="June" day="5"/>
+        </definition>
     </holiday>
     
     <!-- http://en.wikipedia.org/wiki/Father%27s_Day -->
