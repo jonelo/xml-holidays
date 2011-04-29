@@ -171,6 +171,14 @@
             <fixed month="April" day="23"/>
         </definition>
     </holiday>
+
+    <holiday>
+        <description language="en" name="Wedding of Prince William of Wales and Catherine Middleton" type="bank holiday"/>
+        <description language="de" name="Hochzeit von Prinz Prince William von Wales and Catherine Middleton" type="bank holiday"/>
+        <definition firstyear="2011" lastyear="2011">
+            <fixed month="April" day="29"/>
+        </definition>
+    </holiday>
     
     <!-- Early May Bank Holiday in Scotland, or, Labour Day in Ireland -->
     <holiday>
