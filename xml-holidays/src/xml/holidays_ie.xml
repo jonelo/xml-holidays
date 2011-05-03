@@ -36,6 +36,16 @@
         </definition>
     </holiday>
 
+    <!-- http://en.wikipedia.org/wiki/Mothering_Sunday -->
+    <holiday>
+        <description language="en" name="Mothering Sunday" type="local"/>
+        <definition>
+            <easter/>
+            <!-- on the fourth Sunday of Lent. -->
+            <add days="-21" />
+        </definition>
+    </holiday>
+
     <holiday>
         <description language="en" name="Easter"/>
         <description language="ga" name="Domhnach Cásca"/>

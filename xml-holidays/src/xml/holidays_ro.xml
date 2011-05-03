@@ -58,6 +58,27 @@
         </definition>
     </holiday>
 
+    <!-- http://www.mediafax.ro/english/romania-celebrates-fathers-day-on-second-sunday-of-may-6088334 -->
+    <!-- http://ro.wikipedia.org/wiki/Ziua_Mamei -->
+    <holiday>
+        <description language="ro" name="Ziua Mamei"/>
+        <description language="en" name="Mother's Day"/>
+        <description language="de" name="Muttertag"/>
+        <definition firstyear="2010">
+            <rule nth="First" weekday="Sunday" month="May"/>
+        </definition>
+    </holiday>
+
+    <!-- http://ro.wikipedia.org/wiki/Ziua_Tat%C4%83lui -->
+    <holiday>
+        <description language="ro" name="Ziua_Tatălui"/>
+        <description language="en" name="Father's Day"/>
+        <description language="de" name="Muttertag"/>
+        <definition firstyear="2010">
+            <rule nth="Second" weekday="Sunday" month="May"/>
+        </definition>
+    </holiday>
+
     <holiday>
         <description language="ro" name="Paştele"/>
         <description language="en" name="Easter" type="Official non-working holiday"/>

@@ -70,6 +70,24 @@
         </definition>
     </holiday>
 
+    <!-- http://de.wikipedia.org/wiki/Muttertag#.C3.96sterreich -->
+    <holiday>
+        <description language="de" name="Muttertag"/>
+        <description language="en" name="Mother's Day"/>
+        <definition firstyear="1924">
+            <rule nth="Second" weekday="Sunday" month="May"/>
+        </definition>
+    </holiday>
+
+    <!-- http://de.wikipedia.org/wiki/Vatertag#.C3.96sterreich -->
+    <holiday>
+        <description language="de" name="Vatertag"/>
+        <description language="en" name="Father's Day"/>
+        <definition firstyear="1955">
+            <rule nth="Second" weekday="Sunday" month="June"/>
+        </definition>
+    </holiday>
+
     <holiday>
         <description language="de" name="Christi Himmelfahrt"/>
         <import id="Ascension of Jesus"/>
