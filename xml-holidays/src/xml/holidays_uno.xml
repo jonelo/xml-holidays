@@ -51,6 +51,18 @@
     </holiday>
 
     <!--
+      http://en.wikipedia.org/wiki/World_Press_Freedom_Day
+    -->
+    <holiday>
+        <description language="en" name="World Press Freedom Day"/>
+        <description language="de" name="Internationaler Tag der Pressefreiheit"/>
+        <description language="es" name="Día Mundial de la Libertad de Prensa"/>
+        <definition firstyear="1994">
+            <fixed month="May" day="3"/>
+        </definition>
+    </holiday>
+
+    <!--
        http://en.wikipedia.org/wiki/United_Nations
        http://en.wikipedia.org/wiki/International_Day_for_Biological_Diversity
        http://www.cbd.int/
