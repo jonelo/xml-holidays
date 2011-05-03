@@ -1,9 +1,18 @@
 version 1.1, ??? ??, 2011
 -------------------------
+- DTD unchanged
 - more international and UN holidays
 - fix for Germany's Oktoberfest for 2010
 - added Ice Saints for Germany
-- Firstyear for the April Fools Day of Germany
+- Mother's Day for Norway, Austria, Romania, Australia
+- Mothering Day for the Republic of Ireland
+- Father's Day for Austria, Romania, Switzerland
+- Vaetertag for Switzerland
+- firstyear fix for the April Fools Day of Germany
+- firstyear fix for Mother's Day in Germany
+- Wedding of Prince William of Wales and Catherine Middleton in 2011
+- Queen's Golden Jubilee in 2002 and Queen's Diamond Jubilee in 2012
+- World Press Freedom Day for the UNO
 
 version 1.0, June 3, 2010
 -------------------------

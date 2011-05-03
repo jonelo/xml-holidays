@@ -120,6 +120,14 @@
     </holiday>
 
     <holiday>
+        <description language="en" name="Mother's Day"/>
+        <description language="de" name="Muttertag"/>
+        <definition firstyear="1924">
+            <rule nth="Second" weekday="Sunday" month="May"/>
+        </definition>
+    </holiday>
+
+    <holiday>
         <description language="en" name="Foundation Day" type="publich holiday, regional" region="Western Australia only"/>
         <definition>
             <rule nth="First" weekday="Monday" month="June"/>

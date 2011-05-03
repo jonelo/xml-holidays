@@ -290,8 +290,7 @@
     <holiday>
         <description language="de" name="Muttertag"/>
         <description language="en" name="Mother's Day"/>
-        <!-- 2. Sonntag im Mai -->
-        <definition>
+        <definition firstyear="1923">
             <rule nth="Second" weekday="Sunday" month="May"/>
         </definition>
     </holiday>

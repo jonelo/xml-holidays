@@ -133,6 +133,36 @@
             <rule nth="First" weekday="Thursday" month="April"/>
         </definition>
     </holiday>
+
+    <!-- http://de.wikipedia.org/wiki/Muttertag#Schweiz -->
+    <holiday>
+        <description language="de" name="Muttertag"/>
+        <description language="en" name="Mother's Day"/>
+        <description language="fr" name="Fête des Mères"/>
+        <definition firstyear="1930">
+            <rule nth="Second" weekday="Sunday" month="May"/>
+        </definition>
+    </holiday>
+
+    <!-- http://de.wikipedia.org/wiki/Vatertag#Schweiz -->
+    <holiday>
+        <description language="de" name="Vätertag"/>
+        <description language="en" name="Father's Day"/>
+        <definition firstyear="2007">
+            <rule nth="First" weekday="Sunday" month="June"/>
+        </definition>
+    </holiday>
+
+    <!-- http://de.wikipedia.org/wiki/Vatertag#Schweiz -->
+    <holiday>
+        <description language="de" name="Vatertag, Josefstag" region="Tessin"/>
+        <description language="en" name="Father's Day"/>
+        <description language="fr" name="Fête des Pères"/>
+        <definition>
+            <fixed day="19" month="March"/>
+        </definition>
+    </holiday>
+
     <!--
     <holiday name="Näfelser Fahrt [Feiertag in Kanton Glarus]" type="local">
         <definition firstyear="1389">

@@ -72,6 +72,16 @@
         </definition>
     </holiday>
 
+    <!-- http://no.wikipedia.org/wiki/Morsdag -->
+    <holiday>
+        <description language="no" name="Morsdag"/>
+        <description language="de" name="Muttertag"/>
+        <description language="en" name="Mother's Day"/>
+        <definition firstyear="1919">
+            <rule nth="Second" weekday="Sunday" month="February"/>
+        </definition>
+    </holiday>
+
     <holiday>
         <description language="no" name="Syttende mai or Grunnlovsdagen"/>
         <description language="en" name="Constitution Day" type="public holiday"/>
