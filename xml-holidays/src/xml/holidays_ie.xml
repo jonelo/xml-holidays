@@ -73,6 +73,14 @@
             <rule weekday="Monday" month="June" nth="First"/>
         </definition>
     </holiday>
+
+    <!-- http://en.wikipedia.org/wiki/Bloomsday -->
+    <holiday>
+        <description language="en" name="Bloomsday"/>
+        <definition firstyear="1954">
+            <fixed month="June" day="16"/>
+        </definition>
+    </holiday>
    
     <holiday>
         <description language="en" name="August Holiday" type="public holiday"/>

@@ -13,6 +13,7 @@ version 1.1, ??? ??, 2011
 - Wedding of Prince William of Wales and Catherine Middleton in 2011
 - Queen's Golden Jubilee in 2002 and Queen's Diamond Jubilee in 2012
 - World Press Freedom Day for the UNO
+- Bloomsday for Ireland
 
 version 1.0, June 3, 2010
 -------------------------
