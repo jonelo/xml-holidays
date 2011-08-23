@@ -28,13 +28,21 @@
         </definition>
     </holiday>
 
+
+    <holiday valid="false">
+        <description language="en" name="Martin Luther King, Jr's Birthday" type="actual birthday"/>
+        <definition firstyear="1929">
+            <fixed day="15" month="January"/>
+        </definition>
+    </holiday>
+
     <!--
        http://en.wikipedia.org/wiki/Martin_Luther_King_Day
        It was observed for the first time on January 20, 1986.
        The third Monday in January.
     -->
     <holiday>
-        <description language="en" name="Martin Luther King Day" type="national"/>
+        <description language="en" name="Martin Luther King, Jr. Day" type="observed, national"/>
         <definition firstyear="1986">
             <rule nth="Third" weekday="Monday" month="January"/>
         </definition>
@@ -191,14 +199,14 @@
     </holiday>
 
     <holiday>
-        <description language="en" name="April Fool's Day"/>
+        <description language="en" name="April Fools' Day"/>
         <definition>
             <fixed day="1" month="April"/>
         </definition>
     </holiday>
 
     <holiday>
-        <description language="en" name="Begin Daylight Saving Time (DST), +1h"/>
+        <description language="en" name="Daylight Saving Time Begins (DST), +1h"/>
         <definition firstyear="1777">
             <dst timezone="America/New_York" action="start"/>
         </definition>
@@ -460,7 +468,7 @@
     </holiday>
 
     <holiday>
-        <description language="en" name="End Daylight Saving Time (DST), -1h"/>
+        <description language="en" name="Daylight Saving Time Ends (DST), -1h"/>
         <definition firstyear="1776">
             <dst timezone="America/New_York" action="end"/>
         </definition>
@@ -519,7 +527,7 @@
     <!-- Congress amended an act on November 8, 1954, by replacing "Armistice"
          with Veterans and it has been known as Veterans Day since -->
     <holiday>
-        <description language="en" name="Veteran's Day" type="federal holiday"/>
+        <description language="en" name="Veterans Day" type="federal holiday"/>
         <definition firstyear="1954">
             <fixed day="11" month="November"/>
         </definition>
@@ -565,6 +573,38 @@
     <holiday>
         <description language="en" name="New Year's Eve"/>
         <import id="New Year's Eve"/>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Frühlingsanfang"/>
+        <description language="en" name="First Day of Spring"/>
+        <definition>
+            <equinox month="March" timezone="America/Chicago"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Sommeranfang (Sommersonnenwende)"/>
+        <description language="en" name="First Day of Summer"/>
+        <definition>
+            <solstice month="June" timezone="America/Chicago"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Herbstanfang"/>
+        <description language="en" name="First Day of Autumn"/>
+        <definition>
+            <equinox month="September" timezone="America/Chicago"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Winteranfang (Wintersonnenwende)"/>
+        <description language="en" name="First Day of Winter"/>
+        <definition>
+            <solstice month="December" timezone="America/Chicago"/>
+        </definition>
     </holiday>
 
 </holidays>
