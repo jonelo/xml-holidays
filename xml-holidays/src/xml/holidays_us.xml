@@ -499,15 +499,7 @@
           Note: the first Tuesday after the first Monday in November is not the
           same as the first Tuesday in November!
         -->
-        <definition firstyear="1845" lastyear="1874" frequency="4">
-            <rule nth="First" weekday="Monday" month="November"/>
-            <add days="1"/><!-- Tuesday -->
-        </definition>
-        <!--
-          In 1875 the date was established for electing U.S. Representatives
-          in every even numbered year.
-        -->
-        <definition firstyear="1876" frequency="2">
+        <definition firstyear="1845">
             <rule nth="First" weekday="Monday" month="November"/>
             <add days="1"/><!-- Tuesday -->
         </definition>
