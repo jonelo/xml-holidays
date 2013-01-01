@@ -543,10 +543,15 @@
         </definition>
     </holiday>
 
-    <!-- http://en.wikipedia.org/wiki/Thanksgiving_%28United_States%29#Friday_after_Thanksgiving -->
-    <!-- The Friday after Thanksgiving, although not a Federal holiday, is a holiday for many companies, except for those in retail. -->
+    <!-- http://en.wikipedia.org/wiki/Black_Friday_%28shopping%29 -->
+    <!-- Black Friday is not an official holiday, but many non-retail employees
+         and schools have both Thanksgiving and the day after off, followed by
+         a weekend, thereby increasing the number of potential shoppers. 
+         "Black Friday" indicates the point at which retailers begin to turn a
+         profit, or are "in the black".
+         -->
     <holiday>
-        <description language="en" name="Friday after Thanksgiving (Black Friday)" type="non federal holiday"/>
+        <description language="en" name="Black Friday (Friday after Thanksgiving)" type="non federal holiday"/>
         <definition firstyear="1776">
             <rule nth="Fourth" weekday="Thursday" month="November"/>
             <add days="1"/>
