@@ -122,6 +122,15 @@
         </definition>
     </holiday>
 
+    <!-- http://de.wikipedia.org/wiki/Tag_des_offenen_Denkmals -->
+    <holiday>
+        <description language="de" name="Tag des Denkmals" type="kulturell"/>
+        <description language="en" name="European Heritage Days" type="cultural"/>
+        <definition firstyear="1996">
+            <rule nth="Last" weekday="Sunday" month="September"/>
+        </definition>
+    </holiday>
+
     <holiday>
         <description language="de" name="Tag der Volksabstimmung" type="lokal" region="Kärnten"/>
         <definition firstyear="1920">
