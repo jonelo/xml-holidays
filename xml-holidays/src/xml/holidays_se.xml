@@ -36,6 +36,8 @@
     
     <holiday>
         <description language="sv" name="Tjugondedag Knut"/> <!-- Der 20. Tag Knut -->
+        <description language="de" name="St. Knut-Tag"/>
+        <description language="en" name="St. Knut's Day"/>
         <definition>
             <fixed month="January" day="13"/>
         </definition>
