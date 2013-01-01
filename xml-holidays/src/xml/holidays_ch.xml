@@ -185,6 +185,15 @@
             <add days="5"/> <!-- Thursday -->
         </definition>
     </holiday>
+
+    <!-- http://de.wikipedia.org/wiki/Tag_des_offenen_Denkmals -->
+    <holiday>
+        <description language="de" name="Europäischer Tag des Denkmals" type="kulturell"/>
+        <description language="en" name="European Heritage Days" type="cultural"/>
+        <definition firstyear="1994">
+            <rule nth="Second" weekday="Sunday" month="September"/>
+        </definition>
+    </holiday>
     
     <!-- Second weekend (and afternoon of following Monday) in September -->
     <holiday>

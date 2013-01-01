@@ -164,6 +164,15 @@
             </condition>
         </definition>
     </holiday>
+
+    <!-- http://de.wikipedia.org/wiki/Tag_des_offenen_Denkmals -->
+    <holiday>
+        <description language="de" name="Tag des offenen Denkmals" type="kulturell"/>
+        <description language="en" name="European Heritage Days" type="cultural"/>
+        <definition firstyear="1993">
+            <rule nth="Second" weekday="Sunday" month="September"/>
+        </definition>
+    </holiday>
     
     <holiday>
         <description language="de" name="Dreifacher Hexensabbat, großer Verfallstag (3. Quartal)" type="Börse"/>
