@@ -1,0 +1,68 @@
+<?xml version="1.1" encoding="UTF-8"?> 
+<!-- 
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+-->
+<combined xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <countries>
+        <!-- International -->
+        <xi:include href="holidays_int.xml"/>
+        <xi:include href="holidays_uno.xml"/>
+        
+        <!-- North America -->
+        <xi:include href="holidays_us.xml"/>
+        <xi:include href="holidays_ca.xml"/>
+
+        <!-- Central Europe -->
+        <xi:include href="holidays_de.xml"/>
+        <xi:include href="holidays_at.xml"/>
+        <xi:include href="holidays_ch.xml"/>
+
+        <!-- West Europe -->
+        <xi:include href="holidays_fr.xml"/>
+        <xi:include href="holidays_es.xml"/>
+        <xi:include href="holidays_pt.xml"/>
+
+        <!-- South Europe -->
+        <xi:include href="holidays_it.xml"/>
+
+        <!-- North Europe -->
+        <xi:include href="holidays_gb.xml"/>
+        <xi:include href="holidays_ie.xml"/>
+        <xi:include href="holidays_se.xml"/>
+        <xi:include href="holidays_fi.xml"/>
+        <xi:include href="holidays_no.xml"/>
+        <xi:include href="holidays_nl.xml"/>
+        <xi:include href="holidays_dk.xml"/>
+        <xi:include href="holidays_be.xml"/>
+
+        <!-- East Europe -->
+        <xi:include href="holidays_gr.xml"/>
+        <xi:include href="holidays_ro.xml"/>
+        <xi:include href="holidays_si.xml"/>
+        <xi:include href="holidays_pl.xml"/>
+        <xi:include href="holidays_ru.xml"/>
+
+        <!-- Middle-America -->
+        <xi:include href="holidays_mx.xml"/>
+
+        <!-- South America -->
+        <xi:include href="holidays_br.xml"/>
+        <xi:include href="holidays_ve.xml"/>
+        <xi:include href="holidays_pa.xml"/>
+        <xi:include href="holidays_co.xml"/>
+
+        <!-- Africa -->
+        <xi:include href="holidays_za.xml"/>
+
+        <!-- Asia and Pacific -->
+        <xi:include href="holidays_jp.xml"/>
+        <xi:include href="holidays_au.xml"/>
+        <xi:include href="holidays_nz.xml"/>
+        
+        <!-- Historic -->
+        
+    </countries>
+</combined>

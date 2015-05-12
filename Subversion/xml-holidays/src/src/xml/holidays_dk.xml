@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+<!-- 
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+-->
+<holidays country="DK">
+    <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Denmark -->
+
+    <default language="da"/>
+
+    <holiday>
+        <description language="da" name="Nytårsdag"/>
+        <description language="en" name="New Year's Day" type="public"/>
+        <import id="New Year's Day"/>
+    </holiday>
+
+    <!-- This is not celebrated a lot, yet, but one day she might become Queen of Denmark. -->
+    <holiday>
+        <description language="da" name="Prinsesse Marys fødselsdag"/>
+        <description language="en" name="Crown Princess Mary's birthday" type="other"/>
+        <definition>
+            <fixed day="5" month="February"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Valentine's Day"/>
+        <import id="Valentine's Day"/>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Fastelavn"/>
+        <description language="en" name="Fastelavn" type="other"/> <!-- Fastelavn is the name for Carnival in Denmark -->
+        <definition>
+            <easter/>
+            <add days="-49"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Forårsjævndøgn"/>
+        <description language="en" name="Vernal equinox"/>
+        <definition>
+            <equinox month="March" timezone="Europe/Copenhagen"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Palmesøndag"/>
+        <description language="en" name="Palm Sunday" type="public"/>
+        <definition>
+            <easter/>
+            <add days="-7"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Skærtorsdag"/>
+        <description language="en" name="Maundy Thursday" type="public"/>
+        <definition>
+            <easter/>
+            <add days="-3"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Langfredag"/>
+        <description language="en" name="Good Friday" type="public"/>
+        <definition>
+            <easter/>
+            <add days="-2"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Påskedag"/>
+        <description language="en" name="Easter Sunday" type="public"/>
+        <import id="Easter Sunday"/>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="2. Påskedag" />
+        <description language="en" name="Easter Monday" type="public"/>
+        <import id="Easter Monday"/>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="1. April"/>
+        <description language="en" name="April Fools' Day"/>
+        <definition>
+            <fixed month="April" day="1"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Danmarks besættelse"/>
+        <description language="en" name="Occupation of Denmark"/>
+        <definition>
+            <fixed month="April" day="9"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Dronningens fødselsdag"/>
+        <description language="en" name="Birthday of Queen Margrethe II"/>
+        <definition>
+            <fixed month="April" day="16"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Prinsesse Benedikte fødselsdag"/>
+        <description language="en" name="Princess Benedikte's birthday"/>
+        <definition>
+            <fixed month="April" day="29"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Arbejdernes kampdag / 1. maj"/>
+        <description language="en" name="Labour Day"/>
+        <definition>
+            <fixed month="May" day="1"/>
+        </definition>
+    </holiday>
+  
+    <holiday>
+        <description language="da" name="Danmarks befrielse"/>
+        <description language="en" name="Liberation day" type="other"/>
+        <definition>
+            <fixed month="May" day="5"/>
+        </definition>
+    </holiday>
+  
+    <holiday>
+        <description language="da" name="Kronprins Frederiks fødselsdag"/>
+        <description language="en" name="Birthday of Crown Prince Frederik"/>
+        <definition>
+            <fixed month="May" day="26"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Sommertid starter"/>
+        <description language="en" name="Begin Daylight Saving Time"/>
+        <definition>
+            <dst timezone="Europe/Copenhagen" action="start"/>
+        </definition>
+    </holiday>
+
+    <!-- The 4th Friday after Easter -->
+    <holiday>
+        <description language="da" name="Stor Bededag"/>
+        <description language="en" name="General Prayer Day" type="public"/>
+        <definition>
+           <easter/>
+           <add days="+26"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Kristi Himmelfartsdag"/>
+        <description language="en" name="Ascension Day" type="public"/>
+        <definition>
+            <easter/>
+            <add days="+39"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Pinsedag"/>
+        <description language="en" name="Whit Sunday" type="public"/>
+        <import id="Pentecost"/>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="2. pinsedag"/>
+        <description language="en" name="Whit Monday" type="public"/>
+        <definition>
+            <easter/>
+            <add days="+50"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Grundlovsdag"/>
+        <description language="en" name="Constitution Day" type="public"/>
+        <definition>
+            <fixed month="June" day="5"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Sommersolhverv"/>
+        <description language="en" name="June Solstice"/>
+        <definition>
+            <solstice month="June" timezone="Europe/Copenhagen"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Efterårsjævndøgn"/>
+        <description language="en" name="Autumnal equinox"/>
+        <definition>
+            <equinox month="September" timezone="Europe/Copenhagen"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Prins Joachims fødselsdag"/>
+        <description language="en" name="Birthday of Prince Joachim" type="other"/>
+        <definition>
+            <fixed month="June" day="7"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Prins Henriks fødselsdag"/>
+        <description language="en" name="Birthday of Prince Henrik" type="other"/>
+        <definition>
+            <fixed month="June" day="11"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Valdemarsdag og Genforeningsdag"/>
+        <description language="en" name="Day of Valdemar and Reunion day" type="other"/>
+        <definition>
+            <fixed month="June" day="15"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Sankt Hans aften"/>
+        <description language="en" name="Saint John's Eve" type="other"/>
+        <definition>
+            <fixed month="June" day="23"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Sommertid slutter"/>
+        <description language="en" name="End Daylight Saving Time"/>
+        <definition>
+            <dst timezone="Europe/Copenhagen" action="end"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Mortensaften"/>
+        <description language="en" name="The eve before Saint Martin's day" type="other"/>
+        <definition>
+            <fixed month="November" day="10"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Vintersolhverv"/>
+        <description language="en" name="December Solstice"/>
+        <definition>
+            <solstice month="December" timezone="Europe/Copenhagen"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Sankt Lucia"/>
+        <description language="en" name="Saint Lucy's Day" type="other"/>
+        <definition>
+            <fixed month="December" day="13"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Juleaftensdag"/>
+        <description language="en" name="Christmas Eve" type="public"/>
+        <import id="Christmas Eve"/>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="1. Juledag"/>
+        <description language="en" name="First Day of Christmas" type="public"/>
+         <definition>
+            <fixed month="December" day="25"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="2. juledag"/>
+        <description language="en" name="Second Day of Christmas" type="public"/>
+        <definition>
+            <fixed month="December" day="26"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Nytårsaften"/>
+        <description language="en" name="New Year's Eve"/>
+        <import id="New Year's Eve"/>
+    </holiday>
+
+</holidays>

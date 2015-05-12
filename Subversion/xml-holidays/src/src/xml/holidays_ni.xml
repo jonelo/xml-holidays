@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+<!-- 
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+ -->
+<holidays country="NI">
+    <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Nicaragua -->
+    
+    <holiday name="Begin Daylight Saving Time (DST)">
+        <definition>
+            <dst timezone="America/Managua" action="start"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="End Daylight Saving Time (DST)">
+        <definition>
+            <dst timezone="America/Managua" action="end"/>
+        </definition>
+    </holiday>
+
+</holidays>

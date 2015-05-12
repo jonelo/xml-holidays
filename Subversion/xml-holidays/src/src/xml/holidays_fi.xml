@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+<!-- 
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+-->
+<holidays country="FI">
+    <!--
+      http://en.wikipedia.org/wiki/Public_holidays_in_Finland
+      -->
+
+    <default language="fi"/>
+
+    <holiday>
+        <description language="fi" name="Uudenvuodenpäivä"/>
+        <description language="en" name="New Year's Day" type="public"/>
+        <definition>
+            <fixed month="January" day="1"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="fi" name="Loppiainen"/>
+        <description language="en" name="Epiphany" type="public"/>
+        <definition>
+            <fixed month="January" day="6"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="fi" name="nuutinpäivä"/>
+        <description language="de" name="Knutstag"/>
+        <definition>
+            <fixed month="January" day="13"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="fi" name="J. L. Runebergin päivä"/>
+        <description language="de" name="Johan-Ludvig-Runeberg-Tag"/>
+        <definition>
+            <fixed month="February" day="5"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="fi" name="Laskiainen"/>
+        <definition>
+            <easter/>
+            <add days="-47"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="fi" name="Kalevalan päivä"/>
+        <description language="en" name="Kalevalatag"/>
+        <definition>
+            <fixed month="February" day="28"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="fi" name="Pitkäperjantai"/>
+        <description language="en" name="Good Friday" type="public"/>
+        <definition>
+            <easter/>
+            <add days="-2"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="fi" name="Pääsiäispäivä"/>
+        <description language="en" name="Easter Sunday" type="public"/>
+        <import id="Easter Sunday"/>
+    </holiday>
+
+    <holiday>
+        <description language="fi" name="2. Pääsiäispäivä"/>
+        <description language="en" name="Easter Monday" type="public"/>
+        <import id="Easter Monday"/>
+    </holiday>
+
+    <holiday>
+        <description language="fi" name="Vappu"/>
+        <description language="en" name="May Day" type="public"/>
+        <definition>
+            <fixed month="May" day="1"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="fi" name="Mikael Agricolan päivä"/>
+        <description language="de" name="Mikael-Agricola-Tag"/>
+        <definition>
+            <fixed month="April" day="9"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="fi" name="kansallinen veteraanipäivä"/>
+        <description language="de" name="Nationaler Veteranentag"/>
+        <definition>
+            <fixed month="April" day="27"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="fi" name="J. V. Snellmanin päivä"/>
+        <description language="de" name="Tag der finnischen Kultur"/>
+        <definition>
+            <fixed month="May" day="12"/>
+        </definition>
+    </holiday>
+
+    <!-- http://www.finn-land.net/finnland-f/floratag.htm -->
+    <holiday>
+        <description language="fi" name="Floratag"/>
+        <definition firstyear="1848">
+            <fixed month="May" day="13"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Mother's Day"/>
+        <definition>
+            <rule nth="Second" weekday="Sunday" month="May"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Memorial Day"/>
+        <description language="de" name="Heldengedenktag"/>
+        <description language="de" name="Gedenktag für die Gefallenen"/>
+        <definition>
+            <rule nth="Third" weekday="Sunday" month="May"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="fi" name="Helatorstai"/>
+        <description language="en" name="Ascension Day" type="public"/>
+        <definition>
+            <easter/>
+            <add days="+39"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="fi" name="Helluntaipäivä"/>
+        <description language="en" name="Pentecost" type="public"/>
+        <import id="Pentecost"/>
+    </holiday>
+
+    <holiday>
+        <description language="fi" name="puolustusvoimain lippujuhlan päivä"/>
+        <description language="de" name="Tag des Flaggenfestes der Armee"/>
+        <definition>
+            <fixed month="June" day="4"/>
+        </definition>
+    </holiday>
+
+    <!-- Friday between 19 June and 25 June -->
+    <holiday>
+        <description language="fi" name="Juhannusaatto"/>
+        <description language="en" name="Midsummer's Eve" type="de facto full holiday"/>
+        <definition>
+            <fixed month="June" day="19"/>
+            <goto weekday="Friday" direction="nextinclusive"/> <!-- inclusive the 19th-->
+        </definition>
+    </holiday>
+
+    <!-- Saturday between 20 June and 26 June -->
+    <holiday>
+        <description language="fi" name="Suomen lipun päivä"/>
+        <description language="en" name="Midsummer's Day" type="public holiday"/>
+        <description language="de" name="Mittsommerfest"/>
+        <definition lastyear="1954">
+            <fixed month="June" day="24"/>
+        </definition>
+        <definition firstyear="1955">
+            <fixed month="June" day="20"/>
+            <goto weekday="Saturday" direction="nextinclusive"/> <!-- inclusive the 20th-->
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="fi" name="Eino Leinon päivä"/>
+        <description language="fi" name="Eino-Leino-Tag"/>
+        <definition>
+            <fixed month="July" day="6"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="fi" name="Aleksis Kiven päivä"/>
+        <description language="de" name="Aleksis Kivi-Tag"/>
+        <definition>
+            <fixed month="October" day="10"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="fi" name="Yhdistyneiden Kansakuntien päivä"/>
+        <description language="de" name="UNO Tag"/>
+        <definition>
+            <fixed month="October" day="24"/>
+        </definition>
+    </holiday>
+
+    <!-- Saturday between 31 October and 6 November -->
+    <holiday>
+        <description language="sv" name="Pyhäinpäivä"/>
+        <description language="en" name="All Saints' Day" type="public holiday"/>
+        <!--
+        <definition lastyear="????">
+            <fixed month="November" day="1"/>
+        </definition>
+        -->
+        <definition>
+            <fixed month="October" day="31"/>
+            <goto weekday="Saturday" direction="nextinclusive"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="fi" name="ruotsalaisuuden päivä"/>
+        <description language="de" name="Tag der schwedischen Kultur"/>
+        <definition>
+            <fixed month="November" day="6"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="fi" name="Isänpäivä"/>
+        <description language="en" name="Father's Day"/>
+        <description language="de" name="Vatertag"/>
+        <definition>
+            <rule nth="Second" weekday="Sunday" month="November"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="fi" name="Itsenäisyyspäivä"/>
+        <description language="de" name="Unabhängigkeitstag"/>
+        <description language="en" name="Independence Day" type="public"/>
+        <definition>
+            <fixed month="December" day="6"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="fi" name="Lucia-neito"/>
+        <description language="de" name="Luciatag"/>
+        <definition>
+            <fixed month="December" day="13"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="fi" name="Jouluaatto"/>
+        <description language="en" name="Christmas Eve" type="non official, de facto full holiday"/>
+        <definition>
+            <fixed month="December" day="24"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="fi" name="Joulupäivä"/>
+        <description language="en" name="Christmas Day" type="public"/>
+        <definition>
+            <fixed month="December" day="25"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="fi" name="Tapaninpäivä"/>
+        <description language="en"  name="St. Stephen's Day" type="public"/>
+        <definition>
+            <fixed month="December" day="26"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Begin Daylight Saving Time"/>
+        <definition>
+            <dst timezone="Europe/Helsinki" action="start"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="en" name="End Daylight Saving Time"/>
+        <definition>
+            <dst timezone="Europe/Helsinki" action="end"/>
+        </definition>
+    </holiday>
+
+</holidays>

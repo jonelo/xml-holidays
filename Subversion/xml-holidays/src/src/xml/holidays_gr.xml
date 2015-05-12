@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+<!-- 
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+-->
+<holidays country="GR">
+    <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Greece -->
+
+    <default language="gr"/>
+
+    <holiday>
+        <description language="gr" name="Πρωτοχρονιά / Protochronia"/>
+        <description language="en" name="New Year's Day" type="public holiday"/>
+        <import id="New Year's Day"/>
+    </holiday>
+    
+    <holiday>
+        <description language="gr" name="Θεοφάνεια / Theofania"/>
+        <description language="en" name="Epiphany" type="public holiday"/>
+        <definition>
+            <fixed month="January" day="6"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="gr" name="Τριών Ιεραρχών / Trion Ierarchon"/>
+        <description language="en" name="The Three Holy Hierarchs" type="school holiday only"/>
+        <definition>
+            <fixed month="January" day="30"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="gr" name="Καθαρή Δευτέρα / Kathari Devtera"/>
+        <description language="en" name="Ash Monday (eastern churches)" type="public holiday"/>
+        <definition>
+            <easter church="eastern"/>
+            <add days="-48"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="gr" name="Ευαγγελισμός Θεοτόκου / Eikosti-pempti Martiou"/>
+        <description language="en" name="25th of March" type ="public holiday"/>
+        <definition>
+            <fixed month="March" day="25"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="en" name="Begin Daylight Saving Time"/>
+        <definition>
+            <dst timezone="Europe/Athens" action="start"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="gr" name="Κυριακή του Πάσχα / Kyriaki tou Pascha"/>
+        <description language="en" name="Easter Sunday (eastern churches)"/>
+        <definition>
+            <easter church="eastern"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="gr" name="Δευτέρα του Πάσχα / Deutera tou Pascha"/>
+        <description language="en" name="Easter Monday (eastern churches)" type="public holiday"/>
+        <definition>
+            <easter church="eastern"/>
+            <add days="+1"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="gr" name="Εργατική Πρωτομαγιά / Ergatiki Protomagia"/>
+        <description language="en" name="Labour Day" type="public holiday"/>
+        <definition>
+            <fixed month="May" day="1"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="gr" name="Πνευματος / Pnevmatos"/>
+        <description language="en" name="Pentecost (eastern churches)" type="public holiday"/>
+        <definition>
+            <easter church="eastern"/>
+            <add days="+49"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="gr" name="Αγιου Πνευματος / Tou Agiou Pnevmatos"/>
+        <description language="en" name="Pentecost Monday (eastern churches)" type="public holiday"/>
+        <definition>
+            <easter church="eastern"/>
+            <add days="+50"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="gr" name="Η Κοίμησις της Θεοτόκου / Panaghias"/>
+        <description language="en" name="The Dormition of the Holy Virgin" type="public holiday"/>
+        <definition>
+            <fixed month="August" day="15"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="en" name="End Daylight Saving Time"/>
+        <definition>
+            <dst timezone="Europe/Athens" action="end"/>
+        </definition>
+    </holiday>
+    
+    <!-- http://en.wikipedia.org/wiki/Oxi_Day -->
+    <holiday>
+        <description language="gr" name="Το Όχι / To Ochi"/>
+        <description language="en" name="The Ochi day" type="public holiday"/>
+        <definition firstyear="1942">
+            <fixed month="October" day="28"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="gr" name="Πολυτεχνείο / Polytechneio"/>
+        <description language="en" name="Polytechneio" type="school holiday only"/>
+        <definition firstyear="1973">
+            <fixed month="November" day="17"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="gr" name="Χριστούγεννα / Christougenna"/>
+        <description language="en" name="Christmas Day" type="public holiday"/>
+        <definition>
+            <fixed month="December" day="25"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="gr" name="Σύναξις Θεοτόκου / Synaxis Theotokou"/>
+        <description language="en" name="Boxing Day" type="public holiday"/>
+        <definition>
+            <fixed month="December" day="26"/>
+        </definition>
+    </holiday>
+</holidays>

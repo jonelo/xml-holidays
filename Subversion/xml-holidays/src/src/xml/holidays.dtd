@@ -1,0 +1,204 @@
+<!-- 
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+ -->
+ 
+<!ENTITY % months "January | February | March | April |
+                   May | June | July | August | September |
+                   October | November | December">
+<!ENTITY % weekdays "Monday | Tuesday | Wednesday | Thursday |
+                     Friday | Saturday | Sunday">
+<!ENTITY % nth "First | Second | Third | Fourth | Last">
+<!ENTITY % startdate "fixed | easter | advent | rule | dst | equinox | solstice">
+<!ENTITY % modifiers "add | goto">
+<!ENTITY % directions "nearest | next | nextinclusive | previous | previousinclusive">
+
+<!--
+  The element called holidays must have at least one element called holiday
+  "country"         the ID of the country
+                    use ISO 3166-1-alpha-2 code in uppercase characters
+                    if applicable
+  -->
+<!ELEMENT holidays (default+,holiday+)>
+<!ATTLIST holidays
+          country CDATA #REQUIRED>
+
+   <!--
+     The default element specifies a language which is common in a country
+     "language"      specify the language for a holiday name.
+                     Use ISO 639-1-alpha-2 code in lowercase characters
+                     if applicable.
+    -->
+   <!ELEMENT default EMPTY>
+   <!ATTLIST default
+             language CDATA #REQUIRED>
+   <!--
+     A holiday can have one import element or a combination of both definitions
+     and code
+     "id"            an optional identification (holiday is usually identified
+                     by the holiday name)
+     "valid"         indicates whether the holiday is still valid or not
+                     (use false if it is a history or obsolete holiday)
+   -->
+   <!ELEMENT holiday (description+,(import|definition+))>
+   <!ATTLIST holiday
+             id CDATA #IMPLIED
+             valid (true|false) "true">
+
+      <!-- 
+        "language"   the language in which the name of the holiday is expressed
+        "name"       the name of the holiday expressed in "language"
+        "type"       free text, it should further describe the type of the
+                     holiday (e.g. legal holiday, de facto legal holiday,
+                     katholic, etc.)
+        "region"     free text, the region of the holiday if applicable
+        -->
+      <!ELEMENT description EMPTY>
+      <!ATTLIST description
+                language CDATA #REQUIRED
+                name CDATA #REQUIRED
+                type CDATA #IMPLIED
+                region CDATA #IMPLIED>
+
+      <!--
+        An import element imports the definitions of a holiday from the
+        file called holidays_shared.xml
+      -->
+      <!ELEMENT import EMPTY>
+      <!ATTLIST import
+                id CDATA #REQUIRED>
+
+      <!--
+        The definition is either
+        * undefined or 
+        * unkonwn or
+        * it is a startdate, followed by a modifier or a condition
+      -->
+      <!ELEMENT definition (undefined | unknown | ((%startdate;),(%modifiers; | condition)*))>
+      <!--
+        year       the year when the holiday is valid,
+                   same as if firstyear equals lastyear
+                   the frequency, firstyear and lastyear are being ignored
+                   if year is set
+        firstyear  the first year when the holiday is valid (inclusively)
+        lastyear   the last year when the holiday was valid (inclusively)
+        frequency  how many years must pass, until the next year is valid?
+                   (the actual start of the frequency depends on the firstyear
+                   respectively on the lastyear if firstyear is not set)
+        ifweekday  only valid if the date is on a particular weekday.
+        ifdaytype  only valid if the type of the date is of a particular type.
+        ifdayofmonth only valid if the day is a particular day of a month
+      -->
+      <!ATTLIST definition
+                year CDATA #IMPLIED
+                firstyear CDATA #IMPLIED
+                lastyear CDATA #IMPLIED
+                frequency CDATA #IMPLIED>
+      <!--
+        a condition can be undefined, unknown or it can have multiple modifiers
+      -->
+      <!ELEMENT condition (undefined | unknown | (%modifiers;)*)>
+      <!ATTLIST condition
+                ifweekday (%weekdays;) #IMPLIED
+                ifdaytype CDATA #IMPLIED
+                ifdayname CDATA #IMPLIED
+                ifdayofmonth CDATA #IMPLIED
+                language CDATA #IMPLIED>
+          
+      <!--
+        The undefined element says that a holiday wasn't/isn't
+        defined during the years of the definition
+      -->
+      <!ELEMENT undefined EMPTY>
+          
+      <!--
+        The empty element defines that we don't know the definition
+      -->
+      <!ELEMENT unknown EMPTY>
+
+      <!--
+        The fixed element defines a fixed date
+      -->
+      <!ELEMENT fixed EMPTY>
+      <!ATTLIST fixed 
+	        month (%months;) #REQUIRED
+	        day CDATA #REQUIRED>
+
+      <!--
+        The Daylight Saving Time (dst) definition
+        action defines whether the DST starts or whether the DST ends
+      -->
+      <!ELEMENT dst EMPTY>
+      <!ATTLIST dst
+                timezone CDATA #REQUIRED
+                action (start|end) #IMPLIED>
+
+      <!--
+        This is the startdate of Easter
+        Western churches use the Gregorian Calendar to calculate the date
+        of Easter and Eastern Orthodox churches use the Julian Calendar
+      -->
+      <!ELEMENT easter EMPTY>
+      <!ATTLIST easter
+                church (western|eastern) "western">
+
+      <!--
+        This is the startdate of the 1st advent
+      -->
+      <!ELEMENT advent EMPTY>
+
+      <!--
+        http://en.wikipedia.org/wiki/Equinox
+        "March equinox" and "September equinox"
+        Names avoid the classical Northern Hemisphere bias implied by the
+        assumption that March is in springtime and September is in autumn;
+        only true for those in the Northern Hemisphere but actually the
+        complete opposite for dwellers in the Southern Hemisphere.
+      -->          
+      <!ELEMENT equinox EMPTY>
+      <!ATTLIST equinox
+                month (March|September) #REQUIRED
+                timezone CDATA #REQUIRED>
+          
+      <!--
+        http://en.wikipedia.org/wiki/Solstice
+      -->
+      <!ELEMENT solstice EMPTY>
+      <!ATTLIST solstice
+                month (June|December) #REQUIRED
+                timezone CDATA #REQUIRED>
+        
+      <!--
+        The rule defines the nth weekday of a month
+      -->
+      <!ELEMENT rule EMPTY>
+      <!ATTLIST rule
+                nth (%nth;) #REQUIRED
+                weekday (%weekdays;) #REQUIRED
+                month (%months;) #REQUIRED>
+      <!--
+        The add modifier
+        the "add" property value can become positive or negative
+      -->
+      <!ELEMENT add EMPTY>
+      <!ATTLIST add
+                days CDATA #REQUIRED>
+        
+      <!--
+        The goto modifier
+        moves to the next, previous or nearest weekday
+        the direction can become
+        nearest           - the nearest weekday, go not more than 3 days
+                            in one direction
+        next              - the next weekday
+        nextinclusive     - a goto action happens only if the current
+                            weekday is not the specified weekday
+        previous          - the previous weekday
+        previousinclusive - a goto action happens only if the current
+                            weekday is not the specified weekday
+      -->
+      <!ELEMENT goto EMPTY>
+      <!ATTLIST goto
+                weekday (%weekdays;) #REQUIRED
+                direction (%directions;) "nearest">

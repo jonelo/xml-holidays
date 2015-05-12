@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+<!-- 
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+-->
+<holidays country="AM">
+    <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Armenia 
+         http://www.armeniadiaspora.com/travel/holidays.html
+    -->
+
+    <holiday name="Ամանօր" type="public">
+        <import name="New Year's Day"/>
+    </holiday>
+    
+    <holiday name="Սուրբ Ծնունդ" type="public" international="Christmas Day">
+        <definition>
+            <fixed day="6" month="January"/>
+        </definition>
+    </holiday> 
+    
+    <!-- In celebration of Armenian Army formation on that day in 1992 -->
+    <holiday name="Բանակի օր" type="public" international="Army Day">
+        <definition firstyear="1992">
+            <fixed day="28" month="January"/>
+        </definition>
+    </holiday> 
+    
+    <!-- Armenian Genocide in 1915 -->
+    <holiday name="Եղեռնի զոհերի հիշատակի օր" type="public" international="Genocide Remembrance Day">
+        <definition firstyear="1915">
+            <fixed day="24" month="April"/>
+        </definition>
+    </holiday>
+    
+    <!-- Victory Day (World War II) was a holiday throughout the USSR and is
+         still an official holiday in Armenia. -->
+    <holiday name="Հաղթանակի եւ Խաղաղության տոն" type="public" international="Victory and Peace Day">
+        <!-- TODO: firstyear="????" -->
+        <definition>
+            <fixed day="9" month="May"/>
+        </definition>
+    </holiday>
+    
+    <!-- Establishment of the Democratic Republic of Armenia -->
+    <holiday name="Հանրապետության օր" type="public" international="Republic Day">
+        <!-- TODO: firstyear="????" -->
+        <definition>
+            <fixed day="28" month="May"/>
+        </definition>
+    </holiday>
+
+    <holiday name="Սահմանադրության օր" type="public" international="Constitution Day">
+        <definition firstyear="1995">
+            <fixed day="5" month="July"/>
+        </definition>
+    </holiday>
+
+    <!-- From the Soviet Union in 1991 -->
+    <holiday name="Անկախության օր" type="public" international="Independence Day">
+        <definition firstyear="1991">
+            <fixed day="21" month="September"/>
+        </definition>
+    </holiday>
+    
+    <!-- A devastating earthquake in 1988 killed thousands of people and
+         destroyed most of the Republic’s infrastructure. -->
+    <holiday name="Երկրաշարժի զոհերի հիշատակի օր" type="public" international="Spitak Remembrance Day">
+        <definition firstyear="1988">
+            <fixed day="7" month="December"/>
+        </definition>
+    </holiday>
+    
+    <!-- On the fourth Sunday preceding Dormition (15 August), a special
+         celebration called Vardevar (Վարդևար) takes place, where anyone is free
+         to soak others with water from spray guns, hoses or even buckets. -->
+    <holiday name="Վարդևար" international="Vardevar">
+        <definition>
+            <fixed day="15" month="August"/>
+            <goto direction="previous" weekday="Sunday"/>
+            <add days="-21"/> <!-- 3*7 = 28 -->
+        </definition>
+    </holiday>
+    
+</holidays>

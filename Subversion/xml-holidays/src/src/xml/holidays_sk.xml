@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+
+<holidays country="SK">
+    <!-- Slowak. Republik http://feiertagskalender.ch/index.php?geo=3453&jahr=2008&klasse=5&hl=de&hidepast=0-->
+
+    <holiday name="Deň vzniku Slovenskej republiky" type="gesetzlich">
+        <definition>
+            <fixed month="January" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="Zjavenie Pána" type="gesetzlich" international="Epiphany">
+        <definition>
+            <fixed month="January" day="6"/>
+        </definition>
+    </holiday>
+    <holiday name="Valentinstag">
+        <import name="Valentine's Day"/>
+    </holiday>
+    <holiday name="Beginn der Sommerzeit (Uhren 1 h vorstellen)" international="Begin Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Bratislava" action="start"/>
+        </definition>
+    </holiday>
+    <holiday name="Veľký piatok" type="gesetzlich" international="Good Friday">
+        <definition>
+            <easter/>
+            <add days="-2"/>
+        </definition>
+    </holiday>
+    <holiday name="Veľkonočná nedeľa" type="gesetzlich">
+        <import name="Easter Sunday"/>
+    </holiday>
+    <holiday name="Veľkonočný pondelok" type="gesetzlich">
+        <import name="Easter Monday"/>
+    </holiday>
+    <holiday name="Sviatok práce" type="gesetzlich" international="Labor Day">
+        <definition>
+            <fixed month="May" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="Výročie úmrtia M. R. ŝtefánika (Anniversary of the Decease of M. R. ŝtefánika)">
+        <definition>
+            <fixed month="May" day="4"/>
+        </definition>
+    </holiday>
+    <holiday name="Deň víťazstva nad faŝizmom (End of World War II)" type="gesetzlich">
+        <definition>
+            <fixed month="May" day="8"/>
+        </definition>
+    </holiday>
+    <holiday name="Muttertag">
+        <!-- 2. Sonntag im Mai -->
+        <definition>
+            <rule nth="Second" weekday="Sunday" month="May"/>
+        </definition>
+    </holiday>
+    <holiday name="Sviatok svätého Cyrila a Metoda (St. Cyril and St. Methodius Day)" type="gesetzlich">
+        <definition>
+            <fixed month="July" day="5"/>
+        </definition>
+    </holiday>
+    <holiday name="Výročie SNP (National Uprising Day)" type="gesetzlich">
+        <definition>
+            <fixed month="August" day="29"/>
+        </definition>
+    </holiday>
+    <holiday name="Deň Ústavy Slovenskej republiky (Constitution Day)" type="gesetzlich">
+        <definition>
+            <fixed month="September" day="1"/>
+        </definition>
+    </holiday>
+    <holiday name="Deň obetí holokaustu a rasového násilia (Day of the Victims of Holocaust and of racial violence)">
+        <definition>
+            <fixed month="September" day="9"/>
+        </definition>
+    </holiday>
+    <holiday name="Sedembolestná Panna Mária (The Day of the Virgin Mary of the Seven Sorrows)" type="gesetzlich">
+        <definition>
+            <fixed month="September" day="15"/>
+        </definition>
+    </holiday>
+    <holiday name="Deň vzniku Slovenskej národnej rady (Day of the First Public Appearance of the Slovak National Council)">
+        <definition>
+            <fixed month="September" day="19"/>
+        </definition>
+    </holiday>
+    <holiday name="Deň obetí Dukly (Dukla Pass Victims Day)">
+        <definition>
+            <fixed month="October" day="6"/>
+        </definition>
+    </holiday>
+    <holiday name="Ende der Sommerzeit (Uhren 1 h zurückstellen)" international="End Daylight Saving Time">
+        <definition>
+            <dst timezone="Europe/Bratislava" action="end"/>
+        </definition>
+    </holiday>
+    <holiday name="Deň černovskej tragédie (Černová Tragedy Day)">
+        <definition>
+            <fixed month="October" day="27"/>
+        </definition>
+    </holiday>
+    <holiday name="Deň vzniku samostatného Česko-slovenského Ŝtátu (Day of the Establishment of an Independent Czecho-Slovak State)">
+        <definition>
+            <fixed month="October" day="28"/>
+        </definition>
+    </holiday>
+    <holiday name="Deň narodenia Ľ. Ŝtúra (Birth of Ľudovít Ŝtúr Day)">
+        <definition>
+            <fixed month="October" day="29"/>
+        </definition>
+    </holiday>
+    <holiday name="Výročie Deklarácie slovenského národa (Anniversary of the Declaration of the Slovak Nation)">
+        <definition>
+            <fixed month="October" day="30"/>
+        </definition>
+    </holiday>
+    <holiday name="Deň reformácie (Reformation Day)">
+        <definition>
+            <fixed month="October" day="31"/>
+        </definition>
+    </holiday>
+    <holiday name="Sviatok vŝetkých svätých" type="gesetzlich" international="All Saints">
+        <!-- All Saint's Day is a Christian holy day observed by many Western churches on November 1 -->
+        <import name="All Saints’ Day"/>
+    </holiday>
+    <holiday name="Deň boja za slobodu a demokraciu (Day of the Fight for Freedom and Democracy)" type="gesetzlich">
+        <definition>
+            <fixed month="November" day="17"/>
+        </definition>
+    </holiday>
+    <holiday name="Ŝtedrý deň" type="gesetzlich" international="Christmas Eve">
+        <import name="Christmas Eve"/>
+    </holiday>
+    <holiday name="Prvý sviatok vianočný" type="gesetzlich" international="Christmas Day">
+        <definition>
+            <fixed month="December" day="25"/>
+        </definition>
+    </holiday>
+    <holiday name="Druhý sviatok vianočný" type="gesetzlich" international="Boxing Day">
+        <definition>
+            <fixed month="December" day="26"/>
+        </definition>
+    </holiday>
+    <holiday name="Deň vyhlásenia Slovenska za samostatnú cirkevnú (Day of the Declaration of Slovakia as an Independent Ecclesiastic Province)">
+        <definition>
+            <fixed month="December" day="30"/>
+        </definition>
+    </holiday>
+</holidays>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+<!-- 
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+-->
+<holidays country="FR">
+    <!-- http://en.wikipedia.org/wiki/Public_holidays_in_France -->
+
+    <default language="fr"/>
+
+    <holiday>
+        <description language="fr" name="Jour de l'An"/>
+        <description language="en" name="New Year's Day"/>
+        <import id="New Year's Day"/>
+    </holiday>
+    
+    <holiday>
+        <description language="fr" name="Saint-Valentin"/>
+        <description language="en" name="Valentine's Day"/>
+        <import id="Valentine's Day"/>
+    </holiday>
+    
+    <holiday>
+        <description language="fr" name="Équinoxe mars"/>
+        <definition>
+            <equinox month="March" timezone="Europe/Paris"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="en" name="Begin Daylight Saving Time"/>
+        <definition>
+            <dst timezone="Europe/Paris" action="start"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="fr" name="Pâques"/>
+        <import id="Easter Sunday"/>
+    </holiday>   
+    
+    <holiday>
+        <description language="fr" name="Lundi de Pâques"/>
+        <import id="Easter Monday"/>
+    </holiday>
+    
+    <holiday>
+        <description language="fr" name="Fête du Travail"/>
+        <description language="en" name="Labour Day" type="public holiday"/>
+        <definition>
+            <fixed month="May" day="1"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="fr" name="Ascension"/>
+        <description language="en" name="Ascension Day"/>
+        <definition>
+            <easter/>
+            <add days="+39"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="fr" name="Victoire 1945"/>
+        <description language="en" name="V-E Day"/>
+        <definition firstyear="1945">
+            <fixed month="May" day="8"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="fr" name="Pentecôte"/>
+        <import id="Pentecost"/>
+    </holiday>
+    
+    <holiday>
+        <description language="fr" name="Lundi de Pentecôte"/>
+        <description language="en" name="Whit Monday"/>
+        <import id="Whit Monday"/>
+    </holiday>
+    
+    <!-- http://fr.wikipedia.org/wiki/F%C3%AAte_des_M%C3%A8res -->
+    <!-- http://en.wikipedia.org/wiki/Mother%27s_Day#Dates_around_the_world -->
+    <holiday>
+        <description language="fr" name="Fête des Mères"/>
+        <description language="en" name="Mother's Day"/>
+        <definition>
+            <rule nth="Last" weekday="Sunday" month="May"/>
+            <condition language="fr" ifdayname="Pentecôte">
+                <!-- First Sunday of June if Pentecost occurs on this day -->
+                <add days="7"/>
+            </condition>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="fr" name="Solstice juin"/>
+        <definition>
+            <solstice month="June" timezone="Europe/Paris"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="fr" name="Fête Nationale"/>
+        <description language="en" name="Bastille Day"/>
+        <definition>
+            <fixed month="July" day="14"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="fr" name="Assomption"/>
+        <description language="en" name="Assumption of Mary"/>
+        <definition>
+            <fixed month="August" day="15"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="fr" name="Équinoxe sept"/>
+        <definition>
+            <equinox month="September" timezone="Europe/Paris"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="en" name="End Daylight Saving Time"/>
+        <definition>
+            <dst timezone="Europe/Paris" action="end"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="fr" name="Toussaint"/>
+        <description language="en" name="All Saint's Day"/>
+        <import id="All Saint's Day"/>
+    </holiday>
+    
+    <holiday>
+        <description language="fr" name="Armistice 1918"/>
+        <description language="en" name="Veterans Day"/>
+        <definition firstyear="1918">
+            <fixed month="November" day="11"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="fr" name="Solstice déc"/>
+        <definition>
+            <solstice month="December" timezone="Europe/Paris"/>
+        </definition>
+    </holiday> 
+    
+    <holiday>
+        <description language="fr" name="Noël"/>
+        <description language="en" name="Christmas Day"/>
+        <import id="Christmas Day"/>
+    </holiday>
+    
+    <holiday>
+        <description language="fr" name="La Saint-Sylvestre"/>
+        <description language="en" name="New Year's Eve"/>
+        <import id="New Year's Eve"/>
+    </holiday>
+    
+</holidays>

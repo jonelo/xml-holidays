@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+<!--
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+-->
+<holidays country="AT">
+    <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Austria.html#Austria -->
+
+    <default language="de"/>
+
+    <holiday>
+        <description language="de" name="Neujahrstag" type="gesetzlich"/>
+        <import id="New Year's Day"/>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Hl. Drei Könige"/>
+        <description language="en" name="Three Kings Day"/>
+        <definition>
+            <fixed month="January" day="6"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Josef"
+                     type="lokal" region="Kärnten, Steiermark, Tirol, Vorlarlberg"/>
+        <definition>
+            <fixed month="March" day="19"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Beginn der Sommerzeit (Uhren 1 h vorstellen)"/>
+        <description language="en" name="Start Daylight Saving Time"/>
+        <definition>
+            <dst timezone="Europe/Vienna" action="start" />
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Karfreitag"/>
+        <import id="Good Friday"/>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Ostersonntag (Ostern)"/>
+        <import id="Easter Sunday"/>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Ostermontag"/>
+        <import id="Easter Monday"/>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Staatsfeiertag (Tag der Arbeit)"/>
+        <description language="en" name="Labour Day"/>
+        <definition>
+            <fixed day="1" month="May" />
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Florian"
+                     type="lokal" region="Oberösterreich"/>
+        <definition>
+            <fixed day="4" month="May" />
+        </definition>
+    </holiday>
+
+    <!-- http://de.wikipedia.org/wiki/Muttertag#.C3.96sterreich -->
+    <holiday>
+        <description language="de" name="Muttertag"/>
+        <description language="en" name="Mother's Day"/>
+        <definition firstyear="1924">
+            <rule nth="Second" weekday="Sunday" month="May"/>
+        </definition>
+    </holiday>
+
+    <!-- http://de.wikipedia.org/wiki/Vatertag#.C3.96sterreich -->
+    <holiday>
+        <description language="de" name="Vatertag"/>
+        <description language="en" name="Father's Day"/>
+        <definition firstyear="1955">
+            <rule nth="Second" weekday="Sunday" month="June"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Christi Himmelfahrt"/>
+        <import id="Ascension of Jesus"/>
+    </holiday>
+
+    <holiday>
+         <description language="de" name="Pfingstsonntag (Pfingsten)"/>
+        <import id="Pentecost"/>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Pfingstmontag"/>
+        <import id="Whit Monday"/>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Fronleichnam"/>
+        <import id="Corpus Christi"/>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Mariä Himmelfahrt"/>
+        <definition>
+            <fixed day="15" month="August" />
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Rupert" type="lokal" region="Salzburg"/>
+        <definition>
+            <fixed day="24" month="September" />
+        </definition>
+    </holiday>
+
+    <!-- http://de.wikipedia.org/wiki/Tag_des_offenen_Denkmals -->
+    <holiday>
+        <description language="de" name="Tag des Denkmals" type="kulturell"/>
+        <description language="en" name="European Heritage Days" type="cultural"/>
+        <definition firstyear="1996">
+            <rule nth="Last" weekday="Sunday" month="September"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Tag der Volksabstimmung" type="lokal" region="Kärnten"/>
+        <definition firstyear="1920">
+            <fixed day="10" month="October" />
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Nationalfeiertag"/>
+        <definition firstyear="1965">
+            <fixed day="26" month="October" />
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="End Daylight Saving Time"/>
+        <description language="de" name="Ende der Sommerzeit (Uhren 1 h zurückstellen)"/>
+        <definition>
+            <dst timezone="Europe/Vienna" action="end" />
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Weltspartag (gefeiert)"/>
+        <import id="Weltspartag (gefeiert)"/>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Weltspartag (offiziell)"/>
+        <import id="Weltspartag (offiziell)"/>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Allerheiligen"/>
+        <import id="All Saints' Day"/>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Martin" type="lokal" region="Burgenland"/>
+        <definition>
+            <fixed day="11" month="November"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Leopold" type="lokal" region="Niederösterreich, Wien"/>
+        <definition>
+            <fixed day="15" month="November"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Mariä Empfängnis"/>
+        <description language="en" name="Immaculate Conception"/>
+        <definition>
+            <fixed day="8" month="December"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Heiliger Abend"/>
+        <definition>
+            <fixed day="24" month="December"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Christtag"/>
+        <import id="Christmas Day"/>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Stefanitag"/>
+        <definition>
+            <fixed day="26" month="December"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Silvester"/>
+        <import id="New Year's Eve"/>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Frühlingsanfang"/>
+        <description language="en" name="Equinox March"/>
+        <definition>
+            <equinox month="March" timezone="Europe/Vienna"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="de" name="Sommeranfang (Sommersonnenwende)"/>
+        <description language="en" name="Solstice June"/>
+        <definition>
+            <solstice month="June" timezone="Europe/Vienna"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="de" name="Herbstanfang"/>
+        <description language="en" name="Equinox September"/>
+        <definition>
+            <equinox month="September" timezone="Europe/Vienna"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Winteranfang (Wintersonnenwende)"/>
+        <description language="en" name="Solstice December"/>
+        <definition>
+            <solstice month="December" timezone="Europe/Vienna"/>
+        </definition>
+    </holiday>
+</holidays>

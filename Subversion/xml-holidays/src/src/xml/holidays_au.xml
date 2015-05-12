@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+<!--
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+-->
+<holidays country="AU">
+    <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Australia -->
+
+    <default language="en"/>
+
+    <holiday>
+        <description language="en" name="New Year" type="public holiday"/>
+        <definition>
+            <fixed month="January" day="1"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Australia Day" type="public holiday"/>
+        <definition firstyear="1788">
+            <fixed month="January" day="26" />
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Royal Hobart Regatta" type="publich holiday, regional" region="Tasmania, Hobart area only"/>
+        <definition>
+            <rule nth="Second" weekday="Monday" month="February"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Labour Day" type="publich holiday, regional" region="Western Australia only"/>
+        <definition>
+            <rule nth="First" weekday="Monday" month="March"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Adelaide Cup" type="publich holiday, regional" region="South Australia"/>
+        <definition>
+            <rule nth="Second" weekday="Monday" month="March"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Canberra Day" type="publich holiday, regional" region="Australian Capital Territory"/>
+        <definition>
+            <rule nth="Second" weekday="Monday" month="March"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Eight Hours Day" type="publich holiday, regional" region="Tasmania"/>
+        <definition>
+            <rule nth="Second" weekday="Monday" month="March"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Labour Day" type="public holiday, regional" region="Victoria"/>
+        <definition>
+            <rule nth="Second" weekday="Monday" month="March"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Good Friday" type="public holiday"/>
+        <definition>
+            <easter/>
+            <add days="-2"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Easter Saturday (Holy Saturday)" type="public holiday"/>
+        <definition>
+            <easter/>
+            <add days="-1"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Easter Sunday" type="public holiday"/>
+        <import id="Easter Sunday"/>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Easter Monday" type="public holiday"/>
+        <import id="Easter Monday"/>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Easter Monday" type="public holiday, regional" region="Tasmania"/>
+        <import id="Easter Tuesday"/>
+    </holiday>
+
+
+    <holiday>
+        <description language="en" name="Anzac Day" type="public holiday"/>
+        <definition firstyear="1916">
+            <fixed month="April" day="25"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Labour Day" type="public holiday, regional" region="Queensland only"/>
+        <definition>
+            <rule nth="First" weekday="Monday" month="May"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="May Day" type="publich holiday, regional" region="Northern Territory only"/>
+        <definition>
+            <rule nth="First" weekday="Monday" month="May"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Mother's Day"/>
+        <description language="de" name="Muttertag"/>
+        <definition firstyear="1924">
+            <rule nth="Second" weekday="Sunday" month="May"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Foundation Day" type="publich holiday, regional" region="Western Australia only"/>
+        <definition>
+            <rule nth="First" weekday="Monday" month="June"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Queen's Birthday" type="publich holiday, regional" region="all exept Western Australia"/>
+        <definition>
+            <rule nth="Second" weekday="Monday" month="June"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Picnic Day" type="publich holiday, regional" region="Northern Territory"/>
+        <definition>
+            <rule nth="First" weekday="Monday" month="August"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Labour Day" type="public holiday, regional" region="ACT, NSW, SA"/>
+        <definition>
+            <rule nth="First" weekday="Monday" month="October"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Recreation Day" type="public holiday, regional" region="Tasmania, Not Hobart area"/>
+        <definition>
+            <rule nth="First" weekday="Monday" month="November"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Family &amp; Community Day" type="public holiday, regional" region="ACT"/>
+        <definition>
+            <rule nth="First" weekday="Tuesday" month="November"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Melbourne Cup Day" type="publich holiday, regional" region="Victoria only"/>
+        <definition>
+            <rule nth="First" weekday="Tuesday" month="November"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Christmas Day" type="public holiday"/>
+        <definition>
+            <fixed month="December" day="25"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Boxing Day" type="public holiday" region="all, except South Australia"/>
+        <definition>
+            <fixed month="December" day="26"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Proclamation Day" type="public holiday" region="South Australia only"/>
+        <definition>
+            <fixed month="December" day="26"/>
+        </definition>
+    </holiday>
+
+</holidays>
