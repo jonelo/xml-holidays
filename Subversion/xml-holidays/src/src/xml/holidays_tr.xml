@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+<!-- 
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+-->
+<holidays country="TR">
+    <!--
+       Holidays in Turkey
+       http://en.wikipedia.org/wiki/Public_holidays_in_Turkey
+    -->
+    <holiday name="Yılbaşı"
+             international="New Year's Day"
+             type="national holiday">
+        <definition>
+            <fixed day="1" month="January"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Ulusal Egemenlik ve Çocuk Bayramı"
+             international="National Sovereignty and Children's Day"
+             type="national holiday">
+        <definition>
+            <fixed day="23" month="April"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Atatürk'ü Anma, Gençlik ve Spor Bayramı"
+             international="Commemoration of Atatürk, Youth and Sports Day"
+             type="national holiday">
+        <definition>
+            <fixed day="19" month="May"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Zafer Bayramı"
+             international="Victory Day"
+             type="national holiday">
+        <definition>
+            <fixed day="30" month="August"/>
+        </definition>
+    </holiday>
+    
+    <holiday name="Cumhuriyet Bayramı"
+             international="Republic Day"
+             type="national holiday">
+        <definition>
+            <fixed day="29" month="October"/>
+        </definition>
+    </holiday>
+    
+    
+    <holiday name="Ramazan Bayramı or Şeker Bayramı"
+             international="Ramadan Feast"
+             type="Islamic religious holiday">
+        <definition>
+            <unknown/> <!-- TODO -->
+        </definition>
+    </holiday>
+    
+    <holiday name="Kurban Bayramı"
+             international="Sacrifice Feast"
+             type="Islamic religious holiday">
+        <definition>
+            <unknown/> <!-- TODO -->
+        </definition>
+    </holiday>
+    
+</holidays>

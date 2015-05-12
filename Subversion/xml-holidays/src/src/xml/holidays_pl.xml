@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+<!--
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+-->
+<holidays country="PL">
+    <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Poland -->
+
+    <default language="pl"/>
+
+    <holiday>
+        <description language="en" name="Nowy Rok" type="public holiday"/>
+        <description language="en" name="New Year's Day"/>
+        <definition>
+            <fixed month="January" day="1"/>
+        </definition>
+    </holiday>
+
+    <!-- In February 2004, 2 May was named Flag Day; it was not, however,
+         made a public holiday. -->
+    <holiday>
+        <description language="pl" name="Dzień Flagi Rzeczypospolitej Polskiej"/>
+        <description language="en" name="Flag of the Republic of Poland Day (Flag Day)" type="non public holiday"/>
+        <definition firstyear="2004">
+            <fixed month="February" day="2"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Easter Sunday" type="public holiday"/>
+        <description language="pl" name="pierwszy dzień Wielkiej Nocy"/>
+        <import id="Easter Sunday"/>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Easter Monday" type="public holiday"/>
+        <description language="pl" name="drugi dzień Wielkiej Nocy"/>
+        <import id="Easter Monday"/>
+    </holiday>
+
+    <holiday>
+        <description language="pl" name="Święto Państwowe" type="public holiday"/>
+        <description language="en" name="State Holiday"/>
+        <definition>
+            <fixed month="May" day="1"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="pl" name="Święto Narodowe Trzeciego Maja" type="public holiday"/>
+        <description language="en" name="Constitution Day"/>
+        <definition>
+            <fixed month="May" day="3"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Pentecost"/>
+        <description language="pl" name="pierwszy dzień Zielonych Świątek" type="public holiday"/>
+        <import id="Pentecost"/>
+    </holiday>
+
+    <holiday>
+        <description language="pl" name="dzień Bożego Ciała (Boże Ciało)" type="public holiday, catholic"/>
+        <description language="en" name="Corpus Christi"/>
+        <definition>
+            <easter/>
+            <add days="+60"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="pl" name="Wniebowzięcie Najświętszej Maryi Panny" type="public holiday"/>
+        <description language="en" name="Assumption of the Blessed Virgin Mary"/>
+        <definition>
+            <fixed month="August" day="15"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="pl" name="Wszystkich Świętych"/>
+        <description language="en" name="All Saint's Day" type="public holiday"/>
+        <import id="All Saint's Day"/>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Narodowe Święto Niepodległości" type="public holiday"/>
+        <description language="en" name="Independence Day"/>
+        <definition firstyear="1918">
+        	<fixed month="November" day="11" />
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="pl" name="pierwszy dzień Bożego Narodzenia"/>
+        <description language="en" name="1st day of Christmas" type="public holiday"/>
+        <definition>
+            <fixed month="December" day="25"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="pl" name="drugi dzień Bożego Narodzenia"/>
+        <description language="en" name="2nd day of Christmas" type="public holiday"/>
+        <definition>
+            <fixed month="December" day="26"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="DST start"/>
+        <definition>
+            <dst timezone="Europe/Warsaw" action="start"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="End Daylight Saving Time"/>
+        <definition>
+            <dst timezone="Europe/Warsaw" action="end"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Frühlingsanfang"/>
+        <description language="en" name="Equinox March"/>
+        <definition>
+            <equinox month="March" timezone="Europe/Warsaw"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Sommeranfang (Sommersonnenwende)"/>
+        <description language="en" name="Solstice June"/>
+        <definition>
+            <solstice month="June" timezone="Europe/Warsaw"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Herbstanfang"/>
+        <description language="en" name="Equinox September"/>
+        <definition>
+            <equinox month="September" timezone="Europe/Warsaw"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Winteranfang (Wintersonnenwende)"/>
+        <description language="en" name="Solstice December"/>
+        <definition>
+            <solstice month="December" timezone="Europe/Warsaw"/>
+        </definition>
+    </holiday>
+
+
+</holidays>
+

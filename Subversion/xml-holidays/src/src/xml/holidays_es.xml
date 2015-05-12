@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+<!-- 
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+-->
+<holidays country="ES">
+    <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Spain -->
+
+    <default language="es"/>
+
+    <holiday>
+        <description language="es" name="Año Nuevo"/>
+        <description language="en" name="New Year's Day" type="National holiday"/>
+        <import id="New Year's Day"/>
+    </holiday>
+    
+    <holiday>
+        <description language="en" name="Día de Reyes / Epifanía del Señor" region="CM, CE, AN, M, S, O, ML"/>
+        <description language="en" name="Epiphany" region="CM, CE, AN, M, S, O, ML"/>
+        <definition>
+            <fixed day="6" month="January"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="es" name="Día de Andalucía"/>
+        <description language="en" name="Day of Andalucía" type="cultural, regional" region="Andalucía (AN)"/>
+        <definition>
+            <fixed day="28" month="February"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="Día de las Islas Baleares"/>
+        <description language="en" name="Day of the Balearic Islands" type="cultural, regional" region="Islas Baleares (IB)"/>
+        <definition>
+            <fixed day="1" month="March"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="San José"/>
+        <description language="en" name="Father's Day" type="regional" region="Castile-La Mancha, Madrid, Murcia and Valencia"/>
+        <definition>
+            <fixed day="19" month="March"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="Equinocio de marzo"/>
+        <description language="en" name="Vernal equinox"/>
+        <definition>
+            <equinox month="March" timezone="Europe/Madrid"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="Jueves Santo"/>
+        <description language="en" name="Holy Thursday" type="All regions except Canary Islands, Catalonia and Valencia (CE, LO, EX, AR, GA, IB, M, CN, ML, CL, MU, O, NA, CM, AN, PV)"/>
+        <definition>
+            <easter/>
+            <add days="-3"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="Viernes Santo"/>
+        <description language="en" name="Good Friday" type="National holiday"/>
+        <import id="Good Friday"/>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="Pascua"/>
+        <description language="en" name="Easter Sunday"/>
+        <import id="Easter Sunday"/>
+    </holiday>
+
+    <holiday>
+        <description language="es" name="Lunes de Pascua"/>
+        <description language="en" name="Easter Monday" region="Basque Country, Catalonia, Navarra, Valencia"/>
+        <import id="Easter Monday"/>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="Cambio de horario de verano"/>
+        <description language="en" name="Begin Daylight Saving Time"/>
+        <definition>
+            <dst timezone="Europe/Madrid" action="start"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="Día de Aragón" region="Aragón"/>
+        <description language="en" name="Día de Aragón" type="cultural, regional" region="Aragón"/>
+        <definition>
+            <fixed day="23" month="April"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="San Jorge"/>
+        <description language="en" name="St. George's Day" type="regional" region="Aragon and Catalonia"/>
+        <definition>
+            <fixed day="23" month="April"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="Día de Castilla y León"/>
+        <description language="en" name="Castile and León Day" type="cultural, regional" region="Castile and León"/>
+        <definition>
+            <fixed day="23" month="April"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="Día del Trabajador"/>
+        <description language="en" name="Labor Day" type="National holiday"/>
+        <definition>
+            <fixed day="1" month="May"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="Fiesta de la Comunidad"/>
+        <description language="en" name="Fiesta de la Comunidad" type="cultural, regional" region="Madrid"/>
+        <definition>
+            <fixed day="2" month="May"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="Pentecostés"/>
+        <description language="en" name="Pentecost"/>
+        <import id="Pentecost"/>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="Secunda Pascua"/>
+        <description language="en" name="Whit Monday"/>
+        <definition>
+            <easter/>
+            <add days="+50"/>
+        </definition>
+    </holiday>
+    
+    <!-- http://en.wikipedia.org/wiki/D%C3%ADa_das_Letras_Galegas -->
+    <holiday>
+        <description language="es" name="Día de las Letras Gallegas(GA)"/>
+        <description language="en" name="Galician Literature Day" type="regional" region="Galicia"/>
+        <definition firstyear="1963">
+            <fixed month="May" day="17"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="Día de las Canarias"/>
+        <description language="en" name="Canarias Day" type="cultural, regional" region="The Canary Islands"/>
+        <definition>
+            <fixed day="30" month="May"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="Día de la Región Castilla-La Mancha"/>
+        <description language="en" name="Day of Castile-La Mancha" type="cultural, regional" region="Castile-La Mancha"/>
+        <definition>
+            <fixed day="31" month="May"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="Día de la Región de Murcia"/>
+        <description language="en" name="Day of Murcia" type="cultural, regional, Murcia"/>
+        <definition>
+            <fixed day="9" month="June"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="Día de La Rioja"/>
+        <description language="en" name="Day of Rioja" type="cultural, regional" region="La Rioja"/>
+        <definition>
+            <fixed day="9" month="June"/>
+        </definition>
+    </holiday>   
+    
+    <holiday>
+        <description language="es" name="El Solsticio de junio"/>
+        <description language="en" name="June Solstice"/>
+        <definition>
+            <solstice month="June" timezone="Europe/Madrid"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="Sant Joan"/>
+        <description language="en" name="St. Joan's Day" type="regional" region="Catalonia"/>
+        <definition>
+            <fixed day="24" month="June"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="Santiago Apostol"/>
+        <description language="en" name="St. James Day" type="regional" region="Basque Country, Galicia"/>
+        <definition>
+            <fixed day="25" month="July"/>
+        </definition>
+    </holiday>
+       
+    <holiday>
+        <description language="es" name="Asunción"/>
+        <description language="en" name="Assumption of Mary" type="National holiday"/>
+        <definition>
+            <fixed day="15" month="August"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="Día de Ceuta"/>
+        <description language="en" name="Day of the independent city Ceuta" type="cultural, regional" region="City of Ceuta"/>
+        <definition>
+            <fixed day="2" month="September"/>
+        </definition>
+    </holiday>
+      
+    <holiday>
+         <description language="es" name="Día de Asturias y Extremadura"/>
+         <description language="en" name="Covadonga and Guadalupe Day" type="regional" region="Asturias, Extremadura"/>
+         <definition>
+            <fixed day="8" month="September"/>
+        </definition>
+    </holiday>  
+    
+    <holiday>
+        <description language="es" name="Fiesta Nacional de Cataluña"/>
+        <description language="en" name="Day of Catalonia" type="cultural, regional" region="Catalonia"/>
+        <definition>
+            <fixed day="11" month="September"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="Equinoccio de septiembre"/>
+        <description language="en" name="Autumnal equinox"/>
+        <definition>
+            <equinox month="September" timezone="Europe/Madrid"/>
+        </definition>
+    </holiday>
+  
+    <holiday>
+        <description language="es" name="Día de Valencia" region="Valencia"/>
+        <description language="en" name="Day of Valencia" type="cultural, regional" region="Valencia"/>
+        <definition>
+            <fixed day="9" month="October"/>
+        </definition>
+    </holiday>
+        
+    <holiday>
+        <description language="es" name="Día de la Hispanidad or Fiesta Nacional de España"/>
+        <description language="en" name="Hispanic Day (Columbus Day)" type="National holiday"/>
+        <definition>
+            <fixed day="12" month="October"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="es" name="Cambio de horario de invierno"/>
+        <description language="en" name="Daylight Saving Time ends"/>
+        <definition>
+            <dst timezone="Europe/Madrid" action="end"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="Día de todos los Santos"/>
+        <description language="en" name="All Saints Day" type="National holiday"/>
+        <import id="All Saints Day"/>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="Día de la Constitución"/>
+        <description language="en" name="Constitution Day" type="National holiday"/>
+        <definition>
+            <fixed day="6" month="December"/>
+        </definition>
+    </holiday>
+        
+    <holiday>
+        <description language="es" name="Inmaculada Concepción"/>
+        <description language="en" name="Immaculate Conception" type="National holiday"/>
+        <definition>
+            <fixed day="8" month="December"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="El Solsticio de diciembre"/>
+        <description language="en" name="December Solstice"/>
+        <definition>
+            <solstice month="December" timezone="Europe/Madrid"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="Navidad"/>
+        <description language="en" name="Christmas Day" type="National holiday"/>
+        <import id="Christmas Day"/>
+    </holiday>
+    
+    <holiday>
+        <description language="es" name="San Esteban or Segundo día de Navidad"/>
+        <description language="en" name="St. Stephen's Day" type="regional" region="Balearic Islands, Catalonia"/>
+        <definition>
+            <fixed day="26" month="December"/>
+        </definition>
+    </holiday> 
+
+</holidays>
