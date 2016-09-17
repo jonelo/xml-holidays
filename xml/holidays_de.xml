@@ -388,8 +388,8 @@
     </holiday>
     
     <holiday>
-        <description language="de" name="Fronleichnam" region="BW,BY,HE,NW,RP,SL,SN teilw.,TH teilw."/>
-        <description language="en" name="Corpus Christi" region="BW,BY,HE,NW,RP,SL,SN partly,TH partly"/>
+        <description language="de" name="Fronleichnam" type="gesetzlich" region="BW,BY,HE,NW,RP,SL,SN teilw.,TH teilw."/>
+        <description language="en" name="Corpus Christi" type="public holiday" region="BW,BY,HE,NW,RP,SL,SN partly,TH partly"/>
         <definition>
             <easter/>
             <add days="+60"/>
