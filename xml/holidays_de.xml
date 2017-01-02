@@ -656,11 +656,31 @@
     <holiday>
         <description language="de" name="Reformationstag" type="gesetzlich, evangelisch" region="BB, MV, SN, ST, TH"/>
         <description language="en" name="Reformation Day" type="public holiday, protestant" region="BB, MV, SN, ST, TH"/>
-        <definition>
+        <definition firstyear="1990" lastyear="2016">
+            <fixed month="October" day="31"/>
+        </definition>
+        <!-- 2017, dem 500. Jahr des Beginns der Reformation, ist der 31. Oktober einmalig
+             ein gesamtdeutscher gesetzlicher Feiertag.
+        -->
+        <definition firstyear="2018">
             <fixed month="October" day="31"/>
         </definition>
     </holiday>
-    
+
+    <!--
+      Im Jahr 2017, dem 500. Jahr des Beginns der Reformation, ist der 31. Oktober
+      einmalig ein gesamtdeutscher gesetzlicher Feiertag, Referenzen z. B.:
+      http://www.ekd.de/aktuell_presse/news_2016_03_17_1_reformationstag_2017_feiertag_bayern.html
+      https://www.merkur.de/welt/feiertage-2017-bayern-brueckentage-fuer-noch-mehr-urlaub-im-neuen-jahr-7177625.html
+    -->
+    <holiday>
+        <description language="de" name="Reformationstag" type="gesetzlich"/>
+        <description language="en" name="Reformation Day" type="public holiday"/>
+        <definition firstyear="2017" lastyear="2017">
+            <fixed month="October" day="31"/>
+        </definition>
+    </holiday>
+            
     <holiday>
         <description language="de" name="Allerheiligen" type="gesetzlich" region="BW, BY, NW, RP, SL"/>
         <description language="en" name="All Saint's Day" type="public holiday" region="BW, BY, NW, RP, SL"/>
