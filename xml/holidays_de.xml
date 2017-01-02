@@ -709,11 +709,22 @@
             <add days="-14"/>
         </definition>
     </holiday>
-    
+
+    <!-- Nur noch in Sachsen gesetzlicher Feiertag seit 1995 -->
     <holiday>
-        <description language="de" name="Buß- und Bettag" type="gesetzlich" region="nur in SA, vor 1995 bundeseinheitlich"/>
-        <description language="en" name="Day of Repentance and Prayer" type="public holiday"  region="only in SA, before 1995 observed at national level"/>
-        <definition lastyear="1994">
+        <description language="de" name="Buß- und Bettag" type="gesetzlich" region="SA"/>
+        <description language="en" name="Day of Repentance and Prayer" type="public holiday" region="SA"/>
+        <definition firstyear="1995">
+            <advent/>
+            <add days="-11"/>
+        </definition>
+    </holiday>
+    
+    <!-- bundeseinheitlich nur von 1990 bis 1994 -->
+    <holiday>
+        <description language="de" name="Buß- und Bettag" type="gesetzlich"/>
+        <description language="en" name="Day of Repentance and Prayer" type="public holiday"/>
+        <definition firstyear="1990" lastyear="1994">
             <advent/>
             <add days="-11"/>
         </definition>
