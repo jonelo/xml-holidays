@@ -25,6 +25,14 @@
         </definition>
     </holiday>
     
+    <holiday>
+        <description language="en" name="World Braille Day"/>
+        <description language="de" name="Welt-Braille-Tag"/>
+        <definition firstyear="2001">
+            <fixed month="January" day="4"/>
+        </definition>
+    </holiday>
+    
     <!-- March -->
 
     <!--
