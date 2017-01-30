@@ -47,6 +47,24 @@
         </definition>
     </holiday>
     
+    <!-- February -->        
+    
+    <holiday>
+        <!-- https://www.saferinternetday.org -->
+        <description language="en" name="Safer Internet Day"/>
+        <!-- https://de.wikipedia.org/wiki/Safer_Internet_Day -->
+        <description language="de" name="Safer Internet Day"/>
+        <!-- https://it.wikipedia.org/wiki/Safer_Internet_Day -->
+        <description language="it" name="Safer Internet Day"/>
+        
+        <definition firstyear="2004">
+            <!-- zweiter Tag der zweiten Woche des zweiten Monats -->
+            <rule nth="Second" weekday="Sunday" month="February"/>
+            <add days="-5"/>
+        </definition>
+        
+    </holiday>
+    
     <!-- March -->
 
     <!--
