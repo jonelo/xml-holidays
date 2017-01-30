@@ -15,11 +15,18 @@
 
     <!-- http://en.wikipedia.org/wiki/International_Holocaust_Remembrance_Day 
          http://de.wikipedia.org/wiki/Internationaler_Tag_des_Gedenkens_an_die_Opfer_des_Holocaust
+         https://fr.wikipedia.org/wiki/Journée_internationale_dédiée_à_la_mémoire_des_victimes_de_l%27Holocauste
+         https://es.wikipedia.org/wiki/D%C3%ADa_Internacional_de_Conmemoración_en_Memoria_de_las_V%C3%ADctimas_del_Holocausto
+         https://it.wikipedia.org/wiki/Giorno_della_Memoria
      -->
     <holiday>
         <description language="en" name="International Holocaust Remembrance Day"/>
         <description language="de" name="Internationaler Tag des Gedenkens an die Opfer des Holocaust"/>
-        <definition firstyear="2006">
+        <description language="fr" name="Journée internationale dédiée à la mémoire des victimes de l'Holocauste"/>
+        <description language="es" name="Día Internacional de Conmemoración en Memoria de las Víctimas del Holocausto"/>
+        <description language="it" name="Giorno della Memoria"/>
+        
+        <definition firstyear="2005">
             <fixed month="January" day="27"/>
         </definition>
     </holiday>
