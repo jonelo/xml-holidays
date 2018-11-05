@@ -513,6 +513,112 @@
         </definition>
     </holiday>
 
+    <!--
+        https://en.wikipedia.org/wiki/United_States_presidential_election
+    -->
+    <holiday>
+        <description language="en" name="Election of President and Vice President of the United States"/>
+        <description language="de" name="Präsidentschaftswahl in den Vereinigten Staaten"/>
+        <!--
+          For federal offices, the Election Day occurs on the first Tuesday
+          after the first Monday in November. Presidential elections are held
+          every four years. Elections to the House of Representatives and the
+          Senate are held every two years.
+          A uniform date for chosing presidential Electors was
+          instituted by the Congress in 1845.
+          Note: the first Tuesday after the first Monday in November is not the
+          same as the first Tuesday in November!
+        -->
+        <!-- https://en.wikipedia.org/wiki/United_States_presidential_election,_1788–89 -->
+        <definition firstyear="1788">
+            <fixed day="15" month="December"/>
+        </definition>
+        <!-- https://en.wikipedia.org/wiki/United_States_presidential_election,_1792 -->
+        <definition firstyear="1792">
+            <fixed day="2" month="November"/>
+        </definition>
+        <!-- https://en.wikipedia.org/wiki/United_States_presidential_election,_1796 -->
+        <definition firstyear="1796">
+            <fixed day="4" month="November"/>
+        </definition>
+        <!-- https://en.wikipedia.org/wiki/United_States_presidential_election,_1800 -->
+        <definition firstyear="1800">
+            <fixed day="31" month="October"/>
+        </definition>
+        <!-- https://en.wikipedia.org/wiki/United_States_presidential_election,_1804 -->
+        <definition firstyear="1804">
+            <fixed day="2" month="November"/>
+        </definition>
+        <!-- https://en.wikipedia.org/wiki/United_States_presidential_election,_1808 -->
+        <definition firstyear="1808">
+            <fixed day="4" month="November"/>
+        </definition>
+        <!-- https://en.wikipedia.org/wiki/United_States_presidential_election,_1812 -->
+        <definition firstyear="1812">
+            <fixed day="30" month="October"/>
+        </definition>
+        <!-- https://en.wikipedia.org/wiki/United_States_presidential_election,_1816 -->
+        <definition firstyear="1816">
+            <fixed day="1" month="November"/>
+        </definition>
+        <!-- https://en.wikipedia.org/wiki/United_States_presidential_election,_1820 -->
+        <definition firstyear="1820">
+            <fixed day="1" month="November"/>
+        </definition>
+        <!-- https://en.wikipedia.org/wiki/United_States_presidential_election,_1824 -->
+        <definition firstyear="1824">
+            <fixed day="26" month="October"/>
+        </definition>
+        <!-- https://en.wikipedia.org/wiki/United_States_presidential_election,_1828 -->
+        <definition firstyear="1828">
+            <fixed day="31" month="October"/>
+        </definition>
+        <!-- https://en.wikipedia.org/wiki/United_States_presidential_election,_1832 -->
+        <definition firstyear="1832">
+            <fixed day="2" month="November"/>
+        </definition>
+        <!-- https://en.wikipedia.org/wiki/United_States_presidential_election,_1836 -->
+        <definition firstyear="1836">
+            <fixed day="3" month="November"/>
+        </definition>
+        <!-- https://en.wikipedia.org/wiki/United_States_presidential_election,_1840 -->
+        <definition firstyear="1840">
+            <fixed day="30" month="October"/>
+        </definition>
+        <!-- https://en.wikipedia.org/wiki/United_States_presidential_election,_1844 -->
+        <definition firstyear="1844">
+            <fixed day="1" month="November"/>
+        </definition>
+        <definition firstyear="1848" frequency="4">
+            <rule nth="First" weekday="Monday" month="November"/>
+            <add days="1"/><!-- Tuesday -->
+        </definition>
+    </holiday>
+
+
+    <!--
+        https://en.wikipedia.org/wiki/United_States_midterm_election
+    -->
+    <holiday>
+        <description language="en" name="Midterm elections"/>
+        <description language="de" name="Halbzeitwahlen in den Vereinigten Staaten"/>
+        <!--
+          For federal offices, the Election Day occurs on the first Tuesday
+          after the first Monday in November. Presidential elections are held
+          every four years. Elections to the House of Representatives and the
+          Senate are held every two years.
+          A uniform date for chosing presidential Electors was
+          instituted by the Congress in 1845.
+          Note: the first Tuesday after the first Monday in November is not the
+          same as the first Tuesday in November!
+        -->
+        <definition firstyear="1910" frequency="4">
+            <rule nth="First" weekday="Monday" month="November"/>
+            <add days="1"/><!-- Tuesday -->
+        </definition>
+    </holiday>
+
+
     <!-- http://en.wikipedia.org/wiki/Veterans_Day
          Veterans Day is an American holiday honoring military veterans. -->
     <!-- An Act (52 Stat. 351; 5 U. S. Code, Sec. 87a) approved May 13, 1938,
