@@ -72,6 +72,8 @@
         <description language="de" name="Welttag der Meteorologie"/>
         <!-- https://en.wikipedia.org/wiki/World_Meteorological_day -->
         <description language="en" name="World Meteorological day"/>
+        <!-- https://es.wikipedia.org/wiki/D%C3%ADa_Meteorológico_Mundial -->
+        <description language="es" name="Día Meteorológico Mundial"/>
 
         <definition firstyear="1950">
             <fixed month="March" day="23"/>
