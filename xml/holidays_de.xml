@@ -667,6 +667,20 @@
         </definition>
     </holiday>
 
+    <holiday>
+        <description language="de" name="Reformationstag" type="gesetzlich, evangelisch" region="SH, HH, NS, BR"/>
+        <description language="en" name="Reformation Day" type="public holiday, protestant" region="SH, HH, NS, BR"/>
+        <!--
+            Am 22. Februar 2018 beschloss der Schleswig-Holsteinische Landtag, den Reformationstag als gesetzlichen
+            Feiertag einzuführen.
+            Am 28. Februar 2018 folgte die Hamburgische Bürgerschaft,
+            am 19. Juni 2018 der Niedersächsische Landtag, tags darauf die Bremische Bürgerschaft
+        -->
+        <definition firstyear="2018">
+            <fixed month="October" day="31"/>
+        </definition>
+    </holiday>
+
     <!--
       Im Jahr 2017, dem 500. Jahr des Beginns der Reformation, ist der 31. Oktober
       einmalig ein gesamtdeutscher gesetzlicher Feiertag, Referenzen z. B.:
