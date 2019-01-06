@@ -2,22 +2,19 @@
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
 <!--
     This file is from the free xml-holidays project. See also
-    http://xml-holidays.sourceforge.net/
+    https://sourceforge.net/projects/xml-holidays/
     Thank you for keeping the comment.
 -->
 <holidays country="UNO">
-    <!-- See also 
-         http://www.un.org/en/events/observances/days.shtml
-         http://en.wikipedia.org/wiki/Category:United_Nations_days
+    <!--
+      https://www.un.org/en/sections/observances/international-days/
+      https://en.wikipedia.org/wiki/Category:United_Nations_days
      -->
 
     <default language="en"/>
 
-    <!-- http://en.wikipedia.org/wiki/International_Holocaust_Remembrance_Day 
-         http://de.wikipedia.org/wiki/Internationaler_Tag_des_Gedenkens_an_die_Opfer_des_Holocaust
-         https://fr.wikipedia.org/wiki/Journée_internationale_dédiée_à_la_mémoire_des_victimes_de_l%27Holocauste
-         https://es.wikipedia.org/wiki/D%C3%ADa_Internacional_de_Conmemoración_en_Memoria_de_las_V%C3%ADctimas_del_Holocausto
-         https://it.wikipedia.org/wiki/Giorno_della_Memoria
+    <!--
+      https://en.wikipedia.org/wiki/International_Holocaust_Remembrance_Day
      -->
     <holiday>
         <description language="en" name="International Holocaust Remembrance Day"/>
@@ -31,19 +28,22 @@
         </definition>
     </holiday>
 
-    <!-- http://www.un.org/en/events/cancerday/index.shtml
-         http://en.wikipedia.org/wiki/World_Cancer_Day
+    <!--
+      http://www.who.int/cancer/world-cancer-day/en/
+      https://en.wikipedia.org/wiki/World_Cancer_Day
      -->
     <holiday>
         <description language="en" name="World Cancer Day"/>
         <description language="de" name="Weltkrebstag"/>
+        <description language="fr" name="Journée mondiale contre le cancer"/>
+        <description language="es" name="Día Mundial contra el Cáncer"/>
         <definition firstyear="2010">
             <fixed month="February" day="4"/>
         </definition>
     </holiday>
 
     <!--
-      http://en.wikipedia.org/wiki/International_Women%27s_Day
+      https://en.wikipedia.org/wiki/International_Women%27s_Day
       -->
     <holiday>
         <description language="en" name="International Women's Day"/>
@@ -54,7 +54,7 @@
     </holiday>
 
     <!--
-      http://en.wikipedia.org/wiki/World_Health_Day
+      https://en.wikipedia.org/wiki/World_Health_Day
       -->
     <holiday>
         <description language="en" name="World Health Day"/>
@@ -65,7 +65,7 @@
     </holiday>
 
     <!--
-      http://en.wikipedia.org/wiki/World_Book_and_Copyright_Day
+      https://en.wikipedia.org/wiki/World_Book_and_Copyright_Day
       -->
     <holiday>
         <description language="en" name="World Book and Copyright Day"/>
@@ -75,7 +75,7 @@
     </holiday>
 
     <!--
-      http://en.wikipedia.org/wiki/World_Press_Freedom_Day
+      https://en.wikipedia.org/wiki/World_Press_Freedom_Day
     -->
     <holiday>
         <description language="en" name="World Press Freedom Day"/>
@@ -87,9 +87,9 @@
     </holiday>
 
     <!--
-       http://en.wikipedia.org/wiki/United_Nations
-       http://en.wikipedia.org/wiki/International_Day_for_Biological_Diversity
-       http://www.cbd.int/
+       https://en.wikipedia.org/wiki/United_Nations
+       https://en.wikipedia.org/wiki/International_Day_for_Biological_Diversity
+       https://www.cbd.int/
      -->
     <holiday>
         <description language="en" name="International Day for Biological Diversity"/>
@@ -102,7 +102,7 @@
     </holiday>
 
     <!--
-      http://en.wikipedia.org/wiki/World_Environment_Day
+      https://en.wikipedia.org/wiki/World_Environment_Day
       -->
     <holiday>
         <description language="en" name="World Environment Day"/>
@@ -112,28 +112,78 @@
         </definition>
     </holiday>
 
+
     <!--
-       http://en.wikipedia.org/wiki/United_Nations_Day
+      https://www.un.org/en/events/cooperativesday/
+      https://en.wikipedia.org/wiki/International_Co-operative_Day
+      -->
+    <holiday>
+        <description language="en" name="International Day of Cooperatives"/>
+        <description language="de" name="Internationaler Genossenschaftstag"/>
+        <description language="fr" name="Journée internationale des coopératives"/>
+        <description language="es" name="Día Internacional de las Cooperativas"/>
+        <definition firstyear="1995">
+            <rule nth="First" weekday="Saturday" month="July"/>
+        </definition>
+    </holiday>
+
+
+    <!--
+       https://www.un.org/en/events/statisticsday/
+       https://en.wikipedia.org/wiki/World_Statistics_Day
+    -->
+    <holiday>
+        <description language="en" name="World Statistics Day"/>
+        <description language="de" name="Weltstatistiktag"/>
+        <description language="fr" name="Journée mondiale de la statistique"/>
+        <description language="es" name="Día Mundial de la Estadística"/>
+        <definition firstyear="2010" frequency="5">
+            <fixed month="October" day="20"/>
+        </definition>
+    </holiday>
+
+    <!--
+       https://en.wikipedia.org/wiki/United_Nations_Day
     -->
     <holiday>
          <description language="en" name="United Nations Day"/>
+         <description language="de" name="Tag der Vereinten Nationen"/>
+         <description language="fr" name="Journée des Nations unies"/>
+         <description language="es" name="Día de las Naciones Unidas"/>
+         <description language="zh" name="联合国日"/>
          <definition firstyear="1947">
              <fixed month="October" day="24"/>
          </definition>
     </holiday>
 
     <!--
-      http://en.wikipedia.org/wiki/Children%27s_Day
+      https://en.wikipedia.org/wiki/Children%27s_Day
      -->
     <holiday>
         <description language="en" name="Universal Children's Day"/>
+        <description language="de" name="Weltkindertag"/>
+        <description language="fr" name="Journée de l'enfance"/>
+        <description language="es" name="Día Universal del Niño"/>
         <definition firstyear="1954">
             <fixed month="November" day="20"/>
         </definition>
     </holiday>
 
     <!--
-      http://en.wikipedia.org/wiki/Africa_Industrialization_Day
+       https://en.wikipedia.org/wiki/World_Toilet_Day
+    -->
+    <holiday>
+        <description language="en" name="World Toilet Day"/>
+        <description language="de" name="Welttoilettentag"/>
+        <description language="fr" name="Journée mondiale des toilettes"/>
+        <description language="es" name="Día Mundial del Retrete"/>
+        <definition firstyear="2013">
+            <fixed month="November" day="19"/>
+        </definition>
+    </holiday>
+
+    <!--
+      https://en.wikipedia.org/wiki/Africa_Industrialization_Day
     -->
     <holiday>
          <description language="en" name="Africa Industrialization Day"/>
@@ -148,13 +198,16 @@
     <holiday>
          <description language="en" name="World AIDS Day"/>
          <description language="de" name="Welt-AIDS-Tag"/>
+         <description language="fr" name="Journée mondiale de lutte contre le sida"/>
+         <description language="es" name="Día Mundial de la Lucha contra el Sida"/>
+         <description language="zh" name="世界艾滋病日"/>
          <definition firstyear="1988">
              <fixed month="December" day="1"/>
          </definition>
     </holiday>
 
     <!--
-       http://en.wikipedia.org/wiki/Human_Rights_Day
+       https://en.wikipedia.org/wiki/Human_Rights_Day
     -->
     <holiday>
          <description language="en" name="Human Rights Day"/>
