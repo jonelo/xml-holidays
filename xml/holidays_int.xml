@@ -67,6 +67,18 @@
     
     <!-- March -->
 
+    <holiday>
+        <!-- https://de.wikipedia.org/wiki/Welttag_der_Meteorologie -->
+        <description language="de" name="Welttag der Meteorologie"/>
+        <!-- https://en.wikipedia.org/wiki/World_Meteorological_day -->
+        <description language="en" name="World Meteorological day"/>
+
+        <definition firstyear="1950">
+            <fixed month="March" day="23"/>
+        </definition>
+
+    </holiday>
+
     <!--
       http://en.wikipedia.org/wiki/Pi_Day
       -->
