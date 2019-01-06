@@ -47,7 +47,16 @@
         </definition>
     </holiday>
     
-    <!-- February -->        
+    <!-- February -->
+    
+    <holiday>
+        <!-- https://futurezone.at/digital-life/der-erste-februar-ist-change-your-password-day/178.401.606 -->
+        <description language="en" name="Change Your Password Day"/>
+        
+        <definition firstyear="2016">
+            <fixed month="February" day="1"/>
+        </definition>
+    </holiday>
     
     <holiday>
         <!-- https://www.saferinternetday.org -->
@@ -106,6 +115,17 @@
 
 
     <!-- May -->
+
+    <holiday>
+        <description language="en" name="World Password Day"/>
+
+        <!-- https://www.csoonline.com/article/2919557/microsoft-subnet/world-password-day-2015-change-your-passwords-on-may-7.html
+        "May 7[, 2015] is the third annual World Password Day"
+        -->
+        <definition firstyear="2013">
+            <rule nth="First" weekday="Thursday" month="May"/>
+        </definition>
+    </holiday>
 
     <!-- 
       http://www.sueddeutsche.de/kultur/artikel/690/115575/
