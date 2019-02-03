@@ -202,6 +202,15 @@
             <rule nth="Second" weekday="Sunday" month="September"/>
         </definition>
     </holiday>
+
+    <holiday>
+        <description language="de" name="Weltkindertag" type="gesetzlich" region="TH"/>
+        <description language="en" name="International Children's Day" type="public holiday" region="TH"/>
+        <definition firstyear="2019">
+            <fixed month="September" day="20"/>
+        </definition>
+    </holiday>
+
     
     <holiday>
         <description language="de" name="Dreifacher Hexensabbat, großer Verfallstag (3. Quartal)" type="Börse"/>
