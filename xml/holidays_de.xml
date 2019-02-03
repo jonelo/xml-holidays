@@ -6,6 +6,25 @@
     Thank you for keeping the comment.
 -->
 <holidays country="DE">
+    <!--
+      Region meaning:
+      BW = Baden-Württemberg
+      BY = Bayern
+      BE = Berlin
+      BB = Brandenburg
+      HB = Hansestadt Bremen
+      HH = Hansestadt Hamburg
+      HE = Hessen
+      MV = Mecklenburg-Vorpommern
+      NI = Niedeersachsen
+      NW = Nordrhein-Westfalen
+      RP = Rheinland-Pfalz
+      SL = Saarland
+      SN = Sachsen
+      ST = Sachsen-Anhalt
+      SH = Schleswig Holstein
+      TH  = Thüringen
+      -->
     <!-- http://de.wikipedia.org/wiki/Feiertage_in_Deutschland -->
 
     <default language="de"/>
@@ -24,7 +43,17 @@
             <fixed month="January" day="6"/>
         </definition>
     </holiday>
-    
+
+    <holiday>
+        <description language="de" name="Internationaler Frauentag"
+                     type="gesetzlich" region="in BE"/>
+        <description language="en" name="International Women's Day"
+                     type="public holiday" region="in BE"/>
+        <definition firstyear="2019">
+            <fixed month="March" day="8"/>
+        </definition>
+    </holiday>
+
     <holiday >
         <description language="de" name="Erscheinung des Herrn (Epiphanie)" type="evangelisch"/>
         <description language="en" name="Epiphany" type="protestant"/>
