@@ -57,7 +57,17 @@
             <fixed month="February" day="1"/>
         </definition>
     </holiday>
-    
+
+    <holiday>
+        <description language="de" name="Weltkrebstag"/>
+        <description language="en" name="World Cancer Day"/>
+
+        <definition firstyear="2000">
+            <fixed month="February" day="4"/>
+        </definition>
+    </holiday>
+
+
     <holiday>
         <!-- https://www.saferinternetday.org -->
         <description language="en" name="Safer Internet Day"/>
