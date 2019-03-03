@@ -85,6 +85,26 @@
     </holiday>
     
     <!-- March -->
+    <holiday>
+        <!-- https://de.wikipedia.org/wiki/Welttag_des_H%C3%B6rens -->
+        <description language="de" name="Welttag des Hörens"/>
+        <!-- https://www.who.int/pbd/deafness/news/IECD/en/ -->
+        <description language="en" name="International Ear Care Day"/>
+        <definition firstyear="2007" lastyear="2015">
+            <fixed month="March" day="3"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <!-- https://de.wikipedia.org/wiki/Welttag_des_H%C3%B6rens -->
+        <description language="de" name="Welttag des Hörens"/>
+        <!-- https://www.who.int/pbd/deafness/world-hearing-day/en/ -->
+        <description language="en" name="World Hearing Day"/>
+        <definition firstyear="2015">
+            <fixed month="March" day="3"/>
+        </definition>
+    </holiday>
+
 
     <holiday>
         <!-- https://de.wikipedia.org/wiki/Welttag_der_Meteorologie -->
