@@ -54,6 +54,21 @@
     </holiday>
 
     <!--
+      https://en.wikipedia.org/wiki/
+      -->
+    <holiday>
+        <description language="en" name="World Water Day"/>
+        <description language="de" name="Weltwassertag"/>
+        <description language="fr" name="Journée mondiale de l'eau"/>
+        <description language="es" name="Día Mundial del Agua"/>
+        <description language="it" name="Giornata mondiale dell'acqua"/>
+        <definition firstyear="1993">
+            <fixed month="March" day="22"/>
+        </definition>
+    </holiday>
+
+
+    <!--
       https://en.wikipedia.org/wiki/World_Health_Day
       -->
     <holiday>
