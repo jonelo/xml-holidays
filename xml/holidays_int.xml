@@ -175,6 +175,18 @@
     <!-- June -->
     
     <!-- July -->
+
+    <!--
+      https://en.wikipedia.org/wiki/World_Chocolate_Day
+      -->
+    <holiday>
+        <description language="en" name="World Chocolate Day"/>
+        <description language="de" name="Weltschokoladentag"/>
+        <definition firstyear="2009">
+            <fixed month="July" day="7"/>
+        </definition>
+    </holiday>
+
     
     <!-- August -->
 
