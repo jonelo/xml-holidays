@@ -160,6 +160,7 @@
     <!-- 
       http://www.sueddeutsche.de/kultur/artikel/690/115575/
       0x25+0x5=37+5=42 ;)
+      https://web.archive.org/web/20080926170310/https://www.sueddeutsche.de/kultur/artikel/690/115575/
       -->
     <holiday>
         <description language="en" name="Towel Day"/>
@@ -211,6 +212,17 @@
     <!-- November -->
     
     <!-- December -->
-    
+
+    <!--
+      https://en.wikipedia.org/wiki/International_Tea_Day
+      -->
+    <holiday>
+        <description language="en" name="International Tea Day"/>
+        <description language="de" name="Internationaler Teetag"/>
+        <definition firstyear="2005">
+            <fixed month="December" day="15"/>
+        </definition>
+    </holiday>
+
 
 </holidays>
