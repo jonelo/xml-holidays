@@ -176,6 +176,22 @@
     <!-- July -->
     
     <!-- August -->
+
+    <!--
+      https://en.wikipedia.org/wiki/International_Beer_Day
+      -->
+    <holiday>
+        <description language="en" name="International Beer Day"/>
+        <description language="de" name="Internationaler Tag des Bieres"/>
+
+        <definition firstyear="2007" lastyear="2012">
+            <fixed month="August" day="5"/>
+        </definition>
+        <!-- https://www.facebook.com/internationalbeerday/posts/10151554502158803 -->
+        <definition firstyear="2013">
+            <rule nth="First" weekday="Friday" month="August"/>
+        </definition>
+    </holiday>
     
     <!-- September -->
     
