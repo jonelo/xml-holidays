@@ -110,7 +110,7 @@
     </holiday>
     
     <holiday>
-        <description language="de" name="Reformationstag" type="gesetzlich (ausser in den Bezirken Halle, Magdeburg und Berlin (Ost))">
+        <description language="de" name="Reformationstag" type="gesetzlich (ausser in den Bezirken Halle, Magdeburg und Berlin (Ost))"/>
         <definition firstyear="1950" lastyear="1966">
             <fixed month="October" day="31"/>
         </definition>
