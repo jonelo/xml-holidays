@@ -63,6 +63,7 @@
         <xi:include href="holidays_nz.xml"/>
         
         <!-- Historic -->
+        <xi:include href="holidays_ddr.xml"/>
         
     </countries>
 </combined>
