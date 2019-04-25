@@ -10,7 +10,7 @@
     <!-- Die DDR bestand vom 7. Oktober 1949 bis zum 2. Oktober 1990 -->
     
     <holiday>
-        <description language="de" name="Neujahrstag" type="gesetzlich"/>
+        <description language="de" name="Neujahr" type="gesetzlich"/>
         <description language="en" name="New Year's Day" type="public holiday"/>
 
         <definition firstyear="1950" lastyear="1990">
@@ -37,21 +37,26 @@
         </definition>
     </holiday>
     
-    <holiday name="Ostermontag (Emmaustag)" type="gesetzlich">
+    <holiday name="Ostermontag" type="gesetzlich">
         <definition firstyear="1950" lastyear="1967">
             <easter/>
             <add days="1"/>
         </definition>
+        <definition year="1990">
+            <easter/>
+            <add days="1"/>
+        </definition>
+
     </holiday>
     
-    <holiday name="Internationaler Kampf- und Feiertag der Werktätigen" type="gesetzlich">
+    <holiday name="Internationaler Kampf- und Feiertag der Werktätigen für Frieden und Sozialismus" type="gesetzlich">
         <definition firstyear="1950" lastyear="1990">
             <fixed month="May" day="1" />
         </definition>
     </holiday>
     
     <holiday name="Tag der Befreiung" type="gesetzlich">
-        <definition firstyear="1950" lastyear="1966">
+        <definition firstyear="1950" lastyear="1967">
             <fixed month="May" day="8" />
         </definition>
         <definition year="1985">
@@ -66,11 +71,11 @@
     </holiday>
     
     <holiday name="Christi Himmelfahrt" type="gesetzlich">
-        <definition firstyear="1950" lastyear="1966"> <!-- // nur bis 1966 -->
+        <definition firstyear="1950" lastyear="1967">
             <easter/>
             <add days="+39"/>
         </definition>
-        <definition year="1990"> <!-- und 1990 -->
+        <definition year="1990">
             <easter/>
             <add days="+39"/>
         </definition>
@@ -96,11 +101,11 @@
         </definition>
     </holiday>
     
-    <holiday name="Reformationstag" type="gesetzlich">
-        <definition firstyear="1950" lastyear="1966"> <!-- // nur bis 1966 -->
+    <holiday name="Reformationstag" type="gesetzlich (ausser in den Bezirken Halle, Magdeburg und Berlin (Ost))">
+        <definition firstyear="1950" lastyear="1966">
             <fixed month="October" day="31"/>
         </definition>
-        <definition year="1990"> <!-- // und 1990 -->
+        <definition year="1990">
             <fixed month="October" day="31"/>
         </definition>
     </holiday>
@@ -109,11 +114,7 @@
         <description language="de" name="Buß- und Bettag" type="gesetzlich"/>
         <description language="en" name="Day of Repentance and Prayer" type="public holiday"/>
 
-        <definition firstyear="1950" lastyear="1966"> <!-- // nur bis 1966 ... -->
-            <advent/>
-            <add days="-11"/>
-        </definition>
-        <definition year="1990"> <!-- // ... und 1990 -->
+        <definition firstyear="1950" lastyear="1966">
             <advent/>
             <add days="-11"/>
         </definition>
