@@ -6,22 +6,32 @@
     Thank you for keeping the comment.
  -->
 <holidays country="DDR">
+    <!-- https://de.wikipedia.org/wiki/Feiertage_in_der_DDR -->
     <!-- Die DDR bestand vom 7. Oktober 1949 bis zum 2. Oktober 1990 -->
     
-    <holiday name="Neujahrstag" type="gesetzlich" international="New Year's Day">
+    <holiday>
+        <description language="de" name="Neujahrstag" type="gesetzlich"/>
+        <description language="en" name="New Year's Day" type="public holiday"/>
+
         <definition firstyear="1950" lastyear="1990">
             <fixed month="January" day="1"/>
         </definition>
     </holiday>
     
-    <holiday name="Karfreitag" type="gesetzlich" international="Good Friday">
+    <holiday>
+        <description language="de" name="Karfreitag" type="gesetzlich"/>
+        <description language="en" name="Good Friday" type="public holiday"/>
+
         <definition firstyear="1950" lastyear="1990">
             <easter/>
             <add days="-2"/>
         </definition>
     </holiday>
     
-    <holiday name="Ostersonntag (Ostern)" type="gesetzlich">
+    <holiday>
+        <description language="de" name="Ostersonntag (Ostern)"/>
+        <description language="en" name="Easter Sunday"/>
+
         <definition firstyear="1950" lastyear="1990">
             <easter/>
         </definition>
@@ -95,24 +105,33 @@
         </definition>
     </holiday>
     
-    <holiday name="Buß- und Bettag" type="gesetzlich">
-        <definition firstyear="1950" lastyear="1966"> <!-- // nur bis 1966 -->
+    <holiday>
+        <description language="de" name="Buß- und Bettag" type="gesetzlich"/>
+        <description language="en" name="Day of Repentance and Prayer" type="public holiday"/>
+
+        <definition firstyear="1950" lastyear="1966"> <!-- // nur bis 1966 ... -->
             <advent/>
             <add days="-11"/>
         </definition>
-        <definition year="1990"> <!-- // und 1990 -->
+        <definition year="1990"> <!-- // ... und 1990 -->
             <advent/>
             <add days="-11"/>
         </definition>
     </holiday>
     
-    <holiday name="1. Weihnachtsfeiertag (Weihnachten)" type="gesetzlich" international="Christmas Day">
+    <holiday>
+        <description language="de" name="1. Weihnachtsfeiertag (Weihnachten)" type="gesetzlich"/>
+        <description language="en" name="Christmas Day" type="public holiday"/>
+
         <definition firstyear="1949" lastyear="1989">
             <fixed month="December" day="25"/>
         </definition>
     </holiday>
     
-    <holiday name="2. Weihnachtsfeiertag" type="gesetzlich" international="Boxing Day">
+    <holiday>
+        <description language="de" name="2. Weihnachtsfeiertag (Weihnachten)" type="gesetzlich"/>
+        <description language="en" name="Boxing Day" type="public holiday"/>
+
         <definition firstyear="1949" lastyear="1989">
             <fixed month="December" day="26"/>
         </definition>
