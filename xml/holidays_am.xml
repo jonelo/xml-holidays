@@ -10,25 +10,34 @@
          http://www.armeniadiaspora.com/travel/holidays.html
     -->
 
-    <holiday name="Ամանօր" type="public">
-        <import name="New Year's Day"/>
+    <default language="hy"/>
+
+    <holiday>
+        <description language="hy" name="Ամանօր" type="public"/>
+        <import id="New Year's Day"/>
     </holiday>
     
-    <holiday name="Սուրբ Ծնունդ" type="public" international="Christmas Day">
+    <holiday>
+        <description language="hy" name="Սուրբ Ծնունդ" type="public"/>
+        <description language="en" name="Christmas Day" type="public"/>
         <definition>
             <fixed day="6" month="January"/>
         </definition>
     </holiday> 
     
     <!-- In celebration of Armenian Army formation on that day in 1992 -->
-    <holiday name="Բանակի օր" type="public" international="Army Day">
+    <holiday>
+        <description language="hy" name="Բանակի օր" type="public"/>
+        <description language="en" name="Army Day" type="public"/>
         <definition firstyear="1992">
             <fixed day="28" month="January"/>
         </definition>
     </holiday> 
     
     <!-- Armenian Genocide in 1915 -->
-    <holiday name="Եղեռնի զոհերի հիշատակի օր" type="public" international="Genocide Remembrance Day">
+    <holiday>
+        <description language="hy" name="Եղեռնի զոհերի հիշատակի օր" type="public"/>
+        <description language="en" name="Genocide Remembrance Day" type="public"/>
         <definition firstyear="1915">
             <fixed day="24" month="April"/>
         </definition>
@@ -36,7 +45,9 @@
     
     <!-- Victory Day (World War II) was a holiday throughout the USSR and is
          still an official holiday in Armenia. -->
-    <holiday name="Հաղթանակի եւ Խաղաղության տոն" type="public" international="Victory and Peace Day">
+    <holiday>
+        <description language="hy" name="Հաղթանակի եւ Խաղաղության տոն" type="public"/>
+        <description language="en" name="Victory and Peace Day" type="public"/>
         <!-- TODO: firstyear="????" -->
         <definition>
             <fixed day="9" month="May"/>
@@ -44,21 +55,27 @@
     </holiday>
     
     <!-- Establishment of the Democratic Republic of Armenia -->
-    <holiday name="Հանրապետության օր" type="public" international="Republic Day">
+    <holiday>
+        <description language="hy" name="Հանրապետության օր" type="public"/>
+        <description language="en" name="Republic Day" type="public"/>
         <!-- TODO: firstyear="????" -->
         <definition>
             <fixed day="28" month="May"/>
         </definition>
     </holiday>
 
-    <holiday name="Սահմանադրության օր" type="public" international="Constitution Day">
+    <holiday>
+        <description language="hy" name="Սահմանադրության օր" type="public"/>
+        <description language="en" name="Constitution Day" type="public"/>
         <definition firstyear="1995">
             <fixed day="5" month="July"/>
         </definition>
     </holiday>
 
     <!-- From the Soviet Union in 1991 -->
-    <holiday name="Անկախության օր" type="public" international="Independence Day">
+    <holiday>
+        <description language="hy" name="Անկախության օր" type="public"/>
+        <description language="en" name="Independence Day" type="public"/>
         <definition firstyear="1991">
             <fixed day="21" month="September"/>
         </definition>
@@ -66,7 +83,9 @@
     
     <!-- A devastating earthquake in 1988 killed thousands of people and
          destroyed most of the Republic’s infrastructure. -->
-    <holiday name="Երկրաշարժի զոհերի հիշատակի օր" type="public" international="Spitak Remembrance Day">
+    <holiday>
+        <description language="hy" name="Երկրաշարժի զոհերի հիշատակի օր" type="public"/>
+        <description language="en" name="Spitak Remembrance Day" type="public"/>
         <definition firstyear="1988">
             <fixed day="7" month="December"/>
         </definition>
@@ -75,7 +94,9 @@
     <!-- On the fourth Sunday preceding Dormition (15 August), a special
          celebration called Vardevar (Վարդևար) takes place, where anyone is free
          to soak others with water from spray guns, hoses or even buckets. -->
-    <holiday name="Վարդևար" international="Vardevar">
+    <holiday>
+        <description language="hy" name="Վարդևար"/>
+        <description language="en" name="Vardevar"/>
         <definition>
             <fixed day="15" month="August"/>
             <goto direction="previous" weekday="Sunday"/>
