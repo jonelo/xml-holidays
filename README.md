@@ -82,7 +82,7 @@ The holiday was declared officially by some states beginning in 1912.
 #### Example: on October 12 with dependencies on a weekday
 
 In Argentina Columbus Day (Día de la Raza) is celebrated on October 12, but if the date falls on a Tuesday or Wednesday,
-the holiday is the preceding Monday. If it falls on a Thursday or a Friday then the holiday is the following Monday.
+the holiday is the preceding Monday. If it falls on a Thursday or on a Friday then the holiday is the following Monday.
 
 ```xml
 <holiday>
@@ -181,7 +181,8 @@ In order to get the Wednesday of the last full week of April, simply subtract th
 
 ### Celebrated on a particular weekday nearest a particular date
 
-Example: on Monday nearest July 1st
+#### Example: on Monday nearest July 1st
+
 In the Canadian provinces Newfoundland and Labrador, the Memorial Day is observed on the Monday nearest July 1st.
 Set the fixed date (July 1) and use the goto-direction called "nearest". The definition:
 
