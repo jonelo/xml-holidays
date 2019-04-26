@@ -45,6 +45,9 @@
         <xi:include href="holidays_pl.xml"/>
         <xi:include href="holidays_ru.xml"/>
 
+        <!-- Middle East -->
+        <xi:include href="holidays_am.xml"/>
+
         <!-- Middle-America -->
         <xi:include href="holidays_mx.xml"/>
 

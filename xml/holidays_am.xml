@@ -14,17 +14,34 @@
 
     <holiday>
         <description language="hy" name="Ամանօր" type="public"/>
+        <description language="en" name="New Year's Day" type="public"/>
         <import id="New Year's Day"/>
     </holiday>
-    
+
+    <holiday>
+        <description language="hy" name="Նախածննդյան տոներ" type="public"/>
+        <description language="en" name="Christmas Eve" type="public"/>
+        <definition>
+            <fixed day="5" month="January"/>
+        </definition>
+    </holiday>
+
     <holiday>
         <description language="hy" name="Սուրբ Ծնունդ" type="public"/>
         <description language="en" name="Christmas Day" type="public"/>
         <definition>
             <fixed day="6" month="January"/>
         </definition>
-    </holiday> 
-    
+    </holiday>
+
+    <holiday>
+        <description language="hy" name="Սուրբ Ծննդյան և Հայտնության տոնին հաջորդող` Մեռելոց հիշատակի օր" type="public"/>
+        <description language="en" name="The day of commemoration of all dead people after Christmas Day" type="public"/>
+        <definition>
+            <fixed day="7" month="January"/>
+        </definition>
+    </holiday>
+
     <!-- In celebration of Armenian Army formation on that day in 1992 -->
     <holiday>
         <description language="hy" name="Բանակի օր" type="public"/>
@@ -33,8 +50,19 @@
             <fixed day="28" month="January"/>
         </definition>
     </holiday> 
-    
-    <!-- Armenian Genocide in 1915 -->
+
+    <!-- https://armeniadiscovery.com/en/articles/march-eight-how-armenians-celebrate-it -->
+    <holiday>
+        <description language="hy" name="Կանանց տոն" type="public"/>
+        <description language="en" name="International Women's Day" type="public"/>
+        <definition firstyear="1921">
+            <fixed day="8" month="March"/>
+        </definition>
+    </holiday>
+
+    <!-- Armenian Genocide in 1915
+         See also http://aglobalworld.com/holidays-around-the-world/armenian-genocide-memorial-day-armenia/
+    -->
     <holiday>
         <description language="hy" name="Եղեռնի զոհերի հիշատակի օր" type="public"/>
         <description language="en" name="Genocide Remembrance Day" type="public"/>
@@ -43,23 +71,27 @@
         </definition>
     </holiday>
     
-    <!-- Victory Day (World War II) was a holiday throughout the USSR and is
-         still an official holiday in Armenia. -->
+    <!--
+         See also http://aglobalworld.com/holidays-around-the-world/victory-peace-day-armenia/
+         "Armenia participated in World War II as part of the Soviet Union [...]
+         It is a day to celebrate and remember the victory over the Nazi forces that capitulated on May 8, 1945
+         during World War II."
+     -->
     <holiday>
         <description language="hy" name="Հաղթանակի եւ Խաղաղության տոն" type="public"/>
         <description language="en" name="Victory and Peace Day" type="public"/>
-        <!-- TODO: firstyear="????" -->
-        <definition>
+        <definition firstyear="1945">
             <fixed day="9" month="May"/>
         </definition>
     </holiday>
     
-    <!-- Establishment of the Democratic Republic of Armenia -->
+    <!-- Establishment of the Democratic Republic of Armenia
+         See also http://aglobalworld.com/holidays-around-the-world/republic-day-armenia/
+    -->
     <holiday>
         <description language="hy" name="Հանրապետության օր" type="public"/>
         <description language="en" name="Republic Day" type="public"/>
-        <!-- TODO: firstyear="????" -->
-        <definition>
+        <definition firstyear="1918">
             <fixed day="28" month="May"/>
         </definition>
     </holiday>
@@ -85,22 +117,19 @@
          destroyed most of the Republic’s infrastructure. -->
     <holiday>
         <description language="hy" name="Երկրաշարժի զոհերի հիշատակի օր" type="public"/>
-        <description language="en" name="Spitak Remembrance Day" type="public"/>
+        <description language="en" name="1988 Earthquake Memorial Day (Spitak Remembrance Day)" type="public"/>
         <definition firstyear="1988">
             <fixed day="7" month="December"/>
         </definition>
     </holiday>
     
-    <!-- On the fourth Sunday preceding Dormition (15 August), a special
-         celebration called Vardevar (Վարդևար) takes place, where anyone is free
-         to soak others with water from spray guns, hoses or even buckets. -->
+    <!-- Vardavar is celebrated 98 days (14 weeks) after Easter. -->
     <holiday>
         <description language="hy" name="Վարդևար"/>
         <description language="en" name="Vardevar"/>
         <definition>
-            <fixed day="15" month="August"/>
-            <goto direction="previous" weekday="Sunday"/>
-            <add days="-21"/> <!-- 3*7 = 28 -->
+            <easter/>
+            <add days="98"/>
         </definition>
     </holiday>
     
