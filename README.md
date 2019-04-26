@@ -23,7 +23,7 @@ is able to read and understand xml holidays data. See also http://numericalchame
 
 ### Celebrated on a fixed day
 
-#### Example: on Janary 1
+#### Example: on January 1
 The New Year's day is always celebrated on January 1, each year.
 
 ```xml
