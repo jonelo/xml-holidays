@@ -27,7 +27,10 @@ is able to read and understand xml holidays data. See also http://numericalchame
 The New Year's day is always celebrated on January 1, each year.
 
 ```xml
-<holiday name="New Year's Day">
+<holiday>
+    <description language="en" name="New Year's Day"/>
+    <description language="de" name="Neujahrstag"/>
+
     <definition>
         <fixed day="1" month="January"/>
     </definition>
@@ -43,7 +46,10 @@ Easter is celebrated always on a Sunday. Good Friday is celebrated two days befo
 Simply use the easter tag at first and subtract two days from it (add -2).
 
 ```xml
-<holiday name="Good Friday">
+<holiday>
+    <description language="en" name="Good Friday"/>
+    <description language="de" name="Karfreitag"/>
+
     <definition>
         <easter/>
         <add days="-2"/>
@@ -61,7 +67,9 @@ The holiday was declared officially by some states beginning in 1912.
 
 ```xml
 <!-- http://en.wikipedia.org/wiki/Mother%27s_Day -->
-<holiday name="Mother's Day">
+<holiday>
+    <description language="en" name="Mother's Day"/>
+
     <definition firstyear="1912">
         <rule nth="2nd" weekday="Sunday" month="May"/>
     </definition>
@@ -77,7 +85,10 @@ In Argentina Columbus Day (Día de la Raza) is celebrated on October 12, but if 
 the holiday is the preceding Monday. If it falls on a Thursday or a Friday then the holiday is the following Monday.
 
 ```xml
-<holiday name="Día de la Raza" international="Columbus Day" type="public holiday">
+<holiday>
+    <description language="es" name="Día de la Raza" type="public holiday"/>
+    <description language="en" name="Columbus Day" type="public holiday"/>
+
     <definition firstyear="1917">
         <fixed day="12" month="October"/>
         <!--
@@ -110,7 +121,9 @@ So actually you need two definition blocks in order to define the Washington's b
   http://en.wikipedia.org/wiki/Washington%27s_Birthday
   George Washington (February 22, 1732 – December 14, 1799)
  -->
-<holiday name="Washington's Birthday (President's Day)" type="federal holiday">
+<holiday>
+    <description language="en" name="Washington's Birthday (President's Day)" type="federal holiday"/>
+
     <!-- Titled Washington's Birthday, the federal holiday was originally
          implemented by the United States federal government in 1880 for
          government offices in the District of Columbia (20 Stat. 277) and
@@ -136,7 +149,9 @@ In the US, the week begins with Sunday, therefore the first full week begins wit
 If you add two days, you get Tuesday.
 
 ```xml
-<holiday name="National Teacher Day">
+<holiday>
+    <description language="en" name="National Teacher Day"/>
+
     <!-- ... -->
     <definition firstyear="1986">
         <rule nth="1st" weekday="Sunday" month="May"/>
@@ -153,7 +168,9 @@ The last full week is therefore the week which ends with Saturday (the last Satu
 In order to get the Wednesday of the last full week of April, simply subtract three days.
 
 ```xml
-<holiday name="National Secretaries Day">
+<holiday>
+    <description language="en" name="National Secretaries Day"/>
+
     <!-- ... -->
     <definition firstyear="1955" lastyear="1980">
         <rule nth="Last" weekday="Saturday" month="April"/>
@@ -169,7 +186,9 @@ In the Canadian provinces Newfoundland and Labrador, the Memorial Day is observe
 Set the fixed date (July 1) and use the goto-direction called "nearest". The definition:
 
 ```xml
-<holiday name="Memorial Day" type="Newfoundland and Labrador">
+<holiday>
+    <description language="en" name="Memorial Day" region="Newfoundland and Labrador"/>
+
     <definition>
         <!-- it is celebrated on the Monday nearest July 1st -->
         <fixed day="1" month="July"/>
@@ -191,7 +210,10 @@ As the actual day of the Solstice (or Equinox) is dependent on the timezone in a
 you can specify it with the parameter called timezone.
 
 ```xml
-<holiday name="Sommeranfang (Sommersonnenwende)" international="Solstice June">
+<holiday>
+    <description language="de" name="Sommeranfang (Sommersonnenwende)"/>
+    <description language="en" name="Solstice June"/>
+
     <definition>
         <solstice type="June" timezone="Europe/Berlin"/>
     </definition>
