@@ -152,8 +152,8 @@
 
     <!-- The 4th Friday after Easter -->
     <holiday>
-        <description language="da" name="Stor Bededag"/>
-        <description language="en" name="General Prayer Day" type="public"/>
+        <description language="da" name="Store Bededag"/>
+        <description language="en" name="Great Prayer Day" type="public"/>
         <definition>
            <easter/>
            <add days="+26"/>
