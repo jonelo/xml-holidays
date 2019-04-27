@@ -1,6 +1,7 @@
 version 1.1, TBD
 ----------------
-- DTD unchanged
+- DTD updated with lunisolar month for Chinese calendar definitions
+
 - Added Holidays for
 
   Armenia

@@ -10,7 +10,8 @@
 <!ENTITY % weekdays "Monday | Tuesday | Wednesday | Thursday |
                      Friday | Saturday | Sunday">
 <!ENTITY % nth "First | Second | Third | Fourth | Last">
-<!ENTITY % startdate "fixed | easter | advent | rule | dst | equinox | solstice">
+<!ENTITY % startdate "fixed | easter | advent | rule | dst |
+                      equinox | solstice | lunisolar">
 <!ENTITY % modifiers "add | goto">
 <!ENTITY % directions "nearest | next | nextinclusive | previous | previousinclusive">
 
@@ -168,7 +169,15 @@
       <!ATTLIST solstice
                 month (June|December) #REQUIRED
                 timezone CDATA #REQUIRED>
-        
+
+		<!--
+          Lunisolar
+        -->
+		<!ELEMENT lunisolar EMPTY>
+		<!ATTLIST lunisolar
+				month CDATA #REQUIRED>
+
+
       <!--
         The rule defines the nth weekday of a month
       -->
