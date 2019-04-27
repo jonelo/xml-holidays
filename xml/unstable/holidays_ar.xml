@@ -8,6 +8,7 @@
 <holidays country="AR">
     <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Argentina -->
 
+    <default language="es"/>
     <!--
      TODO:
      The following are federal non-working religious holidays
@@ -18,73 +19,83 @@
      Muslim New Year (Islam)
     -->
 
-    <holiday name="Año Nuevo" type="public holiday">
-        <import name="New Year's Day"/>
+    <holiday>
+        <description language="es" name="Año Nuevo" type="public holiday"/>
+        <import id="New Year's Day"/>
     </holiday>
 
-    <holiday name="Eastern Orthodox Christmas Day"
-             type="federal non-working religious holiday (people of the relevant faiths are excused from work)">
+    <holiday>
+        <description language="es" name="Eastern Orthodox Christmas Day"
+             type="federal non-working religious holiday (people of the relevant faiths are excused from work)"/>
         <definition>
             <fixed day="7" month="January"/>
         </definition>
     </holiday> 
     
-    <holiday name="Jueves Santo" type="public holiday">
-        <import name="Maundy Thursday"/>
+    <holiday>
+        <description language="es" name="Jueves Santo" type="public holiday"/>
+        <description language="en" name="Holy Thursday" type="public holiday"/>
+        <import id="Maundy Thursday"/>
     </holiday>
     
-    <holiday name="Viernes Santo" type="public holiday">
-        <import name="Good Friday"/>
+    <holiday>
+        <description language="es" name="Viernes Santo" type="public holiday"/>
+        <import id="Good Friday"/>
     </holiday>
     
     <!-- http://en.wikipedia.org/wiki/Day_of_Memory_for_Truth_and_Justice -->
-    <holiday name="Día de la Memoria por la Verdad y la Justicia"
-             type="public holiday"
-             international="Day of Memory for Truth and Justice">
+    <holiday>
+        <description language="es" name="Día de la Memoria por la Verdad y la Justicia" type="public holiday"/>
+        <description language="en" name="Day of Remembrance for Truth and Justice" type="public holiday"/>
         <definition firstyear="1976">
             <fixed day="24" month="March"/>
         </definition>
     </holiday>
 
     <!-- http://en.wikipedia.org/wiki/Malvinas_Day -->
-    <holiday name="Día de los caídos en Malvinas"
-             type="public holiday"
-             international="Malvinas Day">
+    <holiday>
+        <description language="es" name="Día de los caídos en Malvinas" type="public holiday"/>
+        <description language="en" name="Malvinas Day" type="public holiday"/>
         <definition firstyear="1982">
             <fixed day="2" month="April"/>
         </definition>
     </holiday>
 
-    <!-- http://en.wikipedia.org/wiki/Malvinas_Day -->
-    <holiday name="Día del Trabajador" type="public holiday"
-             international="Labor Day">
+    <holiday>
+        <description language="es" name="Día del Trabajador" type="public holiday"/>
+        <description language="en" name="Labor Day" type="public holiday"/>
         <definition>
             <fixed day="1" month="May"/>
         </definition>
     </holiday>
 
     <!-- http://en.wikipedia.org/wiki/May_Revolution -->
-    <holiday name="Revolución de Mayo" type="public holiday"
-             international="May Revolution">
+    <holiday>
+        <description language="es" name="Revolución de Mayo" type="public holiday"/>
+        <description language="en" name="May Revolution"/>
         <definition firstyear="1810">
             <fixed day="25" month="May"/>
         </definition>
     </holiday>
     
-    <holiday name="Día de la Bandera" international="National Flag Day"
-             type="public holiday">
+    <holiday>
+        <description language="es" name="Día de la Bandera" type="public holiday"/>
+        <description language="en" name="National Flag Day" type="public holiday"/>
         <definition>
             <rule nth="Third" weekday="Monday" month="June"/>
         </definition>
     </holiday>
     
-    <holiday name="Father's Day">
+    <holiday>
+        <description language="en" name="Father's Day"/>
         <definition>
             <rule nth="Third" weekday="Sunday" month="June"/>
         </definition>
     </holiday>
     
-    <holiday name="New Year's Day for indigenous cultures" type="federal non-working religious holiday (people of the relevant faiths are excused from work)">
+    <holiday>
+        <description language="en" name="New Year's Day for indigenous cultures"
+                     type="federal non-working religious holiday (people of the relevant faiths are excused from work)"/>
         <definition>
             <fixed day="21" month="June"/>
         </definition>
@@ -92,30 +103,35 @@
 
 
     <!-- http://en.wikipedia.org/wiki/May_Revolution -->
-    <holiday name="Día de la Independencia" type="public holiday"
-             international="National Independence Day">
+    <holiday>
+        <description language="es" name="Día de la Independencia" type="public holiday"/>
+        <description language="en" name="National Independence Day" type="public holiday"/>
         <definition firstyear="1810">
             <fixed day="9" month="July"/>
         </definition>
     </holiday>
     
-    <holiday name="Día del Libertador José de San Martín"
-        international="Anniversary of the death of General José de San Martín"
-        type="public holiday">
+    <holiday>
+        <description language="es" name="Día del Libertador José de San Martín" type="public holiday"/>
+        <description language="en" name="Anniversary of the death of General José de San Martín" type="public holiday"/>
+
         <definition>
             <rule nth="Third" weekday="Monday" month="August"/>
         </definition>
     </holiday>
     
-    <holiday name="Children's Day">
+    <holiday>
+        <description language="en" name="Children's Day"/>
         <definition>
             <rule nth="Second" weekday="Sunday" month="August"/>
         </definition>
     </holiday>
     
     <!-- http://en.wikipedia.org/wiki/Columbus_Day -->
-    <holiday name="Día de la Raza" international="Columbus Day"
-             type="public holiday">
+    <holiday>
+        <description language="es" name="Día de la Raza" type="public holiday"/>
+        <description language="en" name="Columbus Day" type="public holiday"/>
+
         <definition firstyear="1917">
             <fixed day="12" month="October"/>
             <!--
@@ -141,50 +157,61 @@
         </definition>        
     </holiday>
     
-    <holiday name="Día del Maestro" international="Teacher's Day" type="only observed by primary school students">
+    <holiday>
+        <description language="es" name="Día del Maestro" type="only observed by primary school students"/>
+        <description language="en" name="Teacher's Day" type="only observed by primary school students"/>
         <definition>
             <fixed day="11" month="September"/>
         </definition>
     </holiday>
     
     <!-- http://en.wikipedia.org/wiki/Mother%27s_Day -->
-    <holiday name="Mother's Day">
+    <holiday>
+        <description language="en" name="Mother's Day"/>
         <definition>
             <rule nth="Third" weekday="Sunday" month="October"/>
         </definition>
     </holiday>
-    
-    <holiday name="Día del Estudiante/Día de la Primavera" international="Student's Day/Spring Day" type="only observed by high-school students">
+
+    <holiday>
+        <description language="es" name="Día del Estudiante/Día de la Primavera" type="only observed by high-school students"/>
+        <description language="en" name="Student's Day/Spring Day" type="only observed by high-school students"/>
         <definition>
             <fixed day="21" month="November"/>
         </definition>
     </holiday>   
 
-    <holiday name="Día de la Inmaculada Concepción" type="public holiday">
+    <holiday>
+        <description language="en" name="Día de la Inmaculada Concepción" type="public holiday"/>
         <definition>
             <fixed day="8" month="December"/>
         </definition>
     </holiday>
     
-    <holiday name="Nochebuena" type="public holiday">
-        <import name="Christmas Eve"/>
+    <holiday>
+        <description language="es" name="Nochebuena" type="public holiday"/>
+        <import id="Christmas Eve"/>
     </holiday>
     
-    <holiday name="Día de Navidad" type="public holiday">
-        <import name="Christmas Day"/>
+    <holiday>
+        <description language="es" name="Día de Navidad" type="public holiday"/>
+        <import id="Christmas Day"/>
     </holiday>
 
-    <holiday name="Fin de Año" type="public holiday">
-        <import name="Christmas Day"/>
+    <holiday>
+        <description language="es" name="Fin de Año" type="public holiday"/>
+        <import id="Christmas Day"/>
     </holiday>
    
-    <holiday name="Begin Daylight Saving Time (DST)">
+    <holiday>
+        <description language="en" name="Begin Daylight Saving Time (DST)"/>
         <definition>
             <dst timezone="America/Buenos_Aires" action="start"/>
         </definition>
     </holiday>
     
-    <holiday name="End Daylight Saving Time (DST)">
+    <holiday>
+        <description language="en" name="End Daylight Saving Time (DST)"/>
         <definition>
             <dst timezone="America/Buenos_Aires" action="end"/>
         </definition>
