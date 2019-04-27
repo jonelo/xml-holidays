@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+<!-- 
+    This file is from the free xml-holidays project. See also
+    http://xml-holidays.sourceforge.net/
+    Thank you for keeping the comment.
+ -->
+<holidays country="CL">
+    <!-- http://en.wikipedia.org/wiki/Public_holidays_in_Chile -->
+
+    <default language="es"/>
+
+    <holiday>
+        <description language="de" name="Neujahrstag" type="gesetzlich"/>
+        <description language="en" name="New Year's Day" type="public holiday"/>
+        <description language="es" name="Año Nuevo" type="public holiday"/>
+        <import id="New Year's Day"/>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Karfreitag" type="gesetzlich"/>
+        <description language="en" name="Good Friday" type="public holiday"/>
+        <description language="es" name="Viernes Santo" type="public holiday"/>
+        <definition>
+            <easter/>
+            <add days="-2"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Karsamstag"/>
+        <description language="en" name="Holy Saturday"/>
+        <description language="es" name="Sábado Santo"/>
+        <definition>
+            <easter/>
+            <add days="-1"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Labour Day" type="public holiday"/>
+        <description language="es" name="Día del Trabajo" type="public holiday"/>
+        <definition>
+            <fixed month="May" day="1"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Navy Day" type="public holiday"/>
+        <description language="es" name="Día de las Glorias Navales" type="public holiday"/>
+        <definition>
+            <fixed month="May" day="21"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Begin Daylight Saving Time (DST)"/>
+        <description language="es" name="Inicio del horario de verano"/>
+        <definition>
+            <dst timezone="America/Santiago" action="start"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="en" name="End Daylight Saving Time (DST)"/>
+        <description language="es" name="Finalizar el horario de verano"/>
+        <definition>
+            <dst timezone="America/Santiago" action="end"/>
+        </definition>
+    </holiday>
+
+</holidays>
