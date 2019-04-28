@@ -19,7 +19,7 @@
         <description language="en" name="Spring Festival (Chinese New Year's Eve)" type="public"/>
         <description language="zh" name="春节 (1st day)" type="public"/>
         <definition firstyear="2008" lastyear="2013">
-            <lunisolar month="1"/>
+            <lunisolar month="1" day="1"/>
             <add days="-1"/>
         </definition>
     </holiday>
@@ -29,7 +29,7 @@
         <description language="en" name="Spring Festival (Chinese New Year, 1st day)" type="public"/>
         <description language="zh" name="春节 (1st day)" type="public"/>
         <definition firstyear="1950">
-            <lunisolar month="1"/>
+            <lunisolar month="1" day="1"/>
         </definition>
     </holiday>
 
@@ -37,8 +37,7 @@
         <description language="en" name="Spring Festival (Chinese New Year, 2nd day)" type="public"/>
         <description language="zh" name="春节 (2nd day)" type="public"/>
         <definition firstyear="1950">
-            <lunisolar month="1"/>
-            <add days="1"/>
+            <lunisolar month="1" day="2"/>
         </definition>
     </holiday>
 
@@ -46,15 +45,13 @@
         <description language="en" name="Spring Festival (Chinese New Year, 3rd day)" type="public"/>
         <description language="zh" name="春节 (3rd day)" type="public"/>
         <definition firstyear="1950" lastyear="2007">
-            <lunisolar month="1"/>
-            <add days="2"/>
+            <lunisolar month="1" day="3"/>
         </definition>
         <definition firstyear="2008" lastyear="2013">
             <undefined/>
         </definition>
         <definition firstyear="2014">
-            <lunisolar month="1"/>
-            <add days="2"/>
+            <lunisolar month="1" day="3"/>
         </definition>
     </holiday>
 
@@ -103,8 +100,7 @@
         <description language="en" name="Dragon Boat Festival" type="public"/>
         <description language="zh" name="端午节" type="public"/>
         <definition firstyear="2008">
-            <lunisolar month="5"/>
-            <add days="4"/>
+            <lunisolar month="5" day="5"/>
         </definition>
     </holiday>
 
@@ -113,8 +109,7 @@
         <description language="en" name="Mid-Autumn Festival" type="public"/>
         <description language="zh" name="中秋节" type="public"/>
         <definition firstyear="2008">
-            <lunisolar month="8"/>
-            <add days="14"/>
+            <lunisolar month="8" day="15"/>
         </definition>
     </holiday>
 

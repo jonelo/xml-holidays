@@ -175,7 +175,8 @@
         -->
 		<!ELEMENT lunisolar EMPTY>
 		<!ATTLIST lunisolar
-				month CDATA #REQUIRED>
+				month CDATA #REQUIRED
+				day CDATA #REQUIRED>
 
 
       <!--

@@ -1,14 +1,15 @@
 version 1.1, TBD
 ----------------
-- DTD updated with lunisolar month for Chinese calendar definitions
+- DTD updated with lunisolar XML element for Chinese holiday definitions
 
 - Added Holidays for
 
   Armenia
   Chile
+  China
   DDR
 
-- many minor fixes and changes
+- many minor fixes and additions on exising definitions
 
   more international and UN holidays
   fix for Germany's Oktoberfest for 2010
