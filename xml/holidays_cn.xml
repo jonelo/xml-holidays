@@ -314,14 +314,21 @@
     </holiday>
 
     <holiday>
+        <description language="en" name="Laba Festival" type="traditional"/>
+        <description language="zh" name="腊八节" type="traditional"/>
+        <definition>
+            <lunisolar month="12" day="8"/>
+        </definition>
+    </holiday>
+
+    <holiday>
         <description language="en" name="Nanking Massacre Memorial Day" type="traditional"/>
         <description language="zh" name="南京大屠杀死难者国家公祭日" type="traditional"/>
         <definition firstyear="2014">
             <fixed month="December" day="13"/>
         </definition>
     </holiday>
-
-
+    
     <holiday>
         <description language="en" name="March Equinox"/>
         <definition>
