@@ -177,7 +177,7 @@
     </holiday>
 
     <holiday>
-        <description language="en" name="Shangsi Festival" type="traditional"/>
+        <description language="en" name="Double Third Festival (Shangsi Festival)" type="traditional"/>
         <description language="zh" name="上巳節 / 上巳节" type="traditional"/>
         <definition>
             <lunisolar month="3" day="3"/>
