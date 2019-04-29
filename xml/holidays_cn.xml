@@ -321,4 +321,34 @@
         </definition>
     </holiday>
 
+
+    <holiday>
+        <description language="en" name="March Equinox"/>
+        <definition>
+            <equinox month="March" timezone="Asia/Shanghai"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="September Equinox"/>
+        <definition>
+            <equinox month="September" timezone="Asia/Shanghai"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="June Solstice"/>
+        <definition>
+            <solstice month="June" timezone="Asia/Shanghai"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="December Solstice"/>
+        <definition>
+            <solstice month="December" timezone="Asia/Shanghai"/>
+        </definition>
+    </holiday>
+
+
 </holidays>

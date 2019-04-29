@@ -867,7 +867,7 @@
     
     <holiday>
         <description language="de" name="Frühlingsanfang"/>
-        <description language="en" name="Equinox March"/>
+        <description language="en" name="March Equinox"/>
         <definition>
             <equinox month="March" timezone="Europe/Berlin"/>
         </definition>
@@ -875,7 +875,7 @@
     
     <holiday>
         <description language="de" name="Sommeranfang (Sommersonnenwende)"/>
-        <description language="en" name="Solstice June"/>
+        <description language="en" name="June Solstice"/>
         <definition>
             <solstice month="June" timezone="Europe/Berlin"/>
         </definition>
@@ -883,7 +883,7 @@
     
     <holiday>
         <description language="de" name="Herbstanfang"/>
-        <description language="en" name="Equinox September"/>
+        <description language="en" name="September Equinox"/>
         <definition>
             <equinox month="September" timezone="Europe/Berlin"/>
         </definition>
@@ -891,7 +891,7 @@
 
     <holiday>
         <description language="de" name="Winteranfang (Wintersonnenwende)"/>
-        <description language="en" name="Solstice December"/>
+        <description language="en" name="December Solstice"/>
         <definition>
             <solstice month="December" timezone="Europe/Berlin"/>
         </definition>
