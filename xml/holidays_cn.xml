@@ -177,6 +177,14 @@
     </holiday>
 
     <holiday>
+        <description language="en" name="Shangsi Festival" type="traditional"/>
+        <description language="zh" name="上巳節 / 上巳节" type="traditional"/>
+        <definition>
+            <lunisolar month="3" day="3"/>
+        </definition>
+    </holiday>
+
+    <holiday>
         <description language="en" name="International Women's Day" type="traditional" region="public holiday applicable to women (half-day)"/>
         <description language="zh" name="国际妇女节"/>
         <definition>
