@@ -306,8 +306,8 @@
     </holiday>
 
     <holiday>
-        <description language="en" name="Chongyang Festival" type="traditional"/>
-        <description language="zh" name="重阳节" type="traditional"/>
+        <description language="en" name="Double Ninth Festival (Chongyang Festival)" type="traditional"/>
+        <description language="zh" name="重陽節 / 重阳节" type="traditional"/>
         <definition>
             <lunisolar month="9" day="9"/>
         </definition>
