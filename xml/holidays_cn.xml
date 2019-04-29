@@ -14,7 +14,6 @@
         <import id="New Year's Day"/>
     </holiday>
 
-
     <holiday>
         <description language="en" name="Spring Festival (Chinese New Year's Eve)" type="public"/>
         <description language="zh" name="春节 (Eve)" type="public"/>
@@ -23,7 +22,6 @@
             <add days="-1"/>
         </definition>
     </holiday>
-
 
     <holiday>
         <description language="en" name="Spring Festival (Chinese New Year, 1st day)" type="public"/>
@@ -62,7 +60,7 @@
          This makes it the 15th day after the Spring Equinox, either 4 or 5 April in a given year.
     -->
     <holiday>
-        <description language="en" name="Tomb-Sweeping Day" type="public"/>
+        <description language="en" name="Tomb-Sweeping Day (Qingming Festival)" type="public"/>
         <description language="zh" name="清明节" type="public"/>
         <definition firstyear="2008">
             <equinox month="March" timezone="Asia/Shanghai"/>
@@ -95,7 +93,6 @@
         </definition>
     </holiday>
 
-    <!-- 5th day of 5th Lunisolar month -->
     <holiday>
         <description language="en" name="Dragon Boat Festival" type="public"/>
         <description language="zh" name="端午节" type="public"/>
@@ -104,7 +101,6 @@
         </definition>
     </holiday>
 
-    <!-- 15th day of 8th Lunisolar month -->
     <holiday>
         <description language="en" name="Mid-Autumn Festival" type="public"/>
         <description language="zh" name="中秋节" type="public"/>
@@ -137,9 +133,51 @@
         </definition>
     </holiday>
 
-    <!-- Additional holidays for specific social groups -->
+    <!-- Traditional Chinese holidays -->
+
     <holiday>
-        <description language="en" name="International Women's Day" type="public holidays applicable to specific sections of the population" region="Applicable to women (half-day)"/>
+        <description language="en" name="New Year's Day" type="traditional"/>
+        <description language="zh" name="元旦" type="traditional"/>
+        <definition>
+            <fixed month="January" day="1"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Chinese New Year's Eve" type="traditional"/>
+        <description language="zh" name="春节" type="traditional"/>
+        <definition>
+            <lunisolar month="1" day="1"/>
+            <add days="-1"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Chinese New Year (Spring Festival)" type="traditional"/>
+        <description language="zh" name="春节" type="traditional"/>
+        <definition>
+            <lunisolar month="1" day="1"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Lantern Festival" type="traditional"/>
+        <description language="zh" name="元宵节" type="traditional"/>
+        <definition>
+            <lunisolar month="1" day="15"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Zhonghe Festival" type="traditional"/>
+        <description language="zh" name="中和节" type="traditional"/>
+        <definition>
+            <lunisolar month="2" day="2"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="International Women's Day" type="traditional" region="public holiday applicable to women (half-day)"/>
         <description language="zh" name="国际妇女节"/>
         <definition>
             <fixed month="March" day="8"/>
@@ -147,7 +185,32 @@
     </holiday>
 
     <holiday>
-        <description language="en" name="Youth Day" type="public holidays applicable to specific sections of the population" region="Applicable to youth from the age of 14 to 28 (half-day)"/>
+        <description language="en" name="Arbor Day" type="traditional"/>
+        <description language="zh" name="植树节" type="traditional"/>
+        <definition>
+            <fixed month="March" day="12"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Tomb-Sweeping Day (Qingming Festival)" type="traditional"/>
+        <description language="zh" name="清明节" type="public"/>
+        <definition>
+            <equinox month="March" timezone="Asia/Shanghai"/>
+            <add days="15"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Labour Day" type="traditional"/>
+        <description language="zh" name="劳动节" type="traditional"/>
+        <definition>
+            <fixed month="May" day="1"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Youth Day" type="traditional" region="public holiday applicable to youth from the age of 14 to 28 (half-day)"/>
         <description language="zh" name="青年节"/>
         <definition>
             <fixed month="May" day="4"/>
@@ -155,18 +218,106 @@
     </holiday>
 
     <holiday>
-        <description language="en" name="Children's Day" type="public holidays applicable to specific sections of the population" region="Applicable to children below the age of 14 (1 day)"/>
+        <description language="en" name="Children's Day" type="traditional" region="public holiday applicable to children below the age of 14 (1 day)"/>
         <description language="zh" name="六一儿童节"/>
         <definition>
             <fixed month="June" day="1"/>
         </definition>
     </holiday>
+    
+    <holiday>
+        <description language="en" name="Dragon Boat Festival" type="traditional"/>
+        <description language="zh" name="端午节" type="traditional"/>
+        <definition>
+            <lunisolar month="5" day="5"/>
+        </definition>
+    </holiday>
 
     <holiday>
-        <description language="en" name="Army Day" type="public holidays applicable to specific sections of the population" region="Military personnel in active service (half-day)"/>
+        <description language="en" name="CPC Founding Day" type="traditional"/>
+        <description language="zh" name="建党节" type="traditional"/>
+        <definition firstyear="1921">
+            <fixed month="July" day="1"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="China National Maritime Day" type="traditional"/>
+        <description language="zh" name="中国航海日" type="traditional"/>
+        <definition year="2005">
+            <fixed month="July" day="11"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Army Day" type="traditional" region="public holiday for military personnel in active service (half-day)"/>
         <description language="zh" name="建军节"/>
         <definition>
             <fixed month="August" day="1"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Double Seven Festival (Qixi Festival)" type="traditional"/>
+        <description language="zh" name="七夕" type="traditional"/>
+        <definition>
+            <lunisolar month="7" day="7"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Spirit Festival (Ghost Festival)" type="traditional"/>
+        <description language="zh" name="中元节" type="traditional"/>
+        <definition>
+            <lunisolar month="7" day="15"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Mid-Autumn Festival (Moon Festival)" type="traditional"/>
+        <description language="zh" name="中秋节" type="traditional"/>
+        <definition>
+            <lunisolar month="8" day="15"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="en" name="Victory over Japan Day (V-J Day)" type="traditional"/>
+        <description language="zh" name="中国人民抗日战争胜利纪念日" type="traditional"/>
+        <definition firstyear="2014">
+            <fixed month="September" day="3"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="National Memorial Day" type="traditional"/>
+        <description language="zh" name="烈士纪念日" type="traditional"/>
+        <definition firstyear="2014">
+            <fixed month="September" day="30"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="National Day" type="traditional"/>
+        <description language="zh" name="国庆节" type="traditional"/>
+        <definition firstyear="2014">
+            <fixed month="October" day="1"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Chongyang Festival" type="traditional"/>
+        <description language="zh" name="重阳节" type="traditional"/>
+        <definition>
+            <lunisolar month="9" day="9"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Nanking Massacre Memorial Day" type="traditional"/>
+        <description language="zh" name="南京大屠杀死难者国家公祭日" type="traditional"/>
+        <definition firstyear="2014">
+            <fixed month="December" day="13"/>
         </definition>
     </holiday>
 
