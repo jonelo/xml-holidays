@@ -178,7 +178,7 @@
 
     <holiday>
         <description language="en" name="Double Third Festival (Shangsi Festival)" type="traditional"/>
-        <description language="zh" name="上巳節 / 上巳节" type="traditional"/>
+        <description language="zh" name="上巳节" type="traditional"/>
         <definition>
             <lunisolar month="3" day="3"/>
         </definition>
@@ -323,7 +323,7 @@
 
     <holiday>
         <description language="en" name="Spirit Festival (Water Lantern Festival)" type="traditional"/>
-        <description language="zh" name="下元節 (下元节)" type="traditional"/>
+        <description language="zh" name="下元节" type="traditional"/>
         <definition>
             <lunisolar month="10" day="15"/>
         </definition>
