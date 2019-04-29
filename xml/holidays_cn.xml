@@ -314,6 +314,14 @@
     </holiday>
 
     <holiday>
+        <description language="en" name="Spirit Festival (Water Lantern Festival)" type="traditional"/>
+        <description language="zh" name="下元節 (下元节)" type="traditional"/>
+        <definition>
+            <lunisolar month="10" day="15"/>
+        </definition>
+    </holiday>
+
+    <holiday>
         <description language="en" name="Laba Festival" type="traditional"/>
         <description language="zh" name="腊八节" type="traditional"/>
         <definition>
@@ -328,7 +336,7 @@
             <fixed month="December" day="13"/>
         </definition>
     </holiday>
-    
+
     <holiday>
         <description language="en" name="March Equinox"/>
         <definition>
