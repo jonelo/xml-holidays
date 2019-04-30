@@ -344,14 +344,14 @@
     </holiday>
 
 
-    <holiday>
+    <holiday valid="false">
         <description language="en" name="Begin Daylight Saving Time (DST)"/>
         <definition>
             <dst timezone="Asia/Tokyo" action="start"/>
         </definition>
     </holiday>
     
-    <holiday>
+    <holiday valid="false">
         <description language="en" name="End Daylight Saving Time (DST)"/>
         <definition>
             <dst timezone="Asia/Tokyo" action="end"/>
