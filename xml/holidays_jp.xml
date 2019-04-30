@@ -307,7 +307,7 @@
 
 
     <!-- https://en.wikipedia.org/wiki/Kōreisai -->
-    <holiday>
+    <holiday valid="false">
         <description language="jp" name="Shunki kōreisai"/>
         <description language="en" name="Vernal Imperial Rituals"/>
         <definition firstyear="1878" lastyear="1947">
@@ -326,7 +326,7 @@
 
 
     <!-- https://en.wikipedia.org/wiki/Kōreisai -->
-    <holiday>
+    <holiday valid="false">
         <description language="jp" name="Shūki kōrei-sai"/>
         <description language="en" name="Autumn Imperial Rituals"/>
         <definition firstyear="1878" lastyear="1947">
