@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE holidays SYSTEM "holidays.dtd">
-
+<!--
+    This file is from the free xml-holidays project. See also
+    https://github.com/jonelo/xml-holidays/
+    Thank you for keeping the comment.
+-->
 <holidays country="SK">
     <!-- Slowak. Republik http://feiertagskalender.ch/index.php?geo=3453&jahr=2008&klasse=5&hl=de&hidepast=0-->
 

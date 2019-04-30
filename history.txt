@@ -2,7 +2,8 @@ version 1.1, TBD
 ----------------
 - more than 1000 holiday definitions
 
-- DTD updated with lunisolar XML element for Chinese holiday definitions
+- DTD updated with lunisolar XML element for holiday definitions
+  that are based on the Chinese calendar
 
 - Added holiday definitions for
 
