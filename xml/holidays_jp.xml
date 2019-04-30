@@ -304,7 +304,46 @@
             <fixed day="23" month="February"/>
         </definition>
     </holiday>
-    
+
+
+    <!-- https://en.wikipedia.org/wiki/Kōreisai -->
+    <holiday>
+        <description language="jp" name="Shunki kōreisai"/>
+        <description language="en" name="Vernal Imperial Rituals"/>
+        <definition firstyear="1878" lastyear="1947">
+            <equinox month="March" timezone="Asia/Tokyo"/>
+        </definition>
+    </holiday>
+
+    <!-- https://en.wikipedia.org/wiki/Vernal_Equinox_Day -->
+    <holiday>
+        <description language="jp" name="Shunbun no Hi"/>
+        <description language="en" name="Vernal Equinox Day"/>
+        <definition firstyear="1948">
+            <equinox month="March" timezone="Asia/Tokyo"/>
+        </definition>
+    </holiday>
+
+
+    <!-- https://en.wikipedia.org/wiki/Kōreisai -->
+    <holiday>
+        <description language="jp" name="Shūki kōrei-sai"/>
+        <description language="en" name="Autumn Imperial Rituals"/>
+        <definition firstyear="1878" lastyear="1947">
+            <equinox month="September" timezone="Asia/Tokyo"/>
+        </definition>
+    </holiday>
+
+    <!-- https://en.wikipedia.org/wiki/Autumnal_Equinox_Day -->
+    <holiday>
+        <description language="jp" name="Shūbun no Hi"/>
+        <description language="en" name="Autumnal Equinox Day"/>
+        <definition firstyear="1948">
+            <equinox month="September" timezone="Asia/Tokyo"/>
+        </definition>
+    </holiday>
+
+
     <holiday>
         <description language="en" name="Begin Daylight Saving Time (DST)"/>
         <definition>
