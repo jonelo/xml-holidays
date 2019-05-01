@@ -18,7 +18,7 @@
         <import id="New Year's Day"/>
     </holiday>
 
-    <holiday>
+    <holiday valid="false">
         <description language="en" name="Spring Festival (Chinese New Year's Eve)" type="public"/>
         <description language="zh" name="春节 (Eve)" type="public"/>
         <definition firstyear="2008" lastyear="2013">
