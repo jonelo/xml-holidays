@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+<!--
+    This file is from the free xml-holidays project. See also
+    https://github.com/jonelo/xml-holidays/
+    Thank you for keeping the comment.
+-->
+<holidays country="TW">
+    <!--
+        https://en.wikipedia.org/wiki/Public_holidays_in_Taiwan
+    -->
+
+    <default language="zh"/>
+
+    <holiday>
+        <description language="en" name="New Year's Day" type="public"/>
+        <description language="zh" name="元旦" type="public"/>
+        <import id="New Year's Day"/>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Lunar New Year's Eve" type="public"/>
+        <description language="zh" name="農曆除夕" type="public"/>
+        <definition>
+            <lunisolar month="1" day="1"/>
+            <add days="-1"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Spring Festival (Lunar New Year, 1st day)" type="public"/>
+        <description language="zh" name="春节 (1st day)" type="public"/>
+        <definition>
+            <lunisolar month="1" day="1"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Spring Festival (Lunar New Year, 2nd day)" type="public"/>
+        <description language="zh" name="春节 (2nd day)" type="public"/>
+        <definition>
+            <lunisolar month="1" day="2"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Spring Festival (Lunar New Year, 3rd day)" type="public"/>
+        <description language="zh" name="春节 (3rd day)" type="public"/>
+        <definition>
+            <lunisolar month="1" day="3"/>
+        </definition>
+    </holiday>
+    
+    <holiday>
+        <description language="en" name="Peace Memorial Day" type="public"/>
+        <description language="zh" name="228和平紀念日" type="public"/>
+        <definition>
+            <fixed month="February" day="28"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="The Combined Holidays of Women's Day and Children's Day" type="public"/>
+        <description language="zh" name="婦女節、兒童節合倂" type="public"/>
+        <definition>
+            <fixed month="April" day="4"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Tomb-Sweeping Day (Qingming Festival)" type="public"/>
+        <description language="zh" name="清明节" type="public"/>
+        <definition>
+            <equinox month="March" timezone="Asia/Taipei"/>
+            <add days="15"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Dragon Boat Festival" type="public"/>
+        <description language="zh" name="端午节" type="public"/>
+        <definition>
+            <lunisolar month="5" day="5"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Mid-Autumn Festival" type="public"/>
+        <description language="zh" name="中秋节" type="public"/>
+        <definition>
+            <lunisolar month="8" day="15"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="National Day/Double Tenth Day" type="public"/>
+        <description language="zh" name="雙十節" type="public"/>
+        <definition>
+            <fixed month="October" day="10"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="March Equinox"/>
+        <definition>
+            <equinox month="March" timezone="Asia/Taipei"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="June Solstice"/>
+        <definition>
+            <solstice month="June" timezone="Asia/Taipei"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="September Equinox"/>
+        <definition>
+            <equinox month="September" timezone="Asia/Taipei"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="December Solstice"/>
+        <definition>
+            <solstice month="December" timezone="Asia/Taipei"/>
+        </definition>
+    </holiday>
+
+    <holiday valid="false">
+        <description language="en" name="Begin Daylight Saving Time (DST)"/>
+        <definition>
+            <dst timezone="Asia/Taipei" action="start"/>
+        </definition>
+    </holiday>
+
+    <holiday valid="false">
+        <description language="en" name="End Daylight Saving Time (DST)"/>
+        <definition>
+            <dst timezone="Asia/Taipei" action="end"/>
+        </definition>
+    </holiday>
+
+</holidays>

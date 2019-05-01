@@ -11,6 +11,7 @@ version 1.1, TBD
   Chile
   China
   DDR
+  Taiwan
 
 - many minor fixes and additions on exising definitions
 
