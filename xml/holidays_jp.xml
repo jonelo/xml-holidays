@@ -305,6 +305,33 @@
         </definition>
     </holiday>
 
+    <holiday>
+        <description language="en" name="March Equinox" type="astronomical event"/>
+        <definition>
+            <equinox month="March" timezone="Asia/Tokyo"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="June Solstice" type="astronomical event"/>
+        <definition>
+            <solstice month="June" timezone="Asia/Tokyo"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="September Equinox" type="astronomical event"/>
+        <definition>
+            <equinox month="September" timezone="Asia/Tokyo"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="December Solstice" type="astronomical event"/>
+        <definition>
+            <solstice month="December" timezone="Asia/Tokyo"/>
+        </definition>
+    </holiday>
 
     <!-- https://en.wikipedia.org/wiki/Kōreisai -->
     <holiday valid="false">
