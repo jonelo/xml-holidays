@@ -5,7 +5,7 @@
     https://github.com/jonelo/xml-holidays/
     Thank you for keeping the comment.
  -->
-<holidays country="DDR">
+<holidays country="DDR" valid="false">
     <!-- https://de.wikipedia.org/wiki/Feiertage_in_der_DDR -->
     <!-- Die DDR bestand vom 7. Oktober 1949 bis zum 2. Oktober 1990 -->
 

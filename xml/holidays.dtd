@@ -23,7 +23,8 @@
   -->
 <!ELEMENT holidays (default+,holiday+)>
 <!ATTLIST holidays
-          country CDATA #REQUIRED>
+          country CDATA #REQUIRED
+		  valid (true|false) "true">
 
    <!--
      The default element specifies a language which is common in a country
