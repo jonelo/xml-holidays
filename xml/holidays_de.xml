@@ -532,7 +532,7 @@
 
         <!-- Im Jahr 2020 findet das Oktoberfest wegen der Ausbreitung des Coronavirus nicht statt -->
 
-        <definition firstyear="2020">
+        <definition firstyear="2021">
             <fixed day="15" month="September"/>
             <goto weekday="Saturday" direction="next"/>
         </definition>
