@@ -616,7 +616,7 @@
         <!-- Im Jahr 2020 findet das Oktoberfest wegen der Ausbreitung des Coronavirus nicht statt -->
 
         <!-- Ab 2021 gilt wieder die Regel von 2000 -->
-        <definition firstyear="2011">
+        <definition firstyear="2021">
             <rule nth="First" weekday="Sunday" month="October"/>
             <condition ifdayofmonth="1">
                 <add days="2"/> <!-- will become the 3rd of October -->
