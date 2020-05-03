@@ -525,7 +525,14 @@
          fand kein Fest statt.
          In den Nachkriegsjahren 1946 bis 1948 gab es wenigstens
          wieder ein „Herbstfest“. -->
-        <definition firstyear="1949">
+        <definition firstyear="1949" lastyear="2019">
+            <fixed day="15" month="September"/>
+            <goto weekday="Saturday" direction="next"/>
+        </definition>
+
+        <!-- Im Jahr 2020 findet das Oktoberfest wegen der Ausbreitung des Coronavirus nicht statt -->
+
+        <definition firstyear="2020">
             <fixed day="15" month="September"/>
             <goto weekday="Saturday" direction="next"/>
         </definition>
@@ -596,6 +603,19 @@
         </definition>
 
         <!-- Ab 2011 gilt wieder die Regel von 2000 -->
+        <definition firstyear="2011" lastyear="2019">
+            <rule nth="First" weekday="Sunday" month="October"/>
+            <condition ifdayofmonth="1">
+                <add days="2"/> <!-- will become the 3rd of October -->
+            </condition>
+            <condition ifdayofmonth="2">
+                <add days="1"/> <!-- will become the 3rd of October -->
+            </condition>
+        </definition>
+
+        <!-- Im Jahr 2020 findet das Oktoberfest wegen der Ausbreitung des Coronavirus nicht statt -->
+
+        <!-- Ab 2021 gilt wieder die Regel von 2000 -->
         <definition firstyear="2011">
             <rule nth="First" weekday="Sunday" month="October"/>
             <condition ifdayofmonth="1">
@@ -605,6 +625,7 @@
                 <add days="1"/> <!-- will become the 3rd of October -->
             </condition>
         </definition>
+
     </holiday>
 
     <holiday>
