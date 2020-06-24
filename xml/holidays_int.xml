@@ -173,6 +173,17 @@
     </holiday>
 
     <!-- June -->
+    <!--
+      https://en.wikipedia.org/wiki/International_Day_of_Yoga
+    -->
+    <holiday>
+        <description language="en" name="International Day of Yoga"/>
+        <description language="de" name="Internationale Tag des Yoga"/>
+        <definition firstyear="2015">
+            <fixed month="June" day="21"/>
+        </definition>
+    </holiday>
+
     
     <!-- July -->
     <holiday>
