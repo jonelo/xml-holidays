@@ -251,6 +251,18 @@
     </holiday>
 
     <!-- November -->
+    <!--
+      https://en.wikipedia.org/wiki/Singles%27_Day
+    -->
+    <holiday>
+        <description language="en" name="Singles Day"/>
+        <description language="de" name="Singles’ Day"/>
+        <description language="es" name="Día del Soltero"/>
+        <definition firstyear="1993">
+            <fixed month="November" day="11"/>
+        </definition>
+    </holiday>
+
     
     <!-- December -->
     <!--
