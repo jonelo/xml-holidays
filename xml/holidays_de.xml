@@ -460,7 +460,7 @@
     </holiday>
     
     <!-- http://de.wikipedia.org/wiki/Oktoberfest -->
-    <!-- Seit seinem Bestehen war das Oktoberfest damit 24 Mal ausgefallen. -->
+    <!-- Seit seinem Bestehen war das Oktoberfest damit 25 Mal ausgefallen. -->
     <holiday>
         <description language="de" name="Oktoberfest (Eröffnung)" type="Fest" region="München"/>
         <description language="en" name="Oktoberfest (Start)" type="Festival" region="Munich"/>
@@ -538,9 +538,9 @@
             <goto weekday="Saturday" direction="next"/>
         </definition>
 
-        <!-- Im Jahr 2020 findet das Oktoberfest wegen der Ausbreitung des Coronavirus nicht statt -->
+        <!-- In den Jahren 2020 und 2021 findet das Oktoberfest wegen der Ausbreitung des Coronavirus nicht statt -->
 
-        <definition firstyear="2021">
+        <definition firstyear="2022">
             <fixed day="15" month="September"/>
             <goto weekday="Saturday" direction="next"/>
         </definition>
