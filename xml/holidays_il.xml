@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+<!-- 
+    This file is from the free xml-holidays project. See also
+    https://github.com/jonelo/xml-holidays/
+    Thank you for keeping the comment.
+-->
+<holidays country="IL">
+    <!-- https://en.wikipedia.org/wiki/Jewish_holidays -->
+
+    <default language="he"/>
+
+    <holiday>
+        <description language="he" name="צום גדליה" type="Jewish holiday"/>
+        <description language="en" name="Fast of Gedalia" type="Jewish holiday"/>
+        <description language="de" name="Zom Gedalja" type="Jewish holiday"/>
+
+        <definition firstyear="-586">
+            <fixed calendar="hebrew" day="3" month="Tishrei"/>
+            <condition calendar="hebrew" ifweekday="Shabbat">
+                <add calendar="hebrew" days="+1"/>
+            </condition>
+        </definition>
+    </holiday>
+
+
+    <!-- https://en.wikipedia.org/wiki/Fast_of_Esther -->
+    <holiday>
+        <description language="he" name="תַּעֲנִית אֶסְתֵּר" type="Jewish holiday"/>
+        <description language="en" name="Fast of Esther" type="Jewish holiday"/>
+        <description language="de" name="Ta’anit Esther" type="Jewish holiday"/>
+
+        <definition>
+            <!-- The fast is observed on the 13th day of the Hebrew month of Adar -->
+            <!-- When the year has two Adar months, it is observed only in the second Adar -->
+            <fixed calendar="hebrew" day="13" month="Adar"/>
+            <condition calendar="hebrew" ifweekday="Shabbat">
+                <!--If the date of the Fast of Esther falls on Shabbat (Saturday), the fast is instead observed on the preceding Thursday -->
+                <add calendar="hebrew" days="-2"/>
+            </condition>
+        </definition>
+    </holiday>
+
+
+    <holiday>
+        <description language="he" name="סוכות יום 1" type="Jewish holiday"/>
+        <description language="en" name="Sukkot/Feast of Tabernacles (day 1 of 7)" type="Jewish holiday, public holiday"/>
+        <description language="de" name="Sukkot/Laubhüttenfest (Tag 1 von 7)" type="Jewish holiday"/>
+
+        <definition firstyear="-597">
+            <fixed calendar="hebrew" day="15" month="Tishrei"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="he" name="סוכות יום 2" type="Jewish holiday"/>
+        <description language="en" name="Sukkot/Feast of Tabernacles (day 2 of 7)" type="Jewish holiday"/>
+        <description language="de" name="Sukkot/Laubhüttenfest (Tag 2 von 7)" type="Jewish holiday"/>
+
+        <definition firstyear="-597">
+            <fixed calendar="hebrew" day="16" month="Tishrei"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="he" name="סוכות יום 3" type="Jewish holiday"/>
+        <description language="en" name="Sukkot/Feast of Tabernacles (day 3 of 7)" type="Jewish holiday"/>
+        <description language="de" name="Sukkot/Laubhüttenfest (Tag 3 von 7)" type="Jewish holiday"/>
+
+        <definition firstyear="-597">
+            <fixed calendar="hebrew" day="17" month="Tishrei"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="he" name="סוכות יום 4" type="Jewish holiday"/>
+        <description language="en" name="Sukkot/Feast of Tabernacles (day 4 of 7)" type="Jewish holiday"/>
+        <description language="de" name="Sukkot/Laubhüttenfest (Tag 4 von 7)" type="Jewish holiday"/>
+
+        <definition firstyear="-597">
+            <fixed calendar="hebrew" day="18" month="Tishrei"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="he" name="סוכות יום 5" type="Jewish holiday"/>
+        <description language="en" name="Sukkot/Feast of Tabernacles (day 5 of 7)" type="Jewish holiday"/>
+        <description language="de" name="Sukkot/Laubhüttenfest (Tag 5 von 7)" type="Jewish holiday"/>
+
+        <definition firstyear="-597">
+            <fixed calendar="hebrew" day="19" month="Tishrei"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="he" name="סוכות יום 6" type="Jewish holiday"/>
+        <description language="en" name="Sukkot/Feast of Tabernacles (day 6 of 7)" type="Jewish holiday"/>
+        <description language="de" name="Sukkot/Laubhüttenfest (Tag 6 von 7)" type="Jewish holiday"/>
+
+        <definition firstyear="-597">
+            <fixed calendar="hebrew" day="20" month="Tishrei"/>
+        </definition>
+    </holiday>
+
+
+    <holiday>
+        <description language="he" name="סוכות יום 7" type="Jewish holiday"/>
+        <description language="en" name="Sukkot/Feast of Tabernacles, Hoshana Rabbah (day 7 of 7)" type="Jewish holiday"/>
+        <description language="de" name="Sukkot/Laubhüttenfest, Hoschana Rabba/Palmfest (Tag 7 von 7)" type="Jewish holiday"/>
+
+        <definition firstyear="-597">
+            <fixed calendar="hebrew" day="21" month="Tishrei"/>
+        </definition>
+    </holiday>
+
+
+    <!-- Hanukkah is observed for eight nights and days, starting on the 25th day of Kislev according to the Hebrew calendar -->
+    <holiday>
+        <description language="he" name="חנוכה יום 1" type="Jewish holiday"/>
+        <description language="en" name="Hanukkah (day 1 of 8)" type="Jewish holiday"/>
+        <description language="de" name="Chanukka/Lichterfest (Tag 1 von 8)" type="Jewish holiday"/>
+
+        <definition firstyear="-164">
+            <fixed calendar="hebrew" day="25" month="Kislev"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="he" name="חנוכה יום 2" type="Jewish holiday"/>
+        <description language="en" name="Hanukkah (day 2 of 8)" type="Jewish holiday"/>
+        <description language="de" name="Chanukka/Lichterfest (Tag 2 von 8)" type="Jewish holiday"/>
+
+        <definition firstyear="-164">
+            <fixed calendar="hebrew" day="25" month="Kislev"/>
+            <add calendar="hebrew" days="+1"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="he" name="חנוכה יום 3" type="Jewish holiday"/>
+        <description language="en" name="Hanukkah (day 3 of 8)" type="Jewish holiday"/>
+        <description language="de" name="Chanukka/Lichterfest (Tag 3 von 8)" type="Jewish holiday"/>
+
+        <definition firstyear="-164">
+            <fixed calendar="hebrew" day="25" month="Kislev"/>
+            <add calendar="hebrew" days="+2"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="he" name="חנוכה יום 4" type="Jewish holiday"/>
+        <description language="en" name="Hanukkah (day 4 of 8)" type="Jewish holiday"/>
+        <description language="de" name="Chanukka/Lichterfest (Tag 4 von 8)" type="Jewish holiday"/>
+
+        <definition firstyear="-164">
+            <fixed calendar="hebrew" day="25" month="Kislev"/>
+            <add calendar="hebrew" days="+3"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="he" name="חנוכה יום 5" type="Jewish holiday"/>
+        <description language="en" name="Hanukkah (day 5 of 8)" type="Jewish holiday"/>
+        <description language="de" name="Chanukka/Lichterfest (Tag 5 von 8)" type="Jewish holiday"/>
+
+        <definition firstyear="-164">
+            <fixed calendar="hebrew" day="25" month="Kislev"/>
+            <add calendar="hebrew" days="+4"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="he" name="חנוכה יום 6" type="Jewish holiday"/>
+        <description language="en" name="Hanukkah (day 6 of 8)" type="Jewish holiday"/>
+        <description language="de" name="Chanukka/Lichterfest (Tag 6 von 8)" type="Jewish holiday"/>
+
+        <definition firstyear="-164">
+            <fixed calendar="hebrew" day="25" month="Kislev"/>
+            <add calendar="hebrew" days="+5"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="he" name="חנוכה יום 7" type="Jewish holiday"/>
+        <description language="en" name="Hanukkah (day 7 of 8)" type="Jewish holiday"/>
+        <description language="de" name="Chanukka/Lichterfest (Tag 7 von 8)" type="Jewish holiday"/>
+
+        <definition firstyear="-164">
+            <fixed calendar="hebrew" day="25" month="Kislev"/>
+            <add calendar="hebrew" days="+6"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="he" name="חנוכה יום 8" type="Jewish holiday"/>
+        <description language="en" name="Hanukkah (day 8 of 8)" type="Jewish holiday"/>
+        <description language="de" name="Chanukka/Lichterfest (Tag 8 von 8)" type="Jewish holiday"/>
+
+        <definition firstyear="-164">
+            <fixed calendar="hebrew" day="25" month="Kislev"/>
+            <add calendar="hebrew" days="+7"/>
+        </definition>
+    </holiday>
+
+
+    <holiday>
+        <description language="en" name="March Equinox"/>
+        <description language="de" name="Frühlingsanfang"/>
+        <definition>
+            <equinox month="March" timezone="Asia/Jerusalem"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="de" name="Sommeranfang (Sommersonnenwende)"/>
+        <description language="en" name="June Solstice"/>
+        <definition>
+            <solstice month="June" timezone="Asia/Jerusalem"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="September Equinox"/>
+        <description language="de" name="Herbstanfang"/>
+        <definition>
+            <equinox month="September" timezone="Asia/Jerusalem"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="December Solstice"/>
+        <description language="de" name="Winteranfang (Wintersonnenwende)"/>
+        <definition>
+            <solstice month="December" timezone="Asia/Jerusalem"/>
+        </definition>
+    </holiday>
+
+
+</holidays>
