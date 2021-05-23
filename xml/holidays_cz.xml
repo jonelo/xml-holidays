@@ -153,6 +153,7 @@
     </holiday>
 
     <holiday>
+        <description language="cs" name="Začněte s letním časem"/>
         <description language="en" name="Begin Daylight Saving Time"/>
         <description language="de" name="Beginn der Sommerzeit (Uhren 1 h vorstellen)"/>
         <definition>
@@ -161,6 +162,7 @@
     </holiday>
 
     <holiday>
+        <description language="cs" name="Ukončete letní čas"/>
         <description language="en" name="End Daylight Saving Time"/>
         <description language="de" name="Ende der Sommerzeit (Uhren 1 h zurückstellen)"/>
         <definition>
@@ -187,7 +189,7 @@
     </holiday>
 
     <holiday>
-        <description language="en" name="Září rovnodennost"/>
+        <description language="cs" name="Září rovnodennost"/>
         <description language="en" name="September Equinox"/>
         <description language="de" name="Herbstanfang"/>
         <definition>
