@@ -4,16 +4,18 @@
     Thank you for keeping the comment.
  -->
  
-<!ENTITY % months "January | February | March | April |
-                   May | June | July | August | September |
-                   October | November | December">
-<!ENTITY % weekdays "Monday | Tuesday | Wednesday | Thursday |
-                     Friday | Saturday | Sunday">
+<!ENTITY % month_names "January | February | March | April | May | June |
+                   July | August | September | October | November | December">
+<!ENTITY % weekday_names "Monday | Tuesday | Wednesday | Thursday | Friday | Saturday | Sunday">
 <!ENTITY % nth "First | Second | Third | Fourth | Last">
-<!ENTITY % startdate "fixed | easter | advent | rule | dst |
-                      equinox | solstice | lunisolar">
+<!ENTITY % startdate "fixed | easter | advent | rule | dst | equinox | solstice | lunisolar">
 <!ENTITY % modifiers "add | goto">
 <!ENTITY % directions "nearest | next | nextinclusive | previous | previousinclusive">
+
+<!ENTITY % hebrew_month_names "Tishrei | Cheshvan | Kislev | Tevet | Shevat | Adar |
+                               Nisan | Iyar | Sivan | Tammuz | Av | Elul">
+
+<!ENTITY % hebrew_weekday_names "Shabbat">
 
 <!--
   The element called holidays must have at least one element called holiday
@@ -53,7 +55,7 @@
         "name"       the name of the holiday expressed in "language"
         "type"       free text, it should further describe the type of the
                      holiday (e.g. legal holiday, de facto legal holiday,
-                     katholic, etc.)
+                     catholic, etc.)
         "region"     free text, the region of the holiday if applicable
         -->
       <!ELEMENT description EMPTY>
@@ -102,7 +104,8 @@
       -->
       <!ELEMENT condition (undefined | unknown | (%modifiers;)*)>
       <!ATTLIST condition
-                ifweekday (%weekdays;) #IMPLIED
+			    calendar CDATA #IMPLIED
+                ifweekday (%weekday_names;|%hebrew_weekday_names;) #IMPLIED
                 ifdaytype CDATA #IMPLIED
                 ifdayname CDATA #IMPLIED
                 ifdayofmonth CDATA #IMPLIED
@@ -123,8 +126,9 @@
         The fixed element defines a fixed date
       -->
       <!ELEMENT fixed EMPTY>
-      <!ATTLIST fixed 
-	        month (%months;) #REQUIRED
+      <!ATTLIST fixed
+			calendar CDATA #IMPLIED
+	        month (%month_names;|%hebrew_month_names;) #REQUIRED
 	        day CDATA #REQUIRED>
 
       <!--
@@ -186,14 +190,15 @@
       <!ELEMENT rule EMPTY>
       <!ATTLIST rule
                 nth (%nth;) #REQUIRED
-                weekday (%weekdays;) #REQUIRED
-                month (%months;) #REQUIRED>
+                weekday (%weekday_names;) #REQUIRED
+                month (%month_names;) #REQUIRED>
       <!--
         The add modifier
         the "add" property value can become positive or negative
       -->
       <!ELEMENT add EMPTY>
       <!ATTLIST add
+			    calendar CDATA #IMPLIED
                 days CDATA #REQUIRED>
         
       <!--
@@ -211,5 +216,5 @@
       -->
       <!ELEMENT goto EMPTY>
       <!ATTLIST goto
-                weekday (%weekdays;) #REQUIRED
+                weekday (%weekday_names;) #REQUIRED
                 direction (%directions;) "nearest">
