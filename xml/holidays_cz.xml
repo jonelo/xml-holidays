@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+<!--
+    This file is from the free xml-holidays project. See also
+    https://github.com/jonelo/xml-holidays/
+    Thank you for keeping the comment.
+-->
+<holidays country="CZ">
+    <!-- 
+       https://en.wikipedia.org/wiki/Public_holidays_in_the_Czech_Republic
+     -->
+
+    <default language="cs"/>
+
+    <holiday>
+        <description language="cs" name="Nový rok" type="public holiday"/>
+        <description language="en" name="New Year's Day" type="public holiday"/>
+        <description language="de" name="Neujahrstag" type="public holiday"/>
+        <definition firstyear="1993">
+            <fixed month="January" day="1"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="cs" name="Den obnovy samostatného českého státu" type="public holiday"/>
+        <description language="en" name="Restoration Day of the Independent Czech State" type="public holiday"/>
+        <description language="de" name="Tag der Erneuerung des selbständigen tschechischen Staates" type="public holiday"/>
+        <definition firstyear="2000">
+            <fixed month="January" day="1"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="cs" name="Velký pátek" type="public holiday"/>
+        <description language="en" name="Good Friday" type="public holiday"/>
+        <description language="de" name="Karfreitag" type="public holiday"/>
+
+        <definition firstyear="2016">
+            <easter/>
+            <add days="-2"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="cs" name="Velikonoční pondělí" type="public holiday"/>
+        <description language="en" name="Easter Monday" type="public holiday"/>
+        <description language="de" name="Ostermontag" type="public holiday"/>
+
+        <definition firstyear="1951">
+            <easter/>
+            <add days="+1"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="cs" name="Svátek práce" type="public holiday"/>
+        <description language="en" name="Labour Day" type="public holiday"/>
+        <description language="de" name="Tag der Arbeit" type="public holiday"/>
+
+        <definition firstyear="1951">
+            <fixed month="May" day="1"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="cs" name="Den vítězství/Den osvobození" type="public holiday"/>
+        <description language="en" name="Liberation Day" type="public holiday"/>
+        <description language="de" name="Tag des Sieges" type="public holiday"/>
+
+        <definition firstyear="1992">
+            <fixed month="May" day="8"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="cs" name="Den slovanských věrozvěstů Cyrila a Metoděje" type="public holiday"/>
+        <description language="en" name="Saints Cyril and Methodius Day" type="public holiday"/>
+        <description language="de" name="Tag der Slawenapostel Kyrill und Method" type="public holiday"/>
+
+        <definition firstyear="1990">
+            <fixed month="July" day="5"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="cs" name="Den upálení mistra Jana Husa" type="public holiday"/>
+        <description language="en" name="Jan Hus Day" type="public holiday"/>
+        <description language="de" name="Tag der Verbrennung von Jan Hus" type="public holiday"/>
+
+        <definition firstyear="1990">
+            <fixed month="July" day="6"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="cs" name="Den české státnosti" type="public holiday"/>
+        <description language="en" name="Statehood Day" type="public holiday"/>
+        <description language="de" name="Tag der tschechischen Staatlichkeit" type="public holiday"/>
+
+        <definition firstyear="2000">
+            <fixed month="September" day="28"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="cs" name="Den vzniku samostatného československého státu" type="public holiday"/>
+        <description language="en" name="Independence Day" type="public holiday"/>
+        <description language="de" name="Tag der Entstehung eines selbstständigen tschechoslowakischen Staates" type="public holiday"/>
+
+        <definition firstyear="1988">
+            <fixed month="October" day="28"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="cs" name="Den boje za svobodu a demokracii" type="public holiday"/>
+        <description language="en" name="Struggle for Freedom and Democracy Day" type="public holiday"/>
+        <description language="de" name="Tag des Kampfes für Freiheit und Demokratie" type="public holiday"/>
+
+        <definition firstyear="2000">
+            <fixed month="November" day="17"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="cs" name="Štědrý den" type="public holiday"/>
+        <description language="en" name="Christmas Eve" type="public holiday"/>
+        <description language="de" name="Heiliger Abend" type="public holiday"/>
+
+        <definition firstyear="1990">
+            <fixed month="December" day="24"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="cs" name="1. svátek vánoční" type="public holiday"/>
+        <description language="en" name="Christmas Day" type="public holiday"/>
+        <description language="de" name="1. Weihnachtsfeiertag" type="public holiday"/>
+
+        <definition firstyear="1951">
+            <fixed month="December" day="25"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="cs" name="2. svátek vánoční" type="public holiday"/>
+        <description language="en" name="The Second Christmas Day" type="public holiday"/>
+        <description language="de" name="2. Weihnachtsfeiertag" type="public holiday"/>
+
+        <definition firstyear="1951">
+            <fixed month="December" day="26"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Begin Daylight Saving Time"/>
+        <description language="de" name="Beginn der Sommerzeit (Uhren 1 h vorstellen)"/>
+        <definition>
+            <dst timezone="Europe/Prague" action="start"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="End Daylight Saving Time"/>
+        <description language="de" name="Ende der Sommerzeit (Uhren 1 h zurückstellen)"/>
+        <definition>
+            <dst timezone="Europe/Prague" action="end"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="cs" name="Březnová rovnodennost"/>
+        <description language="en" name="March Equinox"/>
+        <description language="de" name="Frühlingsanfang"/>
+        <definition>
+            <equinox month="March" timezone="Europe/Prague"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="cs" name="Června slunovrat"/>
+        <description language="en" name="June Solstice"/>
+        <description language="de" name="Sommeranfang (Sommersonnenwende)"/>
+        <definition>
+            <solstice month="June" timezone="Europe/Prague"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="en" name="Září rovnodennost"/>
+        <description language="en" name="September Equinox"/>
+        <description language="de" name="Herbstanfang"/>
+        <definition>
+            <equinox month="September" timezone="Europe/Prague"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="cs" name="Prosincový slunovrat"/>
+        <description language="en" name="December Solstice"/>
+        <description language="de" name="Winteranfang (Wintersonnenwende)"/>
+        <definition>
+            <solstice month="December" timezone="Europe/Prague"/>
+        </definition>
+    </holiday>
+
+
+</holidays>

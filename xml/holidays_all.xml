@@ -40,6 +40,7 @@
 
         <!-- East Europe -->
         <xi:include href="holidays_gr.xml"/>
+        <xi:include href="holidays_cz.xml"/>
         <xi:include href="holidays_ro.xml"/>
         <xi:include href="holidays_si.xml"/>
         <xi:include href="holidays_pl.xml"/>
