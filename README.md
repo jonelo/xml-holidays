@@ -95,14 +95,22 @@ the holiday is the preceding Monday. If it falls on a Thursday or on a Friday th
           If the date falls on a Tuesday or Wednesday,
           the holiday is the preceding Monday.
         -->
-        <add days="-1" ifweekday="Tuesday"/> <!-- can become the preceding Monday -->
-        <add days="-2" ifweekday="Wednesday"/> <!-- can become the preceding Monday -->
+        <condition ifweekday="Tuesday">
+            <add days="-1"/>  <!-- can become the preceding Monday -->
+        </condition>
+        <condition ifweekday="Wednesday">
+            <add days="-2"/>  <!-- can become the preceding Monday -->
+        </condition>
         <!--
           If it falls on a Thursday or a Friday then
           the holiday is the following Monday.
         -->
-        <add days="+4" ifweekday="Thursday"/> <!-- can become the following Monday -->
-        <add days="+3" ifweekday="Friday"/> <!-- can become the following Monday -->
+        <condition ifweekday="Thursday">
+            <add days="+4"/>  <!-- can become the following Monday -->
+        </condition>
+        <condition ifweekday="Friday">
+            <add days="+3"/> <!-- can become the following Monday -->
+        </condition>
     </definition>
 </holiday>
 ```
