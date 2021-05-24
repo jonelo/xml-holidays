@@ -313,6 +313,17 @@
 
     <!-- *** Iyar -->
 
+    <holiday>
+        <description language="he" name="לַ״ג בָּעוֹמֶר" type="Jewish holiday"/>
+        <description language="en" name="Lag BaOmer" type="Jewish holiday"/>
+        <description language="de" name="Lag baOmer" type="Jewish holiday"/>
+
+        <definition>
+            <fixed calendar="hebrew" day="18" month="Iyar"/>
+        </definition>
+    </holiday>
+
+
     <!-- *** Sivan -->
 
     <!-- *** Tammuz -->
