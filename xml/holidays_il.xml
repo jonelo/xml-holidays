@@ -33,6 +33,7 @@
         </definition>
     </holiday>
 
+    <!-- https://en.wikipedia.org/wiki/Fast_of_Gedalia -->
     <holiday>
         <description language="he" name="צום גדליה" type="Jewish holiday"/>
         <description language="en" name="Fast of Gedalia" type="Jewish holiday"/>
@@ -46,6 +47,7 @@
         </definition>
     </holiday>
 
+    <!-- https://en.wikipedia.org/wiki/Yom_Kippur -->
     <holiday>
         <description language="he" name="ערב יום כיפור" type="Jewish holiday"/>
         <description language="en" name="Erev Yom Kippur" type="Jewish holiday"/>
@@ -67,6 +69,7 @@
         </definition>
     </holiday>
 
+    <!-- https://en.wikipedia.org/wiki/Sukkot -->
     <holiday>
         <description language="he" name="סוכות יום 1" type="Jewish holiday"/>
         <description language="en" name="Sukkot/Feast of Tabernacles (day 1 of 7)" type="Jewish holiday, public holiday"/>
@@ -127,7 +130,6 @@
         </definition>
     </holiday>
 
-
     <holiday>
         <description language="he" name="סוכות יום 7" type="Jewish holiday"/>
         <description language="en" name="Sukkot/Feast of Tabernacles, Hoshana Rabbah (day 7 of 7)" type="Jewish holiday"/>
@@ -138,6 +140,7 @@
         </definition>
     </holiday>
 
+    <!-- https://en.wikipedia.org/wiki/Shemini_Atzeret -->
     <holiday>
         <description language="he" name="שְּׁמִינִי עֲצֶרֶת" type="Jewish holiday"/>
         <description language="en" name="Shemini Atzeret" type="Jewish holiday"/>
@@ -148,6 +151,7 @@
         </definition>
     </holiday>
 
+    <!-- https://en.wikipedia.org/wiki/Simchat_Torah -->
     <holiday>
         <description language="he" name="שִׂמְחַת תּוֹרָה" type="Jewish holiday"/>
         <description language="en" name="Simchat Torah / Simhat Torah" type="Jewish holiday"/>
@@ -162,6 +166,7 @@
 
     <!-- *** Kislev -->
 
+    <!-- https://en.wikipedia.org/wiki/Hanukkah -->
     <!-- Hanukkah is observed for eight nights and days, starting on the 25th day of Kislev according to the Hebrew calendar -->
     <holiday>
         <description language="he" name="חנוכה יום 1" type="Jewish holiday"/>
@@ -254,8 +259,8 @@
     <!-- *** Tevet -->
 
     <!-- *** Shevat -->
-    <!-- https://en.wikipedia.org/wiki/Tu_BiShvat -->
 
+    <!-- https://en.wikipedia.org/wiki/Tu_BiShvat -->
     <holiday>
         <description language="he" name="ט״ו בשבט" type="Jewish holiday"/>
         <description language="en" name="Tu BiShvat" type="Jewish holiday"/>
@@ -313,7 +318,7 @@
     <holiday>
         <description language="he" name="פורים קטן" type="Jewish holiday, without Jerusalem and all ancient walled cities"/>
         <description language="en" name="Purim Katan" type="Jewish holiday, without Jerusalem and all ancient walled cities"/>
-        <description language="de" name="Purim Katan/Kleines Purim" type="Jewish holiday, without Jerusalem and all ancient walled cities"/>
+        <description language="de" name="Purim Katan / Kleines Purim" type="Jewish holiday, without Jerusalem and all ancient walled cities"/>
 
         <definition>
             <fixed calendar="hebrew" day="14" month="Adar_I"/>
@@ -323,6 +328,7 @@
         </definition>
     </holiday>
 
+    <!-- https://en.wikipedia.org/wiki/Purim#Purim_Katan -->
     <holiday>
         <description language="he" name="שושן פורים קטן" type="Jewish holiday, in Jerusalem and all ancient walled cities"/>
         <description language="en" name="Shushan Purim Katan" type="Jewish holiday, in Jerusalem and all ancient walled cities"/>
@@ -339,6 +345,7 @@
 
     <!-- *** Nisan -->
 
+    <!-- https://en.wikipedia.org/wiki/Passover -->
     <holiday>
         <description language="he" name="פֶּסַח" type="Jewish holiday"/>
         <description language="en" name="Passover / Pesach (day 1 of 8)" type="Jewish holiday"/>
@@ -350,6 +357,7 @@
 
     </holiday>
 
+    <!-- https://en.wikipedia.org/wiki/Passover -->
     <holiday>
         <description language="he" name="פֶּסַח" type="Jewish holiday"/>
         <description language="en" name="Passover / Pesach (day 2 of 8)" type="Jewish holiday"/>
@@ -361,6 +369,7 @@
 
     </holiday>
 
+    <!-- https://en.wikipedia.org/wiki/Passover -->
     <holiday>
         <description language="he" name="פֶּסַח" type="Jewish holiday"/>
         <description language="en" name="Passover / Pesach (day 3 of 8)" type="Jewish holiday"/>
@@ -372,6 +381,7 @@
 
     </holiday>
 
+    <!-- https://en.wikipedia.org/wiki/Passover -->
     <holiday>
         <description language="he" name="פֶּסַח" type="Jewish holiday"/>
         <description language="en" name="Passover / Pesach (day 4 of 8)" type="Jewish holiday"/>
@@ -383,6 +393,7 @@
 
     </holiday>
 
+    <!-- https://en.wikipedia.org/wiki/Passover -->
     <holiday>
         <description language="he" name="פֶּסַח" type="Jewish holiday"/>
         <description language="en" name="Passover / Pesach (day 5 of 8)" type="Jewish holiday"/>
@@ -394,6 +405,7 @@
 
     </holiday>
 
+    <!-- https://en.wikipedia.org/wiki/Passover -->
     <holiday>
         <description language="he" name="פֶּסַח" type="Jewish holiday"/>
         <description language="en" name="Passover / Pesach (day 6 of 8)" type="Jewish holiday"/>
@@ -405,6 +417,7 @@
 
     </holiday>
 
+    <!-- https://en.wikipedia.org/wiki/Passover -->
     <holiday>
         <description language="he" name="פֶּסַח" type="Jewish holiday"/>
         <description language="en" name="Passover / Pesach (day 7 of 8)" type="Jewish holiday"/>
@@ -416,6 +429,7 @@
 
     </holiday>
 
+    <!-- https://en.wikipedia.org/wiki/Passover -->
     <holiday>
         <description language="he" name="פֶּסַח" type="Jewish holiday"/>
         <description language="en" name="Passover / Pesach (day 8 of 8)" type="Jewish holiday"/>
@@ -427,6 +441,7 @@
 
     </holiday>
 
+    <!-- https://en.wikipedia.org/wiki/Yom_HaShoah -->
     <holiday>
         <description language="he" name="יום הזיכרון לשואה ולגבורה" type="national memorial day"/>
         <description language="en" name="Yom HaShoah / Yom Hazikaron laShoah ve-laG'vurah / Holocaust and Heroism Remembrance Day" type="national memorial day"/>
@@ -494,7 +509,7 @@
 
     </holiday>
 
-
+    <!-- https://en.wikipedia.org/wiki/Lag_BaOmer -->
     <holiday>
         <description language="he" name="לַ״ג בָּעוֹמֶר" type="Jewish holiday"/>
         <description language="en" name="Lag BaOmer" type="Jewish holiday"/>
@@ -518,6 +533,7 @@
 
     <!-- *** Sivan -->
 
+    <!-- https://en.wikipedia.org/wiki/Shavuot -->
     <holiday>
         <description language="he" name="שבועות / חג השבועות" type="Jewish holiday"/>
         <description language="en" name="Shavuot" type="Jewish holiday"/>
