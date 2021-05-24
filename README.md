@@ -24,7 +24,7 @@ is able to read and understand xml holidays data. See also http://numericalchame
 ### Celebrated on a fixed day
 
 #### Example: on January 1
-The New Year's day is always celebrated on January 1, each year.
+In many countries the New Year's day is always celebrated on January 1, each year.
 
 ```xml
 <holiday>
@@ -206,6 +206,32 @@ Set the fixed date (July 1) and use the goto-direction called "nearest". The def
 </holiday>
 ```
 
+### Celebrated in a different calendar system
+
+#### Example: Hebrew Calendar: Fast of Esther in Israel
+
+In Israel the Fast of Esther is observed on the 13th day of the Hebrew month of Adar. So we need to specify
+the hebrew calendar for the definition.
+
+```xml
+    <holiday>
+        <description language="he" name="תַּעֲנִית אֶסְתֵּר" type="Jewish holiday"/>
+        <description language="en" name="Fast of Esther" type="Jewish holiday"/>
+        <description language="de" name="Ta’anit Esther" type="Jewish holiday"/>
+
+        <definition>
+            <!-- The fast is observed on the 13th day of the Hebrew month of Adar -->
+            <!-- When the year has two Adar months, it is observed only in the second Adar -->
+            <fixed calendar="hebrew" day="13" month="Adar"/>
+            <condition calendar="hebrew" ifweekday="Shabbat">
+                <!--If the date of the Fast of Esther falls on Shabbat (Saturday),
+                the fast is instead observed on the preceding Thursday -->
+                <add calendar="hebrew" days="-2"/>
+            </condition>
+        </definition>
+    </holiday>
+```
+
 ### Seasons: a day dependent on Solstice or Equinox
 
 #### Example: the Solstice in June in Germany
@@ -227,5 +253,4 @@ you can specify it with the parameter called timezone.
         <solstice type="June" timezone="Europe/Berlin"/>
     </definition>
 </holiday>
-
 ```
