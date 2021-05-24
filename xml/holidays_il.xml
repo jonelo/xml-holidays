@@ -138,6 +138,25 @@
         </definition>
     </holiday>
 
+    <holiday>
+        <description language="he" name="שְּׁמִינִי עֲצֶרֶת" type="Jewish holiday"/>
+        <description language="en" name="Shemini Atzeret" type="Jewish holiday"/>
+        <description language="de" name="Schmini Azeret / Schemini Azeret / Schlussfest" type="Jewish holiday"/>
+
+        <definition>
+            <fixed calendar="hebrew" day="22" month="Tishrei"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="he" name="שִׂמְחַת תּוֹרָה" type="Jewish holiday"/>
+        <description language="en" name="Simchat Torah / Simhat Torah" type="Jewish holiday"/>
+        <description language="de" name="Simchat Tora" type="Jewish holiday"/>
+
+        <definition>
+            <fixed calendar="hebrew" day="22" month="Tishrei"/>
+        </definition>
+    </holiday>
 
     <!-- *** Cheshvan -->
 
