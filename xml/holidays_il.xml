@@ -387,6 +387,16 @@
         </definition>
     </holiday>
 
+    <!-- https://en.wikipedia.org/wiki/Jerusalem_Day -->
+    <holiday>
+        <description language="he" name="יום ירושלים" type="Jewish holiday"/>
+        <description language="en" name="Jerusalem Day" type="Jewish holiday"/>
+        <description language="de" name="Jerusalemtag" type="Jewish holiday"/>
+
+        <definition>
+            <fixed calendar="hebrew" day="28" month="Iyar"/>
+        </definition>
+    </holiday>
 
     <!-- *** Sivan -->
 
