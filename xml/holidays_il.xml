@@ -546,6 +546,16 @@
         </definition>
     </holiday>
 
+    <!-- https://en.wikipedia.org/wiki/Tu_B%27Av -->
+    <holiday>
+        <description language="he" name="ט״ו באב" type="Jewish holiday"/>
+        <description language="en" name="Tu B'Av" type="Jewish holiday"/>
+        <description language="de" name="Tu B’Av" type="Jewish holiday"/>
+
+        <definition>
+            <fixed calendar="hebrew" day="15" month="Av"/>
+        </definition>
+    </holiday>
 
     <!-- *** Elul -->
 
