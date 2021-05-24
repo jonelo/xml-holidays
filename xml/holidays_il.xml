@@ -340,6 +340,94 @@
     <!-- *** Nisan -->
 
     <holiday>
+        <description language="he" name="פֶּסַח" type="Jewish holiday"/>
+        <description language="en" name="Passover / Pesach (day 1 of 8)" type="Jewish holiday"/>
+        <description language="de" name="Pessach / Passa / Passah / Pascha (Tag 1 von 8)" type="Jewish holiday"/>
+
+        <definition>
+            <fixed calendar="hebrew" day="15" month="Nisan"/>
+        </definition>
+
+    </holiday>
+
+    <holiday>
+        <description language="he" name="פֶּסַח" type="Jewish holiday"/>
+        <description language="en" name="Passover / Pesach (day 2 of 8)" type="Jewish holiday"/>
+        <description language="de" name="Pessach / Passa / Passah / Pascha (Tag 2 von 8)" type="Jewish holiday"/>
+
+        <definition>
+            <fixed calendar="hebrew" day="16" month="Nisan"/>
+        </definition>
+
+    </holiday>
+
+    <holiday>
+        <description language="he" name="פֶּסַח" type="Jewish holiday"/>
+        <description language="en" name="Passover / Pesach (day 3 of 8)" type="Jewish holiday"/>
+        <description language="de" name="Pessach / Passa / Passah / Pascha (Tag 3 von 8)" type="Jewish holiday"/>
+
+        <definition>
+            <fixed calendar="hebrew" day="17" month="Nisan"/>
+        </definition>
+
+    </holiday>
+
+    <holiday>
+        <description language="he" name="פֶּסַח" type="Jewish holiday"/>
+        <description language="en" name="Passover / Pesach (day 4 of 8)" type="Jewish holiday"/>
+        <description language="de" name="Pessach / Passa / Passah / Pascha (Tag 4 von 8)" type="Jewish holiday"/>
+
+        <definition>
+            <fixed calendar="hebrew" day="18" month="Nisan"/>
+        </definition>
+
+    </holiday>
+
+    <holiday>
+        <description language="he" name="פֶּסַח" type="Jewish holiday"/>
+        <description language="en" name="Passover / Pesach (day 5 of 8)" type="Jewish holiday"/>
+        <description language="de" name="Pessach / Passa / Passah / Pascha (Tag 5 von 8)" type="Jewish holiday"/>
+
+        <definition>
+            <fixed calendar="hebrew" day="19" month="Nisan"/>
+        </definition>
+
+    </holiday>
+
+    <holiday>
+        <description language="he" name="פֶּסַח" type="Jewish holiday"/>
+        <description language="en" name="Passover / Pesach (day 6 of 8)" type="Jewish holiday"/>
+        <description language="de" name="Pessach / Passa / Passah / Pascha (Tag 6 von 8)" type="Jewish holiday"/>
+
+        <definition>
+            <fixed calendar="hebrew" day="20" month="Nisan"/>
+        </definition>
+
+    </holiday>
+
+    <holiday>
+        <description language="he" name="פֶּסַח" type="Jewish holiday"/>
+        <description language="en" name="Passover / Pesach (day 7 of 8)" type="Jewish holiday"/>
+        <description language="de" name="Pessach / Passa / Passah / Pascha (Tag 7 von 8)" type="Jewish holiday"/>
+
+        <definition>
+            <fixed calendar="hebrew" day="21" month="Nisan"/>
+        </definition>
+
+    </holiday>
+
+    <holiday>
+        <description language="he" name="פֶּסַח" type="Jewish holiday"/>
+        <description language="en" name="Passover / Pesach (day 8 of 8)" type="Jewish holiday"/>
+        <description language="de" name="Pessach / Passa / Passah / Pascha (Tag 8 von 8)" type="Jewish holiday"/>
+
+        <definition>
+            <fixed calendar="hebrew" day="22" month="Nisan"/>
+        </definition>
+
+    </holiday>
+
+    <holiday>
         <description language="he" name="יום הזיכרון לשואה ולגבורה" type="national memorial day"/>
         <description language="en" name="Yom HaShoah / Yom Hazikaron laShoah ve-laG'vurah / Holocaust and Heroism Remembrance Day" type="national memorial day"/>
         <description language="de" name="Jom haScho’a / Jom haZikaron laScho’a weLaGwura / Tag des Gedenkens an Holocaust und Heldentum" type="national memorial day"/>
