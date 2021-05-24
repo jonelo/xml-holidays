@@ -326,6 +326,16 @@
 
     <!-- *** Sivan -->
 
+    <holiday>
+        <description language="he" name="שבועות / חג השבועות" type="Jewish holiday"/>
+        <description language="en" name="Shavuot" type="Jewish holiday"/>
+        <description language="de" name="Schawuot" type="Jewish holiday"/>
+
+        <definition>
+            <fixed calendar="hebrew" day="6" month="Sivan"/>
+        </definition>
+    </holiday>
+
     <!-- *** Tammuz -->
 
     <!-- *** Av -->
