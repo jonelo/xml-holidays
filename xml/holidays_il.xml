@@ -340,8 +340,22 @@
 
     <!-- *** Av -->
 
-    <!-- *** Elul -->
+    <!-- https://en.wikipedia.org/wiki/Tisha_B%27Av -->
+    <holiday>
+        <description language="he" name="תשעה באב" type="Jewish holiday"/>
+        <description language="en" name="Tisha B'Av" type="Jewish holiday"/>
+        <description language="de" name="Tischa beAv" type="Jewish holiday"/>
 
+        <definition>
+            <fixed calendar="hebrew" day="9" month="Av"/>
+            <condition calendar="hebrew" ifweekday="Shabbat">
+                <add calendar="hebrew" days="+1"/>
+            </condition>
+        </definition>
+    </holiday>
+
+
+    <!-- *** Elul -->
 
     <holiday>
         <description language="en" name="March Equinox"/>
