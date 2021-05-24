@@ -10,6 +10,29 @@
 
     <default language="he"/>
 
+    <!-- *** Tishrei -->
+
+    <!-- https://en.wikipedia.org/wiki/Rosh_Hashanah -->
+    <holiday>
+        <description language="he" name="רֹאשׁ הַשָּׁנָה" type="Jewish holiday"/>
+        <description language="en" name="Rosh Hashanah (day 1 of 2)" type="Jewish holiday"/>
+        <description language="de" name="Rosch ha-Schana (Tag 1 von 2)" type="Jewish holiday"/>
+
+        <definition>
+            <fixed calendar="hebrew" day="1" month="Tishrei"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="he" name="רֹאשׁ הַשָּׁנָה" type="Jewish holiday"/>
+        <description language="en" name="Rosh Hashanah (day 2 of 2)" type="Jewish holiday"/>
+        <description language="de" name="Rosch ha-Schana (Tag 2 von 2)" type="Jewish holiday"/>
+
+        <definition>
+            <fixed calendar="hebrew" day="2" month="Tishrei"/>
+        </definition>
+    </holiday>
+
     <holiday>
         <description language="he" name="צום גדליה" type="Jewish holiday"/>
         <description language="en" name="Fast of Gedalia" type="Jewish holiday"/>
@@ -23,24 +46,26 @@
         </definition>
     </holiday>
 
-
-    <!-- https://en.wikipedia.org/wiki/Fast_of_Esther -->
     <holiday>
-        <description language="he" name="תַּעֲנִית אֶסְתֵּר" type="Jewish holiday"/>
-        <description language="en" name="Fast of Esther" type="Jewish holiday"/>
-        <description language="de" name="Ta’anit Esther" type="Jewish holiday"/>
+        <description language="he" name="ערב יום כיפור" type="Jewish holiday"/>
+        <description language="en" name="Erev Yom Kippur" type="Jewish holiday"/>
+        <description language="de" name="Vorabend von Jom Kippur" type="Jewish holiday"/>
 
         <definition>
-            <!-- The fast is observed on the 13th day of the Hebrew month of Adar -->
-            <!-- When the year has two Adar months, it is observed only in the second Adar -->
-            <fixed calendar="hebrew" day="13" month="Adar"/>
-            <condition calendar="hebrew" ifweekday="Shabbat">
-                <!--If the date of the Fast of Esther falls on Shabbat (Saturday), the fast is instead observed on the preceding Thursday -->
-                <add calendar="hebrew" days="-2"/>
-            </condition>
+            <fixed calendar="hebrew" day="9" month="Tishrei"/>
         </definition>
     </holiday>
 
+    <!-- https://en.wikipedia.org/wiki/Yom_Kippur -->
+    <holiday>
+        <description language="he" name="יוֹם כִּפּוּר" type="Jewish holiday"/>
+        <description language="en" name="Yom Kippur" type="Jewish holiday"/>
+        <description language="de" name="Jom Kippur" type="Jewish holiday"/>
+
+        <definition>
+            <fixed calendar="hebrew" day="10" month="Tishrei"/>
+        </definition>
+    </holiday>
 
     <holiday>
         <description language="he" name="סוכות יום 1" type="Jewish holiday"/>
@@ -113,6 +138,10 @@
         </definition>
     </holiday>
 
+
+    <!-- *** Cheshvan -->
+
+    <!-- *** Kislev -->
 
     <!-- Hanukkah is observed for eight nights and days, starting on the 25th day of Kislev according to the Hebrew calendar -->
     <holiday>
@@ -201,6 +230,96 @@
             <add calendar="hebrew" days="+7"/>
         </definition>
     </holiday>
+
+
+    <!-- *** Tevet -->
+
+    <!-- *** Shevat -->
+
+    <!-- *** Adar -->
+
+    <!-- https://en.wikipedia.org/wiki/Fast_of_Esther -->
+    <holiday>
+        <description language="he" name="תַּעֲנִית אֶסְתֵּר" type="Jewish holiday"/>
+        <description language="en" name="Fast of Esther" type="Jewish holiday"/>
+        <description language="de" name="Ta’anit Esther" type="Jewish holiday"/>
+
+        <definition>
+            <!-- The fast is observed on the 13th day of the Hebrew month of Adar -->
+            <!-- When the year has two Adar months, it is observed only in the second Adar -->
+            <fixed calendar="hebrew" day="13" month="Adar"/>
+            <condition calendar="hebrew" ifweekday="Shabbat">
+                <!--If the date of the Fast of Esther falls on Shabbat (Saturday), the fast is instead observed on the preceding Thursday -->
+                <add calendar="hebrew" days="-2"/>
+            </condition>
+        </definition>
+    </holiday>
+
+    <!-- https://en.wikipedia.org/wiki/Purim -->
+    <holiday>
+        <description language="he" name="פּוּרִים" type="Jewish holiday, without Jerusalem and all ancient walled cities"/>
+        <description language="en" name="Purim" type="Jewish holiday, without Jerusalem and all ancient walled cities"/>
+        <description language="de" name="Purim" type="Jewish holiday, without Jerusalem and all ancient walled cities"/>
+
+        <definition>
+            <fixed calendar="hebrew" day="14" month="Adar"/>
+        </definition>
+    </holiday>
+
+    <!-- https://en.wikipedia.org/wiki/Purim#Shushan_Purim -->
+    <holiday>
+        <description language="he" name="שושן פורים" type="Jewish holiday, in Jerusalem and all ancient walled cities"/>
+        <description language="en" name="Shushan Purim" type="Jewish holiday, in Jerusalem and all ancient walled cities"/>
+        <description language="de" name="Schuschan Purim/Purim der Städte" type="Jewish holiday, in Jerusalem and all ancient walled cities"/>
+
+        <definition>
+            <fixed calendar="hebrew" day="15" month="Adar"/>
+        </definition>
+    </holiday>
+
+    <!-- https://en.wikipedia.org/wiki/Purim#Purim_Katan -->
+    <!-- In jüdischen Schaltjahren wird der Adar verdoppelt;
+    Purim findet in diesem Fall im zweiten Adar statt und im ersten Adar wird dann Purim qatan (kleines Purim) gefeiert. -->
+    <holiday>
+        <description language="he" name="פורים קטן" type="Jewish holiday, without Jerusalem and all ancient walled cities"/>
+        <description language="en" name="Purim Katan" type="Jewish holiday, without Jerusalem and all ancient walled cities"/>
+        <description language="de" name="Purim Katan/Kleines Purim" type="Jewish holiday, without Jerusalem and all ancient walled cities"/>
+
+        <definition>
+            <fixed calendar="hebrew" day="14" month="Adar_I"/>
+            <condition calendar="hebrew" leapyear="false">
+                <undefined/>
+            </condition>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="he" name="שושן פורים קטן" type="Jewish holiday, in Jerusalem and all ancient walled cities"/>
+        <description language="en" name="Shushan Purim Katan" type="Jewish holiday, in Jerusalem and all ancient walled cities"/>
+        <description language="de" name="Schuschan Purim Katan/Kleines Purim der Städte" type="Jewish holiday, in Jerusalem and all ancient walled cities"/>
+
+        <definition>
+            <fixed calendar="hebrew" day="15" month="Adar_I"/>
+            <condition calendar="hebrew" leapyear="false">
+                <undefined/>
+            </condition>
+            </definition>
+    </holiday>
+
+
+
+
+    <!-- *** Nisan -->
+
+    <!-- *** Iyar -->
+
+    <!-- *** Sivan -->
+
+    <!-- *** Tammuz -->
+
+    <!-- *** Av -->
+
+    <!-- *** Elul -->
 
 
     <holiday>
