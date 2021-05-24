@@ -254,6 +254,17 @@
     <!-- *** Tevet -->
 
     <!-- *** Shevat -->
+    <!-- https://en.wikipedia.org/wiki/Tu_BiShvat -->
+
+    <holiday>
+        <description language="he" name="ט״ו בשבט" type="Jewish holiday"/>
+        <description language="en" name="Tu BiShvat" type="Jewish holiday"/>
+        <description language="de" name="Tu biSchevat / Neujahr der Bäume" type="Jewish holiday"/>
+
+        <definition>
+            <fixed calendar="hebrew" day="15" month="Shevat"/>
+        </definition>
+    </holiday>
 
     <!-- *** Adar -->
 
