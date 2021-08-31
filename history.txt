@@ -1,37 +1,33 @@
 version 1.1, TBD
 ----------------
-- more than 1000 holiday definitions
+holiday definitions
 
-- DTD updated with lunisolar XML element for holiday definitions
-  that are based on the Chinese calendar
-
-- DTD updated with attribute called "valid" for holidays in order to mark
-  historic countries that do not exist anymore, such as the DDR
+- more than 1100 holiday definitions
 
 - Added holiday definitions for
 
   Armenia
   Chile
   China
-  DDR
+  Czech Republic
+  DDR (historic)
+  Israel
   Taiwan
 
-- many minor fixes and additions on exising definitions
+DTD updates
 
-  more international and UN holidays
-  fix for Germany's Oktoberfest for 2010
-  added Ice Saints for Germany
-  Mother's Day for Norway, Austria, Romania, Australia
-  Mothering Day for the Republic of Ireland
-  Father's Day for Austria, Romania, Switzerland
-  Vaetertag for Switzerland
-  firstyear fix for the April Fools Day of Germany
-  firstyear fix for Mother's Day in Germany
-  Wedding of Prince William of Wales and Catherine Middleton in 2011
-  Queen's Golden Jubilee in 2002 and Queen's Diamond Jubilee in 2012
-  World Press Freedom Day for the UNO
-  Bloomsday for Ireland
-  etc.
+- added the lunisolar XML element, e. g. for holiday definitions that are based on the Chinese calendar
+
+- atted attribute called "valid" for holidays in order to mark historic countries that do not exist anymore, such as the DDR
+
+- added a calendar attribute and added that attribute to the condition, fixed, and the add element
+
+- added hebrew_month_names and hebrew_weekday_names for creating Jewish holiday definitions
+
+other
+
+- many minor fixes and additions on existing definitions
+
 
 version 1.0, June 3, 2010
 -------------------------
@@ -73,7 +69,7 @@ version 1.0, June 3, 2010
   United States of America  
   Venezuela
 
-- In addition to the country specific holiday definition, this package provide
+- In addition to the country specific holiday definition, this package provides
   also international holiday definitions and UNO holiday definitions
 
 
