@@ -48,7 +48,7 @@
     <holiday>
         <description language="en" name="International Women's Day"/>
         <description language="de" name="Internationaler Frauentag (Weltfrauentag)"/>
-        <definition firstyear="1978">
+        <definition firstyear="1975">
             <fixed month="March" day="8"/>
         </definition>
     </holiday>

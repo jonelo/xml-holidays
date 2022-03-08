@@ -105,6 +105,26 @@
         </definition>
     </holiday>
 
+    <holiday>
+        <!-- https://de.wikipedia.org/wiki/Internationaler_Frauentag -->
+        <description language="de" name="Internationaler Frauentag"/>
+        <!-- https://en.wikipedia.org/wiki/International_Women%27s_Day -->
+        <description language="en" name="International Women' Day"/>
+        <!-- https://fr.wikipedia.org/wiki/Journ%C3%A9e_internationale_des_femmes -->
+        <description language="fr" name="Journée internationale des femmes"/>
+        <!-- https://es.wikipedia.org/wiki/D%C3%ADa_Internacional_de_la_Mujer -->
+        <description language="es" name="Día Internacional de la Mujer"/>
+
+        <!-- Erstmals fand der Frauentag am 19. März 1911 statt. -->
+        <definition firstyear="1911" lastyear="1920">
+            <fixed month="March" day="19"/>
+        </definition>
+        <!-- 1921 wurde sein Datum durch einen Beschluss der Zweiten Internationalen Konferenz kommunistischer Frauen
+             in Moskau endgültig auf den 8. März gelegt. -->
+        <definition firstyear="1921">
+            <fixed month="March" day="8"/>
+        </definition>
+    </holiday>
 
     <holiday>
         <!-- https://de.wikipedia.org/wiki/Welttag_der_Meteorologie -->
