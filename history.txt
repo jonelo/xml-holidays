@@ -13,6 +13,7 @@ holiday definitions
   DDR (historic)
   Israel
   Taiwan
+  Ukraine
 
 DTD updates
 

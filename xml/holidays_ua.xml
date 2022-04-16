@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+<!--
+    This file is from the free xml-holidays project. See also
+    https://github.com/jonelo/xml-holidays/
+    Thank you for keeping the comment.
+-->
+<!-- Ukraine -->
+<holidays country="UA">
+    <!-- https://en.wikipedia.org/wiki/Public_holidays_in_Ukraine -->
+
+    <default language="uk"/> <!-- Ukrainian -->
+
+    <holiday>
+        <description language="uk" name="Новий Рік"/>
+        <description language="ru" name="Новый Год / Novy God"/>
+        <description language="en" name="New Year's Day" type="public holiday"/>
+        <definition>
+            <fixed month="January" day="1"/>
+            <condition ifweekday="Sunday">
+                <add days="1"/>
+            </condition>
+            <condition ifweekday="Saturday">
+                <add days="+2"/>
+            </condition>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="uk" name="Різдво Христове"/>
+        <description language="ru" name="Рождество / Rozhdestvo"/>
+        <description language="en" name="Orthodox Christmas Day" type="public holiday"/>
+        <description language="de" name="Orthodoxer Weihnachtstag" type="public holiday"/>
+        <definition>
+            <fixed month="January" day="7"/>
+            <condition ifweekday="Sunday">
+                <add days="1"/>
+            </condition>
+            <condition ifweekday="Saturday">
+                <add days="+2"/>
+            </condition>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="uk" name="Міжнародний жіночий день"/>
+        <description language="ru" name="Международный Женский День"/>
+        <description language="en" name="International Women's Day" type="public holiday"/>
+        <description language="de" name="Weltfrauentag"/>
+        <definition>
+            <fixed month="March" day="8"/>
+            <condition ifweekday="Sunday">
+                <add days="1"/>
+            </condition>
+            <condition ifweekday="Saturday">
+                <add days="+2"/>
+            </condition>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="uk" name="Великдень"/>
+        <description language="en" name="Orthodox Easter"/>
+        <description language="de" name="Orthodoxer Ostersonntag"/>
+        <definition>
+            <easter church="eastern"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="uk" name="Великодній понеділок"/>
+        <description language="en" name="Orthodox Easter Monday"/>
+        <description language="de" name="Orthodoxer Oster(montag)"/>
+        <definition>
+            <easter church="eastern"/>
+            <add days="1"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="uk" name="Трійця"/>
+        <description language="en" name="Orthodox Pentecost"/>
+        <description language="de" name="Orthodoxer Pfingstsonntag"/>
+        <definition>
+            <easter church="eastern"/>
+            <add days="49"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="uk" name="Трійця (понеділок)"/>
+        <description language="en" name="Orthodox Pentecost Monday"/>
+        <description language="de" name="Orthodoxer Pfingstmontag"/>
+        <definition>
+            <easter church="eastern"/>
+            <add days="50"/>
+        </definition>
+    </holiday>
+
+
+    <holiday>
+        <description language="uk" name="День праці"/>
+        <description language="en" name="International Workers Day" type="public holiday"/>
+        <description language="de" name="Tag der Arbeit"/>
+        <definition>
+            <fixed month="May" day="1"/>
+            <condition ifweekday="Sunday">
+                <add days="1"/>
+            </condition>
+            <condition ifweekday="Saturday">
+                <add days="+2"/>
+            </condition>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="uk" name="День перемоги над нацизмом у Другій світовій війні"/>
+        <description language="en" name="Victory Day over Nazism in World War II" type="public holiday"/>
+        <description language="de" name="Tag des Sieges über den Nationalsozialismus im 2. Weltkrieg"/>
+        <definition>
+            <fixed month="May" day="9"/>
+            <condition ifweekday="Sunday">
+                <add days="1"/>
+            </condition>
+            <condition ifweekday="Saturday">
+                <add days="+2"/>
+            </condition>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="uk" name="День Конституції України"/>
+        <description language="en" name="Constitution Day" type="public holiday"/>
+        <description language="de" name="Tag der Verfassung"/>
+        <definition>
+            <fixed month="June" day="28"/>
+            <condition ifweekday="Sunday">
+                <add days="1"/>
+            </condition>
+            <condition ifweekday="Saturday">
+                <add days="+2"/>
+            </condition>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="uk" name="День Незалежности України"/>
+        <description language="en" name="Independence Day" type="public holiday"/> <!-- From the USSR in 1991 -->
+        <description language="de" name="Unabhängigkeitstag"/>
+        <definition firstyear="1991">
+            <fixed month="August" day="24"/>
+            <condition ifweekday="Sunday">
+                <add days="1"/>
+            </condition>
+            <condition ifweekday="Saturday">
+                <add days="+2"/>
+            </condition>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="uk" name="День захисників і захисниць України"/>
+        <description language="en" name="Defenders and Defendresses of Ukraine Day" type="public holiday"/> <!-- From the USSR in 1991 -->
+        <description language="de" name="Tag der Verteidiger und Verteidigerinnen der Ukraine"/>
+        <definition firstyear="2015">
+            <fixed month="October" day="14"/>
+            <condition ifweekday="Sunday">
+                <add days="1"/>
+            </condition>
+            <condition ifweekday="Saturday">
+                <add days="+2"/>
+            </condition>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="uk" name="Різдво Христове "/>
+        <description language="en" name="Christmas" type="public holiday"/>
+        <description language="de" name="Weihnachtstag"/>
+        <definition firstyear="2017">
+            <fixed month="December" day="25"/>
+            <condition ifweekday="Sunday">
+                <add days="1"/>
+            </condition>
+            <condition ifweekday="Saturday">
+                <add days="+2"/>
+            </condition>
+        </definition>
+    </holiday>
+
+</holidays>
