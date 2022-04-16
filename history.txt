@@ -19,7 +19,7 @@ DTD updates
 
 - added the lunisolar XML element, e. g. for holiday definitions that are based on the Chinese calendar
 
-- atted attribute called "valid" for holidays in order to mark historic countries that do not exist anymore, such as the DDR
+- added attribute called "valid" for holidays in order to mark historic countries that do not exist anymore, such as the DDR
 
 - added a calendar attribute and added that attribute to the condition, fixed, and the add element
 
