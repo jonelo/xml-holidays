@@ -177,6 +177,22 @@
         </definition>
     </holiday>
 
+    <!--
+      https://en.wikipedia.org/wiki/International_Nurses_Day
+      https://de.wikipedia.org/wiki/Internationaler_Tag_der_Pflegenden
+    -->
+    <holiday>
+        <description language="en" name="International Nurses Day"/>
+        <description language="de" name="Internationaler Tag der Pflegenden"/>
+
+        <definition lastyear="1964">
+            <undefined/>
+        </definition>
+        <definition firstyear="1965">
+            <fixed month="May" day="12"/> <!-- the anniversary of Florence Nightingale's birth -->
+        </definition>
+    </holiday>
+
     <!-- 
       http://www.sueddeutsche.de/kultur/artikel/690/115575/
       0x25+0x5=37+5=42 ;)
