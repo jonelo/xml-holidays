@@ -401,6 +401,15 @@
         </definition>
     </holiday>
 
+    <!-- https://www.daysoftheyear.com/days/smores-day/ -->
+    <holiday>
+        <description language="en" name="National S'mores Day" type="quirky occasion"/>
+
+        <definition firstyear="2000"> <!-- does not to be known earlier -->
+            <fixed day="10" month="August"/>
+        </definition>
+    </holiday>
+
     <!-- http://en.wikipedia.org/wiki/Labor_Day -->
     <holiday>
         <description language="en" name="Labor Day" type="federal holiday"/>
