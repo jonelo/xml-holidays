@@ -259,7 +259,20 @@
             <rule nth="First" weekday="Friday" month="August"/>
         </definition>
     </holiday>
-    
+
+
+    <!--
+      https://www.bing.com/search?q=Panthercham%c3%a4leon&filters=HpDate:%2220220813_2200%22&setlang=de-de&cc=DE&form=SHHPIH
+      -->
+    <holiday>
+        <description language="en" name="World Lizard Day"/>
+        <description language="de" name="Welttag der Echsen"/>
+
+        <definition>
+            <fixed month="August" day="14"/>
+        </definition>
+    </holiday>
+
     <!-- September -->
     
     <!-- October -->    
