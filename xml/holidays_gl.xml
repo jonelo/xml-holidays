@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE holidays SYSTEM "holidays.dtd">
+<!--
+    This file is from the free xml-holidays project. See also
+    https://github.com/jonelo/xml-holidays/
+    Thank you for keeping the comment.
+-->
+<holidays country="GL">
+    <!-- https://en.wikipedia.org/wiki/Public_holidays_in_Greenland -->
+
+    <default language="da"/>
+
+    <holiday>
+        <description language="da" name="Nytårsdag" type="National helligdag"/>
+        <description language="en" name="New Year's Day" type="National Holiday"/>
+        <import id="New Year's Day"/>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Forårsjævndøgn"/>
+        <description language="en" name="Vernal equinox"/>
+        <definition>
+            <equinox month="March" timezone="Etc/GMT-2"/> <!-- for Capital City Nuuk -->
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Skærtorsdag" type="National helligdag, Kristen"/>
+        <description language="en" name="Maundy Thursday" type="National Holiday, Christian"/>
+        <definition>
+            <easter/>
+            <add days="-3"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Langfredag" type="National helligdag, Kristen"/>
+        <description language="en" name="Good Friday" type="National Holiday, Christian"/>
+        <definition>
+            <easter/>
+            <add days="-2"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Påskedag" type="National helligdag, Kristen"/>
+        <description language="en" name="Easter Sunday" type="National Holiday, Christian"/>
+        <import id="Easter Sunday"/>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Anden påskedag" type="National helligdag, Kristen"/>
+        <description language="en" name="Easter Monday" type="National Holiday, Christian"/>
+        <import id="Easter Monday"/>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="1. April"/>
+        <description language="en" name="April Fools' Day"/>
+        <definition>
+            <fixed month="April" day="1"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Arbejdernes internationale kampdag" type="National helligdag"/>
+        <description language="en" name="International Workers' Day" type="National Holiday"/>
+        <definition>
+            <fixed month="May" day="1"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Begynd sommertid"/>
+        <description language="en" name="Begin Daylight Saving Time"/>
+        <definition>
+            <dst timezone="Etc/GMT-2" action="start"/> <!-- for Capital City Nuuk -->
+        </definition>
+    </holiday>
+
+    <!-- https://en.wikipedia.org/wiki/Store_Bededag -->
+    <holiday>
+        <description language="da" name="Store Bededag" type="National helligdag"/>
+        <description language="en" name="Great Prayer Day" type="National Holiday"/>
+        <description language="de" name="Großer Gebetstag" type="Nationaler Feiertag"/>
+        <definition firstyear="1686">
+            <!-- The 4th Friday after Easter -->
+            <easter/>
+            <add days="+26"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Kristi Himmelfartsdag" type="National helligdag, Kristen"/>
+        <description language="en" name="Ascension Day" type="National Holiday, Christian"/>
+        <definition>
+            <easter/>
+            <add days="+39"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Pinsedag" type="National helligdag, Kristen"/>
+        <description language="en" name="Whit Sunday" type="National Holiday, Christian"/>
+        <import id="Pentecost"/>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Anden pinsedag" type="National helligdag, Kristen"/>
+        <description language="en" name="Whit Monday" type="National Holiday, Christian"/>
+        <definition>
+            <easter/>
+            <add days="+50"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Grønlands nationaldag" type="National helligdag"/>
+        <description language="en" name="National Day" type="National Holiday"/>
+        <definition>
+            <fixed month="June" day="21"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Sommersolhverv"/>
+        <description language="en" name="June Solstice"/>
+        <definition>
+            <solstice month="June" timezone="Etc/GMT-2"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Efterårsjævndøgn"/>
+        <description language="en" name="Autumnal equinox"/>
+        <definition>
+            <equinox month="September" timezone="Etc/GMT-2"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Sommertid slutter"/>
+        <description language="en" name="End Daylight Saving Time"/>
+        <definition>
+            <dst timezone="Etc/GMT-2" action="end"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Vintersolhverv"/>
+        <description language="en" name="December Solstice"/>
+        <definition>
+            <solstice month="December" timezone="Etc/GMT-2"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Juleaftensdag" type="National helligdag, Kristen"/>
+        <description language="en" name="Christmas Eve" type="National Holiday, Christian"/>
+        <import id="Christmas Eve"/>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Juledag" type="National helligdag, Kristen"/>
+        <description language="en" name="First Day of Christmas" type="National Holiday, Christian"/>
+        <definition>
+            <fixed month="December" day="25"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Anden juledag" type="National helligdag, Kristen"/>
+        <description language="en" name="Second Day of Christmas" type="National Holiday, Christian"/>
+        <definition>
+            <fixed month="December" day="26"/>
+        </definition>
+    </holiday>
+
+    <holiday>
+        <description language="da" name="Nytårsaften" type="National helligdag"/>
+        <description language="en" name="New Year's Eve" type="National Holiday"/>
+        <import id="New Year's Eve"/>
+    </holiday>
+
+</holidays>
