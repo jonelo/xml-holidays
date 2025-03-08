@@ -152,8 +152,9 @@
 
     <!-- https://en.wikipedia.org/wiki/Store_Bededag -->
     <holiday>
-        <description language="da" name="Store Bededag"/>
+        <description language="da" name="Store Bededag" type="public"/>
         <description language="en" name="Great Prayer Day" type="public"/>
+        <description language="de" name="Großer Gebetstag" type="public"/>
         <!-- Store Bededag was celebrated in Denmark as a public holiday for the last time on the 5th of May, 2023. -->
         <definition firstyear="1686" lastyear="2023">
            <!-- The 4th Friday after Easter -->
@@ -164,8 +165,9 @@
 
     <!-- https://en.wikipedia.org/wiki/Store_Bededag -->
     <holiday>
-        <description language="da" name="Store Bededag"/>
+        <description language="da" name="Store Bededag" type="non-public"/>
         <description language="en" name="Great Prayer Day" type="non-public"/>
+        <description language="de" name="Großer Gebetstag" type="non-public"/>
         <!-- Store Bededag was celebrated in Denmark as a public holiday for the last time on the 5th of May, 2023. -->
         <definition firstyear="2024">
             <!-- The 4th Friday after Easter -->
